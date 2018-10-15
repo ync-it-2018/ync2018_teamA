@@ -625,7 +625,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav menu__list">
 								<li class="">
-									<a class="nav-stylehead" href="about.jsp]">해외여행</a>
+									<a class="nav-stylehead" href="about.jsp">해외여행</a>
 								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">국내여행
@@ -1036,7 +1036,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3 class="agileits-sear-head">Special Deals</h3>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/d2.jpg" alt="">
+							<img src="/resources/front/images/d2.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Lay's Potato Chips</h3>
@@ -1046,7 +1046,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/d1.jpg" alt="">
+							<img src="/resources/front/images/d1.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Bingo Mad Angles</h3>
@@ -1056,7 +1056,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/d4.jpg" alt="">
+							<img src="/resources/front/images/d4.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Tata Salt</h3>
@@ -1066,7 +1066,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/d5.jpg" alt="">
+							<img src="/resources/front/images/d5.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Gujarat Dry Fruit</h3>
@@ -1076,7 +1076,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/d3.jpg" alt="">
+							<img src="/resources/front/images/d3.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Cadbury Dairy Milk</h3>
@@ -1097,7 +1097,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/m1.jpg" alt="">
+									<img src="/resources/front/images/m1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -1136,7 +1136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/m2.jpg" alt="">
+									<img src="/resources/front/images/m2.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -1176,7 +1176,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/m3.jpg" alt="">
+									<img src="/resources/front/images/m3.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -1225,7 +1225,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<h3 class="w3l-nut-middle">Nuts & Dry Fruits</h3>
 						<div class="col-xs-5 bg-right-nut">
-							<img src="images/nut1.png" alt="">
+							<img src="/resources/front/images/nut1.png" alt="">
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -1236,7 +1236,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/mk4.jpg" alt="">
+									<img src="/resources/front/images/mk4.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -1275,7 +1275,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/mk5.jpg" alt="">
+									<img src="/resources/front/images/mk5.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="single.html" class="link-product-add-cart">Quick View</a>

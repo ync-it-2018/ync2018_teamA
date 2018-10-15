@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -8,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Single 2 :: w3layouts</title>
+	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Typography :: w3layouts</title>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,16 +26,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		}
 	</script>
 	<!--//tags -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="/resources/front/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/resources/front/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/resources/front/css/font-awesome.css" rel="stylesheet">
 	<!--pop-up-box-->
-	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/resources/front/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 	<!--//pop-up-box-->
 	<!-- price range -->
-	<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
-	<!-- flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/resources/front/css/jquery-ui1.css">
 	<!-- fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 </head>
@@ -740,10 +740,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 									</ul>
 								</li>
-								<li>
+								<li class="">
 									<a class="nav-stylehead" href="faqs.html">Faqs</a>
 								</li>
-								<li class="dropdown">
+								<li class="dropdown active">
 									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Pages
 										<b class="caret"></b>
 									</a>
@@ -751,7 +751,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li>
 											<a href="icons.html">Web Icons</a>
 										</li>
-										<li>
+										<li class="active">
 											<a href="typography.html">Typography</a>
 										</li>
 									</ul>
@@ -781,17 +781,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="index.html">Home</a>
 						<i>|</i>
 					</li>
-					<li>Single Page</li>
+					<li>Typography</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- //page -->
-	<!-- Single Page -->
-	<div class="banner-bootom-w3-agileits">
+	<!-- Codes -->
+	<div class="typo">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Single Page
+			<h3 class="tittle-w3l">Typography
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -799,403 +799,735 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</span>
 			</h3>
 			<!-- //tittle heading -->
-			<div class="col-md-5 single-right-left ">
-				<div class="grid images_3_of_2">
-					<div class="flexslider">
-						<ul class="slides">
-							<li data-thumb="images/se1.jpg">
-								<div class="thumb-image">
-									<img src="images/se1.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+			<div class="grid_3 grid_4 w3layouts">
+				<h3 class="hdg">Headings</h3>
+				<div class="bs-example">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>
+									<h1 id="h1.-bootstrap-heading">h1. Bootstrap heading
+										<a class="anchorjs-link" href="#h1.-bootstrap-heading">
+											<span class="anchorjs-icon"></span>
+										</a>
+									</h1>
+								</td>
+								<td class="type-info">Semibold 36px</td>
+							</tr>
+							<tr>
+								<td>
+									<h2 id="h2.-bootstrap-heading">h2. Bootstrap heading
+										<a class="anchorjs-link" href="#h2.-bootstrap-heading">
+											<span class="anchorjs-icon"></span>
+										</a>
+									</h2>
+								</td>
+								<td class="type-info">Semibold 30px</td>
+							</tr>
+							<tr>
+								<td>
+									<h3 id="h3.-bootstrap-heading">h3. Bootstrap heading
+										<a class="anchorjs-link" href="#h3.-bootstrap-heading">
+											<span class="anchorjs-icon"></span>
+										</a>
+									</h3>
+								</td>
+								<td class="type-info">Semibold 24px</td>
+							</tr>
+							<tr>
+								<td>
+									<h4 id="h4.-bootstrap-heading">h4. Bootstrap heading
+										<a class="anchorjs-link" href="#h4.-bootstrap-heading">
+											<span class="anchorjs-icon"></span>
+										</a>
+									</h4>
+								</td>
+								<td class="type-info">Semibold 18px</td>
+							</tr>
+							<tr>
+								<td>
+									<h5 id="h5.-bootstrap-heading">h5. Bootstrap heading
+										<a class="anchorjs-link" href="#h5.-bootstrap-heading">
+											<span class="anchorjs-icon"></span>
+										</a>
+									</h5>
+								</td>
+								<td class="type-info">Semibold 14px</td>
+							</tr>
+							<tr>
+								<td>
+									<h6>h6. Bootstrap heading</h6>
+								</td>
+								<td class="type-info">Semibold 12px</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="grid_3 grid_5 w3l">
+				<h3>Progress Bars</h3>
+				<div class="tab-content">
+					<div class="tab-pane active" id="domprogress">
+						<div class="progress">
+							<div class="progress-bar progress-bar-primary" style="width: 20%"></div>
+						</div>
+						<p>Info with
+							<code>progress-bar-info</code> class.</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-info" style="width: 60%"></div>
+						</div>
+						<p>Success with
+							<code>progress-bar-success</code> class.</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-success" style="width: 30%"></div>
+						</div>
+						<p>Warning with
+							<code>progress-bar-warning</code> class.</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-warning" style="width: 70%"></div>
+						</div>
+						<p>Danger with
+							<code>progress-bar-danger</code> class.</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-danger" style="width: 50%"></div>
+						</div>
+						<p>Inverse with
+							<code>progress-bar-inverse</code> class.</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-inverse" style="width: 40%"></div>
+						</div>
+						<p>Inverse with
+							<code>progress-bar-inverse</code> class.</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-success" style="width: 35%">
+								<span class="sr-only">35% Complete (success)</span>
+							</div>
+							<div class="progress-bar progress-bar-warning" style="width: 20%">
+								<span class="sr-only">20% Complete (warning)</span>
+							</div>
+							<div class="progress-bar progress-bar-danger" style="width: 10%">
+								<span class="sr-only">10% Complete (danger)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid_3 grid_5 w3ls">
+				<h3>Alerts</h3>
+				<div class="alert alert-success" role="alert">
+					<strong>Well done!</strong> You successfully read this important alert message.
+				</div>
+				<div class="alert alert-info" role="alert">
+					<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+				</div>
+				<div class="alert alert-warning" role="alert">
+					<strong>Warning!</strong> Best check yo self, you're not looking too good.
+				</div>
+				<div class="alert alert-danger" role="alert">
+					<strong>Oh snap!</strong> Change a few things up and try submitting again.
+				</div>
+			</div>
+			<div class="grid_3 grid_5 agileits">
+				<h3>Pagination</h3>
+				<div class="col-md-6">
+					<nav>
+						<ul class="pagination pagination-lg">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">«</span>
+								</a>
 							</li>
-							<li data-thumb="images/se2.jpg">
-								<div class="thumb-image">
-									<img src="images/se2.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+							<li>
+								<a href="#">1</a>
 							</li>
-							<li data-thumb="images/se3.jpg">
-								<div class="thumb-image">
-									<img src="images/se3.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<a href="#">5</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">»</span>
+								</a>
 							</li>
 						</ul>
-						<div class="clearfix"></div>
-					</div>
+					</nav>
+					<nav>
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">«</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<a href="#">5</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">»</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<nav>
+						<ul class="pagination pagination-sm">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">«</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<a href="#">5</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">»</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-			</div>
-			<div class="col-md-7 single-right-left simpleCart_shelfItem">
-				<h3>Ambipur Air Freshener - 275 g </h3>
-				<div class="rating1">
-					<span class="starRating">
-						<input id="rating5" type="radio" name="rating" value="5">
-						<label for="rating5">5</label>
-						<input id="rating4" type="radio" name="rating" value="4">
-						<label for="rating4">4</label>
-						<input id="rating3" type="radio" name="rating" value="3" checked="">
-						<label for="rating3">3</label>
-						<input id="rating2" type="radio" name="rating" value="2">
-						<label for="rating2">2</label>
-						<input id="rating1" type="radio" name="rating" value="1">
-						<label for="rating1">1</label>
-					</span>
-				</div>
-				<p>
-					<span class="item_price">$265.00</span>
-					<del>$285.00</del>
-					<label>Free delivery</label>
-				</p>
-				<div class="single-infoagile">
-					<ul>
-						<li>
-							Cash on Delivery Eligible.
+				<div class="col-md-6">
+					<ul class="pagination pagination-lg">
+						<li class="disabled">
+							<a href="#">
+								<i class="fa fa-angle-left">«</i>
+							</a>
+						</li>
+						<li class="active">
+							<a href="#">1</a>
 						</li>
 						<li>
-							Delivery to within 7 - 10 business days.
+							<a href="#">2</a>
 						</li>
 						<li>
-							Sold by Cloudtail India (4.2 out of 5 | 95,027 ratings).
+							<a href="#">3</a>
 						</li>
 						<li>
-							6 offer from
-							<span class="item_price">$285.00</span>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-angle-right">»</i>
+							</a>
+						</li>
+					</ul>
+					<nav>
+						<ul class="pagination">
+							<li class="disabled">
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">«</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="#">1
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<a href="#">5</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">»</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="pagination pagination-sm">
+						<li class="disabled">
+							<a href="#">
+								<i class="fa fa-angle-left">«</i>
+							</a>
+						</li>
+						<li class="active">
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-angle-right">»</i>
+							</a>
 						</li>
 					</ul>
 				</div>
-				<div class="product-single-w3l">
-					<p>
-						<i class="fa fa-hand-o-right" aria-hidden="true"></i>Pantry Cashback Offer</p>
-					<ul>
-						<li>
-							Doesn't just cover, Truly removes odours
-						</li>
-						<li>
-							Ambi Pur is a brand of air freshener products available in the United States, Europe, Asia and Oceania.
-						</li>
-						<li>
-							Their range of products may be used in the home or in the car with a variety of smells and properties such as odor neutralisation.
-						</li>
-						<li>
-							Transforms your home from smelly to smiley
-						</li>
-					</ul>
-					<p>
-						<i class="fa fa-refresh" aria-hidden="true"></i>All food products are
-						<label>returnable.</label>
-					</p>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="grid_3 grid_5 agileinfo">
+				<h3>Breadcrumbs</h3>
+				<ol class="breadcrumb">
+					<li class="active">Home</li>
+				</ol>
+				<ol class="breadcrumb">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li class="active">Library</li>
+				</ol>
+				<ol class="breadcrumb">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Library</a>
+					</li>
+					<li class="active">Data</li>
+				</ol>
+			</div>
+			<div class="grid_3 grid_5 wthree">
+				<h3>Badges</h3>
+				<div class="col-md-6 agileits-w3layouts">
+					<p>Add modifier classes to change the appearance of a badge.</p>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Classes</th>
+								<th>Badges</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>No modifiers</td>
+								<td>
+									<span class="badge">42</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.badge-primary</code>
+								</td>
+								<td>
+									<span class="badge badge-primary">1</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.badge-success</code>
+								</td>
+								<td>
+									<span class="badge badge-success">22</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.badge-info</code>
+								</td>
+								<td>
+									<span class="badge badge-info">30</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.badge-warning</code>
+								</td>
+								<td>
+									<span class="badge badge-warning">412</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.badge-danger</code>
+								</td>
+								<td>
+									<span class="badge badge-danger">999</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<div class="occasion-cart">
-					<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-						<form action="#" method="post">
-							<fieldset>
-								<input type="hidden" name="cmd" value="_cart" />
-								<input type="hidden" name="add" value="1" />
-								<input type="hidden" name="business" value=" " />
-								<input type="hidden" name="item_name" value="Zeeba Premium Basmati Rice - 5 KG" />
-								<input type="hidden" name="amount" value="951.00" />
-								<input type="hidden" name="discount_amount" value="1.00" />
-								<input type="hidden" name="currency_code" value="USD" />
-								<input type="hidden" name="return" value=" " />
-								<input type="hidden" name="cancel_return" value=" " />
-								<input type="submit" name="submit" value="Add to cart" class="button" />
-							</fieldset>
-						</form>
+				<div class="col-md-6 w3-agileits">
+					<p>Easily highlight new or unread items with the
+						<code>.badge</code> class</p>
+					<div class="list-group list-group-alternate">
+						<a href="#" class="list-group-item">
+							<span class="badge">201</span>
+							<i class="ti ti-email"></i> Inbox </a>
+						<a href="#" class="list-group-item">
+							<span class="badge badge-primary">5021</span>
+							<i class="ti ti-eye"></i> Profile visits </a>
+						<a href="#" class="list-group-item">
+							<span class="badge">14</span>
+							<i class="ti ti-headphone-alt"></i> Call </a>
+						<a href="#" class="list-group-item">
+							<span class="badge">20</span>
+							<i class="ti ti-comments"></i> Messages </a>
+						<a href="#" class="list-group-item">
+							<span class="badge badge-warning">14</span>
+							<i class="ti ti-bookmark"></i> Bookmarks </a>
+						<a href="#" class="list-group-item">
+							<span class="badge badge-danger">30</span>
+							<i class="ti ti-bell"></i> Notifications </a>
 					</div>
-
 				</div>
-
+				<div class="clearfix"> </div>
 			</div>
-			<div class="clearfix"> </div>
+			<div class="grid_3 grid_5 agile">
+				<h3>Wells</h3>
+				<div class="well">
+					There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+				</div>
+				<div class="well">
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+					here
+				</div>
+				<div class="well">
+					Lorem Ipsum is simply dummy text of the printing and typesetting Automated. Lorem Ipsum has been the Automated's standard
+					dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+					book. It has survived not only five centuries, but also the leap into electronic
+				</div>
+			</div>
+			<h3 class="bars">Unordered List</h3>
+			<ul class="list-group w3-agile">
+				<li class="list-group-item">Cras justo odio</li>
+				<li class="list-group-item">Dapibus ac facilisis in</li>
+				<li class="list-group-item">Morbi leo risus</li>
+				<li class="list-group-item">Porta ac consectetur ac</li>
+				<li class="list-group-item">Vestibulum at eros</li>
+			</ul>
+			<h3 class="bars">Ordered List</h3>
+			<ol>
+				<li class="list-group-item1">Cras justo odio</li>
+				<li class="list-group-item1">Dapibus ac facilisis in</li>
+				<li class="list-group-item1">Morbi leo risus</li>
+				<li class="list-group-item1">Porta ac consectetur ac</li>
+				<li class="list-group-item1">Vestibulum at eros</li>
+			</ol>
+			<h3 class="bars">Forms</h3>
+			<div class="input-group w3_w3layouts">
+				<span class="input-group-addon" id="basic-addon1">@</span>
+				<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group w3_w3layouts">
+				<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+				<span class="input-group-addon" id="basic-addon2">@example.com</span>
+			</div>
+			<div class="input-group w3_w3layouts">
+				<span class="input-group-addon">$</span>
+				<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+				<span class="input-group-addon">.00</span>
+			</div>
+			<div class="input-group input-group-lg w3_w3layouts">
+				<span class="input-group-addon" id="sizing-addon1">@</span>
+				<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+			</div>
+			<div class="input-group w3_w3layouts">
+				<span class="input-group-addon" id="sizing-addon2">@</span>
+				<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+			</div>
+			<div class="input-group input-group-sm w3_w3layouts">
+				<span class="input-group-addon" id="sizing-addon3">@</span>
+				<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+			</div>
+			<div class="row">
+				<div class="col-lg-6 in-gp-tl">
+					<div class="input-group">
+						<span class="input-group-addon">
+							<input type="checkbox" aria-label="...">
+						</span>
+						<input type="text" class="form-control" aria-label="...">
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+				<div class="col-lg-6 in-gp-tb">
+					<div class="input-group">
+						<span class="input-group-addon">
+							<input type="radio" aria-label="...">
+						</span>
+						<input type="text" class="form-control" aria-label="...">
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-lg-6 in-gp-tl">
+					<div class="input-group">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">Go!</button>
+						</span>
+						<input type="text" class="form-control" placeholder="Search for...">
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+				<div class="col-lg-6 in-gp-tb">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">Go!</button>
+						</span>
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-lg-6 in-gp-tl">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /btn-group -->
+						<input type="text" class="form-control" aria-label="...">
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+				<div class="col-lg-6 in-gp-tb">
+					<div class="input-group">
+						<input type="text" class="form-control" aria-label="...">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /btn-group -->
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>
+			<!-- /.row -->
+			<div class="page-header">
+				<h3 class="bars">Tables</h3>
+			</div>
+			<h2 class="typoh2">Default styles</h2>
+			<p>For basic stylinglight padding and only horizontal add the base class
+				<code>.table</code> to any
+				<code>&lt;table&gt;</code>.</p>
+			<div class="bs-docs-example">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Username</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<hr class="bs-docs-separator">
+			<p>Add any of the following classes to the
+				<code>.table</code> base class.</p>
+			<p>Adds zebra-striping to any table row within the
+				<code>&lt;tbody&gt;</code> via the
+				<code>:nth-child</code> CSS selector (not available in IE7-8).</p>
+			<div class="bs-docs-example">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Username</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>Add borders and rounded corners to the table.</p>
+			<div class="bs-docs-example">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Username</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2">1</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@getbootstrap</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>Enable a hover state on table rows within a
+				<code>&lt;tbody&gt;</code>.</p>
+			<div class="bs-docs-example">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Username</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
-	<!-- //Single Page -->
-	<!-- special offers -->
-	<div class="featured-section" id="projects">
-		<div class="container">
-			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Add More
-				<span class="heading-style">
-					<i></i>
-					<i></i>
-					<i></i>
-				</span>
-			</h3>
-			<!-- //tittle heading -->
-			<div class="content-bottom-in">
-				<ul id="flexiselDemo1">
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single.html">
-									<img src="images/s1.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single.html">Aashirvaad, 5g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$220.00</h6>
-									<p>Save $40.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Aashirvaad, 5g" />
-											<input type="hidden" name="amount" value="220.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single.html">
-									<img src="images/s4.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single.html">Kissan Tomato Ketchup, 950g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$99.00</h6>
-									<p>Save $20.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Kissan Tomato Ketchup, 950g" />
-											<input type="hidden" name="amount" value="99.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single.html">
-									<img src="images/s2.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single.html">Madhur Pure Sugar, 1g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$69.00</h6>
-									<p>Save $20.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Madhur Pure Sugar, 1g" />
-											<input type="hidden" name="amount" value="69.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single2.html">
-									<img src="images/s3.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single2.html">Surf Excel Liquid, 1.02L</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$187.00</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Surf Excel Liquid, 1.02L" />
-											<input type="hidden" name="amount" value="187.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single.html">
-									<img src="images/s8.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single.html">Cadbury Choclairs, 655.5g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$160.00</h6>
-									<p>Save $60.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Cadbury Choclairs, 655.5g" />
-											<input type="hidden" name="amount" value="160.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single2.html">
-									<img src="images/s6.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single2.html">Fair & Lovely, 80 g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$121.60</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Fair & Lovely, 80 g" />
-											<input type="hidden" name="amount" value="121.60" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single.html">
-									<img src="images/s5.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single.html">Sprite, 2.25L (Pack of 2)</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$180.00</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Sprite, 2.25L (Pack of 2)" />
-											<input type="hidden" name="amount" value="180.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single2.html">
-									<img src="images/s9.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single2.html">Lakme Eyeconic Kajal, 0.35 g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$153.00</h6>
-									<p>Save $40.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Lakme Eyeconic Kajal, 0.35 g" />
-											<input type="hidden" name="amount" value="153.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- //special offers -->
+	<!-- //Codes -->
 
 	<!-- newsletter -->
 	<div class="footer-top">
@@ -1615,6 +1947,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //cart-js -->
 
+	<!-- password-script -->
+	<script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+	<!-- //password-script -->
+
 	<!-- smoothscroll -->
 	<script src="js/SmoothScroll.min.js"></script>
 	<!-- //smoothscroll -->
@@ -1653,73 +2004,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->
-
-	<!-- imagezoom -->
-	<script src="js/imagezoom.js"></script>
-	<!-- //imagezoom -->
-
-	<!-- FlexSlider -->
-	<script src="js/jquery.flexslider.js"></script>
-	<script>
-		// Can also be used with $(document).ready()
-		$(window).load(function () {
-			$('.flexslider').flexslider({
-				animation: "slide",
-				controlNav: "thumbnails"
-			});
-		});
-	</script>
-	<!-- //FlexSlider-->
-
-	<!-- flexisel (for special offers) -->
-	<script src="js/jquery.flexisel.js"></script>
-	<script>
-		$(window).load(function () {
-			$("#flexiselDemo1").flexisel({
-				visibleItems: 3,
-				animationSpeed: 1000,
-				autoPlay: true,
-				autoPlaySpeed: 3000,
-				pauseOnHover: true,
-				enableResponsiveBreakpoints: true,
-				responsiveBreakpoints: {
-					portrait: {
-						changePoint: 480,
-						visibleItems: 1
-					},
-					landscape: {
-						changePoint: 640,
-						visibleItems: 2
-					},
-					tablet: {
-						changePoint: 768,
-						visibleItems: 2
-					}
-				}
-			});
-
-		});
-	</script>
-	<!-- //flexisel (for special offers) -->
-
-	<!-- password-script -->
-	<script>
-		window.onload = function () {
-			document.getElementById("password1").onchange = validatePassword;
-			document.getElementById("password2").onchange = validatePassword;
-		}
-
-		function validatePassword() {
-			var pass2 = document.getElementById("password2").value;
-			var pass1 = document.getElementById("password1").value;
-			if (pass1 != pass2)
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-			else
-				document.getElementById("password2").setCustomValidity('');
-			//empty string means no validation error
-		}
-	</script>
-	<!-- //password-script -->
 
 	<!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
