@@ -51,7 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header-bot-->
 			<div class="col-md-4 logo_agile">
 				<h1>
-					<a href="index.html">
+					<a href="/">
 						<span>G</span>rocery
 						<span>S</span>hoppy
 						<img src="images/logo2.png" alt=" ">
