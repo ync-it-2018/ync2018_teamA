@@ -17,13 +17,13 @@ public class ProductController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/single", method = RequestMethod.GET)
+	@RequestMapping(value = "/product", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
 		logger.info("Product 화면으로 이동", locale);
 
-		return "front/single";
+		return "front/product";
 	}
 	
 }
