@@ -5,6 +5,14 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.ModelAndView;
 
 // 전역 오류 처리
+/**
+ * CommonExceptionAdvice.java
+ * 
+ * @Author	: 김 주 성
+ * @Date	: 2018. 10. 15.
+ * @Description
+ *  
+ */
 @ControllerAdvice
 public class CommonExceptionAdvice {
 
