@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</a>
 						<ul class="dropdown-menu agile_short_dropdown">
 							<li>
-								<a href="absc.jsp">22회원정보</a>
+								<a href="absc.jsp">회원정보</a>
 							</li>
 							<li>
 								<a href="absc.jsp">예약/구매현황</a>
@@ -756,13 +756,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</a>
 									<ul class="dropdown-menu agile_short_dropdown">
 										<li>
-											<a href="icons.html">Web Icons</a>
+											<a href="icons.jsp">Web Icons</a>
 										</li>
 										<li>
-											<a href="typography.html">Typography</a>
-										</li>
-										<li>
-											<a href="typography.html">Typography</a>
+											<a href="typography.jsp">Typography</a>
 										</li>
 									</ul>
 								</li>
@@ -832,7 +829,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</h3>
 						<p>Get Now
 							<span>40%</span> Discount</p>
-						<a class="button2" href="product.html">Shop Now </a>
+						<a class="button2" href="product.jsp]">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -1847,44 +1844,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3>Categories</h3>
 						<ul>
 							<li>
-								<a href="product.html">Grocery</a>
+								<a href="product.jsp">Grocery</a>
 							</li>
 							<li>
-								<a href="product.html">Fruits</a>
+								<a href="product.jsp">Fruits</a>
 							</li>
 							<li>
-								<a href="product.html">Soft Drinks</a>
+								<a href="product.jsp">Soft Drinks</a>
 							</li>
 							<li>
-								<a href="product2.html">Dishwashers</a>
+								<a href="product2.jsp">Dishwashers</a>
 							</li>
 							<li>
-								<a href="product.html">Biscuits & Cookies</a>
+								<a href="product.jsp">Biscuits & Cookies</a>
 							</li>
 							<li>
-								<a href="product2.html">Baby Diapers</a>
+								<a href="product2.jsp">Baby Diapers</a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-xs-6 footer-grids agile-secomk">
 						<ul>
 							<li>
-								<a href="product.html">Snacks & Beverages</a>
+								<a href="product.jsp">Snacks & Beverages</a>
 							</li>
 							<li>
-								<a href="product.html">Bread & Bakery</a>
+								<a href="product.jsp">Bread & Bakery</a>
 							</li>
 							<li>
-								<a href="product.html">Sweets</a>
+								<a href="product.jsp">Sweets</a>
 							</li>
 							<li>
-								<a href="product.html">Chocolates & Biscuits</a>
+								<a href="product.jsp">Chocolates & Biscuits</a>
 							</li>
 							<li>
-								<a href="product2.html">Personal Care</a>
+								<a href="product2.jsp">Personal Care</a>
 							</li>
 							<li>
-								<a href="product.html">Dried Fruits & Nuts</a>
+								<a href="product.jsp">Dried Fruits & Nuts</a>
 							</li>
 						</ul>
 					</div>
@@ -1897,22 +1894,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3>Quick Links</h3>
 						<ul>
 							<li>
-								<a href="about.html">About Us</a>
+								<a href="about.jsp">About Us</a>
 							</li>
 							<li>
-								<a href="contact.html">Contact Us</a>
+								<a href="contact.jsp">Contact Us</a>
 							</li>
 							<li>
-								<a href="help.html">Help</a>
+								<a href="help.jsp">Help</a>
 							</li>
 							<li>
-								<a href="faqs.html">Faqs</a>
+								<a href="faqs.jsp">Faqs</a>
 							</li>
 							<li>
-								<a href="terms.html">Terms of use</a>
+								<a href="terms.jsp">Terms of use</a>
 							</li>
 							<li>
-								<a href="privacy.html">Privacy Policy</a>
+								<a href="privacy.jsp">Privacy Policy</a>
 							</li>
 						</ul>
 					</div>
@@ -1988,106 +1985,106 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h5>Popular Brands</h5>
 					<ul>
 						<li>
-							<a href="product.html">Aashirvaad</a>
+							<a href="product.jsp">Aashirvaad</a>
 						</li>
 						<li>
-							<a href="product.html">Amul</a>
+							<a href="product.jsp">Amul</a>
 						</li>
 						<li>
-							<a href="product.html">Bingo</a>
+							<a href="product.jsp">Bingo</a>
 						</li>
 						<li>
-							<a href="product.html">Boost</a>
+							<a href="product.jsp">Boost</a>
 						</li>
 						<li>
-							<a href="product.html">Durex</a>
+							<a href="product.jsp">Durex</a>
 						</li>
 						<li>
-							<a href="product.html"> Maggi</a>
+							<a href="product.jsp"> Maggi</a>
 						</li>
 						<li>
-							<a href="product.html">Glucon-D</a>
+							<a href="product.jsp">Glucon-D</a>
 						</li>
 						<li>
-							<a href="product.html">Horlicks</a>
+							<a href="product.jsp">Horlicks</a>
 						</li>
 						<li>
-							<a href="product2.html">Head & Shoulders</a>
+							<a href="product2.jsp">Head & Shoulders</a>
 						</li>
 						<li>
-							<a href="product2.html">Dove</a>
+							<a href="product2.jsp">Dove</a>
 						</li>
 						<li>
-							<a href="product2.html">Dettol</a>
+							<a href="product2.jsp">Dettol</a>
 						</li>
 						<li>
-							<a href="product2.html">Dabur</a>
+							<a href="product2.jsp">Dabur</a>
 						</li>
 						<li>
-							<a href="product2.html">Colgate</a>
+							<a href="product2.jsp">Colgate</a>
 						</li>
 						<li>
-							<a href="product.html">Coca-Cola</a>
+							<a href="product.jsp">Coca-Cola</a>
 						</li>
 						<li>
-							<a href="product2.html">Closeup</a>
+							<a href="product2.jsp">Closeup</a>
 						</li>
 						<li>
-							<a href="product2.html"> Cinthol</a>
+							<a href="product2.jsp"> Cinthol</a>
 						</li>
 						<li>
-							<a href="product.html">Cadbury</a>
+							<a href="product.jsp">Cadbury</a>
 						</li>
 						<li>
-							<a href="product.html">Bru</a>
+							<a href="product.jsp">Bru</a>
 						</li>
 						<li>
-							<a href="product.html">Bournvita</a>
+							<a href="product.jsp">Bournvita</a>
 						</li>
 						<li>
-							<a href="product.html">Tang</a>
+							<a href="product.jsp">Tang</a>
 						</li>
 						<li>
-							<a href="product.html">Pears</a>
+							<a href="product.jsp">Pears</a>
 						</li>
 						<li>
-							<a href="product.html">Oreo</a>
+							<a href="product.jsp">Oreo</a>
 						</li>
 						<li>
-							<a href="product.html"> Taj Mahal</a>
+							<a href="product.jsp"> Taj Mahal</a>
 						</li>
 						<li>
-							<a href="product.html">Sprite</a>
+							<a href="product.jsp">Sprite</a>
 						</li>
 						<li>
-							<a href="product.html">Thums Up</a>
+							<a href="product.jsp">Thums Up</a>
 						</li>
 						<li>
-							<a href="product2.html">Fair & Lovely</a>
+							<a href="product2.jsp">Fair & Lovely</a>
 						</li>
 						<li>
-							<a href="product2.html">Lakme</a>
+							<a href="product2.jsp">Lakme</a>
 						</li>
 						<li>
-							<a href="product.html">Tata</a>
+							<a href="product.jsp">Tata</a>
 						</li>
 						<li>
-							<a href="product2.html">Sunfeast</a>
+							<a href="product2.jsp">Sunfeast</a>
 						</li>
 						<li>
-							<a href="product2.html">Sunsilk</a>
+							<a href="product2.jsp">Sunsilk</a>
 						</li>
 						<li>
-							<a href="product.html">Patanjali</a>
+							<a href="product.jsp">Patanjali</a>
 						</li>
 						<li>
-							<a href="product.html">MTR</a>
+							<a href="product.jsp">MTR</a>
 						</li>
 						<li>
-							<a href="product.html">Kissan</a>
+							<a href="product.jsp">Kissan</a>
 						</li>
 						<li>
-							<a href="product2.html"> Lipton</a>
+							<a href="product2.jsp"> Lipton</a>
 						</li>
 					</ul>
 				</div>
