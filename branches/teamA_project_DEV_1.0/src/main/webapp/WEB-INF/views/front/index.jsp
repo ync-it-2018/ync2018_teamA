@@ -1315,7 +1315,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/mk6.jpg" alt="">
+									<img src="/resources/front/images/mk6.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="/single" class="link-product-add-cart">Quick View</a>
@@ -1361,7 +1361,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/mk7.jpg" alt="">
+									<img src="/resources/front/images/mk7.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="/single" class="link-product-add-cart">Quick View</a>
@@ -1399,7 +1399,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/mk8.jpg" alt="">
+									<img src="/resources/front/images/mk8.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="/single" class="link-product-add-cart">Quick View</a>
@@ -1439,7 +1439,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/mk9.jpg" alt="">
+									<img src="/resources/front/images/mk9.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="/single" class="link-product-add-cart">Quick View</a>
@@ -1503,7 +1503,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
 								<a href="/single">
-									<img src="images/s1.jpg" alt="">
+									<img src="/resources/front/images/s1.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
@@ -1537,7 +1537,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
 								<a href="/single">
-									<img src="images/s4.jpg" alt="">
+									<img src="/resources/front/images/s4.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
@@ -1571,7 +1571,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
 								<a href="/single">
-									<img src="images/s2.jpg" alt="">
+									<img src="/resources/front/images/s2.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
@@ -1605,7 +1605,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
 								<a href="/single2">
-									<img src="images/s3.jpg" alt="">
+									<img src="/resources/front/images/s3.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
@@ -1639,7 +1639,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
 								<a href="/single">
-									<img src="images/s8.jpg" alt="">
+									<img src="/resources/front/images/s8.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
@@ -1673,7 +1673,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
 								<a href="/single2">
-									<img src="images/s6.jpg" alt="">
+									<img src="/resources/front/images/s6.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
@@ -1707,7 +1707,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
 								<a href="/single">
-									<img src="images/s5.jpg" alt="">
+									<img src="/resources/front/images/s5.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
@@ -1741,7 +1741,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
 								<a href="/single2">
-									<img src="images/s9.jpg" alt="">
+									<img src="/resources/front/images/s9.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
@@ -1791,7 +1791,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 			<div class="col-xs-4 w3l-rightmk">
-				<img src="images/tab3.png" alt=" ">
+				<img src="/resources/front/images/tab3.png" alt=" ">
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -1958,10 +1958,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="agileits_app-devices">
 						<h5>Download the App</h5>
 						<a href="#">
-							<img src="images/1.png" alt="">
+							<img src="/resources/front/images/1.png" alt="">
 						</a>
 						<a href="#">
-							<img src="images/2.png" alt="">
+							<img src="/resources/front/images/2.png" alt="">
 						</a>
 						<div class="clearfix"> </div>
 					</div>
@@ -2097,31 +2097,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h5>Payment Method</h5>
 					<ul>
 						<li>
-							<img src="images/pay2.png" alt="">
+							<img src="/resources/front/images/pay2.png" alt="">
 						</li>
 						<li>
-							<img src="images/pay5.png" alt="">
+							<img src="/resources/front/images/pay5.png" alt="">
 						</li>
 						<li>
-							<img src="images/pay1.png" alt="">
+							<img src="/resources/front/images/pay1.png" alt="">
 						</li>
 						<li>
-							<img src="images/pay4.png" alt="">
+							<img src="/resources/front/images/pay4.png" alt="">
 						</li>
 						<li>
-							<img src="images/pay6.png" alt="">
+							<img src="/resources/front/images/pay6.png" alt="">
 						</li>
 						<li>
-							<img src="images/pay3.png" alt="">
+							<img src="/resources/front/images/pay3.png" alt="">
 						</li>
 						<li>
-							<img src="images/pay7.png" alt="">
+							<img src="/resources/front/images/pay7.png" alt="">
 						</li>
 						<li>
-							<img src="images/pay8.png" alt="">
+							<img src="/resources/front/images/pay8.png" alt="">
 						</li>
 						<li>
-							<img src="images/pay9.png" alt="">
+							<img src="/resources/front/images/pay9.png" alt="">
 						</li>
 					</ul>
 				</div>
@@ -2143,11 +2143,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<!-- js-files -->
 	<!-- jquery -->
-	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="/resources/front/js/jquery-2.1.4.min.js"></script>
 	<!-- //jquery -->
 
 	<!-- popup modal (for signin & signup)-->
-	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="/resources/front/js/jquery.magnific-popup.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('.popup-with-zoom-anim').magnificPopup({
@@ -2171,7 +2171,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //popup modal (for signin & signup)-->
 
 	<!-- cart-js -->
-	<script src="js/minicart.js"></script>
+	<script src="/resources/front/js/minicart.js"></script>
 	<script>
 		paypalm.minicartk.render(); //use only unique class names other than paypalm.minicartk.Also Replace same class name in css and minicart.min.js
 
@@ -2195,7 +2195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //cart-js -->
 
 	<!-- price range (top products) -->
-	<script src="js/jquery-ui.js"></script>
+	<script src="/resources/front/js/jquery-ui.js"></script>
 	<script>
 		//<![CDATA[ 
 		$(window).load(function () {
@@ -2215,7 +2215,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //price range (top products) -->
 
 	<!-- flexisel (for special offers) -->
-	<script src="js/jquery.flexisel.js"></script>
+	<script src="/resources/front/js/jquery.flexisel.js"></script>
 	<script>
 		$(window).load(function () {
 			$("#flexiselDemo1").flexisel({
@@ -2265,12 +2265,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //password-script -->
 
 	<!-- smoothscroll -->
-	<script src="js/SmoothScroll.min.js"></script>
+	<script src="/resources/front/js/SmoothScroll.min.js"></script>
 	<!-- //smoothscroll -->
 
 	<!-- start-smooth-scrolling -->
-	<script src="js/move-top.js"></script>
-	<script src="js/easing.js"></script>
+	<script src="/resources/front/js/move-top.js"></script>
+	<script src="/resources/front/js/easing.js"></script>
 	<script>
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -2304,7 +2304,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 
