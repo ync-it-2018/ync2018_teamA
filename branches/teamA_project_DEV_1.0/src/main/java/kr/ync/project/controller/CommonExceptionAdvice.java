@@ -4,7 +4,8 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.ModelAndView;
 
-// 전역 오류 처리
+// �쟾�뿭 �삤瑜� 泥섎━
+
 /**
  * CommonExceptionAdvice.java
  * 
