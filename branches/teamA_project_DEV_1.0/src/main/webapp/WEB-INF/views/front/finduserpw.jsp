@@ -23,8 +23,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		function hideURLbar() {
 			window.scrollTo(0, 1);
-		}
+		}		
 	</script>
+	
 	<!--//tags -->
 	<link href="/resources/front/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="/resources/front/css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -799,7 +800,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>contact Us</li>
+					<li>회원 비밀번호 찾기</li>
 				</ul>
 			</div>
 		</div>
@@ -809,7 +810,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact-w3l">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Contact Us
+			<h3 class="tittle-w3l">회원 비밀번호 찾기
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -820,21 +821,69 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- contact -->
 			<div class="contact agileits">
 				<div class="contact-agileinfo">
-					<div class="contact-form wthree">
+					<div class="" style="padding: 50px 150px;">
 						<form action="#" method="post">
-							<div class="">
-								<input type="text" name="name" placeholder="Name" required="">
-							</div>
-							<div class="">
-								<input class="text" type="text" name="subject" placeholder="Subject" required="">
-							</div>
-							<div class="">
-								<input class="email" type="email" name="email" placeholder="Email" required="">
-							</div>
-							<div class="">
-								<textarea placeholder="Message" name="message" required=""></textarea>
-							</div>
-							<input type="submit" value="Submit">
+						<div class="" style="width:50%;float:left">
+								<div class="">
+									<input type="text" name="name" placeholder="이름" required="">
+								</div>
+								<div class="">
+									<input class="email" type="email" name="email" placeholder="이메일" required="">
+								</div>
+								<div class="">
+									<input type="text" name="phone" placeholder="연락처" required="">
+								</div>
+						</div>
+						<div class="" style="width:40%;float:right">
+								<textarea placeholder="Message" name="message" required="">회원가입시  입력한 이름과 이메일, 연락처 정보 그리고 생년월일을 입력해주세요</textarea>
+						</div>
+						<div class="" style="float:left">
+						생년월일 &nbsp;				
+		
+							<input type="hidden" name="memBirth">
+		
+							<select id="year">
+		
+								<option value="">- 선택하세요 -</option>
+								
+								<%for(int i = 1950; i <=2018; i++) {%>
+								<option value="<%=i %>"><%=i %></option>
+								<%} %>
+		
+							</select>년 &nbsp;
+		
+							<select id="month">
+		
+								<option>- 선택하세요 -</option>
+								
+								<%for(int i = 1; i <=12; i++) {%>
+								<option value="<%=i %>"><%=i %></option>
+								<%} %>
+		
+							</select>월 &nbsp;
+		
+							<select id="day">
+		
+								<option>- 선택하세요 -</option>
+								
+								<%for(int i = 1; i <=31; i++) {%>
+								<option value="<%=i %>"><%=i %></option>
+								<%} %>
+		
+							</select>일 &nbsp;
+		
+						</div>
+						
+						
+						<div class="" style="width:50%;float:left">
+						<input type="submit" value="확인">
+						<div>
+						<a href="/finduserid">
+								아이디 찾기</a>｜
+						<a href="#" data-toggle="modal" data-target="#myModal2">
+								회원가입</a>
+								</div>
+						</div>
 						</form>
 					</div>
 					<div class="contact-right wthree">
@@ -1254,6 +1303,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 
 		});
+		
+		
+
 	</script>
 	<!-- Large modal -->
 	<!-- <script>
@@ -1347,6 +1399,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
+	
 
 </body>
 

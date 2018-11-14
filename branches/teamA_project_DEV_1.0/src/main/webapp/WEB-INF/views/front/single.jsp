@@ -72,15 +72,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="fa fa-truck" aria-hidden="true"></span>Track Order</a>
 					</li>
 					<li>
-						<span class="fa fa-phone" aria-hidden="true"></span> 001 234 5678
+						<span class="fa fa-phone" aria-hidden="true"></span> 010-1234-5678
 					</li>
 					<li>
 						<a href="#" data-toggle="modal" data-target="#myModal1">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인 </a>
 					</li>
 					<li>
 						<a href="#" data-toggle="modal" data-target="#myModal2">
-							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
+							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> 회원가입 </a>
 					</li>
 				</ul>
 				<!-- //header lists -->
@@ -504,21 +504,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="fa fa-envelope-o" aria-hidden="true"></span>
 					</div>
 					<div class="modal_body_left modal_body_left1">
-						<h3 class="agileinfo_sign">Sign In </h3>
-						<p>
-							Sign In now, Let's start your Grocery Shopping. Don't have an account?
-							<a href="#" data-toggle="modal" data-target="#myModal2">
-								Sign Up Now</a>
+						<h3 class="agileinfo_sign">로그인 </h3>
+						<p style="text-align:center">
+							저희 여행사와 함께 즐겁고 행복한 여행 되세요.</br>
+							로그인을 하시면 더욱 다양한 서비스를 이용하실 수 있습니다.</br>
+							
 						</p>
 						<form action="#" method="post">
-							<div class="styled-input agile-styled-input-top">
-								<input type="text" placeholder="User Name" name="Name" required="">
+							<div class="contact-form wthree">
+								<div class="">
+									<input type="text" name="name" placeholder="아이디" required="">
+								</div>
+								<div class="">
+									<input class="text" type="password" name="비밀번호" placeholder="비밀번호" required="">
+								</div>
+								<input type="submit" value="로그인" style="margin-left:30%">
 							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Password" name="password" required="">
-							</div>
-							<input type="submit" value="Sign In">
-						</form>
+						</form><br>
+						<div style="text-align:center">
+						<a href="/finduserid">
+								아이디 찾기</a>｜
+						<a href="/finduserpw">
+								비밀번호 찾기</a>｜
+						<a href="#" data-toggle="modal" data-target="#myModal2">
+								회원가입</a>
+						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="clearfix"></div>
@@ -543,28 +553,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="fa fa-envelope-o" aria-hidden="true"></span>
 					</div>
 					<div class="modal_body_left modal_body_left1">
-						<h3 class="agileinfo_sign">Sign Up</h3>
-						<p>
-							Come join the Grocery Shoppy! Let's set up your Account.
+						<h3 class="agileinfo_sign">회원가입</h3>
+						<p style="text-align:center">
+							저희 여행사와 함께 즐겁고 행복한 여행 되세요.<br/>
+							회원가입을 하시면 마일리지 적립, 이벤트 등 특별한 혜택을 드립니다.
 						</p>
 						<form action="#" method="post">
-							<div class="styled-input agile-styled-input-top">
-								<input type="text" placeholder="Name" name="Name" required="">
+							<div class="contact-form wthree">
+								<div class="">
+									<input type="text" name="name" placeholder="이름" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="아이디" placeholder="아이디" required="">
+									<input type="submit" value="아이디 중복 확인">
+								</div>
+								<div class="">
+									<input class="text" type="password" name="비밀번호" placeholder="비밀번호" required="">
+									<input class="text" type="password" name="비밀번호 확인" placeholder="비밀번호 확인" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="E-mail" placeholder="E-mail" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="휴대폰번호" placeholder="휴대폰번호" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="생년월일" placeholder="생년월일" required="">
+								</div>
+								<input type="submit" value="회원가입" style="margin-left:30%">
 							</div>
-							<div class="styled-input">
-								<input type="email" placeholder="E-mail" name="Email" required="">
-							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Password" name="password" id="password1" required="">
-							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Confirm Password" name="Confirm Password" id="password2" required="">
-							</div>
-							<input type="submit" value="Sign Up">
-						</form>
-						<p>
-							<a href="#">By clicking register, I agree to your terms</a>
-						</p>
+						</form><br>
 					</div>
 				</div>
 			</div>
