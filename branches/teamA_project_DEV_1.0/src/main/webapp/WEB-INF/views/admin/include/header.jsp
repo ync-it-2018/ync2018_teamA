@@ -330,7 +330,7 @@
               </a>
               <ul class="treeview-menu">
                 <li>
-                	<a href="../layout/top-nav.html">
+                	<a href="PackageAdd">
                 		<i class="fa fa-circle-o"></i> 패키지 등록
                 	</a>
                 </li>
