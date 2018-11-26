@@ -11,6 +11,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <head>
 	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Contact Us :: w3layouts</title>
+	 <style>
+      table {
+        width: 100%;
+        height: 200px;
+      }
+      table, th, td {
+        border: 1px solid #bcbcbc;
+      }
+      .s1 {
+      	width: 150px;
+      	text-align: center;
+      	background-color: #bcbcbc;
+      }
+      .s2 {
+      	padding-left: 15px;
+      	padding-top: 3px;
+      	padding-bottom: 3px;
+      }
+      .s3 {
+      	position: relative;
+      	left: 330px;
+      }
+      .s4 {
+      	color: #bcbcbc;
+      	padding-left: 15px;
+      }
+      .s5 {
+      	padding-left: 15px;
+      }
+          
+     ::-webkit-input-placeholder { 
+    	color: #bcbcbc;
+	}
+    </style>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -520,9 +554,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</form><br>
 						<div style="text-align:center">
-						<a href="/finduserid">
+						<a href="/login/idFind">
 								아이디 찾기</a>｜
-						<a href="/finduserpw">
+						<a href="/login/pwdFind">
 								비밀번호 찾기</a>｜
 						<a href="#" data-toggle="modal" data-target="#myModal2">
 								회원가입</a>
@@ -596,7 +630,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="agileits-navi_search">
 				<form action="#" method="post">
 					<select id="agileinfo-nav_search" name="agileinfo_search" required="">
-						<option value="">All Categories</option>
+						<option value="">전체메뉴</option>
 						<option value="Kitchen">Kitchen</option>
 						<option value="Household">Household</option>
 						<option value="Snacks &amp; Beverages">Snacks & Beverages</option>
@@ -627,16 +661,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav menu__list">
-								<li>
-									<a class="nav-stylehead" href="/">Home
-										<span class="sr-only">(current)</span>
-									</a>
-								</li>
 								<li class="">
-									<a class="nav-stylehead" href="about">About Us</a>
+									<a class="nav-stylehead" href="/about">해외여행</a>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kitchen
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">국내여행
 										<span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu multi-column columns-3">
@@ -644,62 +673,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="col-sm-4 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product">Bakery</a>
+														<a href="/product">Bakery</a>
 													</li>
 													<li>
-														<a href="product">Baking Supplies</a>
+														<a href="/product">Baking Supplies</a>
 													</li>
 													<li>
-														<a href="product">Coffee, Tea & Beverages</a>
+														<a href="/product">Coffee, Tea & Beverages</a>
 													</li>
 													<li>
-														<a href="product">Dried Fruits, Nuts</a>
+														<a href="/product">Dried Fruits, Nuts</a>
 													</li>
 													<li>
-														<a href="product">Sweets, Chocolate</a>
+														<a href="/product">Sweets, Chocolate</a>
 													</li>
 													<li>
-														<a href="product">Spices & Masalas</a>
+														<a href="/product">Spices & Masalas</a>
 													</li>
 													<li>
-														<a href="product">Jams, Honey & Spreads</a>
+														<a href="/product">Jams, Honey & Spreads</a>
 													</li>
 												</ul>
 											</div>
 											<div class="col-sm-4 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product">Pickles</a>
+														<a href="/product">Pickles</a>
 													</li>
 													<li>
-														<a href="product">Pasta & Noodles</a>
+														<a href="/product">Pasta & Noodles</a>
 													</li>
 													<li>
-														<a href="product">Rice, Flour & Pulses</a>
+														<a href="/product">Rice, Flour & Pulses</a>
 													</li>
 													<li>
-														<a href="product">Sauces & Cooking Pastes</a>
+														<a href="/product">Sauces & Cooking Pastes</a>
 													</li>
 													<li>
-														<a href="product">Snack Foods</a>
+														<a href="/product">Snack Foods</a>
 													</li>
 													<li>
-														<a href="product">Oils, Vinegars</a>
+														<a href="/product">Oils, Vinegars</a>
 													</li>
 													<li>
-														<a href="product">Meat, Poultry & Seafood</a>
+														<a href="/product">Meat, Poultry & Seafood</a>
 													</li>
 												</ul>
-											</div>
-											<div class="col-sm-4 multi-gd-img">
-												<img src="/resources/front/images/nav.png" alt="">
 											</div>
 											<div class="clearfix"></div>
 										</div>
 									</ul>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Household
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">인기상품
 										<span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu multi-column columns-3">
@@ -707,50 +733,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="col-sm-6 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product2">Kitchen & Dining</a>
+														<a href="/product2">Kitchen & Dining</a>
 													</li>
 													<li>
-														<a href="product2">Detergents</a>
+														<a href="/product2">Detergents</a>
 													</li>
 													<li>
-														<a href="product2">Utensil Cleaners</a>
+														<a href="/product2">Utensil Cleaners</a>
 													</li>
 													<li>
-														<a href="product2">Floor & Other Cleaners</a>
+														<a href="/product2">Floor & Other Cleaners</a>
 													</li>
 													<li>
-														<a href="product2">Disposables, Garbage Bag</a>
+														<a href="/product2">Disposables, Garbage Bag</a>
 													</li>
 													<li>
-														<a href="product2">Repellents & Fresheners</a>
+														<a href="/product2">Repellents & Fresheners</a>
 													</li>
 													<li>
-														<a href="product2"> Dishwash</a>
+														<a href="/product2"> Dishwash</a>
 													</li>
 												</ul>
 											</div>
 											<div class="col-sm-6 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product2">Pet Care</a>
+														<a href="/product2">Pet Care</a>
 													</li>
 													<li>
-														<a href="product2">Cleaning Accessories</a>
+														<a href="/product2">Cleaning Accessories</a>
 													</li>
 													<li>
-														<a href="product2">Pooja Needs</a>
+														<a href="/product2">Pooja Needs</a>
 													</li>
 													<li>
-														<a href="product2">Crackers</a>
+														<a href="/product2">Crackers</a>
 													</li>
 													<li>
-														<a href="product2">Festive Decoratives</a>
+														<a href="/product2">Festive Decoratives</a>
 													</li>
 													<li>
-														<a href="product2">Plasticware</a>
+														<a href="/product2">Plasticware</a>
 													</li>
 													<li>
-														<a href="product2">Home Care</a>
+														<a href="/product2">Home Care</a>
 													</li>
 												</ul>
 											</div>
@@ -759,10 +785,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</ul>
 								</li>
 								<li class="">
-									<a class="nav-stylehead" href="faqs">Faqs</a>
+									<a class="nav-stylehead" href="/faqs">추천상품</a>
 								</li>
 								<li class="dropdown">
-									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Pages
+									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">특가상품
 										<b class="caret"></b>
 									</a>
 									<ul class="dropdown-menu agile_short_dropdown">
@@ -774,8 +800,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</li>
 									</ul>
 								</li>
-								<li class="active">
-									<a class="" href="contact">Contact</a>
+								<li class="">
+									<a class="nav-stylehead" href="/contact">Contact</a>
 								</li>
 							</ul>
 						</div>
@@ -799,7 +825,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>회원 아이디 찾기</li>
+					<li>회원 정보 수정</li>
 				</ul>
 			</div>
 		</div>
@@ -809,7 +835,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact-w3l">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">회원 아이디 찾기
+			<h3 class="tittle-w3l">기본 정보 수정
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -820,30 +846,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- contact -->
 			<div class="contact agileits">
 				<div class="contact-agileinfo">
-					<div class="" style="padding: 50px 150px;">
+					<div class="contact-form wthree">
 						<form action="#" method="post">
-						<div class="" style="width:45%;float:left">
-								<div class="">
-									<input type="text" name="name" placeholder="이름" required="">
-								</div>
-								<div class="">
-									<input class="email" type="email" name="email" placeholder="이메일" required="">
-								</div>
-						</div>
-						<div class="" style="width:40%;float:right">
-								<textarea placeholder="Message" name="message" required="">회원가입시  입력한 이름과 이메일 정보를 입력해주세요</textarea>
-						</div>
-						
-						<div class="" style="width:45%;float:left">
-						<input type="submit" value="확인">
-						<div>
-						<a href="/finduserpw">
-								비밀번호 찾기</a>｜
-						<a href="#" data-toggle="modal" data-target="#myModal2">
-								회원가입</a>
-						</div>
-						</div>
-						
+							<table>
+								<tr>
+									<th class="s1">이름</th>
+									<td class="s2">홍길동</td>
+								<tr>
+								<tr>
+									<th class="s1">아이디</th>
+									<td class="s2">ync12345</td>
+								<tr>
+								<tr>
+									<th class="s1">비밀번호</th>
+									<td class="s5"><input type="password" placeholder="비밀번호" style="margin-bottom:3px; margin-top:3px; padding-left: 10px;">
+									&emsp;&emsp;&emsp;&emsp;&emsp;
+									<input type="password" placeholder="비밀번호 확인" style="padding-left: 10px;"></td>
+								<tr>
+								<tr>
+									<th class="s1">E-mail</th>
+									<td class="s4"><input type="text" placeholder="E-mail 주소" style="height: 5px; width: 300px; margin-bottom:3px; margin-top:3px;"></td>
+								<tr>
+								<tr>
+									<th class="s1">휴대폰번호</th>
+									<td class="s4"><input type="text" placeholder="(-)없이 입력" style="height: 5px; width: 300px; margin-bottom:3px; margin-top:3px;"></td>
+								<tr>
+								<tr>
+									<th class="s1">생년월일</th>
+									<td class="s4"><input type="text" placeholder="(-)포함해서 입력" style="height: 5px; width: 330px; margin-bottom:3px; margin-top:3px;"></td>
+								<tr>
+							</table>
+							<input type="submit" value="수정한 정보 저장" class="s3">
 						</form>
 					</div>
 					<div class="contact-right wthree">

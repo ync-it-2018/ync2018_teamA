@@ -522,9 +522,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</form><br>
 						<div style="text-align:center">
-						<a href="/finduserid">
+						<a href="/login/idFind">
 								아이디 찾기</a>｜
-						<a href="/finduserpw">
+						<a href="/login/pwdFind">
 								비밀번호 찾기</a>｜
 						<a href="#" data-toggle="modal" data-target="#myModal2">
 								회원가입</a>

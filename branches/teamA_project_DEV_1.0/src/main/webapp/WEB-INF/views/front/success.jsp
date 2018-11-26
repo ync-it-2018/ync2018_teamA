@@ -10,7 +10,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Single 2 :: w3layouts</title>
+	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Contact Us :: w3layouts</title>
+	<style>
+	.s1 {
+        border: 1px solid #41719c;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+	.s3 {
+      	position: relative;
+      	left: 310px;
+      }
+	</style>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,8 +45,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--//pop-up-box-->
 	<!-- price range -->
 	<link rel="stylesheet" type="text/css" href="/resources/front/css/jquery-ui1.css">
-	<!-- flexslider -->
-	<link rel="stylesheet" href="/resources/front/css/flexslider.css" type="text/css" media="screen" />
 	<!-- fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 </head>
@@ -598,7 +607,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="agileits-navi_search">
 				<form action="#" method="post">
 					<select id="agileinfo-nav_search" name="agileinfo_search" required="">
-						<option value="">All Categories</option>
+						<option value="">전체메뉴</option>
 						<option value="Kitchen">Kitchen</option>
 						<option value="Household">Household</option>
 						<option value="Snacks &amp; Beverages">Snacks & Beverages</option>
@@ -629,142 +638,134 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav menu__list">
-								<li>
-									<a class="nav-stylehead" href="/">Home
-										<span class="sr-only">(current)</span>
+								<li class="">
+									<a class="nav-stylehead" href="/about">해외여행</a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">국내여행
+										<span class="caret"></span>
 									</a>
+									<ul class="dropdown-menu multi-column columns-3">
+										<div class="agile_inner_drop_nav_info">
+											<div class="col-sm-4 multi-gd-img">
+												<ul class="multi-column-dropdown">
+													<li>
+														<a href="/product">Bakery</a>
+													</li>
+													<li>
+														<a href="/product">Baking Supplies</a>
+													</li>
+													<li>
+														<a href="/product">Coffee, Tea & Beverages</a>
+													</li>
+													<li>
+														<a href="/product">Dried Fruits, Nuts</a>
+													</li>
+													<li>
+														<a href="/product">Sweets, Chocolate</a>
+													</li>
+													<li>
+														<a href="/product">Spices & Masalas</a>
+													</li>
+													<li>
+														<a href="/product">Jams, Honey & Spreads</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-sm-4 multi-gd-img">
+												<ul class="multi-column-dropdown">
+													<li>
+														<a href="/product">Pickles</a>
+													</li>
+													<li>
+														<a href="/product">Pasta & Noodles</a>
+													</li>
+													<li>
+														<a href="/product">Rice, Flour & Pulses</a>
+													</li>
+													<li>
+														<a href="/product">Sauces & Cooking Pastes</a>
+													</li>
+													<li>
+														<a href="/product">Snack Foods</a>
+													</li>
+													<li>
+														<a href="/product">Oils, Vinegars</a>
+													</li>
+													<li>
+														<a href="/product">Meat, Poultry & Seafood</a>
+													</li>
+												</ul>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">인기상품
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu multi-column columns-3">
+										<div class="agile_inner_drop_nav_info">
+											<div class="col-sm-6 multi-gd-img">
+												<ul class="multi-column-dropdown">
+													<li>
+														<a href="/product2">Kitchen & Dining</a>
+													</li>
+													<li>
+														<a href="/product2">Detergents</a>
+													</li>
+													<li>
+														<a href="/product2">Utensil Cleaners</a>
+													</li>
+													<li>
+														<a href="/product2">Floor & Other Cleaners</a>
+													</li>
+													<li>
+														<a href="/product2">Disposables, Garbage Bag</a>
+													</li>
+													<li>
+														<a href="/product2">Repellents & Fresheners</a>
+													</li>
+													<li>
+														<a href="/product2"> Dishwash</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-sm-6 multi-gd-img">
+												<ul class="multi-column-dropdown">
+													<li>
+														<a href="/product2">Pet Care</a>
+													</li>
+													<li>
+														<a href="/product2">Cleaning Accessories</a>
+													</li>
+													<li>
+														<a href="/product2">Pooja Needs</a>
+													</li>
+													<li>
+														<a href="/product2">Crackers</a>
+													</li>
+													<li>
+														<a href="/product2">Festive Decoratives</a>
+													</li>
+													<li>
+														<a href="/product2">Plasticware</a>
+													</li>
+													<li>
+														<a href="/product2">Home Care</a>
+													</li>
+												</ul>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</ul>
 								</li>
 								<li class="">
-									<a class="nav-stylehead" href="about">About Us</a>
+									<a class="nav-stylehead" href="/faqs">추천상품</a>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kitchen
-										<span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu multi-column columns-3">
-										<div class="agile_inner_drop_nav_info">
-											<div class="col-sm-4 multi-gd-img">
-												<ul class="multi-column-dropdown">
-													<li>
-														<a href="product">Bakery</a>
-													</li>
-													<li>
-														<a href="product">Baking Supplies</a>
-													</li>
-													<li>
-														<a href="product">Coffee, Tea & Beverages</a>
-													</li>
-													<li>
-														<a href="product">Dried Fruits, Nuts</a>
-													</li>
-													<li>
-														<a href="product">Sweets, Chocolate</a>
-													</li>
-													<li>
-														<a href="product">Spices & Masalas</a>
-													</li>
-													<li>
-														<a href="product">Jams, Honey & Spreads</a>
-													</li>
-												</ul>
-											</div>
-											<div class="col-sm-4 multi-gd-img">
-												<ul class="multi-column-dropdown">
-													<li>
-														<a href="product">Pickles</a>
-													</li>
-													<li>
-														<a href="product">Pasta & Noodles</a>
-													</li>
-													<li>
-														<a href="product">Rice, Flour & Pulses</a>
-													</li>
-													<li>
-														<a href="product">Sauces & Cooking Pastes</a>
-													</li>
-													<li>
-														<a href="product">Snack Foods</a>
-													</li>
-													<li>
-														<a href="product">Oils, Vinegars</a>
-													</li>
-													<li>
-														<a href="product">Meat, Poultry & Seafood</a>
-													</li>
-												</ul>
-											</div>
-											<div class="col-sm-4 multi-gd-img">
-												<img src="/resources/front/images/nav.png" alt="">
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Household
-										<span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu multi-column columns-3">
-										<div class="agile_inner_drop_nav_info">
-											<div class="col-sm-6 multi-gd-img">
-												<ul class="multi-column-dropdown">
-													<li>
-														<a href="product2">Kitchen & Dining</a>
-													</li>
-													<li>
-														<a href="product2">Detergents</a>
-													</li>
-													<li>
-														<a href="product2">Utensil Cleaners</a>
-													</li>
-													<li>
-														<a href="product2">Floor & Other Cleaners</a>
-													</li>
-													<li>
-														<a href="product2">Disposables, Garbage Bag</a>
-													</li>
-													<li>
-														<a href="product2">Repellents & Fresheners</a>
-													</li>
-													<li>
-														<a href="product2"> Dishwash</a>
-													</li>
-												</ul>
-											</div>
-											<div class="col-sm-6 multi-gd-img">
-												<ul class="multi-column-dropdown">
-													<li>
-														<a href="product2">Pet Care</a>
-													</li>
-													<li>
-														<a href="product2">Cleaning Accessories</a>
-													</li>
-													<li>
-														<a href="product2">Pooja Needs</a>
-													</li>
-													<li>
-														<a href="product2">Crackers</a>
-													</li>
-													<li>
-														<a href="product2">Festive Decoratives</a>
-													</li>
-													<li>
-														<a href="product2">Plasticware</a>
-													</li>
-													<li>
-														<a href="product2">Home Care</a>
-													</li>
-												</ul>
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</ul>
-								</li>
-								<li>
-									<a class="nav-stylehead" href="faqs">Faqs</a>
-								</li>
-								<li class="dropdown">
-									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Pages
+									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">특가상품
 										<b class="caret"></b>
 									</a>
 									<ul class="dropdown-menu agile_short_dropdown">
@@ -776,8 +777,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</li>
 									</ul>
 								</li>
-								<li>
-									<a class="" href="contact">Contact</a>
+								<li class="">
+									<a class="nav-stylehead" href="/contact">Contact</a>
 								</li>
 							</ul>
 						</div>
@@ -801,17 +802,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>Single Page</li>
+					<li>회원 정보 수정 완료</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- //page -->
-	<!-- Single Page -->
-	<div class="banner-bootom-w3-agileits">
+	<!-- contact page -->
+	<div class="contact-w3l">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Single Page
+			<h3 class="tittle-w3l">회원 정보 수정 완료
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -819,404 +820,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</span>
 			</h3>
 			<!-- //tittle heading -->
-			<div class="col-md-5 single-right-left ">
-				<div class="grid images_3_of_2">
-					<div class="flexslider">
-						<ul class="slides">
-							<li data-thumb="images/se1.jpg">
-								<div class="thumb-image">
-									<img src="/resources/front/images/se1.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
-							</li>
-							<li data-thumb="images/se2.jpg">
-								<div class="thumb-image">
-									<img src="/resources/front/images/se2.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
-							</li>
-							<li data-thumb="images/se3.jpg">
-								<div class="thumb-image">
-									<img src="/resources/front/images/se3.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
-							</li>
-						</ul>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-7 single-right-left simpleCart_shelfItem">
-				<h3>Ambipur Air Freshener - 275 g </h3>
-				<div class="rating1">
-					<span class="starRating">
-						<input id="rating5" type="radio" name="rating" value="5">
-						<label for="rating5">5</label>
-						<input id="rating4" type="radio" name="rating" value="4">
-						<label for="rating4">4</label>
-						<input id="rating3" type="radio" name="rating" value="3" checked="">
-						<label for="rating3">3</label>
-						<input id="rating2" type="radio" name="rating" value="2">
-						<label for="rating2">2</label>
-						<input id="rating1" type="radio" name="rating" value="1">
-						<label for="rating1">1</label>
-					</span>
-				</div>
-				<p>
-					<span class="item_price">$265.00</span>
-					<del>$285.00</del>
-					<label>Free delivery</label>
-				</p>
-				<div class="single-infoagile">
-					<ul>
-						<li>
-							Cash on Delivery Eligible.
-						</li>
-						<li>
-							Delivery to within 7 - 10 business days.
-						</li>
-						<li>
-							Sold by Cloudtail India (4.2 out of 5 | 95,027 ratings).
-						</li>
-						<li>
-							6 offer from
-							<span class="item_price">$285.00</span>
-						</li>
-					</ul>
-				</div>
-				<div class="product-single-w3l">
-					<p>
-						<i class="fa fa-hand-o-right" aria-hidden="true"></i>Pantry Cashback Offer</p>
-					<ul>
-						<li>
-							Doesn't just cover, Truly removes odours
-						</li>
-						<li>
-							Ambi Pur is a brand of air freshener products available in the United States, Europe, Asia and Oceania.
-						</li>
-						<li>
-							Their range of products may be used in the home or in the car with a variety of smells and properties such as odor neutralisation.
-						</li>
-						<li>
-							Transforms your home from smelly to smiley
-						</li>
-					</ul>
-					<p>
-						<i class="fa fa-refresh" aria-hidden="true"></i>All food products are
-						<label>returnable.</label>
-					</p>
-				</div>
-				<div class="occasion-cart">
-					<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+			<!-- contact -->
+			<div class="contact agileits">
+				<div class="contact-agileinfo">
+					<div class="contact-form wthree">
 						<form action="#" method="post">
-							<fieldset>
-								<input type="hidden" name="cmd" value="_cart" />
-								<input type="hidden" name="add" value="1" />
-								<input type="hidden" name="business" value=" " />
-								<input type="hidden" name="item_name" value="Zeeba Premium Basmati Rice - 5 KG" />
-								<input type="hidden" name="amount" value="951.00" />
-								<input type="hidden" name="discount_amount" value="1.00" />
-								<input type="hidden" name="currency_code" value="USD" />
-								<input type="hidden" name="return" value=" " />
-								<input type="hidden" name="cancel_return" value=" " />
-								<input type="submit" name="submit" value="Add to cart" class="button" />
-							</fieldset>
+							<p style="text-align:center"><img src="/resources/front/images/style1.png"></p></br>
+							<div class="s1"><p align="center" style="color:black; font-size:25px">수정이 정상적으로 완료되었습니다.</p>
+							<p align="center" style="color:black">회원님의 정보가 수정되었으므로 다시 로그인을 해주시면 감사하겠습니다.</p></div></br>
+							<input type="submit" value="로그인 하러 가기" class="s3">
 						</form>
 					</div>
-
+					<div class="contact-right wthree">
+						<div class="col-xs-7 contact-text w3-agileits">
+							<h4>GET IN TOUCH :</h4>
+							<p>
+								<i class="fa fa-map-marker"></i> 123 Sebastian, NY 10002, USA.</p>
+							<p>
+								<i class="fa fa-phone"></i> Telephone : 333 222 3333</p>
+							<p>
+								<i class="fa fa-fax"></i> FAX : +1 888 888 4444</p>
+							<p>
+								<i class="fa fa-envelope-o"></i> Email :
+								<a href="mailto:example@mail.com">mail@example.com</a>
+							</p>
+						</div>
+						<div class="col-xs-5 contact-agile">
+							<img src="/resources/front/images/contact2.jpg" alt="">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
 				</div>
-
 			</div>
-			<div class="clearfix"> </div>
+			<!-- //contact -->
 		</div>
 	</div>
-	<!-- //Single Page -->
-	<!-- special offers -->
-	<div class="featured-section" id="projects">
-		<div class="container">
-			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Add More
-				<span class="heading-style">
-					<i></i>
-					<i></i>
-					<i></i>
-				</span>
-			</h3>
-			<!-- //tittle heading -->
-			<div class="content-bottom-in">
-				<ul id="flexiselDemo1">
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single">
-									<img src="/resources/front/images/s1.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single">Aashirvaad, 5g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$220.00</h6>
-									<p>Save $40.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Aashirvaad, 5g" />
-											<input type="hidden" name="amount" value="220.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single">
-									<img src="/resources/front/images/s4.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single">Kissan Tomato Ketchup, 950g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$99.00</h6>
-									<p>Save $20.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Kissan Tomato Ketchup, 950g" />
-											<input type="hidden" name="amount" value="99.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single">
-									<img src="/resources/front/images/s2.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single">Madhur Pure Sugar, 1g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$69.00</h6>
-									<p>Save $20.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Madhur Pure Sugar, 1g" />
-											<input type="hidden" name="amount" value="69.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single2">
-									<img src="/resources/front/images/s3.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single2">Surf Excel Liquid, 1.02L</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$187.00</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Surf Excel Liquid, 1.02L" />
-											<input type="hidden" name="amount" value="187.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single">
-									<img src="/resources/front/images/s8.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single">Cadbury Choclairs, 655.5g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$160.00</h6>
-									<p>Save $60.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Cadbury Choclairs, 655.5g" />
-											<input type="hidden" name="amount" value="160.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single2">
-									<img src="/resources/front/images/s6.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single2">Fair & Lovely, 80 g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$121.60</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Fair & Lovely, 80 g" />
-											<input type="hidden" name="amount" value="121.60" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single">
-									<img src="/resources/front/images/s5.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single">Sprite, 2.25L (Pack of 2)</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$180.00</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Sprite, 2.25L (Pack of 2)" />
-											<input type="hidden" name="amount" value="180.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single2">
-									<img src="/resources/front/images/s9.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single2">Lakme Eyeconic Kajal, 0.35 g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$153.00</h6>
-									<p>Save $40.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Lakme Eyeconic Kajal, 0.35 g" />
-											<input type="hidden" name="amount" value="153.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
+	<!-- map -->
+	<div class="map w3layouts">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55565170.29301636!2d-132.08532758867793!3d31.786060306224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1512365940398"
+		    allowfullscreen></iframe>
 	</div>
-	<!-- //special offers -->
-
+	<!-- //map -->
 	<!-- newsletter -->
 	<div class="footer-top">
 		<div class="container-fluid">
@@ -1538,7 +1182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h5>Payment Method</h5>
 					<ul>
 						<li>
-							<img src="/resources/front/mages/pay2.png" alt="">
+							<img src="/resources/front/images/pay2.png" alt="">
 						</li>
 						<li>
 							<img src="/resources/front/images/pay5.png" alt="">
@@ -1635,6 +1279,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //cart-js -->
 
+	<!-- password-script -->
+	<script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+	<!-- //password-script -->
+
 	<!-- smoothscroll -->
 	<script src="/resources/front/js/SmoothScroll.min.js"></script>
 	<!-- //smoothscroll -->
@@ -1673,73 +1336,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->
-
-	<!-- imagezoom -->
-	<script src="/resources/front/js/imagezoom.js"></script>
-	<!-- //imagezoom -->
-
-	<!-- FlexSlider -->
-	<script src="/resources/front/js/jquery.flexslider.js"></script>
-	<script>
-		// Can also be used with $(document).ready()
-		$(window).load(function () {
-			$('.flexslider').flexslider({
-				animation: "slide",
-				controlNav: "thumbnails"
-			});
-		});
-	</script>
-	<!-- //FlexSlider-->
-
-	<!-- flexisel (for special offers) -->
-	<script src="/resources/front/js/jquery.flexisel.js"></script>
-	<script>
-		$(window).load(function () {
-			$("#flexiselDemo1").flexisel({
-				visibleItems: 3,
-				animationSpeed: 1000,
-				autoPlay: true,
-				autoPlaySpeed: 3000,
-				pauseOnHover: true,
-				enableResponsiveBreakpoints: true,
-				responsiveBreakpoints: {
-					portrait: {
-						changePoint: 480,
-						visibleItems: 1
-					},
-					landscape: {
-						changePoint: 640,
-						visibleItems: 2
-					},
-					tablet: {
-						changePoint: 768,
-						visibleItems: 2
-					}
-				}
-			});
-
-		});
-	</script>
-	<!-- //flexisel (for special offers) -->
-
-	<!-- password-script -->
-	<script>
-		window.onload = function () {
-			document.getElementById("password1").onchange = validatePassword;
-			document.getElementById("password2").onchange = validatePassword;
-		}
-
-		function validatePassword() {
-			var pass2 = document.getElementById("password2").value;
-			var pass1 = document.getElementById("password1").value;
-			if (pass1 != pass2)
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-			else
-				document.getElementById("password2").setCustomValidity('');
-			//empty string means no validation error
-		}
-	</script>
-	<!-- //password-script -->
 
 	<!-- for bootstrap working -->
 	<script src="/resources/front/js/bootstrap.js"></script>

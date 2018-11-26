@@ -12,18 +12,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.ync.project.controller.HomeController;
 
 @Controller
-public class FindUserIDController {
+public class profileController {
 
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/finduserid", method = RequestMethod.GET)
+	@RequestMapping(value = "/profile", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
-		logger.info("finduserid로 이동", locale);
+		logger.info("profile로 이동", locale);
 
-		return "front/finduserid";
+		return "front/profile";
 	}
 	
 }
