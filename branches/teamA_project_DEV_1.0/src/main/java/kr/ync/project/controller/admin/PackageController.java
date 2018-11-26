@@ -17,7 +17,7 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 	
 
 	@RequestMapping(value = "/PackageAdd", method = RequestMethod.GET)
-	public String about(Locale locale, Model model) {
+	public String PackageAdd(Locale locale, Model model) {
 
 		// 가나다
 		logger.info("패키지등록으로 이동", locale);
