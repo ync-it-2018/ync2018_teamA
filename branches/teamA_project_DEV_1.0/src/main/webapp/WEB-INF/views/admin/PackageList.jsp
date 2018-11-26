@@ -22,37 +22,6 @@
 	</div>
 	<!-- /.row -->
 
-	<table width="100%">
-		<tr>
-			<td width="10%">상품명</td>
-			<td width="90%"><input type="text" name="PRODUCT_NAME"></td>
-		</tr>
-	</table>
-	<br>
-	<table>
-		<tr>
-			<td width="10%">국가</td>
-			<td width="40%"><select name="NATION_CODE">
-					<option value="일본">일본</option>
-			</select></td>
-			<td width="10%">지역</td>
-			<td width="40%"><select name="CITY_CODE">
-					<option value="일본">후쿠오카</option>
-			</select></td>
-		</tr>
-	</table>
-	<br>
-	<table>
-		<tr>
-			<td width="10%">도시</td>
-			<td width="40%"><select name="REGION_CODE">
-					<option value="일본">후쿠오카</option>
-			</select></td>
-			<td width="10%">인원수</td>
-			<td width="40%"><input type="text" name="THENUMBER"></td>
-		</tr>
-	</table>
-	<br>
 	<table>
 		<tr>
 			<td width="10%">출/귀국일</td>
@@ -90,6 +59,38 @@
 			<td width="17%"><select name="minute">
 					<option value="분">분</option>
 			</select></td>
+		</tr>
+	</table>
+	<br>
+	<table width="100%">
+	
+		<tr>
+			<td width="10%">상품명</td>
+			<td width="90%"><input type="text" name="PRODUCT_NAME"></td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<td width="10%">국가</td>
+			<td width="40%"><select name="NATION_CODE">
+					<option value="일본">일본</option>
+			</select></td>
+			<td width="10%">지역</td>
+			<td width="40%"><select name="CITY_CODE">
+					<option value="일본">후쿠오카</option>
+			</select></td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<td width="10%">도시</td>
+			<td width="40%"><select name="REGION_CODE">
+					<option value="일본">후쿠오카</option>
+			</select></td>
+			<td width="10%">인원수</td>
+			<td width="40%"><input type="text" name="THENUMBER"></td>
 		</tr>
 	</table>
 	<br>

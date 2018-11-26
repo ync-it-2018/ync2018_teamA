@@ -35,9 +35,23 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
+		return "front/index";
+	}
+	@RequestMapping(value = "/admin", method = RequestMethod.GET)
+	public String adminhome(Locale locale, Model model) {
+
+		// 가나다
+		logger.info("teamA log 내용", locale);
+
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
 		return "admin/index";
 	}
-	
 }
 
 

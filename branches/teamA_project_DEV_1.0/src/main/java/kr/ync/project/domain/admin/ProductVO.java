@@ -9,11 +9,20 @@ import lombok.ToString;
 @Setter
 @ToString
 public class ProductVO {
-	private String PRODUCT_CODE;
 	private String PRODUCT_NAME;
 	private Integer THENUMBER;
-	private Date DEPARTUE_DATE;
-	private Date ARRIVAL_DATE;
+	private Date DEPARTUE_DATE; //출국
+	private Date ARRIVAL_DATE; //귀국
+	private Integer D_YEAR;
+	private Integer D_MONTH;
+	private Integer D_DAY;
+	private Integer D_HOUR;
+	private Integer D_MINUTE;
+	private Integer A_YEAR;
+	private Integer A_MONTH;
+	private Integer A_DAY;
+	private Integer A_HOUR;
+	private Integer A_MINUTE;
 	private String TRANSPORTATION;
 	private String THEME;
 	private String CATEGORIZATION;
