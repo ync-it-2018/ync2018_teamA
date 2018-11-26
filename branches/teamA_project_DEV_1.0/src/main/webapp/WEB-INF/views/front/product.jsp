@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Kitchen Products :: w3layouts</title>
+	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Travel Products :: w3layouts</title>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -799,7 +799,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>Kitchen Products</li>
+					<li>Travel Products</li>
 				</ul>
 			</div>
 		</div>
@@ -809,7 +809,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="ads-grid">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Kitchen Products
+			<h3 class="tittle-w3l">Travel Products
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -820,15 +820,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- product left -->
 			<div class="side-bar col-md-3">
 				<div class="search-hotel">
-					<h3 class="agileits-sear-head">Search Here..</h3>
+					<h3 class="agileits-sear-head">검색하기</h3>
 					<form action="#" method="post">
-						<input type="search" placeholder="Product name..." name="search" required="">
+						<input type="search" placeholder="ex) 부산" name="search" required="">
 						<input type="submit" value=" ">
 					</form>
 				</div>
 				<!-- price range -->
 				<div class="range">
-					<h3 class="agileits-sear-head">Price range</h3>
+					<h3 class="agileits-sear-head">가격범위</h3>
 					<ul class="dropdown-menu6">
 						<li>
 
@@ -838,159 +838,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 				</div>
 				<!-- //price range -->
-				<!-- food preference -->
+				
+				<!-- 여행일정 -->
 				<div class="left-side">
-					<h3 class="agileits-sear-head">Food Preference</h3>
+					<h3 class="agileits-sear-head">여행 일정</h3>
 					<ul>
 						<li>
 							<input type="checkbox" class="checked">
-							<span class="span">Vegetarian</span>
+							<span class="span">당일</span>
 						</li>
 						<li>
 							<input type="checkbox" class="checked">
-							<span class="span">Non-Vegetarian</span>
-						</li>
-					</ul>
-				</div>
-				<!-- //food preference -->
-				<!-- discounts -->
-				<div class="left-side">
-					<h3 class="agileits-sear-head">Discount</h3>
-					<ul>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">5% or More</span>
+							<span class="span">1박 2일</span>
 						</li>
 						<li>
 							<input type="checkbox" class="checked">
-							<span class="span">10% or More</span>
+							<span class="span">2박 3일</span>
 						</li>
 						<li>
 							<input type="checkbox" class="checked">
-							<span class="span">20% or More</span>
+							<span class="span">3박 4일</span>
 						</li>
 						<li>
 							<input type="checkbox" class="checked">
-							<span class="span">30% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">50% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">60% or More</span>
+							<span class="span">장기여행</span>
 						</li>
 					</ul>
 				</div>
 				<!-- //discounts -->
-				<!-- reviews -->
-				<div class="customer-rev left-side">
-					<h3 class="agileits-sear-head">Customer Review</h3>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<span>5.0</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<span>4.0</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<span>3.5</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<span>3.0</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<span>2.5</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!-- //reviews -->
-				<!-- cuisine -->
-				<div class="left-side">
-					<h3 class="agileits-sear-head">Cuisine</h3>
-					<ul>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">South American</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">French</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">Greek</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">Chinese</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">Japanese</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">Italian</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">Mexican</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">Thai</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">Indian</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span"> Spanish </span>
-						</li>
-					</ul>
-				</div>
-				<!-- //cuisine -->
+				
 				<!-- deals -->
 				<div class="deal-leftmk left-side">
-					<h3 class="agileits-sear-head">Special Deals</h3>
+					<h3 class="agileits-sear-head">특가상품</h3>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
 							<img src="/resources/front/images/d2.jpg" alt="">

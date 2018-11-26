@@ -35,8 +35,10 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
+
 		return "front/index";
 	}
+	
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public String adminhome(Locale locale, Model model) {
 
@@ -51,6 +53,7 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "admin/index";
+
 	}
 }
 
