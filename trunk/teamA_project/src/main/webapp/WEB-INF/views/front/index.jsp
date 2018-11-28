@@ -52,8 +52,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-4 logo_agile">
 				<h1>
 					<a href="/">
-						<span>T</span>our
-						<span>P</span>ackage
+						<span>또</span>봄
+						<span>투</span>어
 						<img src="/resources/front/images/tour_logo.png" alt=" ">
 					</a>
 				</h1>
@@ -68,16 +68,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</a>
 						<ul class="dropdown-menu agile_short_dropdown">
 							<li>
-								<a href="absc.jsp">회원정보</a>
+								<a href="absc">회원정보</a>
 							</li>
 							<li>
-								<a href="absc.jsp">예약/구매현황</a>
+								<a href="absc">예약/구매현황</a>
 							</li>
 							<li>
-								<a href="absc.jsp">마일리지</a>
+								<a href="absc">마일리지</a>
 							</li>
 							<li>
-								<a href="absc.jsp">쿠폰</a>
+								<a href="absc">쿠폰</a>
 							</li>
 						</ul>
 					</li>
@@ -85,15 +85,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="#" data-toggle="modal" data-target="#myModal1">Track Order</a>
 					</li>
 					<li>
-						<span class="fa fa-phone" aria-hidden="true"></span> 001 234 5678
+						<span class="fa fa-phone" aria-hidden="true"></span> 010-1234-5678
 					</li>
 					<li>
 						<a href="#" data-toggle="modal" data-target="#myModal1">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인 </a>
 					</li>
 					<li>
 						<a href="#" data-toggle="modal" data-target="#myModal2">
-							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
+							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> 회원가입 </a>
 					</li>
 				</ul>
 				<!-- //header lists -->
@@ -517,21 +517,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="fa fa-envelope-o" aria-hidden="true"></span>
 					</div>
 					<div class="modal_body_left modal_body_left1">
-						<h3 class="agileinfo_sign">Sign In </h3>
-						<p>
-							Sign In now, Let's start your Grocery Shopping. Don't have an account?
-							<a href="#" data-toggle="modal" data-target="#myModal2">
-								Sign Up Now</a>
+						<h3 class="agileinfo_sign">로그인 </h3>
+						<p style="text-align:center">
+							저희 여행사와 함께 즐겁고 행복한 여행 되세요.</br>
+							로그인을 하시면 더욱 다양한 서비스를 이용하실 수 있습니다.</br>
+							
 						</p>
 						<form action="#" method="post">
-							<div class="styled-input agile-styled-input-top">
-								<input type="text" placeholder="User Name" name="Name" required="">
+							<div class="contact-form wthree">
+								<div class="">
+									<input type="text" name="name" placeholder="아이디" required="">
+								</div>
+								<div class="">
+									<input class="text" type="password" name="비밀번호" placeholder="비밀번호" required="">
+								</div>
+								<input type="submit" value="로그인" style="margin-left:30%">
 							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Password" name="password" required="">
-							</div>
-							<input type="submit" value="Sign In">
-						</form>
+						</form><br>
+						<div style="text-align:center">
+						<a href="/login/idFind">
+								아이디 찾기</a>｜
+						<a href="/login/pwdFind">
+								비밀번호 찾기</a>｜
+						<a href="#" data-toggle="modal" data-target="#myModal2">
+								회원가입</a>
+						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="clearfix"></div>
@@ -544,7 +554,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //signin Model -->
 	<!-- signup Model -->
 	<!-- Modal2 -->
-	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+	<div class="modal 
+	fade" id="myModal2" tabindex="-1" role="dialog">
 		<div class="modal-dialog">
 			<!-- Modal content-->
 			<div class="modal-content">
@@ -556,28 +567,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="fa fa-envelope-o" aria-hidden="true"></span>
 					</div>
 					<div class="modal_body_left modal_body_left1">
-						<h3 class="agileinfo_sign">Sign Up</h3>
-						<p>
-							Come join the Grocery Shoppy! Let's set up your Account.
+						<h3 class="agileinfo_sign">회원가입</h3>
+						<p style="text-align:center">
+							저희 여행사와 함께 즐겁고 행복한 여행 되세요.<br/>
+							회원가입을 하시면 마일리지 적립, 이벤트 등 특별한 혜택을 드립니다.
 						</p>
 						<form action="#" method="post">
-							<div class="styled-input agile-styled-input-top">
-								<input type="text" placeholder="Name" name="Name" required="">
+							<div class="contact-form wthree">
+								<div class="">
+									<input type="text" name="name" placeholder="이름" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="아이디" placeholder="아이디" required="">
+									<input type="submit" value="아이디 중복 확인">
+								</div>
+								<div class="">
+									<input class="text" type="password" name="비밀번호" placeholder="비밀번호" required="">
+									<input class="text" type="password" name="비밀번호 확인" placeholder="비밀번호 확인" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="E-mail" placeholder="E-mail" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="휴대폰번호" placeholder="휴대폰번호" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="생년월일" placeholder="생년월일" required="">
+								</div>
+								<input type="submit" value="회원가입" style="margin-left:30%">
 							</div>
-							<div class="styled-input">
-								<input type="email" placeholder="E-mail" name="Email" required="">
-							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Password" name="password" id="password1" required="">
-							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Confirm Password" name="Confirm Password" id="password2" required="">
-							</div>
-							<input type="submit" value="Sign Up">
-						</form>
-						<p>
-							<a href="#">By clicking register, I agree to your terms</a>
-						</p>
+						</form><br>
 					</div>
 				</div>
 			</div>
@@ -625,7 +644,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav menu__list">
 								<li class="">
-									<a class="nav-stylehead" href="/about">해외여행</a>
+									<a class="nav-stylehead" href="/overseas">해외여행</a>
 								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">국내여행
@@ -756,10 +775,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</a>
 									<ul class="dropdown-menu agile_short_dropdown">
 										<li>
-											<a href="icons.jsp">Web Icons</a>
+											<a href="icons">Web Icons</a>
 										</li>
 										<li>
-											<a href="typography.jsp">Typography</a>
+											<a href="typography">Typography</a>
 										</li>
 									</ul>
 								</li>
@@ -792,7 +811,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</h3>
 						<p>Get flat
 							<span>10%</span> Cashback</p>
-						<a class="button2" href="product.jsp">Shop Now </a>
+						<a class="button2" href="product">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -804,7 +823,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</h3>
 						<p>Get Upto
 							<span>30%</span> Off</p>
-						<a class="button2" href="product.jsp">Shop Now </a>
+						<a class="button2" href="product">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -817,7 +836,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>Get Best Offer Upto
 							<span>20%</span>
 						</p>
-						<a class="button2" href="product.jsp">Shop Now </a>
+						<a class="button2" href="product">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -829,7 +848,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</h3>
 						<p>Get Now
 							<span>40%</span> Discount</p>
-						<a class="button2" href="product.jsp]">Shop Now </a>
+						<a class="button2" href="product]">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -1844,44 +1863,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3>Categories</h3>
 						<ul>
 							<li>
-								<a href="product.jsp">Grocery</a>
+								<a href="product">Grocery</a>
 							</li>
 							<li>
-								<a href="product.jsp">Fruits</a>
+								<a href="product">Fruits</a>
 							</li>
 							<li>
-								<a href="product.jsp">Soft Drinks</a>
+								<a href="product">Soft Drinks</a>
 							</li>
 							<li>
-								<a href="product2.jsp">Dishwashers</a>
+								<a href="product2">Dishwashers</a>
 							</li>
 							<li>
-								<a href="product.jsp">Biscuits & Cookies</a>
+								<a href="product">Biscuits & Cookies</a>
 							</li>
 							<li>
-								<a href="product2.jsp">Baby Diapers</a>
+								<a href="product2">Baby Diapers</a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-xs-6 footer-grids agile-secomk">
 						<ul>
 							<li>
-								<a href="product.jsp">Snacks & Beverages</a>
+								<a href="product">Snacks & Beverages</a>
 							</li>
 							<li>
-								<a href="product.jsp">Bread & Bakery</a>
+								<a href="product">Bread & Bakery</a>
 							</li>
 							<li>
-								<a href="product.jsp">Sweets</a>
+								<a href="product">Sweets</a>
 							</li>
 							<li>
-								<a href="product.jsp">Chocolates & Biscuits</a>
+								<a href="product">Chocolates & Biscuits</a>
 							</li>
 							<li>
-								<a href="product2.jsp">Personal Care</a>
+								<a href="product2">Personal Care</a>
 							</li>
 							<li>
-								<a href="product.jsp">Dried Fruits & Nuts</a>
+								<a href="product">Dried Fruits & Nuts</a>
 							</li>
 						</ul>
 					</div>
@@ -1894,22 +1913,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3>Quick Links</h3>
 						<ul>
 							<li>
-								<a href="about.jsp">About Us</a>
+								<a href="about">About Us</a>
 							</li>
 							<li>
-								<a href="contact.jsp">Contact Us</a>
+								<a href="contact">Contact Us</a>
 							</li>
 							<li>
-								<a href="help.jsp">Help</a>
+								<a href="help">Help</a>
 							</li>
 							<li>
-								<a href="faqs.jsp">Faqs</a>
+								<a href="faqs">Faqs</a>
 							</li>
 							<li>
-								<a href="terms.jsp">Terms of use</a>
+								<a href="terms">Terms of use</a>
 							</li>
 							<li>
-								<a href="privacy.jsp">Privacy Policy</a>
+								<a href="privacy">Privacy Policy</a>
 							</li>
 						</ul>
 					</div>
@@ -1985,106 +2004,106 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h5>Popular Brands</h5>
 					<ul>
 						<li>
-							<a href="product.jsp">Aashirvaad</a>
+							<a href="product">Aashirvaad</a>
 						</li>
 						<li>
-							<a href="product.jsp">Amul</a>
+							<a href="product">Amul</a>
 						</li>
 						<li>
-							<a href="product.jsp">Bingo</a>
+							<a href="product">Bingo</a>
 						</li>
 						<li>
-							<a href="product.jsp">Boost</a>
+							<a href="product">Boost</a>
 						</li>
 						<li>
-							<a href="product.jsp">Durex</a>
+							<a href="product">Durex</a>
 						</li>
 						<li>
-							<a href="product.jsp"> Maggi</a>
+							<a href="product"> Maggi</a>
 						</li>
 						<li>
-							<a href="product.jsp">Glucon-D</a>
+							<a href="product">Glucon-D</a>
 						</li>
 						<li>
-							<a href="product.jsp">Horlicks</a>
+							<a href="product">Horlicks</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Head & Shoulders</a>
+							<a href="product2">Head & Shoulders</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Dove</a>
+							<a href="product2">Dove</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Dettol</a>
+							<a href="product2">Dettol</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Dabur</a>
+							<a href="product2">Dabur</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Colgate</a>
+							<a href="product2">Colgate</a>
 						</li>
 						<li>
-							<a href="product.jsp">Coca-Cola</a>
+							<a href="product">Coca-Cola</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Closeup</a>
+							<a href="product2">Closeup</a>
 						</li>
 						<li>
-							<a href="product2.jsp"> Cinthol</a>
+							<a href="product2"> Cinthol</a>
 						</li>
 						<li>
-							<a href="product.jsp">Cadbury</a>
+							<a href="product">Cadbury</a>
 						</li>
 						<li>
-							<a href="product.jsp">Bru</a>
+							<a href="product">Bru</a>
 						</li>
 						<li>
-							<a href="product.jsp">Bournvita</a>
+							<a href="product">Bournvita</a>
 						</li>
 						<li>
-							<a href="product.jsp">Tang</a>
+							<a href="product">Tang</a>
 						</li>
 						<li>
-							<a href="product.jsp">Pears</a>
+							<a href="product">Pears</a>
 						</li>
 						<li>
-							<a href="product.jsp">Oreo</a>
+							<a href="product">Oreo</a>
 						</li>
 						<li>
-							<a href="product.jsp"> Taj Mahal</a>
+							<a href="product"> Taj Mahal</a>
 						</li>
 						<li>
-							<a href="product.jsp">Sprite</a>
+							<a href="product">Sprite</a>
 						</li>
 						<li>
-							<a href="product.jsp">Thums Up</a>
+							<a href="product">Thums Up</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Fair & Lovely</a>
+							<a href="product2">Fair & Lovely</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Lakme</a>
+							<a href="product2">Lakme</a>
 						</li>
 						<li>
-							<a href="product.jsp">Tata</a>
+							<a href="product">Tata</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Sunfeast</a>
+							<a href="product2">Sunfeast</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Sunsilk</a>
+							<a href="product2">Sunsilk</a>
 						</li>
 						<li>
-							<a href="product.jsp">Patanjali</a>
+							<a href="product">Patanjali</a>
 						</li>
 						<li>
-							<a href="product.jsp">MTR</a>
+							<a href="product">MTR</a>
 						</li>
 						<li>
-							<a href="product.jsp">Kissan</a>
+							<a href="product">Kissan</a>
 						</li>
 						<li>
-							<a href="product2.jsp"> Lipton</a>
+							<a href="product2"> Lipton</a>
 						</li>
 					</ul>
 				</div>

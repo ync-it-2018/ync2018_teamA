@@ -317,29 +317,35 @@
             <li class="header">MAIN NAVIGATION</li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-dashboard"></i> 
+                <span>회원 관리</span> 
               </a>
-              <ul class="treeview-menu">
-                <li><a href="/resources/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                <li><a href="/resources/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-              </ul>
             </li>
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-files-o"></i>
-                <span>Layout Options</span>
-                <span class="label label-primary pull-right">4</span>
+                <span>상품 관리</span>
+                <i class="fa fa-angle-left pull-right"></i>
+               <!--  <span class="label label-primary pull-right">4</span> -->
               </a>
               <ul class="treeview-menu">
-                <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+                <li>
+                	<a href="PackageAdd">
+                		<i class="fa fa-circle-o"></i> 패키지 등록
+                	</a>
+                </li>
+                <li>
+                	<a href="../layout/boxed.html">
+                		<i class="fa fa-circle-o"></i> 패키지 조회
+                	</a>
+                </li>
               </ul>
             </li>
             <li>
               <a href="../widgets.html">
-                <i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">new</small>
+                <i class="fa fa-th"></i> 
+                <span>Widgets</span> 
+                <!-- <small class="label pull-right bg-green">new</small> -->
               </a>
             </li>
             <li class="treeview">

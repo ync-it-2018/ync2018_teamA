@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -10,7 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Single 2 :: w3layouts</title>
+	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | About Us :: w3layouts</title>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,8 +35,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--//pop-up-box-->
 	<!-- price range -->
 	<link rel="stylesheet" type="text/css" href="/resources/front/css/jquery-ui1.css">
-	<!-- flexslider -->
-	<link rel="stylesheet" href="/resources/front/css/flexslider.css" type="text/css" media="screen" />
 	<!-- fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 </head>
@@ -513,18 +512,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<form action="#" method="post">
 							<div class="contact-form wthree">
 								<div class="">
-									<input type="text" name="name" placeholder="아이디" required="">
+									<input type="text" name="uid" placeholder="아이디" required="">
 								</div>
 								<div class="">
-									<input class="text" type="password" name="비밀번호" placeholder="비밀번호" required="">
+									<input type="password" name="pwd" placeholder="비밀번호" required="">
 								</div>
 								<input type="submit" value="로그인" style="margin-left:30%">
 							</div>
 						</form><br>
 						<div style="text-align:center">
-						<a href="/login/idFind">
+						<a href="/finduserid">
 								아이디 찾기</a>｜
-						<a href="/login/pwdFind">
+						<a href="/finduserpw">
 								비밀번호 찾기</a>｜
 						<a href="#" data-toggle="modal" data-target="#myModal2">
 								회원가입</a>
@@ -634,7 +633,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<span class="sr-only">(current)</span>
 									</a>
 								</li>
-								<li class="">
+								<li class="active">
 									<a class="nav-stylehead" href="about">About Us</a>
 								</li>
 								<li class="dropdown">
@@ -760,7 +759,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 									</ul>
 								</li>
-								<li>
+								<li class="">
 									<a class="nav-stylehead" href="faqs">Faqs</a>
 								</li>
 								<li class="dropdown">
@@ -801,17 +800,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>Single Page</li>
+					<li>About Us</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- //page -->
-	<!-- Single Page -->
-	<div class="banner-bootom-w3-agileits">
+	<!-- about page -->
+	<!-- welcome -->
+	<div class="welcome">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Single Page
+			<h3 class="tittle-w3l">Welcome to our Site
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -819,117 +819,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</span>
 			</h3>
 			<!-- //tittle heading -->
-			<div class="col-md-5 single-right-left ">
-				<div class="grid images_3_of_2">
-					<div class="flexslider">
-						<ul class="slides">
-							<li data-thumb="images/se1.jpg">
-								<div class="thumb-image">
-									<img src="/resources/front/images/se1.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
-							</li>
-							<li data-thumb="images/se2.jpg">
-								<div class="thumb-image">
-									<img src="/resources/front/images/se2.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
-							</li>
-							<li data-thumb="images/se3.jpg">
-								<div class="thumb-image">
-									<img src="/resources/front/images/se3.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
-							</li>
-						</ul>
-						<div class="clearfix"></div>
+			<div class="w3l-welcome-info">
+				<div class="col-sm-6 col-xs-6 welcome-grids">
+					<div class="welcome-img">
+						<img src="/resources/front/images/about.jpg" class="img-responsive zoom-img" alt="">
 					</div>
 				</div>
-			</div>
-			<div class="col-md-7 single-right-left simpleCart_shelfItem">
-				<h3>Ambipur Air Freshener - 275 g </h3>
-				<div class="rating1">
-					<span class="starRating">
-						<input id="rating5" type="radio" name="rating" value="5">
-						<label for="rating5">5</label>
-						<input id="rating4" type="radio" name="rating" value="4">
-						<label for="rating4">4</label>
-						<input id="rating3" type="radio" name="rating" value="3" checked="">
-						<label for="rating3">3</label>
-						<input id="rating2" type="radio" name="rating" value="2">
-						<label for="rating2">2</label>
-						<input id="rating1" type="radio" name="rating" value="1">
-						<label for="rating1">1</label>
-					</span>
-				</div>
-				<p>
-					<span class="item_price">$265.00</span>
-					<del>$285.00</del>
-					<label>Free delivery</label>
-				</p>
-				<div class="single-infoagile">
-					<ul>
-						<li>
-							Cash on Delivery Eligible.
-						</li>
-						<li>
-							Delivery to within 7 - 10 business days.
-						</li>
-						<li>
-							Sold by Cloudtail India (4.2 out of 5 | 95,027 ratings).
-						</li>
-						<li>
-							6 offer from
-							<span class="item_price">$285.00</span>
-						</li>
-					</ul>
-				</div>
-				<div class="product-single-w3l">
-					<p>
-						<i class="fa fa-hand-o-right" aria-hidden="true"></i>Pantry Cashback Offer</p>
-					<ul>
-						<li>
-							Doesn't just cover, Truly removes odours
-						</li>
-						<li>
-							Ambi Pur is a brand of air freshener products available in the United States, Europe, Asia and Oceania.
-						</li>
-						<li>
-							Their range of products may be used in the home or in the car with a variety of smells and properties such as odor neutralisation.
-						</li>
-						<li>
-							Transforms your home from smelly to smiley
-						</li>
-					</ul>
-					<p>
-						<i class="fa fa-refresh" aria-hidden="true"></i>All food products are
-						<label>returnable.</label>
-					</p>
-				</div>
-				<div class="occasion-cart">
-					<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-						<form action="#" method="post">
-							<fieldset>
-								<input type="hidden" name="cmd" value="_cart" />
-								<input type="hidden" name="add" value="1" />
-								<input type="hidden" name="business" value=" " />
-								<input type="hidden" name="item_name" value="Zeeba Premium Basmati Rice - 5 KG" />
-								<input type="hidden" name="amount" value="951.00" />
-								<input type="hidden" name="discount_amount" value="1.00" />
-								<input type="hidden" name="currency_code" value="USD" />
-								<input type="hidden" name="return" value=" " />
-								<input type="hidden" name="cancel_return" value=" " />
-								<input type="submit" name="submit" value="Add to cart" class="button" />
-							</fieldset>
-						</form>
+				<div class="col-sm-6 col-xs-6 welcome-grids">
+					<div class="welcome-img">
+						<img src="/resources/front/images/about2.jpg" class="img-responsive zoom-img" alt="">
 					</div>
-
 				</div>
-
+				<div class="clearfix"> </div>
 			</div>
-			<div class="clearfix"> </div>
+			<div class="w3l-welcome-text">
+				<p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus
+					omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.Sed ut perspiciatis unde omnis iste
+					natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+					et quasi architecto beatae vitae </p>
+				<p>libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus
+					omnis optio cumque nihil impedit </p>
+			</div>
 		</div>
 	</div>
-	<!-- //Single Page -->
-	<!-- special offers -->
-	<div class="featured-section" id="projects">
+	<!-- //welcome -->
+	<!-- video -->
+	<div class="about">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Add More
+			<h3 class="tittle-w3l">Our Video
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -937,286 +855,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</span>
 			</h3>
 			<!-- //tittle heading -->
-			<div class="content-bottom-in">
-				<ul id="flexiselDemo1">
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single">
-									<img src="/resources/front/images/s1.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single">Aashirvaad, 5g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$220.00</h6>
-									<p>Save $40.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Aashirvaad, 5g" />
-											<input type="hidden" name="amount" value="220.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single">
-									<img src="/resources/front/images/s4.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single">Kissan Tomato Ketchup, 950g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$99.00</h6>
-									<p>Save $20.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Kissan Tomato Ketchup, 950g" />
-											<input type="hidden" name="amount" value="99.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single">
-									<img src="/resources/front/images/s2.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single">Madhur Pure Sugar, 1g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$69.00</h6>
-									<p>Save $20.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Madhur Pure Sugar, 1g" />
-											<input type="hidden" name="amount" value="69.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single2">
-									<img src="/resources/front/images/s3.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single2">Surf Excel Liquid, 1.02L</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$187.00</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Surf Excel Liquid, 1.02L" />
-											<input type="hidden" name="amount" value="187.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single">
-									<img src="/resources/front/images/s8.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single">Cadbury Choclairs, 655.5g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$160.00</h6>
-									<p>Save $60.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Cadbury Choclairs, 655.5g" />
-											<input type="hidden" name="amount" value="160.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single2">
-									<img src="/resources/front/images/s6.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single2">Fair & Lovely, 80 g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$121.60</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Fair & Lovely, 80 g" />
-											<input type="hidden" name="amount" value="121.60" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single">
-									<img src="/resources/front/images/s5.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single">Sprite, 2.25L (Pack of 2)</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$180.00</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Sprite, 2.25L (Pack of 2)" />
-											<input type="hidden" name="amount" value="180.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="single2">
-									<img src="/resources/front/images/s9.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="single2">Lakme Eyeconic Kajal, 0.35 g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$153.00</h6>
-									<p>Save $40.00</p>
-								</div>
-								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" />
-											<input type="hidden" name="business" value=" " />
-											<input type="hidden" name="item_name" value="Lakme Eyeconic Kajal, 0.35 g" />
-											<input type="hidden" name="amount" value="153.00" />
-											<input type="hidden" name="discount_amount" value="1.00" />
-											<input type="hidden" name="currency_code" value="USD" />
-											<input type="hidden" name="return" value=" " />
-											<input type="hidden" name="cancel_return" value=" " />
-											<input type="submit" name="submit" value="Add to cart" class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
+			<div class="about-tp">
+				<div class="col-md-8 about-agileits-w3layouts-left">
+					<iframe src="https://player.vimeo.com/video/15520702?color=ffffff&title=0&byline=0"></iframe>
+				</div>
+				<div class="col-md-4 about-agileits-w3layouts-right">
+					<div class="img-video-about">
+						<img src="/resources/front/images/videoimg2.png" alt="">
+					</div>
+					<h4>Grocery Shoppy</h4>
+					<p>No.1 Leading E-commerce marketplace with over 70 million Products</p>
+				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
-	<!-- //special offers -->
-
+	<!-- //video-->
+	<!-- //about page -->
 	<!-- newsletter -->
 	<div class="footer-top">
 		<div class="container-fluid">
@@ -1538,7 +1193,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h5>Payment Method</h5>
 					<ul>
 						<li>
-							<img src="/resources/front/mages/pay2.png" alt="">
+							<img src="/resources/front/images/pay2.png" alt="">
 						</li>
 						<li>
 							<img src="/resources/front/images/pay5.png" alt="">
@@ -1635,6 +1290,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //cart-js -->
 
+	<!-- password-script -->
+	<script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+	<!-- //password-script -->
+
 	<!-- smoothscroll -->
 	<script src="/resources/front/js/SmoothScroll.min.js"></script>
 	<!-- //smoothscroll -->
@@ -1673,73 +1347,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->
-
-	<!-- imagezoom -->
-	<script src="/resources/front/js/imagezoom.js"></script>
-	<!-- //imagezoom -->
-
-	<!-- FlexSlider -->
-	<script src="/resources/front/js/jquery.flexslider.js"></script>
-	<script>
-		// Can also be used with $(document).ready()
-		$(window).load(function () {
-			$('.flexslider').flexslider({
-				animation: "slide",
-				controlNav: "thumbnails"
-			});
-		});
-	</script>
-	<!-- //FlexSlider-->
-
-	<!-- flexisel (for special offers) -->
-	<script src="/resources/front/js/jquery.flexisel.js"></script>
-	<script>
-		$(window).load(function () {
-			$("#flexiselDemo1").flexisel({
-				visibleItems: 3,
-				animationSpeed: 1000,
-				autoPlay: true,
-				autoPlaySpeed: 3000,
-				pauseOnHover: true,
-				enableResponsiveBreakpoints: true,
-				responsiveBreakpoints: {
-					portrait: {
-						changePoint: 480,
-						visibleItems: 1
-					},
-					landscape: {
-						changePoint: 640,
-						visibleItems: 2
-					},
-					tablet: {
-						changePoint: 768,
-						visibleItems: 2
-					}
-				}
-			});
-
-		});
-	</script>
-	<!-- //flexisel (for special offers) -->
-
-	<!-- password-script -->
-	<script>
-		window.onload = function () {
-			document.getElementById("password1").onchange = validatePassword;
-			document.getElementById("password2").onchange = validatePassword;
-		}
-
-		function validatePassword() {
-			var pass2 = document.getElementById("password2").value;
-			var pass1 = document.getElementById("password1").value;
-			if (pass1 != pass2)
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-			else
-				document.getElementById("password2").setCustomValidity('');
-			//empty string means no validation error
-		}
-	</script>
-	<!-- //password-script -->
 
 	<!-- for bootstrap working -->
 	<script src="/resources/front/js/bootstrap.js"></script>

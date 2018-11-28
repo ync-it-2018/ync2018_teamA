@@ -12,18 +12,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.ync.project.controller.HomeController;
 
 @Controller
-public class AboutController {
-	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+public class profileController {
+
+private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/about", method = RequestMethod.GET)
+	@RequestMapping(value = "/profile", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
-		logger.info("해외여행으로 이동", locale);
+		logger.info("profile로 이동", locale);
 
-		return "front/about";
+		return "front/profile";
 	}
 	
 }

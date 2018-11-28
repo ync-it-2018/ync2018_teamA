@@ -52,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header-bot-->
 			<div class="col-md-4 logo_agile">
 				<h1>
-					<a href="index.jsp">
+					<a href="/">
 						<span>T</span>our
 						<span>P</span>ackage
 						<img src="/resources/front/images/tour_logo.png" alt=" ">
@@ -72,15 +72,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="fa fa-truck" aria-hidden="true"></span>Track Order</a>
 					</li>
 					<li>
-						<span class="fa fa-phone" aria-hidden="true"></span> 001 234 5678
+						<span class="fa fa-phone" aria-hidden="true"></span> 010-1234-5678
 					</li>
 					<li>
 						<a href="#" data-toggle="modal" data-target="#myModal1">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인 </a>
 					</li>
 					<li>
 						<a href="#" data-toggle="modal" data-target="#myModal2">
-							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
+							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> 회원가입 </a>
 					</li>
 				</ul>
 				<!-- //header lists -->
@@ -504,21 +504,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="fa fa-envelope-o" aria-hidden="true"></span>
 					</div>
 					<div class="modal_body_left modal_body_left1">
-						<h3 class="agileinfo_sign">Sign In </h3>
-						<p>
-							Sign In now, Let's start your Grocery Shopping. Don't have an account?
-							<a href="#" data-toggle="modal" data-target="#myModal2">
-								Sign Up Now</a>
+						<h3 class="agileinfo_sign">로그인 </h3>
+						<p style="text-align:center">
+							저희 여행사와 함께 즐겁고 행복한 여행 되세요.</br>
+							로그인을 하시면 더욱 다양한 서비스를 이용하실 수 있습니다.</br>
+							
 						</p>
 						<form action="#" method="post">
-							<div class="styled-input agile-styled-input-top">
-								<input type="text" placeholder="User Name" name="Name" required="">
+							<div class="contact-form wthree">
+								<div class="">
+									<input type="text" name="name" placeholder="아이디" required="">
+								</div>
+								<div class="">
+									<input class="text" type="password" name="비밀번호" placeholder="비밀번호" required="">
+								</div>
+								<input type="submit" value="로그인" style="margin-left:30%">
 							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Password" name="password" required="">
-							</div>
-							<input type="submit" value="Sign In">
-						</form>
+						</form><br>
+						<div style="text-align:center">
+						<a href="/login/idFind">
+								아이디 찾기</a>｜
+						<a href="/login/pwdFind">
+								비밀번호 찾기</a>｜
+						<a href="#" data-toggle="modal" data-target="#myModal2">
+								회원가입</a>
+						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="clearfix"></div>
@@ -543,28 +553,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="fa fa-envelope-o" aria-hidden="true"></span>
 					</div>
 					<div class="modal_body_left modal_body_left1">
-						<h3 class="agileinfo_sign">Sign Up</h3>
-						<p>
-							Come join the Grocery Shoppy! Let's set up your Account.
+						<h3 class="agileinfo_sign">회원가입</h3>
+						<p style="text-align:center">
+							저희 여행사와 함께 즐겁고 행복한 여행 되세요.<br/>
+							회원가입을 하시면 마일리지 적립, 이벤트 등 특별한 혜택을 드립니다.
 						</p>
 						<form action="#" method="post">
-							<div class="styled-input agile-styled-input-top">
-								<input type="text" placeholder="Name" name="Name" required="">
+							<div class="contact-form wthree">
+								<div class="">
+									<input type="text" name="name" placeholder="이름" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="아이디" placeholder="아이디" required="">
+									<input type="submit" value="아이디 중복 확인">
+								</div>
+								<div class="">
+									<input class="text" type="password" name="비밀번호" placeholder="비밀번호" required="">
+									<input class="text" type="password" name="비밀번호 확인" placeholder="비밀번호 확인" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="E-mail" placeholder="E-mail" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="휴대폰번호" placeholder="휴대폰번호" required="">
+								</div>
+								<div class="">
+									<input class="text" type="text" name="생년월일" placeholder="생년월일" required="">
+								</div>
+								<input type="submit" value="회원가입" style="margin-left:30%">
 							</div>
-							<div class="styled-input">
-								<input type="email" placeholder="E-mail" name="Email" required="">
-							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Password" name="password" required="">
-							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Confirm Password" name="Confirm Password" required="">
-							</div>
-							<input type="submit" value="Sign Up">
-						</form>
-						<p>
-							<a href="#">By clicking register, I agree to your terms</a>
-						</p>
+						</form><br>
 					</div>
 				</div>
 			</div>
@@ -612,12 +630,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav menu__list">
 								<li>
-									<a class="nav-stylehead" href="index.jsp">Home
+									<a class="nav-stylehead" href="/">Home
 										<span class="sr-only">(current)</span>
 									</a>
 								</li>
 								<li class="">
-									<a class="nav-stylehead" href="about.jsp">About Us</a>
+									<a class="nav-stylehead" href="about">About Us</a>
 								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kitchen
@@ -628,55 +646,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="col-sm-4 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product.jsp">Bakery</a>
+														<a href="product">Bakery</a>
 													</li>
 													<li>
-														<a href="product.jsp">Baking Supplies</a>
+														<a href="product">Baking Supplies</a>
 													</li>
 													<li>
-														<a href="product.jsp">Coffee, Tea & Beverages</a>
+														<a href="product">Coffee, Tea & Beverages</a>
 													</li>
 													<li>
-														<a href="product.jsp">Dried Fruits, Nuts</a>
+														<a href="product">Dried Fruits, Nuts</a>
 													</li>
 													<li>
-														<a href="product.jsp">Sweets, Chocolate</a>
+														<a href="product">Sweets, Chocolate</a>
 													</li>
 													<li>
-														<a href="product.jsp">Spices & Masalas</a>
+														<a href="product">Spices & Masalas</a>
 													</li>
 													<li>
-														<a href="product.jsp">Jams, Honey & Spreads</a>
+														<a href="product">Jams, Honey & Spreads</a>
 													</li>
 												</ul>
 											</div>
 											<div class="col-sm-4 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product.jsp">Pickles</a>
+														<a href="product">Pickles</a>
 													</li>
 													<li>
-														<a href="product.jsp">Pasta & Noodles</a>
+														<a href="product">Pasta & Noodles</a>
 													</li>
 													<li>
-														<a href="product.jsp">Rice, Flour & Pulses</a>
+														<a href="product">Rice, Flour & Pulses</a>
 													</li>
 													<li>
-														<a href="product.jsp">Sauces & Cooking Pastes</a>
+														<a href="product">Sauces & Cooking Pastes</a>
 													</li>
 													<li>
-														<a href="product.jsp">Snack Foods</a>
+														<a href="product">Snack Foods</a>
 													</li>
 													<li>
-														<a href="product.jsp">Oils, Vinegars</a>
+														<a href="product">Oils, Vinegars</a>
 													</li>
 													<li>
-														<a href="product.jsp">Meat, Poultry & Seafood</a>
+														<a href="product">Meat, Poultry & Seafood</a>
 													</li>
 												</ul>
 											</div>
 											<div class="col-sm-4 multi-gd-img">
-												<img src="/resources/front/images/images/nav.png" alt="">
+												<img src="/resources/front/images/nav.png" alt="">
 											</div>
 											<div class="clearfix"></div>
 										</div>
@@ -691,50 +709,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="col-sm-6 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product2.jsp">Kitchen & Dining</a>
+														<a href="product2">Kitchen & Dining</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Detergents</a>
+														<a href="product2">Detergents</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Utensil Cleaners</a>
+														<a href="product2">Utensil Cleaners</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Floor & Other Cleaners</a>
+														<a href="product2">Floor & Other Cleaners</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Disposables, Garbage Bag</a>
+														<a href="product2">Disposables, Garbage Bag</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Repellents & Fresheners</a>
+														<a href="product2">Repellents & Fresheners</a>
 													</li>
 													<li>
-														<a href="product2.jsp"> Dishwash</a>
+														<a href="product2"> Dishwash</a>
 													</li>
 												</ul>
 											</div>
 											<div class="col-sm-6 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product2.jsp">Pet Care</a>
+														<a href="product2">Pet Care</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Cleaning Accessories</a>
+														<a href="product2">Cleaning Accessories</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Pooja Needs</a>
+														<a href="product2">Pooja Needs</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Crackers</a>
+														<a href="product2">Crackers</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Festive Decoratives</a>
+														<a href="product2">Festive Decoratives</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Plasticware</a>
+														<a href="product2">Plasticware</a>
 													</li>
 													<li>
-														<a href="product2.jsp">Home Care</a>
+														<a href="product2">Home Care</a>
 													</li>
 												</ul>
 											</div>
@@ -743,7 +761,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</ul>
 								</li>
 								<li class="">
-									<a class="nav-stylehead" href="faqs.jsp">Faqs</a>
+									<a class="nav-stylehead" href="faqs">Faqs</a>
 								</li>
 								<li class="dropdown">
 									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Pages
@@ -751,15 +769,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</a>
 									<ul class="dropdown-menu agile_short_dropdown">
 										<li>
-											<a href="icons.jsp">Web Icons</a>
+											<a href="icons">Web Icons</a>
 										</li>
 										<li>
-											<a href="typography.jsp">Typography</a>
+											<a href="typography">Typography</a>
 										</li>
 									</ul>
 								</li>
 								<li>
-									<a class="" href="contact.jsp">Contact</a>
+									<a class="" href="contact">Contact</a>
 								</li>
 							</ul>
 						</div>
@@ -780,7 +798,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<ul class="w3_short">
 					<li>
-						<a href="index.jsp">Home</a>
+						<a href="/">Home</a>
 						<i>|</i>
 					</li>
 					<li>Household Products</li>
@@ -976,7 +994,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3 class="agileits-sear-head">Special Deals</h3>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="/resources/front/images/images/d2.jpg" alt="">
+							<img src="/resources/front/images/d2.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Lay's Potato Chips</h3>
@@ -986,7 +1004,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="/resources/front/images/images/d1.jpg" alt="">
+							<img src="/resources/front/images/d1.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Bingo Mad Angles</h3>
@@ -996,7 +1014,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="/resources/front/images/images/d4.jpg" alt="">
+							<img src="/resources/front/images/d4.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Tata Salt</h3>
@@ -1006,7 +1024,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="/resources/front/images/images/d5.jpg" alt="">
+							<img src="/resources/front/images/d5.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Gujarat Dry Fruit</h3>
@@ -1016,7 +1034,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="/resources/front/images/images/d3.jpg" alt="">
+							<img src="/resources/front/images/d3.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Cadbury Dairy Milk</h3>
@@ -1036,17 +1054,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-xs-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a1.jpg" alt="">
+									<img src="/resources/front/images/a1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Vim Dishwash Gel</a>
+										<a href="single2">Vim Dishwash Gel</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$99.00</span>
@@ -1075,17 +1093,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-xs-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a2.jpg" alt="">
+									<img src="/resources/front/images/a2.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Harpic Cleaner</a>
+										<a href="single2">Harpic Cleaner</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$134.00</span>
@@ -1114,10 +1132,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-xs-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a3.jpg" alt="">
+									<img src="/resources/front/images/a3.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -1125,7 +1143,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Comfort After Wash</a>
+										<a href="single2">Comfort After Wash</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">306.85</span>
@@ -1159,16 +1177,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a4.jpg" alt="">
+									<img src="/resources/front/images/a4.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Odonil Blocks (3+1)</a>
+										<a href="single2">Odonil Blocks (3+1)</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$141.00</span>
@@ -1197,10 +1215,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a5.jpg" alt="">
+									<img src="/resources/front/images/a5.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -1208,7 +1226,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Surf Excel Detergent</a>
+										<a href="single2">Surf Excel Detergent</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$337.00</span>
@@ -1237,17 +1255,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a6.jpg" alt="">
+									<img src="/resources/front/images/a6.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Sunsilk Shampoo</a>
+										<a href="single2">Sunsilk Shampoo</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$294.50</span>
@@ -1281,10 +1299,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a8.jpg" alt="">
+									<img src="/resources/front/images/a8.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -1292,7 +1310,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Gala Leader Floor Mop</a>
+										<a href="single2">Gala Leader Floor Mop</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$149.00</span>
@@ -1321,16 +1339,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a7.jpg" alt="">
+									<img src="/resources/front/images/a7.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Spotzero Spin Mop</a>
+										<a href="single2">Spotzero Spin Mop</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$888.00</span>
@@ -1359,10 +1377,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a9.jpg" alt="">
+									<img src="/resources/front/images/a9.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -1370,7 +1388,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Spotzero Zero Dust</a>
+										<a href="single2">Spotzero Zero Dust</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$139.00</span>
@@ -1404,16 +1422,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a10.jpg" alt="">
+									<img src="/resources/front/images/a10.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">All Out 480 Hours</a>
+										<a href="single2">All Out 480 Hours</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$89.00</span>
@@ -1442,10 +1460,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a11.jpg" alt="">
+									<img src="/resources/front/images/a11.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -1453,7 +1471,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Wall Hanging</a>
+										<a href="single2">Wall Hanging</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$349.00</span>
@@ -1482,17 +1500,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/images/a12.jpg" alt="">
+									<img src="/resources/front/images/a12.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single2.jsp" class="link-product-add-cart">Quick View</a>
+											<a href="single2" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single2.jsp">Colin Regular Refill</a>
+										<a href="single2">Colin Regular Refill</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$155.00</span>
@@ -1545,13 +1563,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.jsp">
-									<img src="/resources/front/images/images/s1.jpg" alt="">
+								<a href="single">
+									<img src="/resources/front/images/s1.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.jsp">Aashirvaad, 5g</a>
+									<a href="single">Aashirvaad, 5g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$220.00</h6>
@@ -1579,13 +1597,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.jsp">
-									<img src="/resources/front/images/images/s4.jpg" alt="">
+								<a href="single">
+									<img src="/resources/front/images/s4.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.jsp">Kissan Tomato Ketchup, 950g</a>
+									<a href="single">Kissan Tomato Ketchup, 950g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$99.00</h6>
@@ -1613,13 +1631,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.jsp">
-									<img src="/resources/front/images/images/s2.jpg" alt="">
+								<a href="single">
+									<img src="/resources/front/images/s2.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.jsp">Madhur Pure Sugar, 1g</a>
+									<a href="single">Madhur Pure Sugar, 1g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$69.00</h6>
@@ -1647,13 +1665,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single2.jsp">
-									<img src="/resources/front/images/images/s3.jpg" alt="">
+								<a href="single2">
+									<img src="/resources/front/images/s3.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single2.jsp">Surf Excel Liquid, 1.02L</a>
+									<a href="single2">Surf Excel Liquid, 1.02L</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$187.00</h6>
@@ -1681,13 +1699,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.jsp">
-									<img src="/resources/front/images/images/s8.jpg" alt="">
+								<a href="single">
+									<img src="/resources/front/images/s8.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.jsp">Cadbury Choclairs, 655.5g</a>
+									<a href="single">Cadbury Choclairs, 655.5g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$160.00</h6>
@@ -1715,13 +1733,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single2.jsp">
-									<img src="/resources/front/images/images/s6.jpg" alt="">
+								<a href="single2">
+									<img src="/resources/front/images/s6.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single2.jsp">Fair & Lovely, 80 g</a>
+									<a href="single2">Fair & Lovely, 80 g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$121.60</h6>
@@ -1749,13 +1767,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.jsp">
-									<img src="/resources/front/images/images/s5.jpg" alt="">
+								<a href="single">
+									<img src="/resources/front/images/s5.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.jsp">Sprite, 2.25L (Pack of 2)</a>
+									<a href="single">Sprite, 2.25L (Pack of 2)</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$180.00</h6>
@@ -1783,13 +1801,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single2.jsp">
-									<img src="/resources/front/images/images/s9.jpg" alt="">
+								<a href="single2">
+									<img src="/resources/front/images/s9.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single2.jsp">Lakme Eyeconic Kajal, 0.35 g</a>
+									<a href="single2">Lakme Eyeconic Kajal, 0.35 g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$153.00</h6>
@@ -1834,7 +1852,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 			<div class="col-xs-4 w3l-rightmk">
-				<img src="/resources/front/images/images/tab3.png" alt=" ">
+				<img src="/resources/front/images/tab3.png" alt=" ">
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -1890,44 +1908,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3>Categories</h3>
 						<ul>
 							<li>
-								<a href="product.jsp">Grocery</a>
+								<a href="product">Grocery</a>
 							</li>
 							<li>
-								<a href="product.jsp">Fruits</a>
+								<a href="product">Fruits</a>
 							</li>
 							<li>
-								<a href="product.jsp">Soft Drinks</a>
+								<a href="product">Soft Drinks</a>
 							</li>
 							<li>
-								<a href="product2.jsp">Dishwashers</a>
+								<a href="product2">Dishwashers</a>
 							</li>
 							<li>
-								<a href="product.jsp">Biscuits & Cookies</a>
+								<a href="product">Biscuits & Cookies</a>
 							</li>
 							<li>
-								<a href="product2.jsp">Baby Diapers</a>
+								<a href="product2">Baby Diapers</a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-xs-6 footer-grids agile-secomk">
 						<ul>
 							<li>
-								<a href="product.jsp">Snacks & Beverages</a>
+								<a href="product">Snacks & Beverages</a>
 							</li>
 							<li>
-								<a href="product.jsp">Bread & Bakery</a>
+								<a href="product">Bread & Bakery</a>
 							</li>
 							<li>
-								<a href="product.jsp">Sweets</a>
+								<a href="product">Sweets</a>
 							</li>
 							<li>
-								<a href="product.jsp">Chocolates & Biscuits</a>
+								<a href="product">Chocolates & Biscuits</a>
 							</li>
 							<li>
-								<a href="product2.jsp">Personal Care</a>
+								<a href="product2">Personal Care</a>
 							</li>
 							<li>
-								<a href="product.jsp">Dried Fruits & Nuts</a>
+								<a href="product">Dried Fruits & Nuts</a>
 							</li>
 						</ul>
 					</div>
@@ -1940,22 +1958,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3>Quick Links</h3>
 						<ul>
 							<li>
-								<a href="about.jsp">About Us</a>
+								<a href="about">About Us</a>
 							</li>
 							<li>
-								<a href="contact.jsp">Contact Us</a>
+								<a href="contact">Contact Us</a>
 							</li>
 							<li>
-								<a href="help.jsp">Help</a>
+								<a href="help">Help</a>
 							</li>
 							<li>
-								<a href="faqs.jsp">Faqs</a>
+								<a href="faqs">Faqs</a>
 							</li>
 							<li>
-								<a href="terms.jsp">Terms of use</a>
+								<a href="terms">Terms of use</a>
 							</li>
 							<li>
-								<a href="privacy.jsp">Privacy Policy</a>
+								<a href="privacy">Privacy Policy</a>
 							</li>
 						</ul>
 					</div>
@@ -2001,10 +2019,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="agileits_app-devices">
 						<h5>Download the App</h5>
 						<a href="#">
-							<img src="/resources/front/images/images/1.png" alt="">
+							<img src="/resources/front/images/1.png" alt="">
 						</a>
 						<a href="#">
-							<img src="/resources/front/images/images/2.png" alt="">
+							<img src="/resources/front/images/2.png" alt="">
 						</a>
 						<div class="clearfix"> </div>
 					</div>
@@ -2031,106 +2049,106 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h5>Popular Brands</h5>
 					<ul>
 						<li>
-							<a href="product.jsp">Aashirvaad</a>
+							<a href="product">Aashirvaad</a>
 						</li>
 						<li>
-							<a href="product.jsp">Amul</a>
+							<a href="product">Amul</a>
 						</li>
 						<li>
-							<a href="product.jsp">Bingo</a>
+							<a href="product">Bingo</a>
 						</li>
 						<li>
-							<a href="product.jsp">Boost</a>
+							<a href="product">Boost</a>
 						</li>
 						<li>
-							<a href="product.jsp">Durex</a>
+							<a href="product">Durex</a>
 						</li>
 						<li>
-							<a href="product.jsp"> Maggi</a>
+							<a href="product"> Maggi</a>
 						</li>
 						<li>
-							<a href="product.jsp">Glucon-D</a>
+							<a href="product">Glucon-D</a>
 						</li>
 						<li>
-							<a href="product.jsp">Horlicks</a>
+							<a href="product">Horlicks</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Head & Shoulders</a>
+							<a href="product2">Head & Shoulders</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Dove</a>
+							<a href="product2">Dove</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Dettol</a>
+							<a href="product2">Dettol</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Dabur</a>
+							<a href="product2">Dabur</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Colgate</a>
+							<a href="product2">Colgate</a>
 						</li>
 						<li>
-							<a href="product.jsp">Coca-Cola</a>
+							<a href="product">Coca-Cola</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Closeup</a>
+							<a href="product2">Closeup</a>
 						</li>
 						<li>
-							<a href="product2.jsp"> Cinthol</a>
+							<a href="product2"> Cinthol</a>
 						</li>
 						<li>
-							<a href="product.jsp">Cadbury</a>
+							<a href="product">Cadbury</a>
 						</li>
 						<li>
-							<a href="product.jsp">Bru</a>
+							<a href="product">Bru</a>
 						</li>
 						<li>
-							<a href="product.jsp">Bournvita</a>
+							<a href="product">Bournvita</a>
 						</li>
 						<li>
-							<a href="product.jsp">Tang</a>
+							<a href="product">Tang</a>
 						</li>
 						<li>
-							<a href="product.jsp">Pears</a>
+							<a href="product">Pears</a>
 						</li>
 						<li>
-							<a href="product.jsp">Oreo</a>
+							<a href="product">Oreo</a>
 						</li>
 						<li>
-							<a href="product.jsp"> Taj Mahal</a>
+							<a href="product"> Taj Mahal</a>
 						</li>
 						<li>
-							<a href="product.jsp">Sprite</a>
+							<a href="product">Sprite</a>
 						</li>
 						<li>
-							<a href="product.jsp">Thums Up</a>
+							<a href="product">Thums Up</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Fair & Lovely</a>
+							<a href="product2">Fair & Lovely</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Lakme</a>
+							<a href="product2">Lakme</a>
 						</li>
 						<li>
-							<a href="product.jsp">Tata</a>
+							<a href="product">Tata</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Sunfeast</a>
+							<a href="product2">Sunfeast</a>
 						</li>
 						<li>
-							<a href="product2.jsp">Sunsilk</a>
+							<a href="product2">Sunsilk</a>
 						</li>
 						<li>
-							<a href="product.jsp">Patanjali</a>
+							<a href="product">Patanjali</a>
 						</li>
 						<li>
-							<a href="product.jsp">MTR</a>
+							<a href="product">MTR</a>
 						</li>
 						<li>
-							<a href="product.jsp">Kissan</a>
+							<a href="product">Kissan</a>
 						</li>
 						<li>
-							<a href="product2.jsp"> Lipton</a>
+							<a href="product2"> Lipton</a>
 						</li>
 					</ul>
 				</div>
@@ -2140,31 +2158,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h5>Payment Method</h5>
 					<ul>
 						<li>
-							<img src="/resources/front/images/images/pay2.png" alt="">
+							<img src="/resources/front/images/pay2.png" alt="">
 						</li>
 						<li>
-							<img src="/resources/front/images/images/pay5.png" alt="">
+							<img src="/resources/front/images/pay5.png" alt="">
 						</li>
 						<li>
-							<img src="/resources/front/images/images/pay1.png" alt="">
+							<img src="/resources/front/images/pay1.png" alt="">
 						</li>
 						<li>
-							<img src="/resources/front/images/images/pay4.png" alt="">
+							<img src="/resources/front/images/pay4.png" alt="">
 						</li>
 						<li>
-							<img src="/resources/front/images/images/pay6.png" alt="">
+							<img src="/resources/front/images/pay6.png" alt="">
 						</li>
 						<li>
-							<img src="/resources/front/images/images/pay3.png" alt="">
+							<img src="/resources/front/images/pay3.png" alt="">
 						</li>
 						<li>
-							<img src="/resources/front/images/images/pay7.png" alt="">
+							<img src="/resources/front/images/pay7.png" alt="">
 						</li>
 						<li>
-							<img src="/resources/front/images/images/pay8.png" alt="">
+							<img src="/resources/front/images/pay8.png" alt="">
 						</li>
 						<li>
-							<img src="/resources/front/images/images/pay9.png" alt="">
+							<img src="/resources/front/images/pay9.png" alt="">
 						</li>
 					</ul>
 				</div>
@@ -2186,11 +2204,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<!-- js-files -->
 	<!-- jquery -->
-	<script src="/resources/front/images/js/jquery-2.1.4.min.js"></script>
+	<script src="/resources/front/js/jquery-2.1.4.min.js"></script>
 	<!-- //jquery -->
 
 	<!-- popup modal (for signin & signup)-->
-	<script src="/resources/front/images/js/jquery.magnific-popup.js"></script>
+	<script src="/resources/front/js/jquery.magnific-popup.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('.popup-with-zoom-anim').magnificPopup({
@@ -2214,7 +2232,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //popup modal (for signin & signup)-->
 
 	<!-- cart-js -->
-	<script src="/resources/front/images/js/minicart.js"></script>
+	<script src="/resources/front/js/minicart.js"></script>
 	<script>
 		paypalm.minicartk.render();
 
@@ -2238,7 +2256,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //cart-js -->
 
 	<!-- price range (top products) -->
-	<script src="/resources/front/images/js/jquery-ui.js"></script>
+	<script src="/resources/front/js/jquery-ui.js"></script>
 	<script>
 		//<![CDATA[ 
 		$(window).load(function () {
@@ -2258,7 +2276,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //price range (top products) -->
 
 	<!-- flexisel (for special offers) -->
-	<script src="/resources/front/images/js/jquery.flexisel.js"></script>
+	<script src="/resources/front/js/jquery.flexisel.js"></script>
 	<script>
 		$(window).load(function () {
 			$("#flexiselDemo1").flexisel({
@@ -2289,12 +2307,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //flexisel (for special offers) -->
 
 	<!-- smoothscroll -->
-	<script src="/resources/front/images/js/SmoothScroll.min.js"></script>
+	<script src="/resources/front/js/SmoothScroll.min.js"></script>
 	<!-- //smoothscroll -->
 
 	<!-- start-smooth-scrolling -->
-	<script src="/resources/front/images/js/move-top.js"></script>
-	<script src="/resources/front/images/js/easing.js"></script>
+	<script src="/resources/front/js/move-top.js"></script>
+	<script src="/resources/front/js/easing.js"></script>
 	<script>
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -2328,7 +2346,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
-	<script src="/resources/front/images/js/bootstrap.js"></script>
+	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 
