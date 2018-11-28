@@ -52,8 +52,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-4 logo_agile">
 				<h1>
 					<a href="/">
-						<span>T</span>our
-						<span>P</span>ackage
+						<span>또</span>봄
+						<span>투</span>어
 						<img src="/resources/front/images/tour_logo.png" alt=" ">
 					</a>
 				</h1>
