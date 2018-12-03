@@ -50,6 +50,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header-bot-->
 			<div class="col-md-4 logo_agile">
 				<h1>
+					<a href="/">
+						<span>또</span>봄
+						<span>투</span>어
+						<img src="/resources/front/images/tour_logo.png" alt=" ">
 					<a href="/"> <span>또</span>봄 <span>투</span>어 <img
 						src="/resources/front/images/tour_logo.png" alt=" ">
 					</a>
@@ -472,14 +476,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">Zeeba Basmati Rice</a>
+										<a href="detail1">Zeeba Basmati Rice</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$950.00</span>
@@ -511,7 +515,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k2.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -519,7 +523,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">Maiyas Gulab Jamun</a>
+										<a href="detail1">Maiyas Gulab Jamun</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$137.00</span>
@@ -551,7 +555,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k3.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -559,7 +563,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">Lipton Green Tea</a>
+										<a href="detail1">Lipton Green Tea</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$384.00</span>
@@ -596,14 +600,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k4.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">Organicana Red Chilli</a>
+										<a href="detail1">Organicana Red Chilli</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$70.00</span>
@@ -635,7 +639,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k5.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -643,7 +647,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">MTR Black Pepper</a>
+										<a href="detail1">MTR Black Pepper</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$85.00</span>
@@ -675,7 +679,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k6.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -683,7 +687,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">Chataka - Elaichi</a>
+										<a href="detail1">Chataka - Elaichi</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$299.99</span>
@@ -720,14 +724,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k7.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">Narulag, Less Sugar</a>
+										<a href="detail1">Narulag, Less Sugar</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$220.00</span>
@@ -759,7 +763,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k8.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -767,7 +771,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">Kellogg's Chocos Fills</a>
+										<a href="detail1">Kellogg's Chocos Fills</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$175.75</span>
@@ -799,7 +803,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k9.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -807,7 +811,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">Amul's India</a>
+										<a href="detail1">Amul's India</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$134.00</span>
@@ -844,14 +848,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k10.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">Snickers Chocolates</a>
+										<a href="detail1">Snickers Chocolates</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$140.00</span>
@@ -883,7 +887,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k11.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -891,7 +895,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">Kissan Fruit Jam</a>
+										<a href="detail1">Kissan Fruit Jam</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$123.00</span>
@@ -923,7 +927,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k12.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single" class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -931,7 +935,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single">MTR Vegetable Pickle</a>
+										<a href="detail1">MTR Vegetable Pickle</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$104.00</span>
@@ -984,13 +988,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single">
+								<a href="detail1">
 									<img src="/resources/front/images/s1.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single">Aashirvaad, 5g</a>
+									<a href="detail1">Aashirvaad, 5g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$220.00</h6>
@@ -1018,13 +1022,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single">
+								<a href="detail1">
 									<img src="/resources/front/images/s4.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single">Kissan Tomato Ketchup, 950g</a>
+									<a href="detail1">Kissan Tomato Ketchup, 950g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$99.00</h6>
@@ -1052,13 +1056,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single">
+								<a href="detail1">
 									<img src="/resources/front/images/s2.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single">Madhur Pure Sugar, 1g</a>
+									<a href="detail1">Madhur Pure Sugar, 1g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$69.00</h6>
@@ -1120,13 +1124,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single">
+								<a href="detail1">
 									<img src="/resources/front/images/s8.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single">Cadbury Choclairs, 655.5g</a>
+									<a href="detail1">Cadbury Choclairs, 655.5g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$160.00</h6>
@@ -1188,13 +1192,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single">
+								<a href="detail1">
 									<img src="/resources/front/images/s5.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single">Sprite, 2.25L (Pack of 2)</a>
+									<a href="detail1">Sprite, 2.25L (Pack of 2)</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$180.00</h6>
@@ -1259,360 +1263,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //special offers -->
 	<!-- newsletter -->
-	<div class="footer-top">
-		<div class="container-fluid">
-			<div class="col-xs-8 agile-leftmk">
-				<h2>Get your Groceries delivered from local stores</h2>
-				<p>Free Delivery on your first order!</p>
-				<form action="#" method="post">
-					<input type="email" placeholder="E-mail" name="email" required="">
-					<input type="submit" value="Subscribe">
-				</form>
-				<div class="newsform-w3l">
-					<span class="fa fa-envelope-o" aria-hidden="true"></span>
-				</div>
-			</div>
-			<div class="col-xs-4 w3l-rightmk">
-				<img src="/resources/front/images/tab3.png" alt=" ">
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	<!-- //newsletter -->
-	<!-- footer -->
-	<footer>
-		<div class="container">
-			<!-- footer first section -->
-			<p class="footer-main">
-				<span>"Grocery Shoppy"</span> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-				magni dolores eos qui ratione voluptatem sequi nesciunt.Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-				accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-				beatae vitae dicta sunt explicabo.</p>
-			<!-- //footer first section -->
-			<!-- footer second section -->
-			<div class="w3l-grids-footer">
-				<div class="col-xs-4 offer-footer">
-					<div class="col-xs-4 icon-fot">
-						<span class="fa fa-map-marker" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-8 text-form-footer">
-						<h3>Track Your Order</h3>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-xs-4 offer-footer">
-					<div class="col-xs-4 icon-fot">
-						<span class="fa fa-refresh" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-8 text-form-footer">
-						<h3>Free & Easy Returns</h3>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-xs-4 offer-footer">
-					<div class="col-xs-4 icon-fot">
-						<span class="fa fa-times" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-8 text-form-footer">
-						<h3>Online cancellation </h3>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<!-- //footer second section -->
-			<!-- footer third section -->
-			<div class="footer-info w3-agileits-info">
-				<!-- footer categories -->
-				<div class="col-sm-5 address-right">
-					<div class="col-xs-6 footer-grids">
-						<h3>Categories</h3>
-						<ul>
-							<li>
-								<a href="product">Grocery</a>
-							</li>
-							<li>
-								<a href="product">Fruits</a>
-							</li>
-							<li>
-								<a href="product">Soft Drinks</a>
-							</li>
-							<li>
-								<a href="product2">Dishwashers</a>
-							</li>
-							<li>
-								<a href="product">Biscuits & Cookies</a>
-							</li>
-							<li>
-								<a href="product2">Baby Diapers</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-xs-6 footer-grids agile-secomk">
-						<ul>
-							<li>
-								<a href="product">Snacks & Beverages</a>
-							</li>
-							<li>
-								<a href="product">Bread & Bakery</a>
-							</li>
-							<li>
-								<a href="product">Sweets</a>
-							</li>
-							<li>
-								<a href="product">Chocolates & Biscuits</a>
-							</li>
-							<li>
-								<a href="product2">Personal Care</a>
-							</li>
-							<li>
-								<a href="product">Dried Fruits & Nuts</a>
-							</li>
-						</ul>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<!-- //footer categories -->
-				<!-- quick links -->
-				<div class="col-sm-5 address-right">
-					<div class="col-xs-6 footer-grids">
-						<h3>Quick Links</h3>
-						<ul>
-							<li>
-								<a href="about">About Us</a>
-							</li>
-							<li>
-								<a href="contact">Contact Us</a>
-							</li>
-							<li>
-								<a href="help">Help</a>
-							</li>
-							<li>
-								<a href="faqs">Faqs</a>
-							</li>
-							<li>
-								<a href="terms">Terms of use</a>
-							</li>
-							<li>
-								<a href="privacy">Privacy Policy</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-xs-6 footer-grids">
-						<h3>Get in Touch</h3>
-						<ul>
-							<li>
-								<i class="fa fa-map-marker"></i> 123 Sebastian, USA.</li>
-							<li>
-								<i class="fa fa-mobile"></i> 333 222 3333 </li>
-							<li>
-								<i class="fa fa-phone"></i> +222 11 4444 </li>
-							<li>
-								<i class="fa fa-envelope-o"></i>
-								<a href="mailto:example@mail.com"> mail@example.com</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- //quick links -->
-				<!-- social icons -->
-				<div class="col-sm-2 footer-grids  w3l-socialmk">
-					<h3>Follow Us on</h3>
-					<div class="social">
-						<ul>
-							<li>
-								<a class="icon fb" href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a class="icon tw" href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a class="icon gp" href="#">
-									<i class="fa fa-google-plus"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="agileits_app-devices">
-						<h5>Download the App</h5>
-						<a href="#">
-							<img src="/resources/front/images/1.png" alt="">
-						</a>
-						<a href="#">
-							<img src="/resources/front/images/2.png" alt="">
-						</a>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<!-- //social icons -->
-				<div class="clearfix"></div>
-			</div>
-			<!-- //footer third section -->
-			<!-- footer fourth section (text) -->
-			<div class="agile-sometext">
-				<div class="sub-some">
-					<h5>Online Grocery Shopping</h5>
-					<p>Order online. All your favourite products from the low price online supermarket for grocery home delivery in Delhi,
-						Gurgaon, Bengaluru, Mumbai and other cities in India. Lowest prices guaranteed on Patanjali, Aashirvaad, Pampers, Maggi,
-						Saffola, Huggies, Fortune, Nestle, Amul, MamyPoko Pants, Surf Excel, Ariel, Vim, Haldiram's and others.</p>
-				</div>
-				<div class="sub-some">
-					<h5>Shop online with the best deals & offers</h5>
-					<p>Now Get Upto 40% Off On Everyday Essential Products Shown On The Offer Page. The range includes Grocery, Personal Care,
-						Baby Care, Pet Supplies, Healthcare and Other Daily Need Products. Discount May Vary From Product To Product.</p>
-				</div>
-				<!-- brands -->
-				<div class="sub-some">
-					<h5>Popular Brands</h5>
-					<ul>
-						<li>
-							<a href="product">Aashirvaad</a>
-						</li>
-						<li>
-							<a href="product">Amul</a>
-						</li>
-						<li>
-							<a href="product">Bingo</a>
-						</li>
-						<li>
-							<a href="product">Boost</a>
-						</li>
-						<li>
-							<a href="product">Durex</a>
-						</li>
-						<li>
-							<a href="product"> Maggi</a>
-						</li>
-						<li>
-							<a href="product">Glucon-D</a>
-						</li>
-						<li>
-							<a href="product">Horlicks</a>
-						</li>
-						<li>
-							<a href="product2">Head & Shoulders</a>
-						</li>
-						<li>
-							<a href="product2">Dove</a>
-						</li>
-						<li>
-							<a href="product2">Dettol</a>
-						</li>
-						<li>
-							<a href="product2">Dabur</a>
-						</li>
-						<li>
-							<a href="product2">Colgate</a>
-						</li>
-						<li>
-							<a href="product">Coca-Cola</a>
-						</li>
-						<li>
-							<a href="product2">Closeup</a>
-						</li>
-						<li>
-							<a href="product2"> Cinthol</a>
-						</li>
-						<li>
-							<a href="product">Cadbury</a>
-						</li>
-						<li>
-							<a href="product">Bru</a>
-						</li>
-						<li>
-							<a href="product">Bournvita</a>
-						</li>
-						<li>
-							<a href="product">Tang</a>
-						</li>
-						<li>
-							<a href="product">Pears</a>
-						</li>
-						<li>
-							<a href="product">Oreo</a>
-						</li>
-						<li>
-							<a href="product"> Taj Mahal</a>
-						</li>
-						<li>
-							<a href="product">Sprite</a>
-						</li>
-						<li>
-							<a href="product">Thums Up</a>
-						</li>
-						<li>
-							<a href="product2">Fair & Lovely</a>
-						</li>
-						<li>
-							<a href="product2">Lakme</a>
-						</li>
-						<li>
-							<a href="product">Tata</a>
-						</li>
-						<li>
-							<a href="product2">Sunfeast</a>
-						</li>
-						<li>
-							<a href="product2">Sunsilk</a>
-						</li>
-						<li>
-							<a href="product">Patanjali</a>
-						</li>
-						<li>
-							<a href="product">MTR</a>
-						</li>
-						<li>
-							<a href="product">Kissan</a>
-						</li>
-						<li>
-							<a href="product2"> Lipton</a>
-						</li>
-					</ul>
-				</div>
-				<!-- //brands -->
-				<!-- payment -->
-				<div class="sub-some child-momu">
-					<h5>Payment Method</h5>
-					<ul>
-						<li>
-							<img src="/resources/front/images/pay2.png" alt="">
-						</li>
-						<li>
-							<img src="/resources/front/images/pay5.png" alt="">
-						</li>
-						<li>
-							<img src="/resources/front/images/pay1.png" alt="">
-						</li>
-						<li>
-							<img src="/resources/front/images/pay4.png" alt="">
-						</li>
-						<li>
-							<img src="/resources/front/images/pay6.png" alt="">
-						</li>
-						<li>
-							<img src="/resources/front/images/pay3.png" alt="">
-						</li>
-						<li>
-							<img src="/resources/front/images/pay7.png" alt="">
-						</li>
-						<li>
-							<img src="/resources/front/images/pay8.png" alt="">
-						</li>
-						<li>
-							<img src="/resources/front/images/pay9.png" alt="">
-						</li>
-					</ul>
-				</div>
-				<!-- //payment -->
-			</div>
-			<!-- //footer fourth section (text) -->
-		</div>
-	</footer>
-	<!-- //footer -->
+	
+
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">

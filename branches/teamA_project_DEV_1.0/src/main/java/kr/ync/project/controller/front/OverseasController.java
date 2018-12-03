@@ -17,11 +17,11 @@ public class OverseasController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "	", method = RequestMethod.GET)
+	@RequestMapping(value = "/overseas", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
-		logger.info("해외여행으로 이동", locale);
+		logger.info("해외여행상품으로 이동", locale);
 
 		return "front/overseas";
 	}
