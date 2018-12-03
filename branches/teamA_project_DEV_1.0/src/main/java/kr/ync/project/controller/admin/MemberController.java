@@ -12,17 +12,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.ync.project.controller.HomeController;
 
 @Controller
-public class PackageController {
-	
+public class MemberController {
+
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/PackageAdd", method = RequestMethod.GET)
-	public String PackageAdd(Locale locale, Model model) {
+	@RequestMapping(value = "/member", method = RequestMethod.GET)
+	public String memberList(Locale locale, Model model) {
 
 		// 가나다
-		logger.info("패키지등록으로 이동", locale);
+		logger.info("회원관리로 이동", locale);
 
-		return "admin/PackageAdd";
+		return "admin/member";
 	}
 }
