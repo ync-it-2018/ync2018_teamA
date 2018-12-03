@@ -11,30 +11,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <head>
 	<title>또봄 투어</title>
-	 <style>
-      table {
+	<style>
+	
+	.AllList_table {
         width: 100%;
-        height: 200px;
-      }
-      table, th, td {
-        border: 1px solid #bcbcbc;
-      }
-      .profile_object {
-      	width: 150px;
-      	text-align: center;
-      	background-color: #bcbcbc;
-      }
-      .profile_content {
-      	padding-left: 15px;
-      	padding-top: 3px;
-      	padding-bottom: 3px;
-      }
-      .profile_button {
-      	position: relative;
-      	left: 330px;
+        height: 100px;
+        background-color: #bcbcbc;
       }
       
-    </style>
+      .AllList_search {
+      	width: 100px;
+      	text-align: center;
+      	background-color: #bcbcbc;
+      	padding-right: 5px;
+      }
+      .AllList_content {
+      	padding-top: 3px;
+      	padding-bottom: 3px;
+      	background-color: #bcbcbc;
+      }
+      
+      .table_content {
+      	border: 1px solid black;
+      	height: 40px;
+      }
+	</style>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -48,6 +49,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
+		
+
+
 	</script>
 	<!--//tags -->
 	<link href="/resources/front/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -75,7 +79,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-4 logo_agile">
 				<h1>
 					<a href="/"> <span>또</span>봄 <span>투</span>어 <img
-						src="/resources/front/images/mainlogo.png" alt=" ">
+						src="/resources/front/images/tour_logo.png" alt=" ">
 					</a>
 				</h1>
 			</div>
@@ -159,7 +163,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3 class="agileinfo_sign">로그인</h3>
 						<p style="text-align: center">
 							저희 여행사와 함께 즐겁고 행복한 여행 되세요.</br> 로그인을 하시면 더욱 다양한 서비스를 이용하실 수 있습니다.</br>
-
 						</p>
 						<form action="#" method="post">
 							<div class="contact-form wthree">
@@ -206,8 +209,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="modal_body_left modal_body_left1">
 						<h3 class="agileinfo_sign">회원가입</h3>
 						<p style="text-align: center">
-							저희 여행사와 함께 즐겁고 행복한 여행 되세요.<br /> 회원가입을 하시면 마일리지 적립, 이벤트 등 특별한 혜택을
-							드립니다.
+							저희 여행사와 함께 즐겁고 행복한 여행 되세요.<br /> 회원가입을 하시면 마일리지 적립, 이벤트 등 특별한
+							혜택을 드립니다.
 						</p>
 						<form action="#" method="post">
 							<div class="contact-form wthree">
@@ -360,7 +363,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>회원 정보 조회</li>
+					<li>예약/구매 현황</li>
 				</ul>
 			</div>
 		</div>
@@ -370,7 +373,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact-w3l">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">기본 정보 조회
+			<h3 class="tittle-w3l">예약/구매 현황
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -383,34 +386,249 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="contact-agileinfo">
 					<div class="contact-form wthree">
 						<form action="#" method="post">
-							<table>
+						<table class="AllList_table">
 								<tr>
-									<th class="profile_object">이름</th>
-									<td class="profile_content">홍길동</td>
-								<tr>
-								<tr>
-									<th class="profile_object">아이디</th>
-									<td class="profile_content">ync12345</td>
-								<tr>
-								<tr>
-									<th class="profile_object">비밀번호</th>
-									<td class="profile_content">ab****</td>
-								<tr>
-								<tr>
-									<th class="profile_object">E-mail</th>
-									<td class="profile_content">ync12345@naver.com</td>
-								<tr>
-								<tr>
-									<th class="profile_object">휴대폰번호</th>
-									<td class="profile_content">010-1234-5678</td>
-								<tr>
-								<tr>
-									<th class="profile_object">생년월일</th>
-									<td class="profile_content">19950101</td>
-								<tr>
+									<th class="AllList_search">조회</th>
+									<td class="AllList_content">
+									<input type="hidden" name="memBirth">
+		
+							<select id="first_year" style="width:75px; font-size:15px">
+		
+								<option value="" >선택</option>
+								
+								<%for(int i = 1950; i <=2018; i++) {%>
+								<option value="<%=i %>"><%=i %></option>
+								<%} %>
+		
+							</select>년 &nbsp;
+		
+							<select id="first_month" style="width:75px; font-size:15px">
+		
+								<option>선택</option>
+								
+								<%for(int i = 1; i <=12; i++) {%>
+								<option value="<%=i %>"><%=i %></option>
+								<%} %>
+		
+							</select>월 &nbsp;
+		
+							<select id="first_day" style="width:75px; font-size:15px">
+		
+								<option>선택</option>
+								
+								<%for(int i = 1; i <=31; i++) {%>
+								<option value="<%=i %>"><%=i %></option>
+								<%} %>
+		
+							</select>일 &nbsp;~&nbsp;
+							<select id="second_year" style="width:75px; font-size:15px">
+		
+								<option value="">선택</option>
+								
+								<%for(int i = 1950; i <=2018; i++) {%>
+								<option value="<%=i %>"><%=i %></option>
+								<%} %>
+		
+							</select>년 &nbsp;
+		
+							<select id="second_month" style="width:75px; font-size:15px">
+		
+								<option>선택</option>
+								
+								<%for(int i = 1; i <=12; i++) {%>
+								<option value="<%=i %>"><%=i %></option>
+								<%} %>
+		
+							</select>월 &nbsp;
+		
+							<select id="second_day" style="width:75px; font-size:15px">
+		
+								<option>선택</option>
+								
+								<%for(int i = 1; i <=31; i++) {%>
+								<option value="<%=i %>"><%=i %></option>
+								<%} %>
+		
+							</select>일&nbsp;&nbsp;<input type="submit" value="검색하기" style="font-size:10pt; padding-left:10px; padding-right:10px"></td>
+								</tr>						
+							</table></br>
+							
+							<div style="width:100%"><input type="button" id="btn1" onClick="btn1Color();" value="구매내역" style="background-color:white; width:33.3%; padding-top:10px; padding-bottom:10px; font-weight:bold"><input type="button" id="btn2" onClick="btn2Color();" value="예약내역" style="background-color:gray; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold"><input type="button" id="btn3" onClick="btn3Color();" value="취소내역" style="background-color:gray; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold"></div>
+							<table style=" width:100%; height:185px; display: block; overflow-y:scroll">
+								<tr class="table_content">
+									<th style="width:116px; text-align:center">구매날짜</th>
+									<th style="width:116px; text-align:center">상품코드</th>
+									<th style="width:116px; text-align:center">상품명</th>
+									<th style="width:116px; text-align:center">결제금액</th>
+									<th style="width:116px; text-align:center">인원</th>
+									<th style="width:116px; text-align:center">출발일/귀국일</th>
+									<th style="width:116px; text-align:center">비고</th>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>2</td>
+									<td>2</td>
+									<td>2</td>
+									<td>2</td>
+									<td>2</td>
+									<td>2</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>2</td>
+									<td>2</td>
+									<td>2</td>
+									<td>2</td>
+									<td>2</td>
+									<td>2</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>3</td>
+									<td>3</td>
+									<td>3</td>
+									<td>3</td>
+									<td>3</td>
+									<td>3</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>4</td>
+									<td>4</td>
+									<td>4</td>
+									<td>4</td>
+									<td>4</td>
+									<td>4</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>5</td>
+									<td>5</td>
+									<td>5</td>
+									<td>5</td>
+									<td>5</td>
+									<td>5</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>6</td>
+									<td>6</td>
+									<td>6</td>
+									<td>6</td>
+									<td>6</td>
+									<td>6</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>7</td>
+									<td>7</td>
+									<td>7</td>
+									<td>7</td>
+									<td>7</td>
+									<td>7</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>8</td>
+									<td>8</td>
+									<td>8</td>
+									<td>8</td>
+									<td>8</td>
+									<td>8</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>9</td>
+									<td>9</td>
+									<td>9</td>
+									<td>9</td>
+									<td>9</td>
+									<td>9</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>10</td>
+									<td>10</td>
+									<td>10</td>
+									<td>10</td>
+									<td>10</td>
+									<td>10</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>11</td>
+									<td>11</td>
+									<td>11</td>
+									<td>11</td>
+									<td>11</td>
+									<td>11</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>12</td>
+									<td>12</td>
+									<td>12</td>
+									<td>12</td>
+									<td>12</td>
+									<td>12</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>13</td>
+									<td>13</td>
+									<td>13</td>
+									<td>13</td>
+									<td>13</td>
+									<td>13</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>14</td>
+									<td>14</td>
+									<td>14</td>
+									<td>14</td>
+									<td>14</td>
+									<td>14</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>15</td>
+									<td>15</td>
+									<td>15</td>
+									<td>15</td>
+									<td>15</td>
+									<td>15</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>16</td>
+									<td>16</td>
+									<td>16</td>
+									<td>16</td>
+									<td>16</td>
+									<td>16</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+								<tr class="table_content" style="text-align:center">
+									<td>17</td>
+									<td>17</td>
+									<td>17</td>
+									<td>17</td>
+									<td>17</td>
+									<td>17</td>
+									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								</tr>
+							
 							</table>
-							<input type="submit" value="정보수정하기" class="profile_button">
-						</form>
+										
 					</div>
 					
 				</div>
@@ -546,6 +764,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
+	<script>
+	function btn1Color() {
+        document.getElementById("btn1").style.backgroundColor = "white"
+        document.getElementById("btn2").style.backgroundColor = "gray"
+        document.getElementById("btn3").style.backgroundColor = "gray"
+    }
+	function btn2Color() {
+        document.getElementById("btn2").style.backgroundColor = "white"
+	      document.getElementById("btn1").style.backgroundColor = "gray"
+		  document.getElementById("btn3").style.backgroundColor = "gray"
+    }
+	function btn3Color() {
+        document.getElementById("btn3").style.backgroundColor = "white"
+	      document.getElementById("btn1").style.backgroundColor = "gray"
+		  document.getElementById("btn2").style.backgroundColor = "gray"
+    }
+	</script>
 
 </body>
 

@@ -11,30 +11,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <head>
 	<title>또봄 투어</title>
-	 <style>
-      table {
+	<style>
+	
+	table {
         width: 100%;
-        height: 200px;
+        height: 100px;
+        background-color: #bcbcbc;
       }
-      table, th, td {
-        border: 1px solid #bcbcbc;
+	
+	.idFind_content {
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
-      .profile_object {
-      	width: 150px;
-      	text-align: center;
-      	background-color: #bcbcbc;
-      }
-      .profile_content {
-      	padding-left: 15px;
-      	padding-top: 3px;
-      	padding-bottom: 3px;
-      }
-      .profile_button {
+	.idFind_button {
       	position: relative;
-      	left: 330px;
+      	left: 360px;
       }
       
-    </style>
+      .idFind_userid {
+      	width: 240px;
+      	text-align: right;
+      	background-color: #bcbcbc;
+      	padding-right: 5px;
+      }
+      .idFind_userpwd {
+      	padding-left: 30px;
+      	padding-top: 3px;
+      	padding-bottom: 3px;
+      	background-color: #bcbcbc;
+      }
+	</style>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -75,7 +81,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-4 logo_agile">
 				<h1>
 					<a href="/"> <span>또</span>봄 <span>투</span>어 <img
-						src="/resources/front/images/mainlogo.png" alt=" ">
+						src="/resources/front/images/tour_logo.png" alt=" ">
 					</a>
 				</h1>
 			</div>
@@ -159,7 +165,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3 class="agileinfo_sign">로그인</h3>
 						<p style="text-align: center">
 							저희 여행사와 함께 즐겁고 행복한 여행 되세요.</br> 로그인을 하시면 더욱 다양한 서비스를 이용하실 수 있습니다.</br>
-
 						</p>
 						<form action="#" method="post">
 							<div class="contact-form wthree">
@@ -206,8 +211,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="modal_body_left modal_body_left1">
 						<h3 class="agileinfo_sign">회원가입</h3>
 						<p style="text-align: center">
-							저희 여행사와 함께 즐겁고 행복한 여행 되세요.<br /> 회원가입을 하시면 마일리지 적립, 이벤트 등 특별한 혜택을
-							드립니다.
+							저희 여행사와 함께 즐겁고 행복한 여행 되세요.<br /> 회원가입을 하시면 마일리지 적립, 이벤트 등 특별한
+							혜택을 드립니다.
 						</p>
 						<form action="#" method="post">
 							<div class="contact-form wthree">
@@ -360,7 +365,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>회원 정보 조회</li>
+					<li>아이디 찾기 확인</li>
 				</ul>
 			</div>
 		</div>
@@ -370,7 +375,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact-w3l">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">기본 정보 조회
+			<h3 class="tittle-w3l">아이디 찾기 
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -383,33 +388,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="contact-agileinfo">
 					<div class="contact-form wthree">
 						<form action="#" method="post">
+							<div class="idFind_content"><p align="center" style="color:black; font-size:25px">입력하신 이름과 이메일로 검색한 회원님의 아이디 정보입니다.</p>
+							<p align="center" style="color:black">결과가 없는 경우에는 입력하신 정보가 맞는지 확인 후 재시도 해주시면 감사하겠습니다.</p></div></br>
 							<table>
 								<tr>
-									<th class="profile_object">이름</th>
-									<td class="profile_content">홍길동</td>
-								<tr>
-								<tr>
-									<th class="profile_object">아이디</th>
-									<td class="profile_content">ync12345</td>
-								<tr>
-								<tr>
-									<th class="profile_object">비밀번호</th>
-									<td class="profile_content">ab****</td>
-								<tr>
-								<tr>
-									<th class="profile_object">E-mail</th>
-									<td class="profile_content">ync12345@naver.com</td>
-								<tr>
-								<tr>
-									<th class="profile_object">휴대폰번호</th>
-									<td class="profile_content">010-1234-5678</td>
-								<tr>
-								<tr>
-									<th class="profile_object">생년월일</th>
-									<td class="profile_content">19950101</td>
-								<tr>
-							</table>
-							<input type="submit" value="정보수정하기" class="profile_button">
+									<th class="idFind_userid">아이디</th>
+									<td class="idFind_userpwd">ync12345</td>
+								</tr>
+							</table></br>
+							<input type="submit" value="확인" class="idFind_button">
 						</form>
 					</div>
 					
