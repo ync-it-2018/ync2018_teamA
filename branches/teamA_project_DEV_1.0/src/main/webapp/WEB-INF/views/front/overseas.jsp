@@ -10,10 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Travel Products :: w3layouts</title>
-
 	<title>또봄 투어</title>
-
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -148,24 +145,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<input type="text" name="name" placeholder="아이디" required="">
 								</div>
 								<div class="">
-
-									<input class="text" type="password" name="비밀번호" placeholder="비밀번호" required="">
-
 									<input class="text" type="password" name="비밀번호"
 										placeholder="비밀번호" required="">
-
 								</div>
 								<input type="submit" value="로그인" style="margin-left: 30%">
 							</div>
-
-						</form><br>
-						<div style="text-align:center">
-						<a href="/login/idFind">
-								아이디 찾기</a>｜
-						<a href="/login/pwdFind">
-								비밀번호 찾기</a>｜
-						<a href="#" data-toggle="modal" data-target="#myModal2">
-
 						</form>
 						<br>
 						<div style="text-align: center">
@@ -285,136 +269,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="collapse navbar-collapse menu--shylock"
 							id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav menu__list">
-								<li>
-									<a class="nav-stylehead" href="/">Home
-										<span class="sr-only">(current)</span>
-									</a>
-								</li>
-								<li class="">
-									<a class="nav-stylehead" href="about">About Us</a>
-								</li>
-								<li class="dropdown active">
-									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kitchen
-										<span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu multi-column columns-3">
-										<div class="agile_inner_drop_nav_info">
-											<div class="col-sm-4 multi-gd-img">
-												<ul class="multi-column-dropdown">
-													<li>
-														<a href="product">Bakery</a>
-													</li>
-													<li>
-														<a href="product">Baking Supplies</a>
-													</li>
-													<li>
-														<a href="product">Coffee, Tea & Beverages</a>
-													</li>
-													<li>
-														<a href="product">Dried Fruits, Nuts</a>
-													</li>
-													<li>
-														<a href="product">Sweets, Chocolate</a>
-													</li>
-													<li>
-														<a href="product">Spices & Masalas</a>
-													</li>
-													<li>
-														<a href="product">Jams, Honey & Spreads</a>
-													</li>
-												</ul>
-											</div>
-											<div class="col-sm-4 multi-gd-img">
-												<ul class="multi-column-dropdown">
-													<li>
-														<a href="product">Pickles</a>
-													</li>
-													<li>
-														<a href="product">Pasta & Noodles</a>
-													</li>
-													<li>
-														<a href="product">Rice, Flour & Pulses</a>
-													</li>
-													<li>
-														<a href="product">Sauces & Cooking Pastes</a>
-													</li>
-													<li>
-														<a href="product">Snack Foods</a>
-													</li>
-													<li>
-														<a href="product">Oils, Vinegars</a>
-													</li>
-													<li>
-														<a href="product">Meat, Poultry & Seafood</a>
-													</li>
-												</ul>
-											</div>
-											<div class="col-sm-4 multi-gd-img">
-												<img src="/resources/front/images/nav.png" alt="">
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Household
-										<span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu multi-column columns-3">
-										<div class="agile_inner_drop_nav_info">
-											<div class="col-sm-6 multi-gd-img">
-												<ul class="multi-column-dropdown">
-													<li>
-														<a href="product2">Kitchen & Dining</a>
-													</li>
-													<li>
-														<a href="product2">Detergents</a>
-													</li>
-													<li>
-														<a href="product2">Utensil Cleaners</a>
-													</li>
-													<li>
-														<a href="product2">Floor & Other Cleaners</a>
-													</li>
-													<li>
-														<a href="product2">Disposables, Garbage Bag</a>
-													</li>
-													<li>
-														<a href="product2">Repellents & Fresheners</a>
-													</li>
-													<li>
-														<a href="product2"> Dishwash</a>
-													</li>
-												</ul>
-											</div>
-											<div class="col-sm-6 multi-gd-img">
-												<ul class="multi-column-dropdown">
-													<li>
-														<a href="product2">Pet Care</a>
-													</li>
-													<li>
-														<a href="product2">Cleaning Accessories</a>
-													</li>
-													<li>
-														<a href="product2">Pooja Needs</a>
-													</li>
-													<li>
-														<a href="product2">Crackers</a>
-													</li>
-													<li>
-														<a href="product2">Festive Decoratives</a>
-													</li>
-													<li>
-														<a href="product2">Plasticware</a>
-													</li>
-													<li>
-														<a href="product2">Home Care</a>
-													</li>
-												</ul>
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</ul>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"
 									data-toggle="dropdown">국내여행 <b class="caret"></b>
@@ -699,7 +553,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k3.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href=single class="link-product-add-cart">Quick View</a>
+											<a href="detail1" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -1406,8 +1260,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //special offers -->
+	<!-- newsletter -->
 	
-	
+
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">

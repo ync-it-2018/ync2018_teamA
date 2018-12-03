@@ -25,6 +25,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			window.scrollTo(0, 1);
 		}
 	</script>
+	
 	<!--//tags -->
 	<link href="/resources/front/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="/resources/front/css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -35,7 +36,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- price range -->
 	<link rel="stylesheet" type="text/css" href="/resources/front/css/jquery-ui1.css">
 	<!-- flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/resources/front/css/flexslider.css" type="text/css" media="screen" />
 	<!-- fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 </head>
@@ -449,17 +450,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="grid images_3_of_2">
 					<div class="flexslider">
 						<ul class="slides">
-							<li data-thumb="images/okinawa.jpg">
+							<li data-thumb="/resources/front/images/osk.jpg">
 								<div class="thumb-image">
 									<img src="/resources/front/images/osk.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
 							</li>
-							<li data-thumb="images/okinawa.jpg">
+							<li data-thumb="/resources/front/images/osk1.jpg">
 								<div class="thumb-image">
-									<img src="/resources/front/images/osk.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+									<img src="/resources/front/images/osk1.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
 							</li>
-							<li data-thumb="images/okinawa.jpg">
+							<li data-thumb="/resources/front/images/osk2.jpg">
 								<div class="thumb-image">
-									<img src="/resources/front/images/osk.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+									<img src="/resources/front/images/osk2.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
 							</li>
 						</ul>
 						<div class="clearfix"></div>
