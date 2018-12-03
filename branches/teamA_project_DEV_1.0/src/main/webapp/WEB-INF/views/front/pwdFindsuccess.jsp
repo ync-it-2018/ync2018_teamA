@@ -79,8 +79,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header-bot-->
 			<div class="col-md-4 logo_agile">
 				<h1>
-					<a href="/"> <span>또</span>봄 <span>투</span>어 <img
-						src="/resources/front/images/tour_logo.png" alt=" ">
+					<a href="/"> <span>또</span>봄 <span>투</span>어 <img src="/resources/front/images/mainlogo.png" alt=" " width="20%">
 					</a>
 				</h1>
 			</div>
@@ -105,14 +104,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="/notice">공지사항</a></li>
 							<li><a href="/qna">1대1 문의</a></li>
 						</ul></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal1">
+					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
 					</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal2">
+					<li><a href="/" data-toggle="modal" data-target="#myModal2">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal1">
+					<li><a href="/basket" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 장바구니
 					</a></li>
 				</ul>
@@ -300,25 +299,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									data-toggle="dropdown">국내여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="">서울/인천/경기</a></li>
-										<li><a href="">강원권</a></li>
-										<li><a href="">충청권</a></li>
-										<li><a href="">젼라권</a></li>
-										<li><a href="">경상권</a></li>
-										<li><a href="">제주권</a></li>
+										<li><a href="/domestic">서울/인천/경기</a></li>
+										<li><a href="/domestic">강원권</a></li>
+										<li><a href="/domestic">충청권</a></li>
+										<li><a href="/domestic">젼라권</a></li>
+										<li><a href="/domestic">경상권</a></li>
+										<li><a href="/domestic">제주권</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"
 									data-toggle="dropdown">해외여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="">동남아</a></li>
-										<li><a href="">중국/홍콩</a></li>
-										<li><a href="">일본</a></li>
-										<li><a href="">남태평양/괌</a></li>
-										<li><a href="">유럽</a></li>
-										<li><a href="">미주/하와이</a></li>
-										<li><a href="">아프리카</a></li>
+										<li><a href="/overseas">동남아</a></li>
+										<li><a href="/overseas">중국/홍콩</a></li>
+										<li><a href="/overseas">일본</a></li>
+										<li><a href="/overseas">남태평양/괌</a></li>
+										<li><a href="/overseas">유럽</a></li>
+										<li><a href="/overseas">미주/하와이</a></li>
+										<li><a href="/overseas">아프리카</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"

@@ -58,8 +58,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header-bot-->
 			<div class="col-md-4 logo_agile">
 				<h1>
-					<a href="/"> <span>또</span>봄 <span>투</span>어 <img
-						src="/resources/front/images/tour_logo.png" alt=" ">
+					<a href="/"> <span>또</span>봄 <span>투</span>어 <img src="/resources/front/images/mainlogo.png" alt=" " width="20%">
 					</a>
 				</h1>
 			</div>
@@ -84,14 +83,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="/notice">공지사항</a></li>
 							<li><a href="/qna">1대1 문의</a></li>
 						</ul></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal1">
+					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
 					</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal2">
+					<li><a href="/" data-toggle="modal" data-target="#myModal2">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal1">
+					<li><a href="/basket" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 장바구니
 					</a></li>
 				</ul>
@@ -279,25 +278,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									data-toggle="dropdown">국내여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="">서울/인천/경기</a></li>
-										<li><a href="">강원권</a></li>
-										<li><a href="">충청권</a></li>
-										<li><a href="">젼라권</a></li>
-										<li><a href="">경상권</a></li>
-										<li><a href="">제주권</a></li>
+										<li><a href="/domestic">서울/인천/경기</a></li>
+										<li><a href="/domestic">강원권</a></li>
+										<li><a href="/domestic">충청권</a></li>
+										<li><a href="/domestic">젼라권</a></li>
+										<li><a href="/domestic">경상권</a></li>
+										<li><a href="/domestic">제주권</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"
 									data-toggle="dropdown">해외여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="">동남아</a></li>
-										<li><a href="">중국/홍콩</a></li>
-										<li><a href="">일본</a></li>
-										<li><a href="">남태평양/괌</a></li>
-										<li><a href="">유럽</a></li>
-										<li><a href="">미주/하와이</a></li>
-										<li><a href="">아프리카</a></li>
+										<li><a href="/overseas">동남아</a></li>
+										<li><a href="/overseas">중국/홍콩</a></li>
+										<li><a href="/overseas">일본</a></li>
+										<li><a href="/overseas">남태평양/괌</a></li>
+										<li><a href="/overseas">유럽</a></li>
+										<li><a href="/overseas">미주/하와이</a></li>
+										<li><a href="/overseas">아프리카</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"
@@ -343,10 +342,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="container">
 					<div class="carousel-caption">
 						<h3>
-							Big <span>Save</span>
+							경주 <span>당일 여행</span>
 						</h3>
 						<p>
-							Get flat <span>10%</span> Cashback
+							KTX왕복 + 경주시티투어
 						</p>
 						<a class="button2" href="product">Shop Now </a>
 					</div>
@@ -356,10 +355,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="container">
 					<div class="carousel-caption">
 						<h3>
-							Healthy <span>Saving</span>
+							페루/볼리비아 8일
 						</h3>
 						<p>
-							Get Upto <span>30%</span> Off
+							찬란한 잉카문명 유적지 마추피추와 그리고 하늘과 맞닿은 우유니 소금 사막까지 한번에 관광
 						</p>
 						<a class="button2" href="product">Shop Now </a>
 					</div>
@@ -369,10 +368,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="container">
 					<div class="carousel-caption">
 						<h3>
-							Big <span>Deal</span>
+							러시아일주 5~7일 <br/>  (모스크바/상트페테르부르크)
 						</h3>
 						<p>
-							Get Best Offer Upto <span>20%</span>
+							 모스크바와 예술의 도시 상트 페테르부르크를 관광하며 찬란했던 과거의 문명과 역동적인 오늘을 모습을 엿볼 수 있는 러시아일주
 						</p>
 						<a class="button2" href="product">Shop Now </a>
 					</div>
@@ -382,12 +381,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="container">
 					<div class="carousel-caption">
 						<h3>
-							Today <span>Discount</span>
+							이스탄불/카파도키아 자유여행 8일
 						</h3>
 						<p>
-							Get Now <span>40%</span> Discount
+							동서문명의 교차로 이스탄불과 초기 그리스도교 유적을 만날 수 있는 카파도키아를 자유여행
 						</p>
-						<a class="button2" href="product]">Shop Now </a>
+						<a class="button2" href="product">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -403,7 +402,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //banner -->
 	<div class="container">
-		<div class="book-form">
+		<div class="book-form"> 
 			<form action="#" method="post">
 				<div class="col-md-3 form-time-w3layouts editContent">
 					<label class="editContent"><span class="fa fa-user"

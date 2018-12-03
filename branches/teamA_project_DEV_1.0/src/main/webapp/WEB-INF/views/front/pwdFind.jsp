@@ -51,8 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header-bot-->
 			<div class="col-md-4 logo_agile">
 				<h1>
-					<a href="/"> <span>또</span>봄 <span>투</span>어 <img
-						src="/resources/front/images/mainlogo.png" alt=" ">
+					<a href="/"> <span>또</span>봄 <span>투</span>어 <img src="/resources/front/images/mainlogo.png" alt=" " width="20%">
 					</a>
 				</h1>
 			</div>
@@ -77,14 +76,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="/notice">공지사항</a></li>
 							<li><a href="/qna">1대1 문의</a></li>
 						</ul></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal1">
+					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
 					</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal2">
+					<li><a href="/" data-toggle="modal" data-target="#myModal2">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal1">
+					<li><a href="/basket" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 장바구니
 					</a></li>
 				</ul>
@@ -136,7 +135,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3 class="agileinfo_sign">로그인</h3>
 						<p style="text-align: center">
 							저희 여행사와 함께 즐겁고 행복한 여행 되세요.</br> 로그인을 하시면 더욱 다양한 서비스를 이용하실 수 있습니다.</br>
-
 						</p>
 						<form action="#" method="post">
 							<div class="contact-form wthree">
@@ -183,8 +181,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="modal_body_left modal_body_left1">
 						<h3 class="agileinfo_sign">회원가입</h3>
 						<p style="text-align: center">
-							저희 여행사와 함께 즐겁고 행복한 여행 되세요.<br /> 회원가입을 하시면 마일리지 적립, 이벤트 등 특별한 혜택을
-							드립니다.
+							저희 여행사와 함께 즐겁고 행복한 여행 되세요.<br /> 회원가입을 하시면 마일리지 적립, 이벤트 등 특별한
+							혜택을 드립니다.
 						</p>
 						<form action="#" method="post">
 							<div class="contact-form wthree">
@@ -273,25 +271,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									data-toggle="dropdown">국내여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="">서울/인천/경기</a></li>
-										<li><a href="">강원권</a></li>
-										<li><a href="">충청권</a></li>
-										<li><a href="">젼라권</a></li>
-										<li><a href="">경상권</a></li>
-										<li><a href="">제주권</a></li>
+										<li><a href="/domestic">서울/인천/경기</a></li>
+										<li><a href="/domestic">강원권</a></li>
+										<li><a href="/domestic">충청권</a></li>
+										<li><a href="/domestic">젼라권</a></li>
+										<li><a href="/domestic">경상권</a></li>
+										<li><a href="/domestic">제주권</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"
 									data-toggle="dropdown">해외여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="">동남아</a></li>
-										<li><a href="">중국/홍콩</a></li>
-										<li><a href="">일본</a></li>
-										<li><a href="">남태평양/괌</a></li>
-										<li><a href="">유럽</a></li>
-										<li><a href="">미주/하와이</a></li>
-										<li><a href="">아프리카</a></li>
+										<li><a href="/overseas">동남아</a></li>
+										<li><a href="/overseas">중국/홍콩</a></li>
+										<li><a href="/overseas">일본</a></li>
+										<li><a href="/overseas">남태평양/괌</a></li>
+										<li><a href="/overseas">유럽</a></li>
+										<li><a href="/overseas">미주/하와이</a></li>
+										<li><a href="/overseas">아프리카</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"
