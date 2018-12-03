@@ -1,6 +1,6 @@
 package kr.ync.project.service.admin;
 
-import javax.inject.Inject;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,5 +21,9 @@ public class ProductServiceImpl implements ProductService{
 		// TODO Auto-generated method stub
 		dao.create(product);
 	}
-
+	
+	@Override
+	public List<ProductVO> listAll()throws Exception {
+		return dao.listAll();
+	}
 }

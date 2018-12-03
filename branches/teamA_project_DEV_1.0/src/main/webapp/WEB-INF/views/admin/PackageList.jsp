@@ -28,10 +28,10 @@
 		});
 	
 	</script>
-    
-    
-    
-    <section class="content">
+
+
+
+  <section class="content">
 		<table>
 			<tr>
 				<td width=75>
@@ -55,15 +55,39 @@
 			  <!-- general form elements -->
 				<div class="box">
 					<div class="box-header with-border">
-						<h3 class="box-title">HOME PAGE ${serverTime }</h3>
+						<h3 class="box-title">LIST ALL PAGE ${serverTime }</h3>
 					</div>
+						<div class="box-body">
+				
+					<table class="table table-bordered">
+						<tr>
+							<th style="width: 10px">NO</th>
+							<th>상품명</th>
+							<th>아이디</th>
+							<th>지역/도시</th>
+							<th>출/귀국일</th>
+							<th>교통편</th>
+							<th>테마</th>
+							<th>가격(원)</th>
+						</tr>
+					
+						<c:forEach items="${list}" var="productVO">
+							<tr>
+								<td>${productVO.bno}</td>
+								<td><a href='/board/read?bno=${productVO.bno}'>${boardVO.title}</a></td>
+								<td>${boardVO.writer}</td>
+								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${productVO.regdate}" /></td>
+								<td><span class="badge bg-red">${boardVO.viewcnt }</span></td>
+							</tr>
+						</c:forEach> 
+					</table>
+				</div>
+					
 				</div>
 			</div><!--/.col (left) -->
 		</div>   <!-- /.row -->
     </section><!-- /.content -->
     
     
-
-
-    
 <%@include file="include/footer.jsp" %>
+    
