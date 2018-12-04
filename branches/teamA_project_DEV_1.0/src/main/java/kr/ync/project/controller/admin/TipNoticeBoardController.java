@@ -1,7 +1,5 @@
 package kr.ync.project.controller.admin;
 
-import java.util.Locale;
-
 import javax.inject.Inject;
 
 import org.slf4j.Logger;
@@ -11,7 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import kr.ync.project.controller.HomeController;
 import kr.ync.project.service.admin.TipNoticeBoardService;
 
 @Controller
@@ -21,7 +18,7 @@ private static final Logger logger = LoggerFactory.getLogger(TipNoticeBoardContr
 	@Inject
 	private TipNoticeBoardService service;
 	
-	@RequestMapping(value = "/tipnoticeboard", method = RequestMethod.GET)
+	@RequestMapping(value = "admin/tipnoticeboard", method = RequestMethod.GET)
 	public String TipNoticeBoardList(Model model) throws Exception {
 
 		// 가나다
@@ -30,6 +27,4 @@ private static final Logger logger = LoggerFactory.getLogger(TipNoticeBoardContr
 		model.addAttribute("list", service.listAll());
 		return "admin/tipnoticeboard";
 	}
-	
-	
 }
