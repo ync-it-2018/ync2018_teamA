@@ -10,7 +10,7 @@ import kr.ync.project.persistence.admin.NoticeBoardDAO;
 
 @Service
 public class NoticeBoardServiceImpl implements NoticeBoardService{
-	
+	@Autowired
 	private NoticeBoardDAO dao;
 
 	@Override
