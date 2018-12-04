@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
@@ -31,6 +30,7 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "front/index";
+
 	}
 	
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)

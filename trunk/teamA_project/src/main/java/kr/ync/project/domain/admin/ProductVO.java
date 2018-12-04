@@ -38,5 +38,4 @@ public class ProductVO {
 	private String CITY_CODE;
 	private String REGION_CODE;
 	private Integer MILEAGE_PERCENT;
-	
 }
