@@ -63,6 +63,12 @@
 	<context:component-scan base-package="kr.ync.project.controller.admin">
 	</context:component-scan>
 	
+	<context:component-scan base-package="kr.ync.project.controller.front">
+	</context:component-scan>
+	
+	<context:component-scan base-package="kr.ync.project.controller">
+	</context:component-scan>
+	
 	<context:component-scan base-package="kr.ync.project.persistence.admin">
 	</context:component-scan>
 	

@@ -9,7 +9,7 @@ import kr.ync.project.domain.admin.NoticeBoardVO;
 
 public class NoticeBoardDAOImpl implements NoticeBoardDAO{
 	
-	@Autowired
+	
 	private SqlSession session;
 	
 	private static String namespace = 

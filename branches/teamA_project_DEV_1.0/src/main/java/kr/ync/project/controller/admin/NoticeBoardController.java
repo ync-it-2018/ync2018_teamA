@@ -11,18 +11,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ync.project.service.admin.NoticeBoardService;
 
-
 @Controller
-public class CustomerSupportController {
-private static final Logger logger = LoggerFactory.getLogger(CustomerSupportController.class);
+public class NoticeBoardController {
+private static final Logger logger = LoggerFactory.getLogger(NoticeBoardController.class);
 	
-//여기에 service 정의하세요!!
-/*
- * 고객센터는 경로때문에 admin/customer 경로에 jsp파일 만들었어요. 복붙해서 사용하세연
- * */
-	@Inject
 	private NoticeBoardService service;
-	
 	
 	@RequestMapping(value = "admin/customersupport/notice", 
 					method = RequestMethod.GET)
