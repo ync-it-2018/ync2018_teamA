@@ -470,14 +470,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">Zeeba Basmati Rice</a>
+										<a href="detail">Zeeba Basmati Rice</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$950.00</span>
@@ -509,7 +509,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k2.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -517,7 +517,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">Maiyas Gulab Jamun</a>
+										<a href="detail">Maiyas Gulab Jamun</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$137.00</span>
@@ -549,7 +549,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k3.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -557,7 +557,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">Lipton Green Tea</a>
+										<a href="detail">Lipton Green Tea</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$384.00</span>
@@ -594,14 +594,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k4.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">Organicana Red Chilli</a>
+										<a href="detail">Organicana Red Chilli</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$70.00</span>
@@ -633,7 +633,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k5.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -641,7 +641,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">MTR Black Pepper</a>
+										<a href="detail">MTR Black Pepper</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$85.00</span>
@@ -673,7 +673,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k6.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -681,7 +681,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">Chataka - Elaichi</a>
+										<a href="detail">Chataka - Elaichi</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$299.99</span>
@@ -718,14 +718,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k7.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">Narulag, Less Sugar</a>
+										<a href="detail">Narulag, Less Sugar</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$220.00</span>
@@ -757,7 +757,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k8.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -765,7 +765,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">Kellogg's Chocos Fills</a>
+										<a href="detail">Kellogg's Chocos Fills</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$175.75</span>
@@ -797,7 +797,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k9.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -805,7 +805,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">Amul's India</a>
+										<a href="detail">Amul's India</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$134.00</span>
@@ -842,14 +842,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k10.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">Snickers Chocolates</a>
+										<a href="detail">Snickers Chocolates</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$140.00</span>
@@ -881,7 +881,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k11.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -889,7 +889,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">Kissan Fruit Jam</a>
+										<a href="detail">Kissan Fruit Jam</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$123.00</span>
@@ -921,7 +921,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/k12.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail1" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -929,7 +929,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="detail1">MTR Vegetable Pickle</a>
+										<a href="detail">MTR Vegetable Pickle</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$104.00</span>
@@ -982,13 +982,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="detail1">
+								<a href="detail">
 									<img src="/resources/front/images/s1.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="detail1">Aashirvaad, 5g</a>
+									<a href="detail">Aashirvaad, 5g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$220.00</h6>
@@ -1016,13 +1016,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="detail1">
+								<a href="detail">
 									<img src="/resources/front/images/s4.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="detail1">Kissan Tomato Ketchup, 950g</a>
+									<a href="detail">Kissan Tomato Ketchup, 950g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$99.00</h6>
@@ -1050,13 +1050,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="detail1">
+								<a href="detail">
 									<img src="/resources/front/images/s2.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="detail1">Madhur Pure Sugar, 1g</a>
+									<a href="detail">Madhur Pure Sugar, 1g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$69.00</h6>
@@ -1118,13 +1118,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="detail1">
+								<a href="detail">
 									<img src="/resources/front/images/s8.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="detail1">Cadbury Choclairs, 655.5g</a>
+									<a href="detail">Cadbury Choclairs, 655.5g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$160.00</h6>
@@ -1186,13 +1186,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="detail1">
+								<a href="detail">
 									<img src="/resources/front/images/s5.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="detail1">Sprite, 2.25L (Pack of 2)</a>
+									<a href="detail">Sprite, 2.25L (Pack of 2)</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$180.00</h6>
