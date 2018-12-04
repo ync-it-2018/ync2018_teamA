@@ -21,7 +21,7 @@ private static final Logger logger = LoggerFactory.getLogger(CustomerSupportCont
  * 고객센터는 경로때문에 admin/customer 경로에 jsp파일 만들었어요. 복붙해서 사용하세연
  * */
 	@Inject
-	private NoticeBoardService Nservice;
+	private NoticeBoardService service;
 	
 	
 	@RequestMapping(value = "admin/customersupport/notice", 
@@ -31,7 +31,7 @@ private static final Logger logger = LoggerFactory.getLogger(CustomerSupportCont
 		// 가나다
 		logger.info("공지사항으로 이동");
 		
-		model.addAttribute("list", Nservice.listAll());
+		model.addAttribute("list", service.listAll());
 		return "admin/customersupport/notice";
 	}
 }
