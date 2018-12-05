@@ -54,14 +54,14 @@
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 1em; }
 .ui-widget-content { background: #e0ddda; color: #222222;  margin-top: 3em; }
 .ui-widget-content a { color: #222222/*{fcContent}*/; }
-.ui-widget-header { background: #1accfd; color: #222222/*{fcHeader}*/; font-weight: bold; }
+.ui-widget-header { background: #c87ad2; color: #222222/*{fcHeader}*/; font-weight: bold; }
 .ui-widget-header a { color: #222222/*{fcHeader}*/; }
 
 /* Interaction states
 ----------------------------------*/
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 0px solid #ff5d56/*{borderColorDefault}*/;
-  background: #FF5722;
+  background: #d6cdca;
   font-weight: normal/*{fwDefault}*/;
   color: #555555/*{fcDefault}*/;
   outline: none;
@@ -87,7 +87,7 @@ padding: 0 0em 0;
 .ui-datepicker .ui-datepicker-header {
   position: relative;
   padding: .56em 0;
-  background:#168eea;
+  background: #7fc787;
   text-transform: uppercase;
 }
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 14px; width: 1.8em; height: 1.8em; }
@@ -105,7 +105,7 @@ padding: 0 0em 0;
     background:url(/resources/front/images/cal.png) no-repeat 0px 0px;
     cursor: pointer;
  }
-.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  display:none;}
 .ui-datepicker .ui-datepicker-title { margin: 0 2.3em;
 line-height: 1.8em;
 text-align: center;

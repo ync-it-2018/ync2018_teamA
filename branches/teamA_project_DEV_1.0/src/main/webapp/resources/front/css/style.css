@@ -50,7 +50,7 @@ label{
 /* top-header */
 .header-most-top p {
     text-align: center;
-    color: #fff;
+    color: #000;
     font-weight: 600;
     padding: 8px;
     letter-spacing: 2px;
@@ -124,7 +124,7 @@ label{
     height: 42px;
     outline: none;
     box-shadow: none;
-    background: #1accfd;
+    background: #F5DA81;
     padding: 0;
     border-radius: inherit;
     -webkit-appearance: none;
@@ -202,7 +202,7 @@ label{
     margin: 0;
     font-weight: 700;
     letter-spacing: 1px;
-    background: #1accfd;
+    background: #F5DA81;
     color: #fff;
     margin: 20px 0;
 }
@@ -498,7 +498,7 @@ button.w3view-cart {
 .snipcart-details input.button {
     font-size: 13px;
     color: #fff;
-    background: #1accfd;
+    background: #F5DA81;
     text-decoration: none;
     position: relative;
     border: none;
@@ -552,7 +552,7 @@ button.w3view-cart {
 }
 #PPminicartk .minicartk-submit {
     color: #fff !important;
-    background: #1accfd !important;
+    background: #F5DA81 !important;
     padding: 0 10px !important;
     font-size: 15px;
     letter-spacing: 1px;
@@ -564,7 +564,7 @@ button.w3view-cart {
     transition: 0.5s all;
     bottom: -25px!important;
     right: 0 !important;
-    border: 1px solid #1accfd!important;
+    border: 1px solid #F5DA81!important;
     border-radius: 0px!important;
     text-shadow: none!important;
 }
@@ -809,7 +809,7 @@ button.w3view-cart {
   color: #c4c4c4;
 }
 .search-hotel form input[type="submit"]{
-  background: url(../images/search.png) no-repeat 13px 11px #1accfd;
+  background: url(../images/search.png) no-repeat 13px 11px #F5DA81;
   width: 44px;
   height: 39px;
   border: none;
@@ -1030,7 +1030,7 @@ span.heading-style {
 .heading-style i:nth-child(2) {
     width: 12px;
     height: 12px;
-    background-color: #1accfd;
+    background-color: #F5DA81;
 }
 h3.tittle-w3l:after {
     content: "";
@@ -1179,7 +1179,7 @@ h3.tittle-w3l:after {
     transition: 0.5s all;
 }
 .footer-top input[type="submit"]:hover{
-	background:#1accfd;
+	background:#F5DA81;
 	-webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1253,7 +1253,7 @@ p.footer-main span {
     padding: 50px 0;
 }
 .footer-info h3 {
-    color: #1accfd;
+    color: #F5DA81;
     font-size: 22px;
     letter-spacing: 1px;
     margin-bottom:25px;
@@ -1394,12 +1394,12 @@ p.footer-main span {
     background: #F5DA81;
 }
 .copy-right p {
-    color: #fff;
+    color: #000;
     letter-spacing: 2px;
     font-size: 15px;
 }
 .copy-right p a{
-    color: #fff;
+    color: #000;
 }
 .copy-right p a:hover{
     color: #f44336;
@@ -1546,7 +1546,7 @@ ul.w3_short {
 }
 .contact-text p i.fa {
     margin-right: 10px;
-    color: #1accfd;
+    color: #F5DA81;
 }
 .map iframe {
     width: 100%;
@@ -2020,7 +2020,7 @@ li.subitem1 p {
     width: 90%;
     border: none;
     padding: 16px;
-    border-bottom: solid 1px #1accfd;
+    border-bottom: solid 1px #F5DA81;
 	height:150px;
 	outline:none;
 }
@@ -2039,7 +2039,7 @@ li.subitem1 p {
 	margin-top:20px;
 }
 .wthree-help form input[type="submit"]:hover {
-    background: #1accfd;
+    background: #F5DA81;
     -webkit-transform: translateY(8px);
     -ms-transform: translateY(8px);
 	-o-transform: translateY(8px);
@@ -2054,7 +2054,7 @@ li.subitem1 p {
 .wthree-help a {
 	color:#fff;
 	padding:10px 20px;
-	background:#1accfd;
+	background:#F5DA81;
 	font-size:16px;
 	margin-bottom:50px;
 }
@@ -2262,10 +2262,10 @@ img.zoom-img:hover{
     margin-bottom: 12px;
 }
 .product-single-w3l {
-    border-top: 1px solid #1accfd;
+    border-top: 1px solid #F5DA81;
 }
 .product-single-w3l p i {
-    color: #1accfd;
+    color: #F5DA81;
     margin-right: 11px;
     font-size: 24px;
 }
@@ -2402,7 +2402,7 @@ td.invert-image a img {
     margin-top: 50px;
 }
 .address_form_agile h4 {
-    color: #1accfd;
+    color: #F5DA81;
     font-size: 24px;
     margin-bottom: 30px;
     letter-spacing: 1px;
@@ -2423,7 +2423,7 @@ td.invert-image a img {
 button.submit.check_out {
     padding: 12px 25px;
     letter-spacing: 1px;
-    background: #1accfd;
+    background: #F5DA81;
     font-size: 16px;
     color: #fff;
     border: none;
@@ -2467,7 +2467,7 @@ button.submit.check_out:hover {
 }
 .checkout-right-basket a span {
     margin-left: 7px;
-    color: #1accfd;
+    color: #F5DA81;
     font-size: 20px;
 }
 /*-- //payment button --*/
@@ -2492,10 +2492,10 @@ button.submit.check_out:hover {
     position: relative;
     padding: 6px 50px 11px;
     letter-spacing: 3px;
-    background: #1accfd;
+    background: #F5DA81;
     font-size: 1.5em;
     color: #fff;
-    border: 1px solid #1accfd;
+    border: 1px solid #F5DA81;
     outline: none;
     text-transform: uppercase;
     cursor:pointer;
@@ -2644,7 +2644,7 @@ input[type="radio"], input[type="checkbox"] {
     margin-left: 1em;
 }
 .vertical_post form input[type="submit"], .number-paymk input[type="submit"] {
-    background: #1accfd;
+    background: #F5DA81;
     color: #FFFFFF;
     text-align: center;
     padding: 11px 19px;
