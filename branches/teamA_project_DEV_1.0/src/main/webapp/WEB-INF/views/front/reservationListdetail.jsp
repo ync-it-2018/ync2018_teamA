@@ -13,28 +13,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>또봄 투어</title>
 	<style>
 	
-	.AllList_table {
-        width: 100%;
-        height: 100px;
-        background-color: #bcbcbc;
-      }
-      
-      .AllList_search {
-      	width: 100px;
-      	text-align: center;
-      	background-color: #bcbcbc;
-      	padding-right: 5px;
-      }
-      .AllList_content {
-      	padding-top: 3px;
-      	padding-bottom: 3px;
-      	background-color: #bcbcbc;
-      }
-      
-      .table_content {
-      	border: 1px solid black;
-      	height: 40px;
-      }
+	.border {
+		border: 1px solid black;
+	}
 	</style>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,9 +30,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
-		
-
-
 	</script>
 	<!--//tags -->
 	<link href="/resources/front/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -78,7 +56,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header-bot-->
 			<div class="col-md-4 logo_agile">
 				<h1>
+
 					<a href="/"> <span>또</span>봄 <span>투</span>어 <img src="/resources/front/images/mainlogo.png" alt=" " width="20%">
+
 					</a>
 				</h1>
 			</div>
@@ -372,7 +352,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact-w3l">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">예약/구매 현황
+			<h3 class="tittle-w3l">예약 내역
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -385,249 +365,142 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="contact-agileinfo">
 					<div class="contact-form wthree">
 						<form action="#" method="post">
-						<table class="AllList_table">
-								<tr>
-									<th class="AllList_search">조회</th>
-									<td class="AllList_content">
-									<input type="hidden" name="memBirth">
-		
-							<select id="first_year" style="width:75px; font-size:15px">
-		
-								<option value="" >선택</option>
-								
-								<%for(int i = 1950; i <=2018; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>년 &nbsp;
-		
-							<select id="first_month" style="width:75px; font-size:15px">
-		
-								<option>선택</option>
-								
-								<%for(int i = 1; i <=12; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>월 &nbsp;
-		
-							<select id="first_day" style="width:75px; font-size:15px">
-		
-								<option>선택</option>
-								
-								<%for(int i = 1; i <=31; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>일 &nbsp;~&nbsp;
-							<select id="second_year" style="width:75px; font-size:15px">
-		
-								<option value="">선택</option>
-								
-								<%for(int i = 1950; i <=2018; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>년 &nbsp;
-		
-							<select id="second_month" style="width:75px; font-size:15px">
-		
-								<option>선택</option>
-								
-								<%for(int i = 1; i <=12; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>월 &nbsp;
-		
-							<select id="second_day" style="width:75px; font-size:15px">
-		
-								<option>선택</option>
-								
-								<%for(int i = 1; i <=31; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>일&nbsp;&nbsp;<input type="submit" value="검색하기" style="font-size:10pt; padding-left:10px; padding-right:10px"></td>
-								</tr>						
+							<table>
+							<tr>
+								<td class="border"><img src="/resources/front/images/buy_travel.jpg" style="width:100%; height:300px"></td>
+								<td style="width:20%"></td>
+								<td class="border" style="text-align:left; width:40%">상품명 : 일본 오사카</br></br>
+								상품코드 : RP1824975567</br></br>
+								일정 : 20180101 ~ 20180105</br></br>
+								최종결제금액 : 900,000</br></br>
+								인원별 금액 : 450,000
+								</td>
+							</tr>
 							</table></br>
-							
-							<div style="width:100%"><input type="button" id="btn1" onClick="btn1Color();" value="구매내역" style="background-color:white; width:33.3%; padding-top:10px; padding-bottom:10px; font-weight:bold"><input type="button" id="btn2" onClick="btn2Color();" value="예약내역" style="background-color:gray; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold"><input type="button" id="btn3" onClick="btn3Color();" value="취소내역" style="background-color:gray; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold"></div>
-							<table style=" width:100%; height:185px; display: block; overflow-y:scroll">
-								<tr class="table_content">
-									<th style="width:116px; text-align:center">구매날짜</th>
-									<th style="width:116px; text-align:center">상품코드</th>
-									<th style="width:116px; text-align:center">상품명</th>
-									<th style="width:116px; text-align:center">결제금액</th>
-									<th style="width:116px; text-align:center">인원</th>
-									<th style="width:116px; text-align:center">출발일/귀국일</th>
-									<th style="width:116px; text-align:center">비고</th>
+							<div class="border" style="padding-left:10px; padding-top:10px; padding-bottom:10px; padding-right:10px">
+							<table>
+								<tr>
+									<td class="border" style="width:100px; text-align:center">예약자명</td>
+									<td style="width:10%;">&emsp;홍길동</td>
+									<td style="width:20%"></td>
+									<td class="border" style="width:25%; text-align:center">요청사항</td>
+									<td style="width:5%"></td>
+									<td></td>
 								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>1</td>
-									<td>1</td>
-									<td>1</td>
-									<td>1</td>
-									<td>1</td>
-									<td>1</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								<tr>
+									<td style="width:100px">&nbsp;</td>
 								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								<tr>
+									<td class="border" style="width:100px; text-align:center">휴대폰 번호</td>
+									<td style="width:30%">&emsp;01012345678</td>
+									<td style="width:20%"></td>
+									<td style="width:50%; text-align:left; font-size:11px" rowspan="3" colspan="3">
+									-여행 예약 시-</br></br>
+									추가로 요청할 사항을 기재해주세요.</br>
+									최대 100자까지 입력 가능합니다.
+									</td> 							
 								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								<tr>
+									<td style="width:100px">&nbsp;</td>
 								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>3</td>
-									<td>3</td>
-									<td>3</td>
-									<td>3</td>
-									<td>3</td>
-									<td>3</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								<tr>
+									<td class="border" style="width:100px; text-align:center">이메일</td>
+									<td style="width:30%; font-size:15px">&emsp;ync12345@naver.com</td>
+									<td style="width:20%"></td>
 								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>4</td>
-									<td>4</td>
-									<td>4</td>
-									<td>4</td>
-									<td>4</td>
-									<td>4</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
+								<tr>
+									<td style="width:100px">&nbsp;</td>
 								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>5</td>
-									<td>5</td>
-									<td>5</td>
-									<td>5</td>
-									<td>5</td>
-									<td>5</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>6</td>
-									<td>6</td>
-									<td>6</td>
-									<td>6</td>
-									<td>6</td>
-									<td>6</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>7</td>
-									<td>7</td>
-									<td>7</td>
-									<td>7</td>
-									<td>7</td>
-									<td>7</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>8</td>
-									<td>8</td>
-									<td>8</td>
-									<td>8</td>
-									<td>8</td>
-									<td>8</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>9</td>
-									<td>9</td>
-									<td>9</td>
-									<td>9</td>
-									<td>9</td>
-									<td>9</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>10</td>
-									<td>10</td>
-									<td>10</td>
-									<td>10</td>
-									<td>10</td>
-									<td>10</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>11</td>
-									<td>11</td>
-									<td>11</td>
-									<td>11</td>
-									<td>11</td>
-									<td>11</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>12</td>
-									<td>12</td>
-									<td>12</td>
-									<td>12</td>
-									<td>12</td>
-									<td>12</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>13</td>
-									<td>13</td>
-									<td>13</td>
-									<td>13</td>
-									<td>13</td>
-									<td>13</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>14</td>
-									<td>14</td>
-									<td>14</td>
-									<td>14</td>
-									<td>14</td>
-									<td>14</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>15</td>
-									<td>15</td>
-									<td>15</td>
-									<td>15</td>
-									<td>15</td>
-									<td>15</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>16</td>
-									<td>16</td>
-									<td>16</td>
-									<td>16</td>
-									<td>16</td>
-									<td>16</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>17</td>
-									<td>17</td>
-									<td>17</td>
-									<td>17</td>
-									<td>17</td>
-									<td>17</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
-								</tr>
-							
 							</table>
-										
+							
+							<table>
+								<tr class="border">
+									<th></th>
+									<th style="width:100%; text-align:left" colspan="5" >
+									&emsp;여행자 정보
+									</th>
+								</tr>
+							</table>
+							<div class="border" style="padding-left:20px; padding-top:20px; padding-bottom:10px; padding-right:10px; border-top:none">
+							<table>
+								<tr>
+									<td class="border" style="width:100px; text-align:center">인원</td>
+									<td style="width:45%;">&emsp;</td>
+									<td class="border" style="width:35%; text-align:center; font-size:15px">성인 2, 아동 0, 유아 0</td>
+									<td style="width:5%"></td>
+									<td></td>
+								</tr>
+							</table>
+							</br>
+							<table>
+								<tr class="border">
+									<th></th>
+									<th style="width:100%; text-align:left" colspan="5" >
+									&emsp;성인1
+									</th>
+								</tr>
+							</table>
+							<div class="border" style="padding-left:20px; padding-top:20px; padding-bottom:10px; padding-right:10px; border-top:none">
+								<table>
+									<tr style="text-align:center">
+										<td class="border" style="width:100px">한글성명</td>
+										<td style="width:100px">홍길동</td>
+										<td class="border" style="width:100px">영문성명</td>
+										<td style="width:180px">HONG&emsp;GILDONG</td>
+										<td class="border" style="width:80px">성별</td>
+										<td style="width:180px; text-align:left; padding-left:20px">남성</td>
+									</tr>
+									<tr>
+										<td>&emsp;</td>
+									</tr>
+									<tr style="text-align:center">
+										<td class="border" style="width:110px">법정생년월일</td>
+										<td style="width:80px">19950101</td>
+										<td class="border" style="width:70px">휴대폰번호</td>
+										<td>010-1234-5678</td>
+										<td class="border" style="width:30px">이메일</td>
+										<td style="width:100px; font-size:13px; text-align:left; padding-left:23px">ync12345@naver.com</td>
+									</tr>
+								</table>
+							</div>
+							</br>
+							<table>
+								<tr class="border">
+									<th></th>
+									<th style="width:100%; text-align:left" colspan="5" >
+									&emsp;성인2
+									</th>
+								</tr>
+							</table>
+							<div class="border" style="padding-left:20px; padding-top:20px; padding-bottom:10px; padding-right:10px; border-top:none">
+								<table>
+									<tr style="text-align:center">
+										<td class="border" style="width:100px">한글성명</td>
+										<td style="width:100px">이순신</td>
+										<td class="border" style="width:100px">영문성명</td>
+										<td style="width:180px">LEE&emsp;SUNSHIN</td>
+										<td class="border" style="width:80px">성별</td>
+										<td style="width:180px; text-align:left; padding-left:20px">남성</td>
+									</tr>
+									<tr>
+										<td>&emsp;</td>
+									</tr>
+									<tr style="text-align:center">
+										<td class="border" style="width:110px">법정생년월일</td>
+										<td style="width:80px">19940101</td>
+										<td class="border" style="width:70px">휴대폰번호</td>
+										<td>010-4567-1298</td>
+										<td class="border" style="width:30px">이메일</td>
+										<td style="width:100px; font-size:13px; text-align:left; padding-left:23px">ync56789@naver.com</td>
+									</tr>
+								</table>
+							</div>
+							</div>
+							
+							</div>
+							
+							<input type="submit" value="예약 취소" style="position: relative; left:80%;">
+						</form>
 					</div>
 					
 				</div>
@@ -763,23 +636,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
-	<script>
-	function btn1Color() {
-        document.getElementById("btn1").style.backgroundColor = "white"
-        document.getElementById("btn2").style.backgroundColor = "gray"
-        document.getElementById("btn3").style.backgroundColor = "gray"
-    }
-	function btn2Color() {
-        document.getElementById("btn2").style.backgroundColor = "white"
-	      document.getElementById("btn1").style.backgroundColor = "gray"
-		  document.getElementById("btn3").style.backgroundColor = "gray"
-    }
-	function btn3Color() {
-        document.getElementById("btn3").style.backgroundColor = "white"
-	      document.getElementById("btn1").style.backgroundColor = "gray"
-		  document.getElementById("btn2").style.backgroundColor = "gray"
-    }
-	</script>
 
 </body>
 
