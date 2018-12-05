@@ -398,7 +398,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						 (상품 코드)</p>
 					<ul>
 						<li>
-							항공사 명
+							교통수단
 						</li>
 						<li>
 							상품 설명
