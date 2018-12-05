@@ -1781,7 +1781,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
-	<script src="/resources/front/css/jquery-ui1.js"></script>
+	<script src="/resources/front/css/jquery-ui1.css"></script>
 	<script>
        $(function() {
           $( "#datepicker,#datepicker1" ).datepicker();

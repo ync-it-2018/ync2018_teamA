@@ -58,12 +58,12 @@
 							<th>REGDATE</th>
 						</tr>
 
-						<c:forEach items="${list}" var="TipNoticeBoardVO">
+						<c:forEach items="${list}" var="NoticeBoardVO">
 
 							<tr>
-								<td>${TipNoticeBoardVO.BOARD_IDX}</td>
-								<td><a href=''>${TipNoticeBoardVO.TITLE}</a></td>
-								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${TipNoticeBoardVO.WRITEDATE}" /></td>
+								<td>${NoticeBoardVO.BOARD_IDX}</td>
+								<td><a href=''>${NoticeBoardVO.TITLE}</a></td>
+								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${NoticeBoardVO.WRITEDATE}" /></td>
 							</tr>
 <!-- /sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${TipNoticeBoardVO.BOARD_IDX} -->
 						</c:forEach>

@@ -155,7 +155,7 @@
                    </a>
                 </li>
                 <li>
-                   <a href="#">
+                   <a href="/customersupport/notice">
                       <i class="fa fa-circle-o"></i> 공지사항 
                    </a>
                 </li>

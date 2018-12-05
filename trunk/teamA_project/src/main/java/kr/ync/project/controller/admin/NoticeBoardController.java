@@ -15,9 +15,10 @@ import kr.ync.project.service.admin.NoticeBoardService;
 public class NoticeBoardController {
 private static final Logger logger = LoggerFactory.getLogger(NoticeBoardController.class);
 	
+	@Inject
 	private NoticeBoardService service;
 	
-	@RequestMapping(value = "admin/customersupport/notice", 
+	@RequestMapping(value = "/customersupport/notice", 
 					method = RequestMethod.GET)
 	public String NoticeBoardList(Model model) throws Exception {
 

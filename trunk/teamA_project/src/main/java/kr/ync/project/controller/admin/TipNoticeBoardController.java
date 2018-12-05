@@ -18,7 +18,7 @@ private static final Logger logger = LoggerFactory.getLogger(TipNoticeBoardContr
 	@Inject
 	private TipNoticeBoardService service;
 	
-	@RequestMapping(value = "admin/tipnoticeboard", method = RequestMethod.GET)
+	@RequestMapping(value = "/tipnoticeboard", method = RequestMethod.GET)
 	public String TipNoticeBoardList(Model model) throws Exception {
 
 		// 가나다
