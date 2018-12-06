@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page session="false"%>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -39,6 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
+<section class="content">
 	<!-- top-header -->
 	<div class="header-most-top">
 		<p>또봄투어와 즐거운 여행 되세요 ♥</p>
@@ -476,13 +480,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
+								<c:forEach items="${list}" var="FProuctVO">
 									<h4>
-										<a href="detail">Zeeba Basmati Rice</a>
+										<a href="detail">${FProuctVO.PRODUCT_NAME}</a>
 									</h4>
 									<div class="info-product-price">
-										<span class="item_price">$950.00</span>
+										<span class="item_price">${FProuctVO.ADULT_PRICE}</span>
 										<del>$1020.00</del>
 									</div>
+								 </c:forEach> 
 									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 										<form action="#" method="post">
 											<fieldset>
@@ -497,7 +503,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<input type="hidden" name="cancel_return" value=" " />
 												<input type="submit" name="submit" value="Add to cart" class="button" />
 											</fieldset>
-										</form>
+										</form> 
 									</div>
 
 								</div>
@@ -1255,6 +1261,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
+	</section>
 	<!-- //special offers -->
 	<!-- newsletter -->
 	
