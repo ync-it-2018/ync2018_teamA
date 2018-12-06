@@ -933,6 +933,13 @@ h3.heading-tittle {
     font-weight: 600;
     letter-spacing: 1px;
 }
+h4.heading-tittle {
+    text-align: center;
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 .men-thumb-item {
     text-align: center;
 }

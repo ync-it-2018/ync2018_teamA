@@ -463,7 +463,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="wrapper">
 					<!-- first section (nuts) -->
 					<div class="col-md-9 product-sec1">
-						<h3 class="heading-tittle" style="text-align:left">인기 패키지 <span style="color:red">best 6</span></h3>
+						<h4 class="heading-tittle" style="text-align:left">인기 패키지 <span style="color:red">best 6</span></h4>
 						<div class="col-md-3 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
@@ -594,8 +594,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-md-3 product-sec1">
-						<h3 class="heading-tittle" style="text-align:left">출발 임박 패키지</span></h3>
-						<div class="col-md-3 product-men">
+						<h4 class="heading-tittle" style="text-align:left">출발 임박 패키지</h4>
+						<div class="product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/m1.jpg" alt="">
@@ -639,20 +639,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="clearfix"></div>
 					</div>
 					<!-- //first section (nuts) -->
-					<!-- second section (nuts special) -->
-					<div class="product-sec1 product-sec2">
-						<div class="col-xs-7 effect-bg">
-							<h3 class="">Pure Energy</h3>
-							<h6>Enjoy our all healthy Products</h6>
-							<p>Get Extra 10% Off</p>
-						</div>
-						<h3 class="w3l-nut-middle">Nuts & Dry Fruits</h3>
-						<div class="col-xs-5 bg-right-nut">
-							<img src="/resources/front/images/nut1.png" alt="">
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<!-- //second section (nuts special) -->
 					<!-- third section (oils) -->
 					<div class="product-sec1">
 						<h3 class="heading-tittle">Oils</h3>
