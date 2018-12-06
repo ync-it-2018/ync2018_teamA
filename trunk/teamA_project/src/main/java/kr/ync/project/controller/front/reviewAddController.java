@@ -12,18 +12,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.ync.project.controller.HomeController;
 
 @Controller
-public class SingleController2 {
+public class reviewAddController {
+
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/single2", method = RequestMethod.GET)
+	@RequestMapping(value = "/buyList/reviewAdd", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
-		logger.info("single2 화면으로 이동", locale);
+		logger.info("reviewAdd로 이동", locale);
 
-		return "front/single2";
+		return "front/reviewAdd";
 	}
 	
 }

@@ -372,7 +372,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact-w3l">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">예약 내역
+			<h3 class="tittle-w3l">취소 내역
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -452,16 +452,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</tr>						
 							</table></br>
 							
-							<div style="width:100%; border: 1px solid black;"><input type="button" id="btn1" onClick="btn1Color();" value="구매내역" style="background-color:white; width:33.4%; padding-top:10px; padding-bottom:10px; font-weight:bold; border-right: 1px solid black"><input type="button" id="btn2" onClick="btn2Color();" value="예약내역" style="background-color:gray; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold; border-right: 1px solid black"><input type="button" id="btn3" onClick="btn3Color();" value="취소내역" style="background-color:gray; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold"></div>
+							<div style="width:100%; border: 1px solid black;"><input type="button" id="btn1" onClick="btn1Color();" value="구매내역" style="background-color:gray; width:33.4%; padding-top:10px; padding-bottom:10px; font-weight:bold; border-right: 1px solid black"><input type="button" id="btn2" onClick="btn2Color();" value="예약내역" style="background-color:gray; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold; border-right: 1px solid black"><input type="button" id="btn3" onClick="btn3Color();" value="취소내역" style="background-color:white; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold"></div>
 							<table style=" width:100%; height:185px; display: block; overflow-y:scroll">
 								<tr class="table_content" style="border-top:none">
-									<th style="width:116px; text-align:center">구매날짜</th>
-									<th style="width:116px; text-align:center">상품코드</th>
-									<th style="width:116px; text-align:center">상품명</th>
-									<th style="width:116px; text-align:center">결제금액</th>
-									<th style="width:116px; text-align:center">인원</th>
-									<th style="width:116px; text-align:center">출발일/귀국일</th>
-									<th style="width:116px; text-align:center">비고</th>
+									<th style="width:135px; text-align:center">구매취소날짜</th>
+									<th style="width:135px; text-align:center">상품명</th>
+									<th style="width:135px; text-align:center">결제금액</th>
+									<th style="width:135px; text-align:center">결제방식</th>
+									<th style="width:135px; text-align:center">출발일/귀국일</th>
+									<th style="width:135px; text-align:center">비고</th>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>1</td>
@@ -470,7 +469,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>1</td>
 									<td>1</td>
 									<td>1</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>2</td>
@@ -479,7 +477,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>2</td>
 									<td>2</td>
 									<td>2</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>2</td>
@@ -488,7 +485,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>2</td>
 									<td>2</td>
 									<td>2</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>3</td>
@@ -497,7 +493,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>3</td>
 									<td>3</td>
 									<td>3</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>4</td>
@@ -506,7 +501,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>4</td>
 									<td>4</td>
 									<td>4</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>5</td>
@@ -515,7 +509,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>5</td>
 									<td>5</td>
 									<td>5</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>6</td>
@@ -524,7 +517,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>6</td>
 									<td>6</td>
 									<td>6</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>7</td>
@@ -533,7 +525,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>7</td>
 									<td>7</td>
 									<td>7</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>8</td>
@@ -542,7 +533,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>8</td>
 									<td>8</td>
 									<td>8</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>9</td>
@@ -551,7 +541,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>9</td>
 									<td>9</td>
 									<td>9</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>10</td>
@@ -560,7 +549,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>10</td>
 									<td>10</td>
 									<td>10</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>11</td>
@@ -569,7 +557,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>11</td>
 									<td>11</td>
 									<td>11</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>12</td>
@@ -578,7 +565,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>12</td>
 									<td>12</td>
 									<td>12</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>13</td>
@@ -587,7 +573,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>13</td>
 									<td>13</td>
 									<td>13</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>14</td>
@@ -596,7 +581,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>14</td>
 									<td>14</td>
 									<td>14</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>15</td>
@@ -605,7 +589,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>15</td>
 									<td>15</td>
 									<td>15</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>16</td>
@@ -614,7 +597,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>16</td>
 									<td>16</td>
 									<td>16</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>17</td>
@@ -623,7 +605,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>17</td>
 									<td>17</td>
 									<td>17</td>
-									<td><input type="button" value="후기작성" style="font-size:13px"></td>
 								</tr>
 							
 							</table>

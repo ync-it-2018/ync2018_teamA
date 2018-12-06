@@ -99,7 +99,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="agileits_search">
 					<form action="#" method="post">
 						<input name="Search" type="search"
-							placeholder="How can we help you today?" required="">
+							placeholder="오늘은 어디로 떠나실건가요?" required="">
 						<button type="submit" class="btn btn-default"
 							aria-label="Left Align">
 							<span class="fa fa-search" aria-hidden="true"> </span>
@@ -458,185 +458,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</span>
 			</h3>
 			<!-- //tittle heading -->
-			<!-- product left -->
-			<div class="side-bar col-md-3">
-				<div class="search-hotel">
-					<h3 class="agileits-sear-head">Search Here..</h3>
-					<form action="#" method="post">
-						<input type="search" placeholder="Product name..." name="search"
-							required=""> <input type="submit" value=" ">
-					</form>
-				</div>
-				<!-- price range -->
-				<div class="range">
-					<h3 class="agileits-sear-head">Price range</h3>
-					<ul class="dropdown-menu6">
-						<li>
-
-							<div id="slider-range"></div> <input type="text" id="amount"
-							style="border: 0; color: #ffffff; font-weight: normal;" />
-						</li>
-					</ul>
-				</div>
-				<!-- //price range -->
-				<!-- food preference -->
-				<div class="left-side">
-					<h3 class="agileits-sear-head">Food Preference</h3>
-					<ul>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">Vegetarian</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">Non-Vegetarian</span></li>
-					</ul>
-				</div>
-				<!-- //food preference -->
-				<!-- discounts -->
-				<div class="left-side">
-					<h3 class="agileits-sear-head">Discount</h3>
-					<ul>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">5% or More</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">10% or More</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">20% or More</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">30% or More</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">50% or More</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">60% or More</span></li>
-					</ul>
-				</div>
-				<!-- //discounts -->
-				<!-- reviews -->
-				<div class="customer-rev left-side">
-					<h3 class="agileits-sear-head">Customer Review</h3>
-					<ul>
-						<li><a href="#"> <i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i> <i
-								class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
-								aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>
-								<span>5.0</span>
-						</a></li>
-						<li><a href="#"> <i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i> <i
-								class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
-								aria-hidden="true"></i> <i class="fa fa-star-o"
-								aria-hidden="true"></i> <span>4.0</span>
-						</a></li>
-						<li><a href="#"> <i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i> <i
-								class="fa fa-star" aria-hidden="true"></i> <i
-								class="fa fa-star-half-o" aria-hidden="true"></i> <i
-								class="fa fa-star-o" aria-hidden="true"></i> <span>3.5</span>
-						</a></li>
-						<li><a href="#"> <i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i> <i
-								class="fa fa-star" aria-hidden="true"></i> <i
-								class="fa fa-star-o" aria-hidden="true"></i> <i
-								class="fa fa-star-o" aria-hidden="true"></i> <span>3.0</span>
-						</a></li>
-						<li><a href="#"> <i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i> <i
-								class="fa fa-star-half-o" aria-hidden="true"></i> <i
-								class="fa fa-star-o" aria-hidden="true"></i> <i
-								class="fa fa-star-o" aria-hidden="true"></i> <span>2.5</span>
-						</a></li>
-					</ul>
-				</div>
-				<!-- //reviews -->
-				<!-- cuisine -->
-				<div class="left-side">
-					<h3 class="agileits-sear-head">Cuisine</h3>
-					<ul>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">South American</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">French</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">Greek</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">Chinese</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">Japanese</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">Italian</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">Mexican</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">Thai</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span">Indian</span></li>
-						<li><input type="checkbox" class="checked"> <span
-							class="span"> Spanish </span></li>
-					</ul>
-				</div>
-				<!-- //cuisine -->
-				<!-- deals -->
-				<div class="deal-leftmk left-side">
-					<h3 class="agileits-sear-head">Special Deals</h3>
-					<div class="special-sec1">
-						<div class="col-xs-4 img-deals">
-							<img src="/resources/front/images/d2.jpg" alt="">
-						</div>
-						<div class="col-xs-8 img-deal1">
-							<h3>Lay's Potato Chips</h3>
-							<a href="/single">$18.00</a>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="special-sec1">
-						<div class="col-xs-4 img-deals">
-							<img src="/resources/front/images/d1.jpg" alt="">
-						</div>
-						<div class="col-xs-8 img-deal1">
-							<h3>Bingo Mad Angles</h3>
-							<a href="/single">$9.00</a>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="special-sec1">
-						<div class="col-xs-4 img-deals">
-							<img src="/resources/front/images/d4.jpg" alt="">
-						</div>
-						<div class="col-xs-8 img-deal1">
-							<h3>Tata Salt</h3>
-							<a href="/single">$15.00</a>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="special-sec1">
-						<div class="col-xs-4 img-deals">
-							<img src="/resources/front/images/d5.jpg" alt="">
-						</div>
-						<div class="col-xs-8 img-deal1">
-							<h3>Gujarat Dry Fruit</h3>
-							<a href="/single">$525.00</a>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="special-sec1">
-						<div class="col-xs-4 img-deals">
-							<img src="/resources/front/images/d3.jpg" alt="">
-						</div>
-						<div class="col-xs-8 img-deal1">
-							<h3>Cadbury Dairy Milk</h3>
-							<a href="/single">$149.00</a>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-				<!-- //deals -->
-			</div>
-			<!-- //product left -->
 			<!-- product right -->
-			<div class="agileinfo-ads-display col-md-9">
+			<div class="agileinfo-ads-display col-md-12">
 				<div class="wrapper">
 					<!-- first section (nuts) -->
-					<div class="product-sec1">
-						<h3 class="heading-tittle">Nuts</h3>
-						<div class="col-md-4 product-men">
+					<div class="col-md-9 product-sec1">
+						<h4 class="heading-tittle" style="text-align:left">인기 패키지 <span style="color:red">best 6</span></h4>
+						<div class="col-md-3 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/m1.jpg" alt="">
@@ -674,11 +502,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</fieldset>
 										</form>
 									</div>
-
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 product-men">
+						<div class="col-md-3 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/m2.jpg" alt="">
@@ -721,7 +548,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 product-men">
+						<div class="col-md-3 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/m3.jpg" alt="">
@@ -766,21 +593,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<!-- //first section (nuts) -->
-					<!-- second section (nuts special) -->
-					<div class="product-sec1 product-sec2">
-						<div class="col-xs-7 effect-bg">
-							<h3 class="">Pure Energy</h3>
-							<h6>Enjoy our all healthy Products</h6>
-							<p>Get Extra 10% Off</p>
-						</div>
-						<h3 class="w3l-nut-middle">Nuts & Dry Fruits</h3>
-						<div class="col-xs-5 bg-right-nut">
-							<img src="/resources/front/images/nut1.png" alt="">
+					<div class="col-md-3 product-sec1">
+						<h4 class="heading-tittle" style="text-align:left">출발 임박 패키지</h4>
+						<div class="product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/m1.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">Quick
+												View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">Almonds, 100g</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$149.00</span>
+										<del>$280.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Almonds, 100g" /> <input
+													type="hidden" name="amount" value="149.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<!-- //second section (nuts special) -->
+					<!-- //first section (nuts) -->
 					<!-- third section (oils) -->
 					<div class="product-sec1">
 						<h3 class="heading-tittle">Oils</h3>
@@ -1359,243 +1217,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //special offers -->
-	<!-- newsletter -->
-	<div class="footer-top">
-		<div class="container-fluid">
-			<div class="col-xs-8 agile-leftmk">
-				<h2>Get your Groceries delivered from local stores</h2>
-				<p>Free Delivery on your first order!</p>
-				<form action="#" method="post">
-					<input type="email" placeholder="E-mail" name="email" required="">
-					<input type="submit" value="Subscribe">
-				</form>
-				<div class="newsform-w3l">
-					<span class="fa fa-envelope-o" aria-hidden="true"></span>
-				</div>
-			</div>
-			<div class="col-xs-4 w3l-rightmk">
-				<img src="/resources/front/images/tab3.png" alt=" ">
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	<!-- //newsletter -->
-	<!-- footer -->
-	<footer>
-		<div class="container">
-			<!-- footer first section -->
-			<p class="footer-main">
-				<span>"Grocery Shoppy"</span> Nemo enim ipsam voluptatem quia
-				voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-				magni dolores eos qui ratione voluptatem sequi nesciunt.Sed ut
-				perspiciatis unde omnis iste natus error sit voluptatem accusantium
-				doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-				inventore veritatis et quasi architecto beatae vitae dicta sunt
-				explicabo.
-			</p>
-			<!-- //footer first section -->
-			<!-- footer second section -->
-			<div class="w3l-grids-footer">
-				<div class="col-xs-4 offer-footer">
-					<div class="col-xs-4 icon-fot">
-						<span class="fa fa-map-marker" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-8 text-form-footer">
-						<h3>Track Your Order</h3>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-xs-4 offer-footer">
-					<div class="col-xs-4 icon-fot">
-						<span class="fa fa-refresh" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-8 text-form-footer">
-						<h3>Free & Easy Returns</h3>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-xs-4 offer-footer">
-					<div class="col-xs-4 icon-fot">
-						<span class="fa fa-times" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-8 text-form-footer">
-						<h3>Online cancellation</h3>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<!-- //footer second section -->
-			<!-- footer third section -->
-			<div class="footer-info w3-agileits-info">
-				<!-- footer categories -->
-				<div class="col-sm-5 address-right">
-					<div class="col-xs-6 footer-grids">
-						<h3>Categories</h3>
-						<ul>
-							<li><a href="product">Grocery</a></li>
-							<li><a href="product">Fruits</a></li>
-							<li><a href="product">Soft Drinks</a></li>
-							<li><a href="product2">Dishwashers</a></li>
-							<li><a href="product">Biscuits & Cookies</a></li>
-							<li><a href="product2">Baby Diapers</a></li>
-						</ul>
-					</div>
-					<div class="col-xs-6 footer-grids agile-secomk">
-						<ul>
-							<li><a href="product">Snacks & Beverages</a></li>
-							<li><a href="product">Bread & Bakery</a></li>
-							<li><a href="product">Sweets</a></li>
-							<li><a href="product">Chocolates & Biscuits</a></li>
-							<li><a href="product2">Personal Care</a></li>
-							<li><a href="product">Dried Fruits & Nuts</a></li>
-						</ul>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<!-- //footer categories -->
-				<!-- quick links -->
-				<div class="col-sm-5 address-right">
-					<div class="col-xs-6 footer-grids">
-						<h3>Quick Links</h3>
-						<ul>
-							<li><a href="about">About Us</a></li>
-							<li><a href="contact">Contact Us</a></li>
-							<li><a href="help">Help</a></li>
-							<li><a href="faqs">Faqs</a></li>
-							<li><a href="terms">Terms of use</a></li>
-							<li><a href="privacy">Privacy Policy</a></li>
-						</ul>
-					</div>
-					<div class="col-xs-6 footer-grids">
-						<h3>Get in Touch</h3>
-						<ul>
-							<li><i class="fa fa-map-marker"></i> 123 Sebastian, USA.</li>
-							<li><i class="fa fa-mobile"></i> 333 222 3333</li>
-							<li><i class="fa fa-phone"></i> +222 11 4444</li>
-							<li><i class="fa fa-envelope-o"></i> <a
-								href="mailto:example@mail.com"> mail@example.com</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- //quick links -->
-				<!-- social icons -->
-				<div class="col-sm-2 footer-grids  w3l-socialmk">
-					<h3>Follow Us on</h3>
-					<div class="social">
-						<ul>
-							<li><a class="icon fb" href="#"> <i
-									class="fa fa-facebook"></i>
-							</a></li>
-							<li><a class="icon tw" href="#"> <i
-									class="fa fa-twitter"></i>
-							</a></li>
-							<li><a class="icon gp" href="#"> <i
-									class="fa fa-google-plus"></i>
-							</a></li>
-						</ul>
-					</div>
-					<div class="agileits_app-devices">
-						<h5>Download the App</h5>
-						<a href="#"> <img src="/resources/front/images/1.png" alt="">
-						</a> <a href="#"> <img src="/resources/front/images/2.png" alt="">
-						</a>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-				<!-- //social icons -->
-				<div class="clearfix"></div>
-			</div>
-			<!-- //footer third section -->
-			<!-- footer fourth section (text) -->
-			<div class="agile-sometext">
-				<div class="sub-some">
-					<h5>Online Grocery Shopping</h5>
-					<p>Order online. All your favourite products from the low price
-						online supermarket for grocery home delivery in Delhi, Gurgaon,
-						Bengaluru, Mumbai and other cities in India. Lowest prices
-						guaranteed on Patanjali, Aashirvaad, Pampers, Maggi, Saffola,
-						Huggies, Fortune, Nestle, Amul, MamyPoko Pants, Surf Excel, Ariel,
-						Vim, Haldiram's and others.</p>
-				</div>
-				<div class="sub-some">
-					<h5>Shop online with the best deals & offers</h5>
-					<p>Now Get Upto 40% Off On Everyday Essential Products Shown On
-						The Offer Page. The range includes Grocery, Personal Care, Baby
-						Care, Pet Supplies, Healthcare and Other Daily Need Products.
-						Discount May Vary From Product To Product.</p>
-				</div>
-				<!-- brands -->
-				<div class="sub-some">
-					<h5>Popular Brands</h5>
-					<ul>
-						<li><a href="product">Aashirvaad</a></li>
-						<li><a href="product">Amul</a></li>
-						<li><a href="product">Bingo</a></li>
-						<li><a href="product">Boost</a></li>
-						<li><a href="product">Durex</a></li>
-						<li><a href="product"> Maggi</a></li>
-						<li><a href="product">Glucon-D</a></li>
-						<li><a href="product">Horlicks</a></li>
-						<li><a href="product2">Head & Shoulders</a></li>
-						<li><a href="product2">Dove</a></li>
-						<li><a href="product2">Dettol</a></li>
-						<li><a href="product2">Dabur</a></li>
-						<li><a href="product2">Colgate</a></li>
-						<li><a href="product">Coca-Cola</a></li>
-						<li><a href="product2">Closeup</a></li>
-						<li><a href="product2"> Cinthol</a></li>
-						<li><a href="product">Cadbury</a></li>
-						<li><a href="product">Bru</a></li>
-						<li><a href="product">Bournvita</a></li>
-						<li><a href="product">Tang</a></li>
-						<li><a href="product">Pears</a></li>
-						<li><a href="product">Oreo</a></li>
-						<li><a href="product"> Taj Mahal</a></li>
-						<li><a href="product">Sprite</a></li>
-						<li><a href="product">Thums Up</a></li>
-						<li><a href="product2">Fair & Lovely</a></li>
-						<li><a href="product2">Lakme</a></li>
-						<li><a href="product">Tata</a></li>
-						<li><a href="product2">Sunfeast</a></li>
-						<li><a href="product2">Sunsilk</a></li>
-						<li><a href="product">Patanjali</a></li>
-						<li><a href="product">MTR</a></li>
-						<li><a href="product">Kissan</a></li>
-						<li><a href="product2"> Lipton</a></li>
-					</ul>
-				</div>
-				<!-- //brands -->
-				<!-- payment -->
-				<div class="sub-some child-momu">
-					<h5>Payment Method</h5>
-					<ul>
-						<li><img src="/resources/front/images/pay2.png" alt="">
-						</li>
-						<li><img src="/resources/front/images/pay5.png" alt="">
-						</li>
-						<li><img src="/resources/front/images/pay1.png" alt="">
-						</li>
-						<li><img src="/resources/front/images/pay4.png" alt="">
-						</li>
-						<li><img src="/resources/front/images/pay6.png" alt="">
-						</li>
-						<li><img src="/resources/front/images/pay3.png" alt="">
-						</li>
-						<li><img src="/resources/front/images/pay7.png" alt="">
-						</li>
-						<li><img src="/resources/front/images/pay8.png" alt="">
-						</li>
-						<li><img src="/resources/front/images/pay9.png" alt="">
-						</li>
-					</ul>
-				</div>
-				<!-- //payment -->
-			</div>
-			<!-- //footer fourth section (text) -->
-		</div>
-	</footer>
-	<!-- //footer -->
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">

@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page session="false"%>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -39,6 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
+<section class="content">
 	<!-- top-header -->
 	<div class="header-most-top">
 		<p>또봄투어와 즐거운 여행 되세요 ♥</p>
@@ -464,25 +468,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="wrapper">
 					<!-- first section -->
 					<div class="product-sec1">
+					<c:forEach items="${list}" var="FProductVO">
 						<div class="col-xs-4 product-men">
+						
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/k1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">상품 보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
+								
 									<h4>
-										<a href="detail">Zeeba Basmati Rice</a>
+										<a href="detail">${FProductVO.PRODUCT_NAME}</a>
 									</h4>
 									<div class="info-product-price">
-										<span class="item_price">$950.00</span>
+										<span class="item_price">${FProductVO.ADULT_PRICE}</span>
 										<del>$1020.00</del>
 									</div>
+								 
 									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 										<form action="#" method="post">
 											<fieldset>
@@ -497,13 +505,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<input type="hidden" name="cancel_return" value=" " />
 												<input type="submit" name="submit" value="Add to cart" class="button" />
 											</fieldset>
-										</form>
+										</form> 
 									</div>
 
 								</div>
 							</div>
+						
 						</div>
-						<div class="col-xs-4 product-men">
+							</c:forEach> 
+<!-- 						<div class="col-xs-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/k2.jpg" alt="">
@@ -585,8 +595,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<!-- //first section -->
-					<!-- 2nd section) -->
+					//first section
+					2nd section)
 					<div class="product-sec1">
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
@@ -709,8 +719,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<!-- //2nd section  -->
-					<!-- 3rd section -->
+					//2nd section 
+					3rd section
 					<div class="product-sec1">
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
@@ -833,8 +843,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<!-- //3rd section -->
-					<!-- 4th section -->
+					//3rd section
+					4th section
 					<div class="product-sec1">
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
@@ -954,7 +964,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="clearfix"></div>
 					</div>
 					<!-- //4th section  -->
@@ -1255,6 +1265,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
+	</section>
 	<!-- //special offers -->
 	<!-- newsletter -->
 	

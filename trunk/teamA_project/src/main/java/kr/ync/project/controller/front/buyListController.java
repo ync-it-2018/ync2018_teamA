@@ -17,7 +17,7 @@ public class buyListController {
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/AllList/buyList", method = RequestMethod.GET)
+	@RequestMapping(value = "/buyList", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
