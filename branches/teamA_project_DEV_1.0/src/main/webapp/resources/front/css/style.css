@@ -832,13 +832,13 @@ button.w3view-cart {
 /*-- Slider range --*/
 ul.dropdown-menu6 ,ul.dropdown-menu5{
 margin:0;
-position:relative;
+position:relative; 
 }
 ul.dropdown-menu6 li {
-list-style:none;
+list-style:none; 
 }
 ul.dropdown-menu6 li p{
-width:100%;
+width:100%; 
 }
 span.amount{
 color:#ffffff;
