@@ -17,13 +17,13 @@ public class MoreDetailController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/moredetail", method = RequestMethod.GET)
+	@RequestMapping(value = "/detail/moredetail", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
 		logger.info("상품 조회 화면으로 이동", locale);
 
-		return "front/moredetail";
+		return "front/detail/moredetail";
 	}
 	
 }
