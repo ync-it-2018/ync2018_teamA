@@ -468,27 +468,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="wrapper">
 					<!-- first section -->
 					<div class="product-sec1">
+					<c:forEach items="${list}" var="FProductVO">
 						<div class="col-xs-4 product-men">
+						
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/k1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail" class="link-product-add-cart">Quick View</a>
+											<a href="detail" class="link-product-add-cart">상품 보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
-								<c:forEach items="${list}" var="FProuctVO">
+								
 									<h4>
-										<a href="detail">${FProuctVO.PRODUCT_NAME}</a>
+										<a href="detail">${FProductVO.PRODUCT_NAME}</a>
 									</h4>
 									<div class="info-product-price">
-										<span class="item_price">${FProuctVO.ADULT_PRICE}</span>
+										<span class="item_price">${FProductVO.ADULT_PRICE}</span>
 										<del>$1020.00</del>
 									</div>
-								 </c:forEach> 
+								 
 									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 										<form action="#" method="post">
 											<fieldset>
@@ -508,8 +510,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								</div>
 							</div>
+						
 						</div>
-						<div class="col-xs-4 product-men">
+							</c:forEach> 
+<!-- 						<div class="col-xs-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/k2.jpg" alt="">
@@ -591,8 +595,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<!-- //first section -->
-					<!-- 2nd section) -->
+					//first section
+					2nd section)
 					<div class="product-sec1">
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
@@ -715,8 +719,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<!-- //2nd section  -->
-					<!-- 3rd section -->
+					//2nd section 
+					3rd section
 					<div class="product-sec1">
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
@@ -839,8 +843,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<!-- //3rd section -->
-					<!-- 4th section -->
+					//3rd section
+					4th section
 					<div class="product-sec1">
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
@@ -960,7 +964,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="clearfix"></div>
 					</div>
 					<!-- //4th section  -->
