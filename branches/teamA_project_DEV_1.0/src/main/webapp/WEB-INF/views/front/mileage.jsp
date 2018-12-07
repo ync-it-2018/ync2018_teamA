@@ -362,7 +362,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>예약/구매 현황</li>
+					<li>마일리지</li>
 				</ul>
 			</div>
 		</div>
@@ -372,7 +372,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact-w3l">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">예약 내역
+			<h3 class="tittle-w3l">마일리지
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -385,6 +385,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="contact-agileinfo">
 					<div class="contact-form wthree">
 						<form action="#" method="post">
+						<div style="font-size:25px; font-weight:bold;">보유중인 마일리지 조회</div>
+						<div style="padding-left:25px; padding-top:10px">
+							<p style="color:black; font-size:18px; font-weight:bold;">● 홍길동님</p>
+							</br>
+							<div style="text-align:center; background-color:#fcece0; font-size:20px; font-weight:bold; padding-top:15px; padding-bottom:15px">
+								개인 잔여 마일리지 : <span>0</span><span>점</span>						
+							</div>							
+						</div>
+						</br>
 						<table class="AllList_table">
 								<tr>
 									<th class="AllList_search">조회</th>
@@ -452,19 +461,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</tr>						
 							</table></br>
 							
-							<div style="width:100%; border: 1px solid black;"><input type="button" id="btn1" onClick="btn1Color();" value="구매내역" style="background-color:gray; width:33.4%; padding-top:10px; padding-bottom:10px; font-weight:bold; border-right: 1px solid black"><input type="button" id="btn2" onClick="btn2Color();" value="예약내역" style="background-color:white; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold; border-right: 1px solid black"><input type="button" id="btn3" onClick="btn3Color();" value="취소내역" style="background-color:gray; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold"></div>
+							
 							<table style=" width:100%; height:185px; display: block; overflow-y:scroll">
-								<tr class="table_content" style="border-top:none">
-									<th style="width:135px; text-align:center">예약날짜</th>
-									<th style="width:135px; text-align:center">상품명</th>
-									<th style="width:135px; text-align:center">결제금액</th>
-									<th style="width:135px; text-align:center">인원</th>
-									<th style="width:135px; text-align:center">출발일/귀국일</th>
-									<th style="width:135px; text-align:center">결제상태</th>
+								<tr class="table_content">
+									<th style="width:135px; text-align:center">유효기간</th>
+									<th style="width:135px; text-align:center">마일리지</th>
+									<th style="width:405px; text-align:center">상품명</th>
+									<th style="width:135px; text-align:center">비고</th>
 								</tr>
 								<tr class="table_content" style="text-align:center">
-									<td>1</td>
-									<td>1</td>
 									<td>1</td>
 									<td>1</td>
 									<td>1</td>
@@ -475,12 +480,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>2</td>
 									<td>2</td>
 									<td>2</td>
-									<td>2</td>
-									<td>2</td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
-									<td>2</td>
-									<td>2</td>
 									<td>2</td>
 									<td>2</td>
 									<td>2</td>
@@ -491,12 +492,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>3</td>
 									<td>3</td>
 									<td>3</td>
-									<td>3</td>
-									<td>3</td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
-									<td>4</td>
-									<td>4</td>
 									<td>4</td>
 									<td>4</td>
 									<td>4</td>
@@ -507,12 +504,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>5</td>
 									<td>5</td>
 									<td>5</td>
-									<td>5</td>
-									<td>5</td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
-									<td>6</td>
-									<td>6</td>
 									<td>6</td>
 									<td>6</td>
 									<td>6</td>
@@ -523,12 +516,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>7</td>
 									<td>7</td>
 									<td>7</td>
-									<td>7</td>
-									<td>7</td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
-									<td>8</td>
-									<td>8</td>
 									<td>8</td>
 									<td>8</td>
 									<td>8</td>
@@ -539,12 +528,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>9</td>
 									<td>9</td>
 									<td>9</td>
-									<td>9</td>
-									<td>9</td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
-									<td>10</td>
-									<td>10</td>
 									<td>10</td>
 									<td>10</td>
 									<td>10</td>
@@ -555,12 +540,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>11</td>
 									<td>11</td>
 									<td>11</td>
-									<td>11</td>
-									<td>11</td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
-									<td>12</td>
-									<td>12</td>
 									<td>12</td>
 									<td>12</td>
 									<td>12</td>
@@ -571,12 +552,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>13</td>
 									<td>13</td>
 									<td>13</td>
-									<td>13</td>
-									<td>13</td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
-									<td>14</td>
-									<td>14</td>
 									<td>14</td>
 									<td>14</td>
 									<td>14</td>
@@ -587,20 +564,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>15</td>
 									<td>15</td>
 									<td>15</td>
-									<td>15</td>
-									<td>15</td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
 									<td>16</td>
 									<td>16</td>
 									<td>16</td>
 									<td>16</td>
-									<td>16</td>
-									<td>16</td>
 								</tr>
 								<tr class="table_content" style="text-align:center">
-									<td>17</td>
-									<td>17</td>
 									<td>17</td>
 									<td>17</td>
 									<td>17</td>

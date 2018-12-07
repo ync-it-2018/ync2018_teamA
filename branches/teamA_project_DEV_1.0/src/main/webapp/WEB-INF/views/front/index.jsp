@@ -86,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
 					</a></li>
-					<li><a href="/" data-toggle="modal" data-target="#myModal2">
+					<li><a href="/join" data-toggle="modal" data-target="#myModal2">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
@@ -173,8 +173,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //signin Model -->
 	<!-- signup Model -->
 	<!-- Modal2 -->
-	<div class="modal 
-	fade" id="myModal2" tabindex="-1" role="dialog">
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
 		<div class="modal-dialog">
 			<!-- Modal content-->
 			<div class="modal-content">
@@ -520,7 +519,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="/single">Cashew Nuts, 100g</a>
+										<a href="/single" style="font-size:12px">Cashew Nuts, 100g</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$200.00</span>
@@ -594,7 +593,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-md-3 product-sec1">
-						<h4 class="heading-tittle" style="text-align:left">출발 임박 패키지</h4>
+						<h4 class="heading-tittle" style="text-align:left;">출발 임박 패키지</h4>
 						<div class="product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">

@@ -80,7 +80,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
 					</a></li>
-					<li><a href="/" data-toggle="modal" data-target="#myModal2">
+					<li><a href="/join" data-toggle="modal" data-target="#myModal2">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>

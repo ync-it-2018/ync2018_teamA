@@ -13,28 +13,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>또봄 투어</title>
 	<style>
 	
-	.AllList_table {
-        width: 100%;
-        height: 100px;
-        background-color: #bcbcbc;
-      }
-      
-      .AllList_search {
-      	width: 100px;
-      	text-align: center;
-      	background-color: #bcbcbc;
-      	padding-right: 5px;
-      }
-      .AllList_content {
-      	padding-top: 3px;
-      	padding-bottom: 3px;
-      	background-color: #bcbcbc;
-      }
-      
-      .table_content {
-      	border: 1px solid black;
-      	height: 40px;
-      }
+	.border {
+		border: 1px solid black;
+	}
+	
+	
 	</style>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,9 +32,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
-		
-
-
 	</script>
 	<!--//tags -->
 	<link href="/resources/front/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -78,7 +58,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header-bot-->
 			<div class="col-md-4 logo_agile">
 				<h1>
+
 					<a href="/"> <span>또</span>봄 <span>투</span>어 <img src="/resources/front/images/mainlogo.png" alt=" " width="20%">
+
 					</a>
 				</h1>
 			</div>
@@ -362,7 +344,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>예약/구매 현황</li>
+					<li>구매 취소</li>
 				</ul>
 			</div>
 		</div>
@@ -372,7 +354,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact-w3l">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">예약 내역
+			<h3 class="tittle-w3l">구매 취소
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -385,230 +367,136 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="contact-agileinfo">
 					<div class="contact-form wthree">
 						<form action="#" method="post">
-						<table class="AllList_table">
-								<tr>
-									<th class="AllList_search">조회</th>
-									<td class="AllList_content">
-									<input type="hidden" name="memBirth">
-		
-							<select id="first_year" style="width:75px; font-size:15px">
-		
-								<option value="" >선택</option>
-								
-								<%for(int i = 1950; i <=2018; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>년 &nbsp;
-		
-							<select id="first_month" style="width:75px; font-size:15px">
-		
-								<option>선택</option>
-								
-								<%for(int i = 1; i <=12; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>월 &nbsp;
-		
-							<select id="first_day" style="width:75px; font-size:15px">
-		
-								<option>선택</option>
-								
-								<%for(int i = 1; i <=31; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>일 &nbsp;~&nbsp;
-							<select id="second_year" style="width:75px; font-size:15px">
-		
-								<option value="">선택</option>
-								
-								<%for(int i = 1950; i <=2018; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>년 &nbsp;
-		
-							<select id="second_month" style="width:75px; font-size:15px">
-		
-								<option>선택</option>
-								
-								<%for(int i = 1; i <=12; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>월 &nbsp;
-		
-							<select id="second_day" style="width:75px; font-size:15px">
-		
-								<option>선택</option>
-								
-								<%for(int i = 1; i <=31; i++) {%>
-								<option value="<%=i %>"><%=i %></option>
-								<%} %>
-		
-							</select>일&nbsp;&nbsp;<input type="submit" value="검색하기" style="font-size:10pt; padding-left:10px; padding-right:10px"></td>
-								</tr>						
-							</table></br>
+							<div class="border" style="padding-left:10px; padding-top:10px; padding-bottom:10px; padding-right:10px">
 							
-							<div style="width:100%; border: 1px solid black;"><input type="button" id="btn1" onClick="btn1Color();" value="구매내역" style="background-color:gray; width:33.4%; padding-top:10px; padding-bottom:10px; font-weight:bold; border-right: 1px solid black"><input type="button" id="btn2" onClick="btn2Color();" value="예약내역" style="background-color:white; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold; border-right: 1px solid black"><input type="button" id="btn3" onClick="btn3Color();" value="취소내역" style="background-color:gray; width:33.3%;padding-top:10px; padding-bottom:10px; font-weight:bold"></div>
-							<table style=" width:100%; height:185px; display: block; overflow-y:scroll">
-								<tr class="table_content" style="border-top:none">
-									<th style="width:135px; text-align:center">예약날짜</th>
-									<th style="width:135px; text-align:center">상품명</th>
-									<th style="width:135px; text-align:center">결제금액</th>
-									<th style="width:135px; text-align:center">인원</th>
-									<th style="width:135px; text-align:center">출발일/귀국일</th>
-									<th style="width:135px; text-align:center">결제상태</th>
+							<table>
+								<tr class="border">
+									<th></th>
+									<th style="width:100%; text-align:left" colspan="5" >
+									&emsp;환불 정보 입력
+									</th>
 								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>1</td>
-									<td>1</td>
-									<td>1</td>
-									<td>1</td>
-									<td>1</td>
-									<td>1</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-									<td>2</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>3</td>
-									<td>3</td>
-									<td>3</td>
-									<td>3</td>
-									<td>3</td>
-									<td>3</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>4</td>
-									<td>4</td>
-									<td>4</td>
-									<td>4</td>
-									<td>4</td>
-									<td>4</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>5</td>
-									<td>5</td>
-									<td>5</td>
-									<td>5</td>
-									<td>5</td>
-									<td>5</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>6</td>
-									<td>6</td>
-									<td>6</td>
-									<td>6</td>
-									<td>6</td>
-									<td>6</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>7</td>
-									<td>7</td>
-									<td>7</td>
-									<td>7</td>
-									<td>7</td>
-									<td>7</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>8</td>
-									<td>8</td>
-									<td>8</td>
-									<td>8</td>
-									<td>8</td>
-									<td>8</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>9</td>
-									<td>9</td>
-									<td>9</td>
-									<td>9</td>
-									<td>9</td>
-									<td>9</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>10</td>
-									<td>10</td>
-									<td>10</td>
-									<td>10</td>
-									<td>10</td>
-									<td>10</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>11</td>
-									<td>11</td>
-									<td>11</td>
-									<td>11</td>
-									<td>11</td>
-									<td>11</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>12</td>
-									<td>12</td>
-									<td>12</td>
-									<td>12</td>
-									<td>12</td>
-									<td>12</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>13</td>
-									<td>13</td>
-									<td>13</td>
-									<td>13</td>
-									<td>13</td>
-									<td>13</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>14</td>
-									<td>14</td>
-									<td>14</td>
-									<td>14</td>
-									<td>14</td>
-									<td>14</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>15</td>
-									<td>15</td>
-									<td>15</td>
-									<td>15</td>
-									<td>15</td>
-									<td>15</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>16</td>
-									<td>16</td>
-									<td>16</td>
-									<td>16</td>
-									<td>16</td>
-									<td>16</td>
-								</tr>
-								<tr class="table_content" style="text-align:center">
-									<td>17</td>
-									<td>17</td>
-									<td>17</td>
-									<td>17</td>
-									<td>17</td>
-									<td>17</td>
-								</tr>
-							
 							</table>
-										
+							<div class="border" style="padding-left:20px; padding-top:20px; padding-bottom:10px; padding-right:10px; border-top:none">
+							<table>
+								<tr>
+									<td class="border" style="width:150px; text-align:center">한글성명</td>
+									<td style="width:3%;">&emsp;</td>
+									<td style="width:10%; text-align:center"><input type="text" style="height: 5px; background-color:white; margin-bottom:3px; margin-top:3px;"></td>
+									<td style="width:20%;">&emsp;</td>
+									<td class="border" style="width:15%; text-align:center; font-size:15px;">카드사</td>
+									<td style="width:2%;">&emsp;</td>
+									<td style="width:15%; text-align:left">
+										<select id="first_year" style="width:75px; font-size:15px">
+		
+											<option value="" >선택</option>
+											
+											<option value="KB국민">KB국민</option>
+											<option value="비씨카드">비씨카드</option>
+											<option value="신한카드">신한카드</option>
+											<option value="롯데카드">롯데카드</option>
+											<option value="NH카드">NH카드</option>
+											<option value="하나카드">하나카드</option>
+											<option value="씨티카드">씨티카드</option>
+											<option value="현대카드">현대카드</option>
+											<option value="삼성카드">삼성카드</option>
+					
+										</select>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td style="height:5px"></td>
+								</tr>
+								<tr>
+									<td class="border" style="width:150px; text-align:center">법정생년월일</td>
+									<td style="width:5%;">&emsp;</td>
+									<td style="width:15%; text-align:center"><input type="text" style="height: 5px; background-color:white; margin-bottom:3px; margin-top:3px;"></td>
+									<td style="width:20%;">&emsp;</td>
+									<td class="border" style="width:15%; text-align:center; font-size:15px">카드번호</td>
+									<td style="width:2%;">&emsp;</td>
+									<td style="width:20%; text-align:center"><input type="text" style="height: 5px; background-color:white; margin-bottom:3px; margin-top:3px;"></td>
+									<td style="width:5%"></td>
+								</tr>
+								<tr>
+									<td style="height:15px"></td>
+								</tr>
+								<tr>
+									<td class="border" style="width:150px; text-align:center">휴대폰번호</td>
+									<td style="width:3%;">&emsp;</td>
+									<td style="width:20%; text-align:center"><input type="text" style="height: 5px; background-color:white; margin-bottom:3px; margin-top:3px;"></td>
+									<td style="width:10%;">&emsp;</td>
+									<td class="border" style="width:15%; text-align:center; font-size:15px;">은행</td>
+									<td style="width:2%;">&emsp;</td>
+									<td style="width:15%; text-align:left">
+										<select id="first_year" style="width:75px; font-size:15px">
+		
+											<option value="" >선택</option>
+											
+											<option value="대구은행">대구은행</option>
+											<option value="KB국민은행">KB국민은행</option>
+											<option value="신한은행">신한은행</option>
+											<option value="우리은행">우리은행</option>
+											<option value="하나은행">하나은행</option>
+											<option value="NH농협은행">NH농협은행</option>
+											<option value="한국씨티은행">한국씨티은행</option>
+											<option value="부산은행">부산은행</option>
+											<option value="카카오뱅크">카카오뱅크</option>
+					
+										</select>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td style="height:5px"></td>
+								</tr>
+								<tr>
+									<td class="border" style="width:150px; text-align:center">이메일</td>
+									<td style="width:5%;">&emsp;</td>
+									<td style="width:15%; text-align:center"><input type="text" style="height: 5px; background-color:white; margin-bottom:3px; margin-top:3px;"></td>
+									<td style="width:20%;">&emsp;</td>
+									<td class="border" style="width:15%; text-align:center; font-size:15px">계좌번호</td>
+									<td style="width:2%;">&emsp;</td>
+									<td style="width:20%; text-align:center"><input type="text" style="height: 5px; background-color:white; margin-bottom:3px; margin-top:3px;"></td>
+									<td style="width:5%"></td>
+								</tr>
+								<tr>
+									<td style="height:5px"></td>
+								</tr>
+								<tr>
+									<td class="border" style="width:150px; text-align:center">결제했던방식</td>
+									<td style="width:5%;">&emsp;</td>
+									<td colspan="5"><input type="radio" name="chk_info">카드결제&emsp;<input type="radio" name="chk_info">무통장입금</td>
+								</tr>
+							</table>
+							</br>
+							<table>
+								<tr class="border">
+									<th></th>
+									<th style="width:100%; text-align:left" colspan="5" >
+									&emsp;환불 정보 입력
+									</th>
+								</tr>
+							</table>
+							<div class="border" style="padding-left:20px; padding-top:20px; padding-bottom:10px; padding-right:10px; border-top:none">
+							<p style="color:black">⦁ 환불 금액 입금은 영업일 기준 3 ~ 5일정도 소요됩니다.</p>
+							</br>
+							<p style="color:black">⦁ 취소는 출발일로부터 1주일 전까지만 가능합니다.</p>
+							</br>
+							<p style="color:black">⦁ 예금주와 계좌번호가 다를 경우, 환불 처리가 지연될 수 있습니다.</p>
+							</br>
+							</div>
+							</br>
+							
+							<div style="text-align:center"><input type="checkbox">위의 정보 및 유의사항을 전부 읽고 확인하였으며 취소하는 것에 동의하겠습니다</div>
+							</br>
+							
+							</div>
+							
+							</div>
+							
+							<input type="submit" value="구매 취소" style="position: relative; left:80%;">
+						</form>
 					</div>
 					
 				</div>
@@ -744,23 +632,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
-	<script>
-	function btn1Color() {
-        document.getElementById("btn1").style.backgroundColor = "white"
-        document.getElementById("btn2").style.backgroundColor = "gray"
-        document.getElementById("btn3").style.backgroundColor = "gray"
-    }
-	function btn2Color() {
-        document.getElementById("btn2").style.backgroundColor = "white"
-	      document.getElementById("btn1").style.backgroundColor = "gray"
-		  document.getElementById("btn3").style.backgroundColor = "gray"
-    }
-	function btn3Color() {
-        document.getElementById("btn3").style.backgroundColor = "white"
-	      document.getElementById("btn1").style.backgroundColor = "gray"
-		  document.getElementById("btn2").style.backgroundColor = "gray"
-    }
-	</script>
 
 </body>
 
