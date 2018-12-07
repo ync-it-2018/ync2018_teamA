@@ -12,18 +12,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.ync.project.controller.HomeController;
 
 @Controller
-public class modifyController {
-
+public class FreservationListdetailController {
+	
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/profile/passCheck/modify", method = RequestMethod.GET)
+	@RequestMapping(value = "/FreservationList/FreservationListdetail", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
-		logger.info("modify로 이동", locale);
+		logger.info("FreservationListdetail로 이동", locale);
 
-		return "front/modify";
+		return "front/FreservationListdetail";
 	}
 	
 }

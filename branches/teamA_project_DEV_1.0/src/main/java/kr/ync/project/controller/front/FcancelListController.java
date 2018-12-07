@@ -12,18 +12,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.ync.project.controller.HomeController;
 
 @Controller
-public class buyListdetailController {
+public class FcancelListController {
 
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/buyList/buyListdetail", method = RequestMethod.GET)
+	@RequestMapping(value = "/FcancelList", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
-		logger.info("buyListdetail로 이동", locale);
+		logger.info("FcancelList로 이동", locale);
 
-		return "front/buyListdetail";
+		return "front/FcancelList";
 	}
+	
 	
 }

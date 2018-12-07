@@ -12,18 +12,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.ync.project.controller.HomeController;
 
 @Controller
-public class modifysuccessController {
-
+public class FidFindsuccessController {
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/profile/passCheck/modify/modifysuccess", method = RequestMethod.GET)
+	@RequestMapping(value = "/login/FidFind/FidFindsuccess", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
-		logger.info("modifysuccess로 이동", locale);
+		logger.info("FidFindsuccess로 이동", locale);
 
-		return "front/modifysuccess";
+		return "front/FidFindsuccess";
 	}
-	
 }

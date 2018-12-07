@@ -12,18 +12,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.ync.project.controller.HomeController;
 
 @Controller
-public class pwdFindController {
-	
+public class FcancelController {
+
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/login/pwdFind", method = RequestMethod.GET)
+	@RequestMapping(value = "/FbuyList/FbuyListdetail/Fcancel", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
-		logger.info("pwdFind로 이동", locale);
+		logger.info("Fcancel로 이동", locale);
 
-		return "front/pwdFind";
+		return "front/Fcancel";
 	}
-
+	
 }
