@@ -16,7 +16,13 @@ public class FProductServiceImpl implements FProductService{
 	private FProductDAO dao;
 	
 	@Override
-	public List<FProductVO> listAll()throws Exception {
-		return dao.listAll();
+	public List<FProductVO> listAll(String nation_code)throws Exception {
+		return dao.listAll(nation_code);
+	}
+
+	@Override
+	public FProductVO read(String product_code) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.read(product_code);
 	}
 }

@@ -290,13 +290,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									data-toggle="dropdown">해외여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="/overseas">동남아</a></li>
-										<li><a href="/overseas">중국/홍콩</a></li>
-										<li><a href="/overseas">일본</a></li>
-										<li><a href="/overseas">남태평양/괌</a></li>
-										<li><a href="/overseas">유럽</a></li>
-										<li><a href="/overseas">미주/하와이</a></li>
-										<li><a href="/overseas">아프리카</a></li>
+										<li><a href="/overseas?nation_code=ID">동남아</a></li>
+										<li><a href="/overseas?nation_code=HK">중국/홍콩</a></li>
+										<li><a href="/overseas?nation_code=JP">일본</a></li>
+										<li><a href="/overseas?nation_code=GU">남태평양/괌</a></li>
+										<li><a href="/overseas?nation_code=FR">유럽</a></li>
+										<li><a href="/overseas?nation_code=US">미주/하와이</a></li>
+										<li><a href="/overseas?nation_code=ZA">아프리카</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"

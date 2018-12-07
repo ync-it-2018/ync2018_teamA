@@ -20,12 +20,12 @@ public class FProductDAOImpl implements FProductDAO{
 	
 
 	@Override
-	public FProductVO read(Integer bno) throws Exception {
-		return session.selectOne(namespace + ".read", bno);
+	public FProductVO read(String product_code) throws Exception {
+		return session.selectOne(namespace + ".read", product_code);
 	}
 
 	@Override
-	public List<FProductVO> listAll() throws Exception {
-		return session.selectList(namespace + ".listAll");
+	public List<FProductVO> listAll(String nation_code) throws Exception {
+		return session.selectList(namespace + ".listAll", nation_code);
 	}
 }

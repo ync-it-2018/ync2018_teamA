@@ -286,13 +286,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									data-toggle="dropdown">해외여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="/overseas">동남아</a></li>
-										<li><a href="/overseas">중국/홍콩</a></li>
-										<li><a href="/overseas">일본</a></li>
-										<li><a href="/overseas">남태평양/괌</a></li>
-										<li><a href="/overseas">유럽</a></li>
-										<li><a href="/overseas">미주/하와이</a></li>
-										<li><a href="/overseas">아프리카</a></li>
+										<li><a href="/overseas?nation_code=ID">동남아</a></li>
+										<li><a href="/overseas?nation_code=HK">중국/홍콩</a></li>
+										<li><a href="/overseas?nation_code=JP">일본</a></li>
+										<li><a href="/overseas?nation_code=GU">남태평양/괌</a></li>
+										<li><a href="/overseas?nation_code=FR">유럽</a></li>
+										<li><a href="/overseas?nation_code=US">미주/하와이</a></li>
+										<li><a href="/overseas?nation_code=ZA">아프리카</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"
@@ -473,18 +473,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/k1.jpg" alt="">
+									<img src="/resources/front/images/${FProductVO.ROOT}" alt="" width="100%">
+									
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="detail" class="link-product-add-cart">상품 보기</a>
+											<a href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}' class="link-product-add-cart">상품 보기</a>
 										</div>
 									</div>
-									<span class="product-new-top">New</span>
+									<!-- <span class="product-new-top">New</span> -->
 								</div>
 								<div class="item-info-product ">
 								
 									<h4>
-										<a href="detail">${FProductVO.PRODUCT_NAME}</a>
+										<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">${FProductVO.ADULT_PRICE}</span>

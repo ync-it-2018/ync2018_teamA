@@ -6,7 +6,7 @@ import kr.ync.project.domain.front.FProductVO;
 
 public interface FProductDAO {
 	
-	public FProductVO read(Integer bno)throws Exception;
+	public FProductVO read(String product_code)throws Exception;
 	
-	public List<FProductVO> listAll()throws Exception;
+	public List<FProductVO> listAll(String nation_code)throws Exception;
 }
