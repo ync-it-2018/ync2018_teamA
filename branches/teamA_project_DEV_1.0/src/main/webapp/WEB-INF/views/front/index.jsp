@@ -463,7 +463,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<!-- first section (nuts) -->
 					<div class="col-md-9 product-sec1">
 						<h4 class="heading-tittle" style="text-align:left">인기 패키지 <span style="color:red">best 6</span></h4>
-						<div class="col-md-3 product-men">
+						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/m1.jpg" alt="">
@@ -504,7 +504,130 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3 product-men">
+						<div class="col-md-4 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/m1.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">Quick
+												View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">Almonds, 100g</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$149.00</span>
+										<del>$280.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Almonds, 100g" /> <input
+													type="hidden" name="amount" value="149.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/m1.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">Quick
+												View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">Almonds, 100g</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$149.00</span>
+										<del>$280.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Almonds, 100g" /> <input
+													type="hidden" name="amount" value="149.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/m1.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">Quick
+												View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">Almonds, 100g</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$149.00</span>
+										<del>$280.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Almonds, 100g" /> <input
+													type="hidden" name="amount" value="149.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/m2.jpg" alt="">
@@ -547,7 +670,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3 product-men">
+						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/m3.jpg" alt="">
@@ -635,16 +758,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						<div class="clearfix"></div>
-					</div>
-					<!-- //first section (nuts) -->
-					<!-- third section (oils) -->
-					<div class="product-sec1">
-						<h3 class="heading-tittle">Oils</h3>
-						<div class="col-md-4 product-men">
+						<div class="product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk4.jpg" alt="">
+									<img src="/resources/front/images/m1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="/single" class="link-product-add-cart">Quick
@@ -655,11 +772,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="/single">Freedom Oil, 1L</a>
+										<a href="/single">Almonds, 100g</a>
 									</h4>
 									<div class="info-product-price">
-										<span class="item_price">$78.00</span>
-										<del>$110.00</del>
+										<span class="item_price">$149.00</span>
+										<del>$280.00</del>
 									</div>
 									<div
 										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
@@ -668,8 +785,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<input type="hidden" name="cmd" value="_cart" /> <input
 													type="hidden" name="add" value="1" /> <input type="hidden"
 													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Freedom Sunflower Oil, 1L" /> <input
-													type="hidden" name="amount" value="78.00" /> <input
+													name="item_name" value="Almonds, 100g" /> <input
+													type="hidden" name="amount" value="149.00" /> <input
 													type="hidden" name="discount_amount" value="1.00" /> <input
 													type="hidden" name="currency_code" value="USD" /> <input
 													type="hidden" name="return" value=" " /> <input
@@ -679,9 +796,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</fieldset>
 										</form>
 									</div>
-
 								</div>
 							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div></div>
+					<!-- //first section (nuts) -->
+					<h6 style="visibility:hidden"> 짜잔~ </h6>
+					<!-- third section (oils) -->
+					<div class="col-md-6 product-sec1">
+						<h4 class="heading-tittle" style="text-align:left;"><sapn style="color:red;">강력추천</sapn>테마 여행</h4>
+						<div class="col-md-4 product-sec4">
+							<div class="product-sec3"><h5 class="text-align:center">허니문</h5></div>
+							<div class="product-sec3"><h5 class="text-align:center">골프</h5></div>
+							<div class="product-sec3"><h5 class="text-align:center">크루즈</h5></div>
+							<div class="product-sec3"><h5 class="text-align:center">음식</h5></div>
+							<div class="product-sec3"><h5 class="text-align:center">예술/문화/역사</h5></div>
+							<div class="product-sec3"><h5 class="text-align:center">이벤트</h5></div>
+							<div class="product-sec3"><h5 class="text-align:center">트래킹/스포츠</h5></div>
+							<div class="product-sec3"><h5 class="text-align:center">체험</h5></div>
 						</div>
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
@@ -774,7 +908,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<!-- //third section (oils) -->
 					<!-- fourth section (noodles) -->
 
-					<div class="product-sec1">
+					<div class="col-md-6 product-sec1">
 						<h3 class="heading-tittle">Pasta & Noodles</h3>
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">

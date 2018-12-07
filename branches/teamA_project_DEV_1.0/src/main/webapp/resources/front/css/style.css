@@ -927,6 +927,17 @@ input.checked {
     margin-bottom: 14px;
 }
 
+.product-sec3 {
+    box-shadow: 0px 0px 15px 0px #c0c0c0;
+    padding: 10px 10px;
+    margin: 8px;
+    height: 20.5%;
+}
+
+.product-sec4 {
+	padding: 20px 10px;
+}
+
 h3.heading-tittle {
     text-align: center;
     color: #000;
@@ -3403,6 +3414,11 @@ input[type="radio"], input[type="checkbox"] {
     .product-sec1 {
         padding: 30px 10px;
     }
+    
+    .product-sec3 {
+        padding: 10px 5px;
+        margin: 8px;
+    }
     .agile-leftmk {
         width: 100%;
         float: none;
@@ -3518,6 +3534,9 @@ input[type="radio"], input[type="checkbox"] {
         font-size: 13px;
     }
     h3.heading-tittle {
+        font-size: 32px;
+    }
+    h4.heading-tittle {
         font-size: 32px;
     }
     .effect-bg h3 {
@@ -3750,6 +3769,11 @@ input[type="radio"], input[type="checkbox"] {
     }
     .product-sec1 {
         padding: 30px 3px;
+    }
+    
+    .product-sec3 {
+        padding: 10px 3px;
+        margin: 8px;
     }
     .offer-footer {
         padding: 0;
@@ -4092,6 +4116,10 @@ input[type="radio"], input[type="checkbox"] {
         padding-bottom: 16px;
     }
     h3.heading-tittle {
+        font-size: 28px;
+        letter-spacing: 0px;
+    }
+    h4.heading-tittle {
         font-size: 28px;
         letter-spacing: 0px;
     }
@@ -4621,7 +4649,15 @@ input[type="radio"], input[type="checkbox"] {
     .product-sec1 {
         padding: 15px 3px;
     }
+    .product-sec3 {
+        padding: 5px 3px;
+        margin: 8px;
+    }
+    
     h3.heading-tittle {
+        font-size: 23px;
+    }
+    h4.heading-tittle {
         font-size: 23px;
     }
     .product-new-top {
