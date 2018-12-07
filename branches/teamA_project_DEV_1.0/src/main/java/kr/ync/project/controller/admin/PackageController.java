@@ -14,7 +14,7 @@ import kr.ync.project.controller.HomeController;
 @Controller
 public class PackageController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(PackageController.class);
 	
 
 	@RequestMapping(value = "/PackageAdd", method = RequestMethod.GET)

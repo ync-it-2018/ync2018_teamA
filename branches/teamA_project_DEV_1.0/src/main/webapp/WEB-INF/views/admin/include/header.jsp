@@ -110,7 +110,7 @@
                    </a>
                 </li>
                 <li>
-                   <a href="/coupon">
+                   <a href="/admin/coupon">
                       <i class="fa fa-circle-o"></i> 쿠폰 정보
                    </a>
                 </li>
@@ -125,12 +125,12 @@
               </a>
               <ul class="treeview-menu">
                 <li>
-                   <a href="PackageAdd">
+                   <a href="/PackageAdd">
                       <i class="fa fa-circle-o"></i> 패키지 등록
                    </a>
                 </li>
                 <li>
-                   <a href="/packageList">
+                   <a href="/PackageList">
                       <i class="fa fa-circle-o"></i> 패키지 조회
                    </a>
                 </li>
@@ -169,7 +169,7 @@
               </a>
             <ul class="treeview-menu">
                 <li>
-                   <a href="tipnoticeboard">
+                   <a href="/tipnoticeboard">
                       <i class="fa fa-circle-o"></i> 게시글 조회
                    </a>
                 </li>

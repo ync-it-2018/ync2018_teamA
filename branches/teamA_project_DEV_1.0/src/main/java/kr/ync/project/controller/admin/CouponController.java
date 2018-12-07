@@ -14,10 +14,10 @@ import kr.ync.project.controller.HomeController;
 @Controller
 public class CouponController {
 
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(CouponController.class);
 	
 
-	@RequestMapping(value = "/coupon", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/coupon", method = RequestMethod.GET)
 	public String memberList(Locale locale, Model model) {
 
 		// 가나다

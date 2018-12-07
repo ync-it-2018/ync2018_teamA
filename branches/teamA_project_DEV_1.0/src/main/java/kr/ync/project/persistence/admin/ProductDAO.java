@@ -9,7 +9,7 @@ public interface ProductDAO {
 	
 	public void create(ProductVO vo)throws Exception;
 	
-	public ProductVO read(Integer bno)throws Exception;
+	public ProductVO read(String code)throws Exception;
 	
 	public List<ProductVO> listAll()throws Exception;
 }

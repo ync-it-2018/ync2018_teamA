@@ -46,10 +46,13 @@ th{
 						<h3 class="box-title">상품등록</h3>
 					</div>
 					<div class="box-body">
+						<form role="form" method="post">
+							<input type='hidden' name='code' value="${productVO.PRODUCT_CODE}">
+						</form>
 						<table class="table table-bordered">
 							<tr>
 								<th>상품명</th>
-								<td colspan="3"><input type="text" name="PRODUCT_NAME"></td>
+								<td colspan="3">${productVO.PRODUCT_NAME}</td>
 							</tr>
 							<tr>
 								<th align="center" bgcolor="#f0ebeb" style="font-weight:bold; font-size:15px">국가</th>
