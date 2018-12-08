@@ -19,4 +19,10 @@ public class FTipBoardServiceImpl implements FTipBoardService{
 		return dao.listAll();
 	}
 
+	@Override
+	public FTipBoardVO read_tip(int board_idx) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.read_tip(board_idx);
+	}
+
 }

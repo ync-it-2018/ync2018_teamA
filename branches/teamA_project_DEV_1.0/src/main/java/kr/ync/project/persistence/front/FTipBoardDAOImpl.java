@@ -23,4 +23,9 @@ public class FTipBoardDAOImpl implements FTipBoardDAO{
 		return session.selectList(namespace + ".listAll");
 	}
 
+	@Override
+	public FTipBoardVO read_tip(int board_idx) throws Exception {
+		return session.selectOne(namespace + ".read_tip", board_idx);
+	}
+
 }
