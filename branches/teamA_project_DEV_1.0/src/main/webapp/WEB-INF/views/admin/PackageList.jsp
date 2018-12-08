@@ -17,9 +17,10 @@
 				temp.children().remove();
 				temp.append('<option value="">지역</option>');
 				
-				if(a == '1'){
+				if(a == 'JS'){
 					temp.append('<option value="">후쿠오카</option>');
 					temp.append('<option value="">도쿄</option>');
+					temp.append('<option value="OSA">오사카</option>')
 				}
 				if(a == '2'){
 					temp.append('<option value="">파리</option>');
@@ -49,7 +50,7 @@
 							<td width=75>
 								<select name="NATION_CODE">
 									<option value="">국가</option>
-									<option value="1">일본</option>
+									<option value="JS">일본</option>
 									<option value="2">프랑스</option>
 								</select>
 							</td>

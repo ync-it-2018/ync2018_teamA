@@ -19,7 +19,7 @@ public class TipNoticeBoardDAOImpl implements TipNoticeBoardDAO{
 	
 	@Override
 	public void create(TipNoticeBoardVO vo) throws Exception {
-		
+		session.insert(namespace+".create", vo);
 	}
 
 	@Override

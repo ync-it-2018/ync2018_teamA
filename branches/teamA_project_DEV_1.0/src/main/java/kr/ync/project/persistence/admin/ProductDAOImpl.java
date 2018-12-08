@@ -14,7 +14,7 @@ public class ProductDAOImpl implements ProductDAO{
 	private SqlSession session;
 	
 	private static String namespace = 
-			"kr.ync.project.mapper.packListMapper";
+			"kr.ync.project.mapper.PackListMapper";
 	
 	@Override
 	public void create(ProductVO vo) throws Exception {

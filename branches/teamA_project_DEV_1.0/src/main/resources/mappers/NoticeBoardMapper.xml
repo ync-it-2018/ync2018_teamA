@@ -5,13 +5,21 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
 <mapper namespace="kr.ync.project.mapper.NoticeBoardMapper">
 
-<select id="listAll" resultType="NoticeBoardVO">
-<![CDATA[
-SELECT
-BOARD_IDX, TITLE, WRITEDATE
-FROM
-TA_BOARD
-WHERE BOARD_IDX > 0 AND BOARD_CODE = '02'
-]]>
-</select>
+	<insert id="create">
+		<![CDATA[
+		INSERT INTO TA_BOARD (BOARD_IDX, TITLE, CONTENT, ID, BOARD_CODE)
+		VALUES( 5, #{TITLE}, #{CONTENT}, 'spring', '02')
+		]]>
+	</insert>
+
+	<select id="listAll" resultType="NoticeBoardVO">
+		<![CDATA[
+		SELECT
+		BOARD_IDX, TITLE, WRITEDATE
+		FROM
+		TA_BOARD
+		WHERE BOARD_IDX > 0 AND BOARD_CODE = '02'
+		]]>
+	</select>
+	
 </mapper>

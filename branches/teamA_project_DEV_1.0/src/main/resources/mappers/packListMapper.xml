@@ -3,8 +3,15 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
-<mapper namespace="kr.ync.project.mapper.packListMapper">
+<mapper namespace="kr.ync.project.mapper.PackListMapper">
 
+	
+	<insert id="create">
+		<![CDATA[
+		INSERT INTO TA_PRODUCT (PRODUCT_NAME, NATION_CODE, CITY_CODE)
+		VALUES(#{PRODUCT_NAME}, 'JS', 'OSA')
+		]]>
+	</insert>
 	
 	<select id="listAll" resultType="ProductVO">
 		<![CDATA[

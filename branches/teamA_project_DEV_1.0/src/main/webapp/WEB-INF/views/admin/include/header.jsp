@@ -125,7 +125,7 @@
               </a>
               <ul class="treeview-menu">
                 <li>
-                   <a href="/PackageAdd">
+                   <a href="/admin/PackageAdd">
                       <i class="fa fa-circle-o"></i> 패키지 등록
                    </a>
                 </li>
@@ -155,7 +155,7 @@
                    </a>
                 </li>
                 <li>
-                   <a href="/customersupport/notice">
+                   <a href="/admin/customersupport/notice">
                       <i class="fa fa-circle-o"></i> 공지사항 
                    </a>
                 </li>
