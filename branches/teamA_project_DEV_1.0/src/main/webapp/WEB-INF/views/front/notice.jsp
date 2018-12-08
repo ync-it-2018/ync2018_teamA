@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page session="false"%>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -36,9 +39,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link rel="stylesheet" type="text/css" href="/resources/front/css/jquery-ui1.css">
 	<!-- fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+	<style>
+	#container {
+      width: 70%;
+      margin: 0 auto;     /* 가로로 중앙에 배치 */
+      padding-top: 10%;   /* 테두리와 내용 사이의 패딩 여백 */
+    }
+     
+    #list {
+      text-align: center;
+    }
+   
+    #write {
+      text-align: right;
+    }
+     
+    /* Bootstrap 수정 */
+    .table > thead {
+      background-color: #F5DA81;
+      
+    }
+    .table > thead > tr > th {
+      text-align: center;
+      color: #000;
+    }
+    .table-hover > tbody > tr:hover {
+      background-color: #fff5d2;
+    }
+    .table > tbody > tr > td {
+      text-align: center;
+      color: #000;
+    }
+    .table > tbody > tr > #title {
+      text-align: left;
+    }
+     
+    div > #paging {
+      text-align: center;
+    }
+     
+    .hit {
+      animation-name: blink;
+      animation-duration: 1.5s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      /* 위 속성들을 한 줄로 표기하기 */
+      /* -webkit-animation: blink 1.5s ease infinite; */
+    }
+	
+	</style>
 </head>
 
 <body>
+<section class="content">
 	<!-- top-header -->
 	<div class="header-most-top">
 		<p>또봄투어와 즐거운 여행 되세요 ♥</p>
@@ -78,7 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
 					</a></li>
-					<li><a href="/join" data-toggle="modal" data-target="#myModal2">
+					<li><a href="/" data-toggle="modal" data-target="#myModal2">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
@@ -334,136 +387,70 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>Faqs</li>
+					<li>고객센터</li>
+					<i>|</i>
+					<li>공지사항</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- //page -->
-	<!-- FAQ-help-page -->
-	<div class="faqs-w3l">
-		<div class="container">
-			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Faqs
+	
+	<div id="container">
+    <div align="right">
+      <!-- Login 검증 -->
+      <!-- jstl의 if문은 else가 없어서 따로 검증해야함. -->
+      <c:if test="${id != null}">
+        <%-- <%@include file="loginOk.jsp" %> --%>
+      </c:if>
+      <c:if test="${id == null}">
+        <%-- <%@include file="login.jsp" %> --%>
+      </c:if>
+    </div>
+   
+    <h3 class="tittle-w3l">NOTICE
 				<span class="heading-style">
 					<i></i>
 					<i></i>
 					<i></i>
 				</span>
-			</h3>
-			<!-- //tittle heading -->
-			<h3 class="w3-head">Top 10 Frequently asked questions</h3>
-			<div class="faq-w3agile">
-				<ul class="faq">
-					<li class="item1">
-						<a href="#" title="click here">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor vehicula ipsum nec ?</a>
-						<ul>
-							<li class="subitem1">
-								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
-									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-									corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item2">
-						<a href="#" title="click here">The standard Lorem Ipsum passage Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices ?</a>
-						<ul>
-							<li class="subitem1">
-								<p> Tincidunt ut laoreet dolore At vero eos et Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-									nibh euismod consectetuer adipiscing elit, sed diam nonummy nibh euismod accusamus et iusto odio dignissimos ducimus
-									qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-									cupiditate non provident.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item3">
-						<a href="#" title="click here">Consectetuer adipiscing elit Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices?</a>
-						<ul>
-							<li class="subitem1">
-								<p>Dincidunt ut laoreet dolore At vero eos et Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-									nibh euismod consectetuer adipiscing elit, sed diam nonummy nibh euismod accusamus et iusto odio dignissimos ducimus
-									qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-									cupiditate non provident.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item4">
-						<a href="#" title="click here">Sed diam nonummy nibh euismod Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices?</a>
-						<ul>
-							<li class="subitem1">
-								<p>At vero eos et Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod consectetuer
-									adipiscing elit, sed diam nonummy nibh euismod accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-									voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item5">
-						<a href="#" title="click here">Euismod tincidunt laoreet Etiam faucibus viverra libero vel efficitur ?</a>
-						<ul>
-							<li class="subitem1">
-								<p>At vero eos et Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod consectetuer
-									adipiscing elit, sed diam nonummy nibh euismod accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-									voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item6">
-						<a href="#" title="click here">Voluptas sit aspernatur aut Ut semper nisl ut laoreet ultrices ?</a>
-						<ul>
-							<li class="subitem1">
-								<p>At vero eos et Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod consectetuer
-									adipiscing elit, sed diam nonummy nibh euismod accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-									voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item7">
-						<a href="#" title="click here">Donec ut quam ligula feugiat Ut semper nisl ut laoreet ultrices ?</a>
-						<ul>
-							<li class="subitem1">
-								<p>At vero eos et Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod consectetuer
-									adipiscing elit, sed diam nonummy nibh euismod accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-									voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item8">
-						<a href="#" title="click here">The standard Lorem Ipsum Ut semper nisl ut laoreet ultrices passage ?</a>
-						<ul>
-							<li class="subitem1">
-								<p>Lorem ipsum dolor sit amet At vero eos et Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-									nibh euismod consectetuer adipiscing elit, sed diam nonummy nibh euismod accusamus et iusto odio dignissimos ducimus
-									qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-									cupiditate non provident.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item9">
-						<a href="#" title="click here">Consectetuer adipiscing Ut semper nisl ut laoreet ultrices elit ?</a>
-						<ul>
-							<li class="subitem1">
-								<p>Lorem ipsum dolor sit amet At vero eos et Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-									nibh euismod consectetuer adipiscing elit, sed diam nonummy nibh euismod accusamus et iusto odio dignissimos ducimus
-									qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-									cupiditate non provident.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item10">
-						<a href="#" title="click here">Sed diam nonummy Ut semper nisl ut laoreet ultrices nibh euismod ?</a>
-						<ul>
-							<li class="subitem1">
-								<p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod consectetuer adipiscing elit, sed diam nonummy nibh euismod
-									accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-									et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- //FAQ-help-page -->
+	</h3>
+    <div>
+      <table class="table table-striped table-bordered table-hover">
+        <thead>
+          <tr>
+            <th width="10%">번호</th>
+            <th width="55%">제목</th>
+            <th width="15%">작성자</th>
+            <th width="20%">작성일</th>
+          </tr>
+        </thead>
+        <tbody>
+          <c:forEach items="${list}" var="FNoticeBoardVO" varStatus="status">
+            <tr>
+              <td>${status.count}</td>
+              <td id="title">
+                <c:if test="${FNoticeBoardVO.BOARD_IDX > 0}">
+                  &nbsp;&nbsp;
+                </c:if>
+                <a href="/bbs/content.bbs?articleNumber=${article.articleNumber}&pageNum=${pageNum}">${FNoticeBoardVO.TITLE}</a>
+              </td>
+              <td>${FNoticeBoardVO.WRITER}</td>
+              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FNoticeBoardVO.WRITEDATE}"/></td>
+            <tr>
+          </c:forEach>
+        </tbody>
+      </table>
+       
+      <!-- Paging 처리 -->
+      <div id="paging">
+        ${pageCode}
+      </div>
+      <div style="height:80px"></div>
+    </div>
+  </div>
+
+</section>
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
