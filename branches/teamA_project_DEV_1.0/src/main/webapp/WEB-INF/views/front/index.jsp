@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page session="false"%>
 
 <!--
 Author: W3layouts
@@ -48,6 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 	<!-- top-header -->
+	<section class="content">
 	<div class="header-most-top">
 		<p>또봄투어와 즐거운 여행 되세요 ♥</p>
 	</div>
@@ -465,250 +469,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<!-- first section (nuts) -->
 					<div class="col-md-9 product-sec1">
 						<h4 class="heading-tittle" style="text-align:left">인기 패키지 <span style="color:red">best 6</span></h4>
+						<c:forEach items="${list}" var="FProductVO">
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="/resources/front/images/m1.jpg" alt="">
+									<img src="/resources/front/images/${FProductVO.ROOT}" alt="" width="100%">
+									
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
+											<a href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}' class="link-product-add-cart">상품 보기</a>
 										</div>
 									</div>
-									<span class="product-new-top">New</span>
+									<!-- <span class="product-new-top">New</span> -->
 								</div>
 								<div class="item-info-product ">
+								
 									<h4>
-										<a href="/single">Almonds, 100g</a>
+										<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
 									</h4>
 									<div class="info-product-price">
-										<span class="item_price">$149.00</span>
-										<del>$280.00</del>
+										<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+										<del>$1020.00</del>
 									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+								 
+									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 										<form action="#" method="post">
 											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Almonds, 100g" /> <input
-													type="hidden" name="amount" value="149.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="business" value=" " />
+												<input type="hidden" name="item_name" value="${FProductVO.PRODUCT_NAME}" />
+												<input type="hidden" name="amount" value="${FProductVO.ADULT_PRICE}" />
+												<input type="hidden" name="discount_amount" value="1.00" />
+												<input type="hidden" name="currency_code" value="USD" />
+												<input type="hidden" name="return" value=" " />
+												<input type="hidden" name="cancel_return" value=" " />
+												<input type="submit" name="submit" value="Add to cart" class="button" />
 											</fieldset>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/m1.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">Almonds, 100g</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$149.00</span>
-										<del>$280.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Almonds, 100g" /> <input
-													type="hidden" name="amount" value="149.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/m1.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">Almonds, 100g</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$149.00</span>
-										<del>$280.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Almonds, 100g" /> <input
-													type="hidden" name="amount" value="149.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/m1.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">Almonds, 100g</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$149.00</span>
-										<del>$280.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Almonds, 100g" /> <input
-													type="hidden" name="amount" value="149.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/m2.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single" style="font-size:12px">Cashew Nuts, 100g</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$200.00</span>
-										<del>$420.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Cashew Nuts, 100g" /> <input
-													type="hidden" name="amount" value="200.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
+										</form> 
 									</div>
 
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/m3.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">Pista..., 250g</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$520.99</span>
-										<del>$600.99</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Pista, 250g" /> <input
-													type="hidden" name="amount" value="520.99" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
+							</c:forEach> 
+						
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-md-3 product-sec1">
@@ -1926,6 +1731,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
+	</section>
 	<!-- //special offers -->
 	<!-- copyright -->
 	<div class="copy-right">

@@ -34,4 +34,10 @@ public class FProductDAOImpl implements FProductDAO{
 		// TODO Auto-generated method stub
 		return session.selectList(namespace + ".listAll", city_code);
 	}
+
+	@Override
+	public List<FProductVO> listAll_best() throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectList(namespace + ".listAll_best");
+	}
 }

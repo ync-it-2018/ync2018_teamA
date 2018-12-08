@@ -30,4 +30,9 @@ public class FProductServiceImpl implements FProductService{
 	public List<FProductVO> listAll_domestic(String city_code) throws Exception {
 		return dao.listAll_domestic(city_code);
 	}
+
+	@Override
+	public List<FProductVO> listAll_best() throws Exception {
+		return dao.listAll_best();
+	}
 }

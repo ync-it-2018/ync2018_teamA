@@ -11,4 +11,6 @@ public interface FProductDAO {
 	public List<FProductVO> listAll_domestic(String nation_code)throws Exception;
 	
 	public List<FProductVO> listAll(String city_code)throws Exception;
+	
+	public List<FProductVO> listAll_best()throws Exception;
 }
