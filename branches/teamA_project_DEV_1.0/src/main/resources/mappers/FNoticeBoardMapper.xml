@@ -11,7 +11,17 @@ SELECT
 BOARD_IDX, TITLE, WRITEDATE, WRITER
 FROM
 TA_BOARD
-WHERE BOARD_IDX > 0 AND BOARD_CODE = '01'
+WHERE BOARD_IDX > 0 AND BOARD_CODE = '02'
+]]>
+</select>
+
+<select id="read_notice" resultType="FNoticeBoardVO">
+<![CDATA[
+SELECT
+*
+FROM
+TA_BOARD
+WHERE BOARD_IDX = #{BOARD_IDX}
 ]]>
 </select>
 

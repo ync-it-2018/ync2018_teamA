@@ -86,6 +86,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       /* 위 속성들을 한 줄로 표기하기 */
       /* -webkit-animation: blink 1.5s ease infinite; */
     }
+    #contents {
+    	color : #000;
+    	text-align: center;
+    }
+    
+    #contentsSize {
+    	color : #000;
+    	width : 800px;
+    }
 	
 	</style>
 </head>
@@ -426,19 +435,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </tr>
         </thead>
         <tbody>
-          <c:forEach items="${list}" var="FNoticeBoardVO" varStatus="status">
             <tr>
               <td>${status.count}</td>
               <td id="title">
-                <c:if test="${FNoticeBoardVO.BOARD_IDX > 0}">
-                  &nbsp;&nbsp;
-                </c:if>
-                <a href="/front/noticeDetail?BOARD_IDX=${FNoticeBoardVO.BOARD_IDX}">${FNoticeBoardVO.TITLE}</a>
+              ${FNoticeBoardVO.TITLE}
               </td>
               <td>${FNoticeBoardVO.WRITER}</td>
               <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FNoticeBoardVO.WRITEDATE}"/></td>
             <tr>
-          </c:forEach>
+            <tr>
+             <th id="contents">내용</th>
+             <td colspan="3" id="cotentsSize"> ${FNoticeBoardVO.CONTENT}</td>
+            </tr>
         </tbody>
       </table>
       

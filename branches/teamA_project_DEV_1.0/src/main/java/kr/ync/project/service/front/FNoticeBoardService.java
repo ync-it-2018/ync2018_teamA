@@ -9,4 +9,6 @@ import kr.ync.project.domain.front.FNoticeBoardVO;
 @Service
 public interface FNoticeBoardService {
 	public List<FNoticeBoardVO> listAll() throws Exception;
+	
+	public FNoticeBoardVO read_notice(int BOARD_IDX)throws Exception;
 }

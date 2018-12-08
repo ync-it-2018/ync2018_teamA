@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.ync.project.service.front.FNoticeBoardService;
 
@@ -28,4 +29,12 @@ private static final Logger logger = LoggerFactory.getLogger(FNoticeBoardControl
 		model.addAttribute("list", service.listAll());
 		return "front/notice";
 	}
+	
+	//공지 상세화면 
+	@RequestMapping(value = "/front/noticeDetail", method = RequestMethod.GET)
+	   public void FNoticeDetail(@RequestParam("BOARD_IDX") int BOARD_IDX, Model model) throws Exception {
+		   
+		   model.addAttribute(service.read_notice(BOARD_IDX));
+		   
+	   }
 }

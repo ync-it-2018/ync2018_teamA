@@ -23,4 +23,10 @@ public class FNoticeBoardDAOImpl implements FNoticeBoardDAO{
 		return session.selectList(namespace + ".listAll");
 	}
 
+	@Override
+	public FNoticeBoardVO read_notice(int BOARD_IDX) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectOne(namespace + ".read_notice", BOARD_IDX);
+	}
+
 }

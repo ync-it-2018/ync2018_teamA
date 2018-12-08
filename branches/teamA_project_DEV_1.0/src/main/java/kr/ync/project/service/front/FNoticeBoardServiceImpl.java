@@ -19,4 +19,10 @@ public class FNoticeBoardServiceImpl implements FNoticeBoardService{
 		return dao.listAll();
 	}
 
+	@Override
+	public FNoticeBoardVO read_notice(int BOARD_IDX) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.read_notice(BOARD_IDX);
+	}
+
 }
