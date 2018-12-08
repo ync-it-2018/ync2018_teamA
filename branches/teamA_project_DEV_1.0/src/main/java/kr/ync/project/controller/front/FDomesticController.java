@@ -17,29 +17,29 @@ import kr.ync.project.controller.HomeController;
 import kr.ync.project.service.front.FProductService;
 
 @Controller
-public class OverseasController {
+public class FDomesticController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(OverseasController.class);
+	private static final Logger logger = LoggerFactory.getLogger(FDomesticController.class);
 	
 	@Inject
 	private FProductService service;
 
-	@RequestMapping(value = "/overseas", method = RequestMethod.GET)
-	public String about(@RequestParam("nation_code")String nation_code,Locale locale, Model model) throws Exception {
+	@RequestMapping(value = "/domestic", method = RequestMethod.GET)
+	public String about(@RequestParam("city_code")String city_code,Locale locale, Model model) throws Exception {
 
 		// 가나다
-		logger.info("해외여행상품으로 이동", locale);
-		model.addAttribute("list", service.listAll(nation_code));
+		logger.info("국내여행상품으로 이동", locale);
+		model.addAttribute("list", service.listAll_domestic(city_code));
 		
-		return "front/overseas";
+		return "front/domestic";
 	}
 	
-	//상품 상세 화면
+/*	//상품 상세 화면
 	@RequestMapping(value = "/front/detail", method = RequestMethod.GET)
 	   public void ProductDetail(@RequestParam("product_code")String product_code, Model model) throws Exception {
 		   
 		   model.addAttribute(service.read(product_code));
 		   
-	   }
+	   }*/
 	
 }

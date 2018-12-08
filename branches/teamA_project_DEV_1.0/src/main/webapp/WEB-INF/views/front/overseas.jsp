@@ -498,8 +498,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<input type="hidden" name="cmd" value="_cart" />
 												<input type="hidden" name="add" value="1" />
 												<input type="hidden" name="business" value=" " />
-												<input type="hidden" name="item_name" value="Zeeba Basmati Rice - 5 KG" />
-												<input type="hidden" name="amount" value="950.00" />
+												<input type="hidden" name="item_name" value="${FProductVO.PRODUCT_NAME}" />
+												<input type="hidden" name="amount" value="${FProductVO.ADULT_PRICE}" />
 												<input type="hidden" name="discount_amount" value="1.00" />
 												<input type="hidden" name="currency_code" value="USD" />
 												<input type="hidden" name="return" value=" " />

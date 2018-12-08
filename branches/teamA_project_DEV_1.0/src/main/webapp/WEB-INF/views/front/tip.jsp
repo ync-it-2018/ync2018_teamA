@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page session="false"%>
 <!--
@@ -338,17 +338,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>Faqs</li>
+					<li>여행 TIP</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- //page -->
-	<!-- FAQ-help-page -->
-	<div class="faqs-w3l">
+	<!-- top Products -->
+	<div class="ads-grid">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">FAQ
+			<h3 class="tittle-w3l">여행 TIP
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -356,27 +356,341 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</span>
 			</h3>
 			<!-- //tittle heading -->
-			<h3 class="w3-head">자주 하는 질문</h3>
-			<div class="faq-w3agile">
-				<ul class="faq">
-				<c:forEach items="${list}" var="FfaqBoardVO">
-				
-					<li class="item1">
-						<a href="#" title="click here">${FfaqBoardVO.TITLE}</a>
-						<ul>
-							<li class="subitem1">
-								<p> ${FfaqBoardVO.CONTENT}</p>
-							</li>
-						</ul>
+			<!-- product left -->
+
+			<!-- //product left -->
+			<!-- product right -->
+			<div class="agileinfo-ads-display col-md-12 w3l-rightpro">
+				<div class="wrapper">
+					<!-- first section -->
+					<div class="product-sec1">
+					<c:forEach items="${list}" var="FTipBoardVO">
+						<div class="col-xs-4 product-men">
+						
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/${FTipBoardVO.IMG}" alt="" width="100%">
+
+									<!-- <span class="product-new-top">New</span> -->
+								</div>
+								<div class="item-info-product ">
+								
+									<h4>
+										<a href="/front/detail?product_code=${FProductVO.BOARD_IDX}">${FTipBoardVO.TITLE}</a>
+									</h4>
+								 
+
+								</div>
+							</div>
+						
+						</div>
+							</c:forEach> 
+
+						<div class="clearfix"></div>
+					</div>
+					<!-- //4th section  -->
+
+				</div>
+			</div>
+			<!-- //product right -->
+		</div>
+	</div>
+	<!-- //top products -->
+	<!-- special offers -->
+	<div class="featured-section" id="projects">
+		<div class="container">
+			<!-- tittle heading -->
+			<h3 class="tittle-w3l">Special Offers
+				<span class="heading-style">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</h3>
+			<!-- //tittle heading -->
+			<div class="content-bottom-in">
+				<ul id="flexiselDemo1">
+					<li>
+						<div class="w3l-specilamk">
+							<div class="speioffer-agile">
+								<a href="detail">
+									<img src="/resources/front/images/s1.jpg" alt="">
+								</a>
+							</div>
+							<div class="product-name-w3l">
+								<h4>
+									<a href="detail">Aashirvaad, 5g</a>
+								</h4>
+								<div class="w3l-pricehkj">
+									<h6>$220.00</h6>
+									<p>Save $40.00</p>
+								</div>
+								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+									<form action="#" method="post">
+										<fieldset>
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" />
+											<input type="hidden" name="business" value=" " />
+											<input type="hidden" name="item_name" value="Aashirvaad, 5g" />
+											<input type="hidden" name="amount" value="220.00" />
+											<input type="hidden" name="discount_amount" value="1.00" />
+											<input type="hidden" name="currency_code" value="USD" />
+											<input type="hidden" name="return" value=" " />
+											<input type="hidden" name="cancel_return" value=" " />
+											<input type="submit" name="submit" value="Add to cart" class="button" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
 					</li>
-				</c:forEach>
+					<li>
+						<div class="w3l-specilamk">
+							<div class="speioffer-agile">
+								<a href="detail">
+									<img src="/resources/front/images/s4.jpg" alt="">
+								</a>
+							</div>
+							<div class="product-name-w3l">
+								<h4>
+									<a href="detail">Kissan Tomato Ketchup, 950g</a>
+								</h4>
+								<div class="w3l-pricehkj">
+									<h6>$99.00</h6>
+									<p>Save $20.00</p>
+								</div>
+								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+									<form action="#" method="post">
+										<fieldset>
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" />
+											<input type="hidden" name="business" value=" " />
+											<input type="hidden" name="item_name" value="Kissan Tomato Ketchup, 950g" />
+											<input type="hidden" name="amount" value="99.00" />
+											<input type="hidden" name="discount_amount" value="1.00" />
+											<input type="hidden" name="currency_code" value="USD" />
+											<input type="hidden" name="return" value=" " />
+											<input type="hidden" name="cancel_return" value=" " />
+											<input type="submit" name="submit" value="Add to cart" class="button" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3l-specilamk">
+							<div class="speioffer-agile">
+								<a href="detail">
+									<img src="/resources/front/images/s2.jpg" alt="">
+								</a>
+							</div>
+							<div class="product-name-w3l">
+								<h4>
+									<a href="detail">Madhur Pure Sugar, 1g</a>
+								</h4>
+								<div class="w3l-pricehkj">
+									<h6>$69.00</h6>
+									<p>Save $20.00</p>
+								</div>
+								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+									<form action="#" method="post">
+										<fieldset>
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" />
+											<input type="hidden" name="business" value=" " />
+											<input type="hidden" name="item_name" value="Madhur Pure Sugar, 1g" />
+											<input type="hidden" name="amount" value="69.00" />
+											<input type="hidden" name="discount_amount" value="1.00" />
+											<input type="hidden" name="currency_code" value="USD" />
+											<input type="hidden" name="return" value=" " />
+											<input type="hidden" name="cancel_return" value=" " />
+											<input type="submit" name="submit" value="Add to cart" class="button" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3l-specilamk">
+							<div class="speioffer-agile">
+								<a href="single2">
+									<img src="/resources/front/images/s3.jpg" alt="">
+								</a>
+							</div>
+							<div class="product-name-w3l">
+								<h4>
+									<a href="single2">Surf Excel Liquid, 1.02L</a>
+								</h4>
+								<div class="w3l-pricehkj">
+									<h6>$187.00</h6>
+									<p>Save $30.00</p>
+								</div>
+								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+									<form action="#" method="post">
+										<fieldset>
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" />
+											<input type="hidden" name="business" value=" " />
+											<input type="hidden" name="item_name" value="Surf Excel Liquid, 1.02L" />
+											<input type="hidden" name="amount" value="187.00" />
+											<input type="hidden" name="discount_amount" value="1.00" />
+											<input type="hidden" name="currency_code" value="USD" />
+											<input type="hidden" name="return" value=" " />
+											<input type="hidden" name="cancel_return" value=" " />
+											<input type="submit" name="submit" value="Add to cart" class="button" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3l-specilamk">
+							<div class="speioffer-agile">
+								<a href="detail">
+									<img src="/resources/front/images/s8.jpg" alt="">
+								</a>
+							</div>
+							<div class="product-name-w3l">
+								<h4>
+									<a href="detail">Cadbury Choclairs, 655.5g</a>
+								</h4>
+								<div class="w3l-pricehkj">
+									<h6>$160.00</h6>
+									<p>Save $60.00</p>
+								</div>
+								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+									<form action="#" method="post">
+										<fieldset>
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" />
+											<input type="hidden" name="business" value=" " />
+											<input type="hidden" name="item_name" value="Cadbury Choclairs, 655.5g" />
+											<input type="hidden" name="amount" value="160.00" />
+											<input type="hidden" name="discount_amount" value="1.00" />
+											<input type="hidden" name="currency_code" value="USD" />
+											<input type="hidden" name="return" value=" " />
+											<input type="hidden" name="cancel_return" value=" " />
+											<input type="submit" name="submit" value="Add to cart" class="button" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3l-specilamk">
+							<div class="speioffer-agile">
+								<a href="single2">
+									<img src="/resources/front/images/s6.jpg" alt="">
+								</a>
+							</div>
+							<div class="product-name-w3l">
+								<h4>
+									<a href="single2">Fair & Lovely, 80 g</a>
+								</h4>
+								<div class="w3l-pricehkj">
+									<h6>$121.60</h6>
+									<p>Save $30.00</p>
+								</div>
+								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+									<form action="#" method="post">
+										<fieldset>
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" />
+											<input type="hidden" name="business" value=" " />
+											<input type="hidden" name="item_name" value="Fair & Lovely, 80 g" />
+											<input type="hidden" name="amount" value="121.60" />
+											<input type="hidden" name="discount_amount" value="1.00" />
+											<input type="hidden" name="currency_code" value="USD" />
+											<input type="hidden" name="return" value=" " />
+											<input type="hidden" name="cancel_return" value=" " />
+											<input type="submit" name="submit" value="Add to cart" class="button" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3l-specilamk">
+							<div class="speioffer-agile">
+								<a href="detail">
+									<img src="/resources/front/images/s5.jpg" alt="">
+								</a>
+							</div>
+							<div class="product-name-w3l">
+								<h4>
+									<a href="detail">Sprite, 2.25L (Pack of 2)</a>
+								</h4>
+								<div class="w3l-pricehkj">
+									<h6>$180.00</h6>
+									<p>Save $30.00</p>
+								</div>
+								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+									<form action="#" method="post">
+										<fieldset>
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" />
+											<input type="hidden" name="business" value=" " />
+											<input type="hidden" name="item_name" value="Sprite, 2.25L (Pack of 2)" />
+											<input type="hidden" name="amount" value="180.00" />
+											<input type="hidden" name="discount_amount" value="1.00" />
+											<input type="hidden" name="currency_code" value="USD" />
+											<input type="hidden" name="return" value=" " />
+											<input type="hidden" name="cancel_return" value=" " />
+											<input type="submit" name="submit" value="Add to cart" class="button" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3l-specilamk">
+							<div class="speioffer-agile">
+								<a href="single2">
+									<img src="/resources/front/images/s9.jpg" alt="">
+								</a>
+							</div>
+							<div class="product-name-w3l">
+								<h4>
+									<a href="single2">Lakme Eyeconic Kajal, 0.35 g</a>
+								</h4>
+								<div class="w3l-pricehkj">
+									<h6>$153.00</h6>
+									<p>Save $40.00</p>
+								</div>
+								<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+									<form action="#" method="post">
+										<fieldset>
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" />
+											<input type="hidden" name="business" value=" " />
+											<input type="hidden" name="item_name" value="Lakme Eyeconic Kajal, 0.35 g" />
+											<input type="hidden" name="amount" value="153.00" />
+											<input type="hidden" name="discount_amount" value="1.00" />
+											<input type="hidden" name="currency_code" value="USD" />
+											<input type="hidden" name="return" value=" " />
+											<input type="hidden" name="cancel_return" value=" " />
+											<input type="submit" name="submit" value="Add to cart" class="button" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<!-- //FAQ-help-page -->
+	</section>
+	<!-- //special offers -->
+	<!-- newsletter -->
+	
 
-</section>
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
@@ -440,30 +754,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //cart-js -->
 
-	<!-- script for tabs -->
+	<!-- price range (top products) -->
+	<script src="/resources/front/js/jquery-ui.js"></script>
 	<script>
-		$(function () {
+		//<![CDATA[ 
+		$(window).load(function () {
+			$("#slider-range").slider({
+				range: true,
+				min: 0,
+				max: 9000,
+				values: [50, 6000],
+				slide: function (event, ui) {
+					$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+				}
+			});
+			$("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
 
-			var menu_ul = $('.faq > li > ul'),
-				menu_a = $('.faq > li > a');
+		}); //]]>
+	</script>
+	<!-- //price range (top products) -->
 
-			menu_ul.hide();
-
-			menu_a.click(function (e) {
-				e.preventDefault();
-				if (!$(this).hasClass('active')) {
-					menu_a.removeClass('active');
-					menu_ul.filter(':visible').slideUp('normal');
-					$(this).addClass('active').next().stop(true, true).slideDown('normal');
-				} else {
-					$(this).removeClass('active');
-					$(this).next().stop(true, true).slideUp('normal');
+	<!-- flexisel (for special offers) -->
+	<script src="/resources/front/js/jquery.flexisel.js"></script>
+	<script>
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 2
+					}
 				}
 			});
 
 		});
 	</script>
-	<!-- script for tabs -->
+	<!-- //flexisel (for special offers) -->
 
 	<!-- password-script -->
 	<script>
