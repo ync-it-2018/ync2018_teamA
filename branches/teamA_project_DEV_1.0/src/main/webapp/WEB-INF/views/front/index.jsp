@@ -63,9 +63,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</h1>
 			</div>
 			<!-- header-bot -->
-			<div class="col-md-8 header">
+			<div class="collapse navbar-collapse menu--shylock"
+							id="bs-example-navbar-collapse-1">
 				<!-- header lists -->
-				<ul>
+				<ul class="nav navbar-nav menu__list">
 					<li class="dropdown"><a class="nav-stylehead dropdown-toggle"
 						href="#" data-toggle="dropdown">마이페이지 <b class="caret"></b>
 					</a>
@@ -82,6 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="/faq">FAQ</a></li>
 							<li><a href="/notice">공지사항</a></li>
 							<li><a href="/qna">1대1 문의</a></li>
+							<li><a href="/tip">여행 TIP</a></li>
 						</ul></li>
 					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
@@ -469,8 +471,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/m1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -510,8 +511,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/m1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -551,8 +551,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/m1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -592,8 +591,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/m1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -633,8 +631,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/m2.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -676,8 +673,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/m3.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -723,8 +719,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/m1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -764,8 +759,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/m1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -808,23 +802,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-6 product-sec1">
 						<h4 class="heading-tittle" style="text-align:left;"><sapn style="color:red;">강력추천</sapn>테마 여행</h4>
 						<div class="col-md-4 product-sec4">
-							<div class="product-sec3"><h5 class="text-align:center">허니문</h5></div>
-							<div class="product-sec3"><h5 class="text-align:center">골프</h5></div>
-							<div class="product-sec3"><h5 class="text-align:center">크루즈</h5></div>
-							<div class="product-sec3"><h5 class="text-align:center">음식</h5></div>
-							<div class="product-sec3"><h5 class="text-align:center">예술/문화/역사</h5></div>
-							<div class="product-sec3"><h5 class="text-align:center">이벤트</h5></div>
-							<div class="product-sec3"><h5 class="text-align:center">트래킹/스포츠</h5></div>
-							<div class="product-sec3"><h5 class="text-align:center">체험</h5></div>
+							<div class="product-sec3 thema-select1"><h5 class="text-align:center">허니문</h5></div>
+							<div class="product-sec3 thema-select2"><h5 class="text-align:center">골프</h5></div>
+							<div class="product-sec3 thema-select3"><h5 class="text-align:center">크루즈</h5></div>
+							<div class="product-sec3 thema-select4"><h5 class="text-align:center">음식</h5></div>
+							<div class="product-sec3 thema-select5"><h5 class="text-align:center">예술/문화/역사</h5></div>
+							<div class="product-sec3 thema-select6"><h5 class="text-align:center">이벤트</h5></div>
+							<div class="product-sec3 thema-select7"><h5 class="text-align:center">트래킹/스포츠</h5></div>
+							<div class="product-sec3 thema-select8"><h5 class="text-align:center">체험</h5></div>
 						</div>
-						<div class="col-md-4 product-men">
+						<div class="col-md-4 product-men thema-selected1">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/mk5.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -832,7 +825,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="/single">Saffola Gold, 1L</a>
+										<a href="/single">허니문1</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$130.00</span>
@@ -860,14 +853,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 product-men">
+						<div class="col-md-4 product-men thema-selected1">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/mk6.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -875,7 +867,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="/single">Fortune Oil, 5L</a>
+										<a href="/single">허니문2</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$399.99</span>
@@ -903,6 +895,594 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
+						<div class="col-md-4 product-men thema-selected2" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">골프1</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected2" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">골프2</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected3" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">크루즈1</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected3" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">크루즈2</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected4" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">음식1</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected4" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">음식2</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected5" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">예술/문화/역사1</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected5" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">예술/문화/역사2</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected6" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">이벤트1</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected6" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">이벤트2</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected7" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">트래킹/스포츠1</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected7" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">트래킹/스포츠2</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected8" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">체험1</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men thema-selected8" style="display:none;">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="/resources/front/images/mk5.jpg" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="/single" class="link-product-add-cart">상품보기</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+
+								</div>
+								<div class="item-info-product ">
+									<h4>
+										<a href="/single">체험2</a>
+									</h4>
+									<div class="info-product-price">
+										<span class="item_price">$130.00</span>
+										<del>$150.00</del>
+									</div>
+									<div
+										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" /> <input
+													type="hidden" name="add" value="1" /> <input type="hidden"
+													name="business" value=" " /> <input type="hidden"
+													name="item_name" value="Saffola Gold, 1L" /> <input
+													type="hidden" name="amount" value="130.00" /> <input
+													type="hidden" name="discount_amount" value="1.00" /> <input
+													type="hidden" name="currency_code" value="USD" /> <input
+													type="hidden" name="return" value=" " /> <input
+													type="hidden" name="cancel_return" value=" " /> <input
+													type="submit" name="submit" value="Add to cart"
+													class="button" />
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
 						<div class="clearfix"></div>
 					</div>
 					<!-- //third section (oils) -->
@@ -916,8 +1496,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/mk7.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 								</div>
@@ -957,8 +1536,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/mk8.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -1000,8 +1578,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<img src="/resources/front/images/mk9.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">Quick
-												View</a>
+											<a href="/single" class="link-product-add-cart">상품보기</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -1540,6 +2117,90 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        $(function() {
           $( "#datepicker,#datepicker1" ).datepicker();
        });
+    </script>
+    <script>
+    	$(function() {
+    		$('.thema-select1').click(function() {
+    			$('.thema-selected1').show();
+    			$('.thema-selected2').hide();
+    			$('.thema-selected3').hide();
+    			$('.thema-selected4').hide();
+    			$('.thema-selected5').hide();
+    			$('.thema-selected6').hide();
+    			$('.thema-selected7').hide();
+    			$('.thema-selected8').hide();
+    		});
+    		$('.thema-select2').click(function() {
+    			$('.thema-selected1').hide();
+    			$('.thema-selected2').show();
+    			$('.thema-selected3').hide();
+    			$('.thema-selected4').hide();
+    			$('.thema-selected5').hide();
+    			$('.thema-selected6').hide();
+    			$('.thema-selected7').hide();
+    			$('.thema-selected8').hide();
+    		});
+    		$('.thema-select3').click(function() {
+    			$('.thema-selected1').hide();
+    			$('.thema-selected2').hide();
+    			$('.thema-selected3').show();
+    			$('.thema-selected4').hide();
+    			$('.thema-selected5').hide();
+    			$('.thema-selected6').hide();
+    			$('.thema-selected7').hide();
+    			$('.thema-selected8').hide();
+    		});
+    		$('.thema-select4').click(function() {
+    			$('.thema-selected1').hide();
+    			$('.thema-selected2').hide();
+    			$('.thema-selected3').hide();
+    			$('.thema-selected4').show();
+    			$('.thema-selected5').hide();
+    			$('.thema-selected6').hide();
+    			$('.thema-selected7').hide();
+    			$('.thema-selected8').hide();
+    		});
+    		$('.thema-select5').click(function() {
+    			$('.thema-selected1').hide();
+    			$('.thema-selected2').hide();
+    			$('.thema-selected3').hide();
+    			$('.thema-selected4').hide();
+    			$('.thema-selected5').show();
+    			$('.thema-selected6').hide();
+    			$('.thema-selected7').hide();
+    			$('.thema-selected8').hide();
+    		});
+    		$('.thema-select6').click(function() {
+    			$('.thema-selected1').hide();
+    			$('.thema-selected2').hide();
+    			$('.thema-selected3').hide();
+    			$('.thema-selected4').hide();
+    			$('.thema-selected5').hide();
+    			$('.thema-selected6').show();
+    			$('.thema-selected7').hide();
+    			$('.thema-selected8').hide();
+    		});
+    		$('.thema-select7').click(function() {
+    			$('.thema-selected1').hide();
+    			$('.thema-selected2').hide();
+    			$('.thema-selected3').hide();
+    			$('.thema-selected4').hide();
+    			$('.thema-selected5').hide();
+    			$('.thema-selected6').hide();
+    			$('.thema-selected7').show();
+    			$('.thema-selected8').hide();
+    		});
+    		$('.thema-select8').click(function() {
+    			$('.thema-selected1').hide();
+    			$('.thema-selected2').hide();
+    			$('.thema-selected3').hide();
+    			$('.thema-selected4').hide();
+    			$('.thema-selected5').hide();
+    			$('.thema-selected6').hide();
+    			$('.thema-selected7').hide();
+    			$('.thema-selected8').show();
+    		});
+    	});
     </script>
 
 </body>
