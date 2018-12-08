@@ -31,7 +31,7 @@ public class TipNoticeBoardDAOImpl implements TipNoticeBoardDAO{
 	@Override
 	public TipNoticeBoardVO read(Integer bno) throws Exception {
 		// TODO Auto-generated method stub
-		return null;
+		return session.selectOne(namespace+".read", bno);
 	}
 
 	@Override
@@ -41,14 +41,14 @@ public class TipNoticeBoardDAOImpl implements TipNoticeBoardDAO{
 	}
 
 	@Override
-	public void update(TipNoticeBoardVO vod) throws Exception {
+	public void update(TipNoticeBoardVO vo) throws Exception {
 		// TODO Auto-generated method stub
-		
+		session.insert(namespace+".update", vo);
 	}
 
 	@Override
 	public void delete(Integer bno) throws Exception {
 		// TODO Auto-generated method stub
-		
+		session.delete(namespace + ".delete", bno);
 	}
 }

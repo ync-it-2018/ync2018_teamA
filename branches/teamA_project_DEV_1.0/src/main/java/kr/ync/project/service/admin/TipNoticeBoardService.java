@@ -9,4 +9,12 @@ import kr.ync.project.domain.admin.TipNoticeBoardVO;
 @Service
 public interface TipNoticeBoardService {
 	public List<TipNoticeBoardVO> listAll() throws Exception;
+	
+	public void remove(Integer bno) throws Exception;
+	
+	public void modify(TipNoticeBoardVO board) throws Exception;
+	
+	public void regist(TipNoticeBoardVO board) throws Exception;
+	
+	public TipNoticeBoardVO read(Integer bno) throws Exception;
 }

@@ -20,4 +20,27 @@ public class TipNoticeBoardServiceImpl implements TipNoticeBoardService {
 		return dao.listAll();
 	}
 	
+	@Override
+	public void remove(Integer bno) throws Exception {
+		// TODO Auto-generated method stub
+		dao.delete(bno);
+	}
+
+	@Override
+	public void modify(TipNoticeBoardVO board) throws Exception {
+		// TODO Auto-generated method stub
+		dao.update(board);
+	}
+
+	@Override
+	public void regist(TipNoticeBoardVO board) throws Exception {
+		// TODO Auto-generated method stub
+		dao.create(board);
+	}
+
+	@Override
+	public TipNoticeBoardVO read(Integer bno) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.read(bno);
+	}
 }

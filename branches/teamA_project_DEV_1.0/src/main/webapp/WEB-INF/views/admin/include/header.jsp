@@ -174,7 +174,7 @@
                    </a>
                 </li>
                 <li>
-                   <a href="#">
+                   <a href="/tipnoticeboardupdate">
                       <i class="fa fa-circle-o"></i> 게시글 등록 
                    </a>
                 </li>
