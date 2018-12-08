@@ -28,4 +28,10 @@ public class FProductDAOImpl implements FProductDAO{
 	public List<FProductVO> listAll(String nation_code) throws Exception {
 		return session.selectList(namespace + ".listAll", nation_code);
 	}
+
+	@Override
+	public List<FProductVO> listAll_domestic(String city_code) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectList(namespace + ".listAll", city_code);
+	}
 }

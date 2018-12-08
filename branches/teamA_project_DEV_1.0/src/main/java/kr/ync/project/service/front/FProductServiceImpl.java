@@ -25,4 +25,9 @@ public class FProductServiceImpl implements FProductService{
 		// TODO Auto-generated method stub
 		return dao.read(product_code);
 	}
+
+	@Override
+	public List<FProductVO> listAll_domestic(String city_code) throws Exception {
+		return dao.listAll_domestic(city_code);
+	}
 }

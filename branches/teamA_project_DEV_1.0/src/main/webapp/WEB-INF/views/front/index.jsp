@@ -277,12 +277,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									data-toggle="dropdown">국내여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="/domestic">서울/인천/경기</a></li>
-										<li><a href="/domestic">강원권</a></li>
-										<li><a href="/domestic">충청권</a></li>
-										<li><a href="/domestic">젼라권</a></li>
-										<li><a href="/domestic">경상권</a></li>
-										<li><a href="/domestic">제주권</a></li>
+										<li><a href="/domestic?city_code=ICN">서울/인천/경기</a></li>
+										<li><a href="/domestic?city_code=KAE">강원권</a></li>
+										<li><a href="/domestic?city_code=KR">충청권</a></li>
+										<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
+										<li><a href="/domestic?city_code=KPO">경상권</a></li>
+										<li><a href="/domestic?city_code=">제주권</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"
@@ -302,22 +302,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									data-toggle="dropdown">테마여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="/honey">허니문</a></li>
-										<li><a href="/cruise">크루즈</a></li>
-										<li><a href="/culture">예술/문화/역사</a></li>
-										<li><a href="/leports">트래킹/스포츠</a></li>
-										<li><a href="/experience">체험</a></li>
-										<li><a href="/golf">골프</a></li>
-										<li><a href="/food">음식</a></li>
-										<li><a href="/event">이벤트</a></li>
+										<li><a href="/theme?theme=허니문">허니문</a></li>
+										<li><a href="/theme?theme=크루즈">크루즈</a></li>
+										<li><a href="/theme?theme=예술/문화/역사">예술/문화/역사</a></li>
+										<li><a href="/theme?theme=트래킹/스포츠">트래킹/스포츠</a></li>
+										<li><a href="/theme?theme=체험">체험</a></li>
+										<li><a href="/theme?theme=골프">골프</a></li>
+										<li><a href="/theme?theme=음식">음식</a></li>
+										<li><a href="/theme?theme=이벤트">이벤트</a></li>
 									</ul></li>
-								<li class=""><a class="nav-stylehead" href="/popular">인기상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=인기상품">인기상품</a>
 								</li>
-								<li class=""><a class="nav-stylehead" href="/recommand">추천상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=추천상품">추천상품</a>
 								</li>
-								<li class=""><a class="nav-stylehead" href="/special">특가상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=특가상품">특가상품</a>
 								</li>
-								<li class=""><a class="nav-stylehead" href="/contact">빠른출발상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=빠른출발상품">빠른출발상품</a>
 								</li>
 							</ul>
 						</div>
