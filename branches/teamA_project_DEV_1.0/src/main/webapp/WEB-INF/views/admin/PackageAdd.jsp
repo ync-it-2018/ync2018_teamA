@@ -85,23 +85,23 @@ th{
 										<td colspan="3">
 											
 											<select name="D_YEAR">
-												<option value="연도">연도</option>
+												<option value="0">연도</option>
 												<option value="2018">2018</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="D_MONTH">
-												<option value="월">월</option>
+												<option value="0">월</option>
 												<option value="01">01</option>	
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="D_DAY">
-												<option value="일">일</option>
+												<option value="0">일</option>
 												<option value="01">01</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="D_HOUR">
-												<option value="시">시</option>
+												<option value="0">시</option>
 												<option value="12">12</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="D_MINUTE">
-												<option value="분">분</option>
+												<option value="0">분</option>
 												<option value="00">00</option>
 											</select>
 										</td>
@@ -110,19 +110,19 @@ th{
 										<td colspan="3">
 											 ~ &nbsp;&nbsp;&nbsp;
 											<select name="A_YEAR">
-												<option value="연도">연도</option>
+												<option value="0">연도</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="A_MONTH">
-												<option value="월">월</option>
+												<option value="0">월</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="A_DAY">
-												<option value="일">일</option>
+												<option value="0">일</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="A_HOUR">
-												<option value="시">시</option>
+												<option value="0">시</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="A_MINUTE">
-												<option value="분">분</option>
+												<option value="0">분</option>
 											</select>
 										</td>
 									</tr>
