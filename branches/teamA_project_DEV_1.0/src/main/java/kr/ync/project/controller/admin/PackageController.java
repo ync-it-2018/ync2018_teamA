@@ -1,5 +1,7 @@
 package kr.ync.project.controller.admin;
 
+import javax.inject.Inject;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -11,12 +13,12 @@ import kr.ync.project.domain.admin.ProductVO;
 import kr.ync.project.service.admin.ProductService;
 
 @Controller
-@RequestMapping("/admin/*")
+@RequestMapping("/admin")
 public class PackageController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(PackageController.class);
 	
-	
+	@Inject
 	private ProductService service;
 	
 	@RequestMapping(value = "/PackageAdd", method = RequestMethod.GET)
