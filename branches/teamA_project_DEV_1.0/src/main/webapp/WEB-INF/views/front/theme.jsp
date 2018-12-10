@@ -340,7 +340,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>국내 여행</li>
+					<li>테마 여행</li>
+					
 				</ul>
 			</div>
 		</div>
@@ -350,13 +351,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="ads-grid">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">국내 여행
+			
+			<h3 class="tittle-w3l">
+				테마 여행
 				<span class="heading-style">
 					<i></i>
 					<i></i>
 					<i></i>
 				</span>
 			</h3>
+			
 			<!-- //tittle heading -->
 			<!-- product left -->
 			<div class="side-bar col-md-3">
@@ -430,7 +434,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="wrapper">
 					<!-- first section -->
 					<div class="product-sec1">
-					<c:forEach items="${list_domestic}" var="FProductVO">
+					<c:forEach items="${list_theme}" var="FProductVO">
 						<div class="col-xs-4 product-men">
 						
 							<div class="men-pro-item simpleCart_shelfItem">

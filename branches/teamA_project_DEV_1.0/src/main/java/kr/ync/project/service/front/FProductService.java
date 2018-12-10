@@ -15,6 +15,12 @@ public interface FProductService {
 	//추천 패키지 
 	public List<FProductVO> listAll_special()throws Exception;
 	
+	//인기/추천/특가 패키지 
+	public List<FProductVO> listAll_categorization(String categorization)throws Exception;
+	
+	//테마 패키지 
+	public List<FProductVO> listAll_theme(String theme)throws Exception;
+	
 	//국내 패키지
 	public List<FProductVO> listAll_domestic(String city_code)throws Exception;
 

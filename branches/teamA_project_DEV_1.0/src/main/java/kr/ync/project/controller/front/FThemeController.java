@@ -16,31 +16,24 @@ import org.springframework.web.bind.annotation.RequestParam;
 import kr.ync.project.controller.HomeController;
 import kr.ync.project.service.front.FProductService;
 
+//추천.인기.특가 패키지 리스트
 @Controller
-public class FDomesticController {
+public class FThemeController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(FDomesticController.class);
+	private static final Logger logger = LoggerFactory.getLogger(FThemeController.class);
 	
 	@Inject
 	private FProductService service;
 
-	@RequestMapping(value = "/domestic", method = RequestMethod.GET)
-	public String about(@RequestParam("city_code")String city_code,Locale locale, Model model) throws Exception {
-
+	@RequestMapping(value = "/theme", method = RequestMethod.GET)
+	public String about(@RequestParam("theme")String theme,Locale locale, Model model) throws Exception {
 		// 가나다
-		logger.info("국내여행상품으로 이동", locale);
-		model.addAttribute("list_domestic", service.listAll_domestic(city_code));
+		logger.info("테마상품으로 이동", locale);
+		model.addAttribute("list_theme", service.listAll_theme(theme));
 		model.addAttribute("list_special", service.listAll_special());
 		
-		return "front/domestic";
+		return "front/theme";
 	}
 	
-/*	//상품 상세 화면
-	@RequestMapping(value = "/front/detail", method = RequestMethod.GET)
-	   public void ProductDetail(@RequestParam("product_code")String product_code, Model model) throws Exception {
-		   
-		   model.addAttribute(service.read(product_code));
-		   
-	   }*/
 	
 }

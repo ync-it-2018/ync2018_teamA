@@ -45,4 +45,14 @@ public class FProductDAOImpl implements FProductDAO{
 	public List<FProductVO> listAll_special() throws Exception {
 		return session.selectList(namespace + ".listAll_special");
 	}
+
+	@Override
+	public List<FProductVO> listAll_categorization(String categorization) throws Exception {
+		return session.selectList(namespace + ".listAll_categorization", categorization);
+	}
+
+	@Override
+	public List<FProductVO> listAll_theme(String theme) throws Exception {
+		return session.selectList(namespace + ".listAll_theme", theme);
+	}
 }

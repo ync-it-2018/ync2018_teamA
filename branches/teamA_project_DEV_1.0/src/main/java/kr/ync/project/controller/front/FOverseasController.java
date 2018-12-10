@@ -29,7 +29,7 @@ public class FOverseasController {
 
 		// 가나다
 		logger.info("해외여행상품으로 이동", locale);
-		model.addAttribute("list", service.listAll(nation_code));
+		model.addAttribute("list_overseas", service.listAll(nation_code));
 		model.addAttribute("list_special", service.listAll_special());
 		
 		return "front/overseas";

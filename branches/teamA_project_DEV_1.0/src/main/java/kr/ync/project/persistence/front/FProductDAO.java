@@ -15,4 +15,8 @@ public interface FProductDAO {
 	public List<FProductVO> listAll_best()throws Exception;
 	
 	public List<FProductVO> listAll_special()throws Exception;
+	
+	public List<FProductVO> listAll_categorization(String categorization)throws Exception;
+	
+	public List<FProductVO> listAll_theme(String theme)throws Exception;
 }

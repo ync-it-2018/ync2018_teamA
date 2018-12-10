@@ -430,7 +430,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="wrapper">
 					<!-- first section -->
 					<div class="product-sec1">
-					<c:forEach items="${list}" var="FProductVO">
+					<c:forEach items="${list_overseas}" var="FProductVO">
 						<div class="col-xs-4 product-men">
 						
 							<div class="men-pro-item simpleCart_shelfItem">

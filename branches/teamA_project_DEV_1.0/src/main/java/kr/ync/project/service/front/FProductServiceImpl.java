@@ -40,4 +40,14 @@ public class FProductServiceImpl implements FProductService{
 	public List<FProductVO> listAll_special() throws Exception {
 		return dao.listAll_special();
 	}
+
+	@Override
+	public List<FProductVO> listAll_categorization(String categorization) throws Exception {
+		return dao.listAll_categorization(categorization);
+	}
+
+	@Override
+	public List<FProductVO> listAll_theme(String theme) throws Exception {
+		return dao.listAll_theme(theme);
+	}
 }
