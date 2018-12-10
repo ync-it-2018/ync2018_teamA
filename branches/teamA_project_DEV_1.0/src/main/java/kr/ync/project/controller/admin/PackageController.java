@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartFile;
 
 import kr.ync.project.domain.admin.ProductVO;
 import kr.ync.project.service.admin.ProductService;
@@ -26,14 +27,15 @@ public class PackageController {
 
 		// 가나다
 		logger.info("패키지등록으로 이동");
-
+	
 	}
 	
 	@RequestMapping(value = "/PackageAdd", method = RequestMethod.POST)
-	public String PackageAddPOST(ProductVO data, Model model) throws Exception {
+	public String PackageAddPOST(ProductVO data, MultipartFile file, Model model) throws Exception {
 
 		// 가나다
 		logger.info("패키지등록");
+		logger.info("orignalName: " + file.getOriginalFilename());
 		logger.info(data.toString());
 		
 		service.regist(data);
@@ -42,4 +44,5 @@ public class PackageController {
 
 		return "admin/success";
 	}
+	
 }
