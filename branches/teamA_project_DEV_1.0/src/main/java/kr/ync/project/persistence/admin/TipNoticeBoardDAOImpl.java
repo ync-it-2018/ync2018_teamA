@@ -47,8 +47,8 @@ public class TipNoticeBoardDAOImpl implements TipNoticeBoardDAO{
 	}
 
 	@Override
-	public void delete(Integer bno) throws Exception {
+	public void delete(Integer BOARD_IDX) throws Exception {
 		// TODO Auto-generated method stub
-		session.delete(namespace + ".delete", bno);
+		session.delete(namespace + ".delete", BOARD_IDX);
 	}
 }

@@ -22,13 +22,14 @@ WHERE BOARD_IDX > 0 AND BOARD_CODE = '01'
 	</select>
 
 	<delete id="delete">
-		delete from TA_BOARD where BOARD_IDX = #{BOARD_IDX};
+		delete from TA_BOARD where BOARD_IDX = #{BOARD_IDX}
 	</delete>
 
 
 	<select id="read" resultType="TipNoticeBoardVO">
 <![CDATA[
    SELECT 
+   BOARD_IDX,
           TITLE,
           WRITEDATE,
           CONTENT

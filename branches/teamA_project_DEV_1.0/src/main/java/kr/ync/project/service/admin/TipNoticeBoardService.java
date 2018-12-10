@@ -10,7 +10,7 @@ import kr.ync.project.domain.admin.TipNoticeBoardVO;
 public interface TipNoticeBoardService {
 	public List<TipNoticeBoardVO> listAll() throws Exception;
 	
-	public void remove(Integer bno) throws Exception;
+	public void remove(Integer BOARD_IDX) throws Exception;
 	
 	public void modify(TipNoticeBoardVO board) throws Exception;
 	

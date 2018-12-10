@@ -21,8 +21,8 @@
 
 				<form role="form" method="post">
 
-					<input type='hidden' name='code'
-						value="${TipNoticeBoardVO.BOARD_IDX}">
+					<input type='hidden' name='BOARD_IDX' id="BOARD_IDX"
+						value="${tipNoticeBoardVO.BOARD_IDX}">
 
 				</form>
 
@@ -68,7 +68,7 @@
 						});
 
 						$(".btn-danger").on("click", function() {
-							formObj.attr("action", "/board/remove");
+							formObj.attr("action", "/remove");
 							formObj.submit();
 						});
 

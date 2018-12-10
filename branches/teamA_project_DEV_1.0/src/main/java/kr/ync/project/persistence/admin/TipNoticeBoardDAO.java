@@ -11,7 +11,7 @@ public interface TipNoticeBoardDAO {
 	
 	public void update (TipNoticeBoardVO vo)throws Exception;
 	
-	public void delete(Integer bno)throws Exception;
+	public void delete(Integer BOARD_IDX)throws Exception;
 	
 	public List<TipNoticeBoardVO> listAll()throws Exception;
 	

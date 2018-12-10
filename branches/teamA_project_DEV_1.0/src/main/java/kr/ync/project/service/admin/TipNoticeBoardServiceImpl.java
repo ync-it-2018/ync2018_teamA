@@ -21,9 +21,9 @@ public class TipNoticeBoardServiceImpl implements TipNoticeBoardService {
 	}
 	
 	@Override
-	public void remove(Integer bno) throws Exception {
+	public void remove(Integer BOARD_IDX) throws Exception {
 		// TODO Auto-generated method stub
-		dao.delete(bno);
+		dao.delete(BOARD_IDX);
 	}
 
 	@Override

@@ -31,17 +31,17 @@ public class TipNoticeBoardController {
 		return "admin/tipnoticeboard";
 	}
 
-//	@RequestMapping(value = "/remove", method = RequestMethod.GET)
-//	public String TipNoticeBoardDelete(@RequestParam("bno") int bno,
-//			RedirectAttributes rttr) throws Exception {
-//
-//		service.remove(bno);
-//		// 가나다
-//		logger.info("게시글 삭제");
-//		
-//		rttr.addFlashAttribute("msg","SUCCESS");
-//		return "admin/tipnoticeboard";
-//	}
+	@RequestMapping(value = "/remove", method = RequestMethod.POST)
+	public String TipNoticeBoardDelete(@RequestParam("BOARD_IDX") Integer BOARD_IDX,
+			RedirectAttributes rttr) throws Exception {
+
+		service.remove(BOARD_IDX);
+		// 가나다
+		logger.info("게시글 삭제");
+		
+		rttr.addFlashAttribute("msg","SUCCESS");
+		return "redirect:/tipnoticeboard";
+	}
 
 	@RequestMapping(value = "/tipnoticeboardupdate", method = RequestMethod.GET)
 	public String TipNoticeBoardRegisterGET(TipNoticeBoardVO board, Model model) throws Exception {
@@ -65,6 +65,23 @@ public class TipNoticeBoardController {
 	public void TipNoticeBoardread(@RequestParam("code") int code, Model model) throws Exception {
 
 		model.addAttribute(service.read(code));
-//		return "redirect:/tipnoticeboard";
 	}
+	
+	@RequestMapping(value = "/tipnoticeboardmodify", method = RequestMethod.GET)
+	public void TipNoticeBoardModifyGET(@RequestParam("BOARD_IDX") Integer BOARD_IDX, Model model) throws Exception {
+
+		model.addAttribute(service.read(BOARD_IDX));
+	}
+	
+	@RequestMapping(value = "/tipnoticeboardmodify", method = RequestMethod.POST)
+	public String TipNoticeBoardModifyPOST(TipNoticeBoardVO board, RedirectAttributes rttr) throws Exception {
+
+		logger.info("글 수정중");
+		
+		service.modify(board);
+		rttr.addFlashAttribute("msg", "SUCCESS");
+
+		return "redirect:/tipnoticeboard";
+	}
+
 }
