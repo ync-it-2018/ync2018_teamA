@@ -29,6 +29,29 @@
 		  });
 		 });
 	
+	$(document).ready(function(){
+		
+		var formObj = $("form[role='form']");
+		
+		console.log(formObj);
+		
+		$(".btn-warning").on("click", function() {
+			formObj.attr("action", "/admin/PackageModify");
+			formObj.attr("method", "get");
+			formObj.submit();
+		});
+		
+		$(".btn-danger").on("click", function() {
+			formObj.attr("action", "/admin/PackageRemove");
+			formObj.submit();
+		});
+		
+		$(".btn-primary").on("click", function() {
+			self.location = "/PackageList";
+		});
+		
+	});
+	
 </script>
 <style>
 <!--
@@ -47,12 +70,12 @@ th{
 					</div>
 					<div class="box-body">
 						<form role="form" method="post">
-							<input type='hidden' name='code' value="${productVO.PRODUCT_CODE}">
+							<input type='hidden' name='code' value="${productview.PRODUCT_CODE}">
 						</form>
 						<table class="table table-bordered">
 							<tr>
 								<th>상품명</th>
-								<td colspan="3">${productVO.PRODUCT_NAME}</td>
+								<td colspan="3">${productview.PRODUCT_NAME}</td>
 							</tr>
 							<tr>
 								<th align="center" bgcolor="#f0ebeb" style="font-weight:bold; font-size:15px">국가</th>
@@ -133,9 +156,9 @@ th{
 							<tr>
 								<th>분류</th>
 								<td colspan="3">
-									<input type="radio" name="CATEGORIZATION">추천&nbsp;&nbsp;&nbsp;
-									<input type="radio" name="CATEGORIZATION">특가&nbsp;&nbsp;&nbsp;
-									<input type="radio" name="CATEGORIZATION">인기&nbsp;&nbsp;&nbsp;
+									<input type="radio" name="CATEGORIZATION">추천상품&nbsp;&nbsp;&nbsp;
+									<input type="radio" name="CATEGORIZATION">특가상품&nbsp;&nbsp;&nbsp;
+									<input type="radio" name="CATEGORIZATION">인기상품&nbsp;&nbsp;&nbsp;
 								</td>
 							</tr>
 							<tr>
@@ -172,7 +195,11 @@ th{
 								<td colspan="3"><input type="checkbox" name="">판매여부</td>
 							</tr>
 							<tr>
-								<td align="center" bgcolor="#e3d3d3" colspan="4"><input type="submit" value="등록">&nbsp;<input type="reset" value="취소"></td>
+								<td align="center" colspan="4">
+									<button type="submit" class="btn btn-warning">수정</button>
+									<button type="submit" class="btn btn-danger">삭제</button>
+									<button type="submit" class="btn btn-primary">목록</button>
+								</td>
 							</tr>
 					</table>
 				</div>	

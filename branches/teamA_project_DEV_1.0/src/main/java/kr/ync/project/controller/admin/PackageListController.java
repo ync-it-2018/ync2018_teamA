@@ -9,7 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import kr.ync.project.domain.admin.ProductVO;
 import kr.ync.project.service.admin.ProductService;
 
 @Controller
@@ -34,7 +36,25 @@ public class PackageListController {
 	public void packageDetail(@RequestParam("code") String code, Model model) throws Exception {
 
 		// 가나다
-		model.addAttribute(service.read(code));
+		model.addAttribute("productview", service.read(code));
 		
 	}
+	
+	@RequestMapping(value = "/admin/PackageModify", method = RequestMethod.GET)
+	public void packageModifyGET(String code, Model model) throws Exception {
+		
+		model.addAttribute(service.read(code));
+	}
+	
+	@RequestMapping(value = "/admin/PackageModify", method = RequestMethod.POST)
+	public String packageModifyPOST(ProductVO data, RedirectAttributes rttr) throws Exception {
+		
+		logger.info("mod post......");
+		
+		service.modify(data);
+		rttr.addFlashAttribute("msg", "SUCCESS");
+		
+		return "redirect:/PackageList";
+	}
+
 }

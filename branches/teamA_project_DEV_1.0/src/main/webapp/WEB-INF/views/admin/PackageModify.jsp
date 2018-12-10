@@ -28,6 +28,22 @@
 			}
 			
 			
+			$(document).ready(function(){
+				
+				var formObj = $("form[role='form']");
+				
+				console.log(formObj);
+				
+				$(".btn-warning").on("click", function() {
+					self.location = "/PackageList";
+				});
+				
+				$(".btn-primary").on("click", function() {
+					formObj.submit();
+				});
+				
+			});
+			
 		});
 	});
 	
@@ -53,11 +69,12 @@ th{
 						<div class="box-body">
 						
 							<form method="post">
+								<input type='text' name='PRODUCT_CODE' value="${productVO.PRODUCT_CODE}">
 								<table class="table table-bordered">
 									<tr>
 										<th>상품명</th>
 										<td colspan="3">
-											<input type="text" name="PRODUCT_NAME">
+											<input type="text" name="PRODUCT_NAME" value="${productVO.PRODUCT_NAME}">
 										</td>
 									</tr>
 									<tr>
@@ -184,7 +201,10 @@ th{
 										<td colspan="3"><input type="checkbox" name="">판매여부</td>
 									</tr>
 									<tr>
-										<td colspan="6"><button type="submit" class="btn btn-primary">Submit</button></td>
+										<td colspan="4">
+											<button type="submit" class="btn btn-primary">수정</button>
+											<button type="submit" class="btn btn-warning">취소</button>
+										</td>
 									</tr>
 							</table>
 						</form>	

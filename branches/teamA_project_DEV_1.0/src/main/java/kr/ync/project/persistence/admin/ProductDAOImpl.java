@@ -24,7 +24,7 @@ public class ProductDAOImpl implements ProductDAO{
 	@Override
 	public void modify(ProductVO vo) throws Exception {
 		// TODO Auto-generated method stub
-		
+		session.update(namespace + ".modify", vo);
 	}
 
 	@Override
@@ -38,4 +38,5 @@ public class ProductDAOImpl implements ProductDAO{
 		// TODO Auto-generated method stub
 		return session.selectList(namespace + ".listAll");
 	}
+	
 }

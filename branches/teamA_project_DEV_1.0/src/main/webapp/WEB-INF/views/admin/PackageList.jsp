@@ -78,7 +78,11 @@
 								<td>${productVO.ROWNUM}</td>
 								<td><a href='/admin/Packagedetail?code=${productVO.PRODUCT_CODE}'>${productVO.PRODUCT_NAME}</a>
 								<td>${productVO.NATION_CODE}/${productVO.CITY_CODE}</td>
-								<td>${productVO.DEPARTURE_DATE}&nbsp;~&nbsp;${productVO.ARRIVAL_DATE}</td>
+								<td>
+									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${productVO.DEPARTURE_DATE}"/>
+									&nbsp;~&nbsp;
+									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${productVO.ARRIVAL_DATE}"/>
+								</td>
 								<td>${productVO.TRANSPORTATION}</td>
 								<td>${productVO.THEME}</td>
 								<td>${productVO.COSTPRICE}</td>

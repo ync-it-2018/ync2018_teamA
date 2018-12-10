@@ -13,4 +13,7 @@ public interface ProductService {
 	public List<ProductVO> listAll()throws Exception;
 	
 	public ProductVO read(String code)throws Exception;
+	
+	public void modify(ProductVO product)throws Exception;
+	
 }

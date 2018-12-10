@@ -31,4 +31,10 @@ public class ProductServiceImpl implements ProductService{
 	public ProductVO read(String code)throws Exception {
 		return dao.read(code);
 	}
+	
+	@Override
+	public void modify(ProductVO product)throws Exception {
+		dao.modify(product);
+	}
+
 }
