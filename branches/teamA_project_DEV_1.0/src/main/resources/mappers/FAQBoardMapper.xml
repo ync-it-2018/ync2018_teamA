@@ -3,7 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
-<mapper namespace="kr.ync.project.mapper.TipNoticeBoardMapper">
+<mapper namespace="kr.ync.project.mapper.FAQBoardMapper">
 
 	<insert id="create">
 		INSERT INTO TA_BOARD (BOARD_IDX, TITLE, ID, CONTENT,
@@ -11,13 +11,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		VALUES(IDX_CRE.NEXTVAL, #{TITLE}, #{ID}, #{CONTENT}, '01')
 	</insert>
 
-	<select id="listAll" resultType="TipNoticeBoardVO">
+	<select id="listAll" resultType="FAQBoardVO">
 <![CDATA[
 SELECT
-BOARD_IDX, TITLE, WRITEDATE
+FAQ_IDX, CATEGORIZATION, TITLE, WRITEDATE
 FROM
-TA_BOARD
-WHERE BOARD_IDX > 0 AND BOARD_CODE = '01'
+TA_FAQ
+WHERE FAQ_IDX > 0
 ]]>
 	</select>
 
@@ -26,7 +26,7 @@ WHERE BOARD_IDX > 0 AND BOARD_CODE = '01'
 	</delete>
 
 
-	<select id="read" resultType="TipNoticeBoardVO">
+	<select id="read" resultType="FAQBoardVO">
 <![CDATA[
    SELECT 
           TITLE,

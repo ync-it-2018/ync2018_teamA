@@ -145,7 +145,7 @@
               </a>
               <ul class="treeview-menu">
                 <li>
-                   <a href="#">
+                   <a href="/admin/customersupport/faq">
                       <i class="fa fa-circle-o"></i> FAQ
                    </a>
                 </li>

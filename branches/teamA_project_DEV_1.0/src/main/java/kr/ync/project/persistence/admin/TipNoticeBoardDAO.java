@@ -7,7 +7,7 @@ import kr.ync.project.domain.admin.TipNoticeBoardVO;
 public interface TipNoticeBoardDAO {
 	public void create(TipNoticeBoardVO vo)throws Exception;
 	
-	public TipNoticeBoardVO read(Integer bno)throws Exception;
+	public TipNoticeBoardVO read(int code)throws Exception;
 	
 	public void update (TipNoticeBoardVO vo)throws Exception;
 	

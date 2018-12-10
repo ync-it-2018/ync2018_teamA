@@ -16,5 +16,5 @@ public interface TipNoticeBoardService {
 	
 	public void regist(TipNoticeBoardVO board) throws Exception;
 	
-	public TipNoticeBoardVO read(Integer bno) throws Exception;
+	public TipNoticeBoardVO read(int code) throws Exception;
 }

@@ -9,26 +9,26 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import kr.ync.project.domain.admin.TipNoticeBoardVO;
-import kr.ync.project.service.admin.TipNoticeBoardService;
+import kr.ync.project.domain.admin.FAQBoardVO;
+import kr.ync.project.service.admin.FAQBoardService;
 
 @Controller
-public class TipNoticeBoardController {
-	private static final Logger logger = LoggerFactory.getLogger(TipNoticeBoardController.class);
+@RequestMapping("/admin/customersupport/*")
+public class FAQBoardController {
+	private static final Logger logger = LoggerFactory.getLogger(FAQBoardController.class);
 
 	@Inject
-	private TipNoticeBoardService service;
+	private FAQBoardService service;
 
-	@RequestMapping(value = "/tipnoticeboard", method = RequestMethod.GET)
-	public String TipNoticeBoardList(Model model) throws Exception {
+	@RequestMapping(value = "/faq", method = RequestMethod.GET)
+	public String FAQBoardList(Model model) throws Exception {
 
 		// 가나다
-		logger.info("여행 팁 게시판으로 이동");
+		logger.info("FAQ 게시판으로 이동");
 
 		model.addAttribute("list", service.listAll());
-		return "admin/tipnoticeboard";
+		return "admin/customersupport/faq";
 	}
 
 //	@RequestMapping(value = "/remove", method = RequestMethod.GET)
@@ -44,14 +44,14 @@ public class TipNoticeBoardController {
 //	}
 
 	@RequestMapping(value = "/tipnoticeboardupdate", method = RequestMethod.GET)
-	public String TipNoticeBoardRegisterGET(TipNoticeBoardVO board, Model model) throws Exception {
+	public String FAQBoardRegisterGET(FAQBoardVO board, Model model) throws Exception {
 
 		logger.info("register get........");
 		return "admin/tipnoticeboardupdate";
 	}
 
 	@RequestMapping(value = "/tipnoticeboardupdate", method = RequestMethod.POST)
-	public String TipNoticeBoardRegisterPOST(TipNoticeBoardVO board, Model model) throws Exception {
+	public String FAQBoardRegisterPOST(FAQBoardVO board, Model model) throws Exception {
 
 		logger.info("글 등록중");
 		logger.info(board.toString());

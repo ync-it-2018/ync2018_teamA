@@ -4,7 +4,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page session="false"%>
 
-<%@include file="include/header.jsp"%>
+<%@include file="../include/header.jsp"%>
 
 <!-- Main content -->
 <section class="content">
@@ -58,12 +58,14 @@
 							<th>REGDATE</th>
 						</tr>
 
-						<c:forEach items="${list}" var="TipNoticeBoardVO">
+						<c:forEach items="${list}" var="FAQBoardVO">
 
 							<tr>
-								<td>${TipNoticeBoardVO.BOARD_IDX}</td>
-								<td><a href='/admin/tipnoticeboarddetail?code=${TipNoticeBoardVO.BOARD_IDX}'>${TipNoticeBoardVO.TITLE}</a></td>
-								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${TipNoticeBoardVO.WRITEDATE}" /></td>
+								<td>${FAQBoardVO.FAQ_IDX}</td>
+								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${FAQBoardVO.WRITEDATE}" /></td>
+								<td>${FAQBoardVO.CATEGORIZATION}</td>
+								<td><a href='/admin/tipnoticeboarddetail?code=${TipNoticeBoardVO.BOARD_IDX}'>${FAQBoardVO.TITLE}</a></td>
+								
 							</tr>
 <!-- /sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${TipNoticeBoardVO.BOARD_IDX} -->
 						</c:forEach>
@@ -134,4 +136,4 @@
 	});
 </script>
 
-<%@include file="include/footer.jsp"%>
+<%@include file="../include/footer.jsp"%>
