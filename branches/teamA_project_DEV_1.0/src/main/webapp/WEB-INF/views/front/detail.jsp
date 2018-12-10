@@ -13,7 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Single :: w3layouts</title>
+	<title>또봄 투어</title>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -103,9 +103,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</h1>
 			</div>
 			<!-- header-bot -->
-			<div class="col-md-8 header">
+			<div class="collapse navbar-collapse menu--shylock"
+							id="bs-example-navbar-collapse-1">
 				<!-- header lists -->
-				<ul>
+				<ul class="nav navbar-nav menu__list">
 					<li class="dropdown"><a class="nav-stylehead dropdown-toggle"
 						href="#" data-toggle="dropdown">마이페이지 <b class="caret"></b>
 					</a>
@@ -122,6 +123,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="/faq">FAQ</a></li>
 							<li><a href="/notice">공지사항</a></li>
 							<li><a href="/qna">1대1 문의</a></li>
+							<li><a href="/tip">여행 TIP</a></li>
 						</ul></li>
 					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
@@ -139,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="agileits_search">
 					<form action="#" method="post">
 						<input name="Search" type="search"
-							placeholder="How can we help you today?" required="">
+							placeholder="오늘은 어디로 떠나실건가요?" required="">
 						<button type="submit" class="btn btn-default"
 							aria-label="Left Align">
 							<span class="fa fa-search" aria-hidden="true"> </span>

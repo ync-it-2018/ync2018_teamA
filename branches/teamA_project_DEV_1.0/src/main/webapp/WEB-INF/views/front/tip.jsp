@@ -95,7 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="agileits_search">
 					<form action="#" method="post">
 						<input name="Search" type="search"
-							placeholder="How can we help you today?" required="">
+							placeholder="오늘은 어디로 떠나실건가요?" required="">
 						<button type="submit" class="btn btn-default"
 							aria-label="Left Align">
 							<span class="fa fa-search" aria-hidden="true"> </span>
