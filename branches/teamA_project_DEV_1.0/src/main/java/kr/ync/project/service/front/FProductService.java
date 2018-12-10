@@ -9,8 +9,11 @@ public interface FProductService {
 	//해외 패키지 
 	public List<FProductVO> listAll(String nation_code)throws Exception;
 	
-	//메인 : 인기 패키지 
+	//인기 패키지 
 	public List<FProductVO> listAll_best()throws Exception;
+	
+	//추천 패키지 
+	public List<FProductVO> listAll_special()throws Exception;
 	
 	//국내 패키지
 	public List<FProductVO> listAll_domestic(String city_code)throws Exception;

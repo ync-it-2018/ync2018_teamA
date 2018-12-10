@@ -6,7 +6,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="kr.ync.project.mapper.productMapper">
 
 	
-	
+	<!--  해외 상품 리스트 -->
 	<select id="listAll" resultType="FProductVO">
 	<![CDATA[
 		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
@@ -16,6 +16,17 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		]]>
 	</select>
 	
+	<!-- 국내 상품 리스트 -->
+	<select id="listAll_domestic" resultType="FProductVO">
+	<![CDATA[
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.CITY_CODE =  #{city_code}
+		]]>
+	</select>
+	
+	<!-- 상품 상세 보기 화면 -->
 	<select id="read" resultType="FProductVO">
 		<![CDATA[
 		SELECT  *
@@ -27,13 +38,25 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 				]]>
 	</select>
 	
+	<!-- 인기 상품 리스트 -->
 	<select id="listAll_best" resultType="FProductVO">
 		<![CDATA[
 		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
 		FROM 	TA_PRODUCT p, TA_PROIMG pi 
 		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
-		AND     p.CATEGORIZATION = '인기'
+		AND     p.CATEGORIZATION = '인기상품'
 		AND     ROWNUM <=6
+		]]>
+	</select>
+	
+	<!-- 추천 상품 리스트 -->
+	<select id="listAll_special" resultType="FProductVO">
+		<![CDATA[
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.CATEGORIZATION = '특가상품'
+		AND     ROWNUM <=5
 		]]>
 	</select>
 	

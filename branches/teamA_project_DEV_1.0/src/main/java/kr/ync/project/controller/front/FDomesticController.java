@@ -30,6 +30,7 @@ public class FDomesticController {
 		// 가나다
 		logger.info("국내여행상품으로 이동", locale);
 		model.addAttribute("list", service.listAll_domestic(city_code));
+		model.addAttribute("list_special", service.listAll_special());
 		
 		return "front/domestic";
 	}

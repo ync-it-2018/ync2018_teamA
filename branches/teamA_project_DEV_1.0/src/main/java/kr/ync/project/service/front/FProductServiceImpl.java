@@ -35,4 +35,9 @@ public class FProductServiceImpl implements FProductService{
 	public List<FProductVO> listAll_best() throws Exception {
 		return dao.listAll_best();
 	}
+
+	@Override
+	public List<FProductVO> listAll_special() throws Exception {
+		return dao.listAll_special();
+	}
 }

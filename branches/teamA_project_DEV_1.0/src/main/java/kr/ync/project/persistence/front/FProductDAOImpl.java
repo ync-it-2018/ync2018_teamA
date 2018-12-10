@@ -32,12 +32,17 @@ public class FProductDAOImpl implements FProductDAO{
 	@Override
 	public List<FProductVO> listAll_domestic(String city_code) throws Exception {
 		// TODO Auto-generated method stub
-		return session.selectList(namespace + ".listAll", city_code);
+		return session.selectList(namespace + ".listAll_domestic", city_code);
 	}
 
 	@Override
 	public List<FProductVO> listAll_best() throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectList(namespace + ".listAll_best");
+	}
+
+	@Override
+	public List<FProductVO> listAll_special() throws Exception {
+		return session.selectList(namespace + ".listAll_special");
 	}
 }
