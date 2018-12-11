@@ -38,6 +38,7 @@ public class HomeController {
 
 		model.addAttribute("list", service.listAll_best());
 		
+		model.addAttribute("list", service.listAll_imminent());
 		
 		return "front/index";
 

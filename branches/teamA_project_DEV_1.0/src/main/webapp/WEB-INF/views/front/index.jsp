@@ -240,26 +240,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="ban-top">
 		<div class="container">
 			<div class="agileits-navi_search">
-				<form action="#" method="post">
-					<select id="agileinfo-nav_search" name="agileinfo_search"
-						required="">
-						<option value="">전체메뉴</option>
-						<option value="Kitchen">Kitchen</option>
-						<option value="Household">Household</option>
-						<option value="Snacks &amp; Beverages">Snacks & Beverages</option>
-						<option value="Personal Care">Personal Care</option>
-						<option value="Gift Hampers">Gift Hampers</option>
-						<option value="Fruits &amp; Vegetables">Fruits &
-							Vegetables</option>
-						<option value="Baby Care">Baby Care</option>
-						<option value="Soft Drinks &amp; Juices">Soft Drinks &
-							Juices</option>
-						<option value="Frozen Food">Frozen Food</option>
-						<option value="Bread &amp; Bakery">Bread & Bakery</option>
-						<option value="Sweets">Sweets</option>
-					</select>
-				</form>
-			</div>
+					<div class="collapse navbar-collapse menu--shylock"
+						id="bs-example-navbar-collapse-2">
+						<ul class="nav navbar-nav menu__list">
+							<li class="dropdown"><a
+								class="nav-stylehead dropdown-toggle" href="#"
+								data-toggle="dropdown">전체 메뉴 <b class="caret"></b>
+							</a>
+
+								<ul class="dropdown-menu2 agile_short_dropdown"
+									style="width: 50%">
+									<li><a href="/domestic?city_code=ICN">서울/인천/경기</a></li>
+									<li><a href="/domestic?city_code=KAE">강원권</a></li>
+									<li><a href="/domestic?city_code=KR">충청권</a></li>
+									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
+									<li><a href="/domestic?city_code=KPO">경상권</a></li>
+									<li><a href="/domestic?city_code=">제주권</a></li>
+								</ul>
+								<ul class="dropdown-menu2 agile_short_dropdown"
+									style="width: 50%">
+									<li><a href="/domestic?city_code=ICN">서울/인천1/경기</a></li>
+									<li><a href="/domestic?city_code=KAE">강원권</a></li>
+									<li><a href="/domestic?city_code=KR">충청권</a></li>
+									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
+									<li><a href="/domestic?city_code=KPO">경상권</a></li>
+									<li><a href="/domestic?city_code=">제주권</a></li>
+								</ul>
+								</li>
+						</ul>
+					</div>
+				</div>
 			<div class="top_nav_left">
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
@@ -517,89 +527,62 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-md-3 product-sec1">
-						<h4 class="heading-tittle" style="text-align:left;">출발 임박 패키지</h4>
-						<div class="product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/m1.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
+							<h4 class="heading-tittle" style="text-align: left;">출발 임박
+								패키지</h4>
+							<c:forEach items="${listAll_imminent}" var="FProductVO">
+								<div class="col-md-6 product-men">
+									<div class="men-pro-item simpleCart_shelfItem">
+										<div class="men-thumb-item">
+											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
+												width="100%">
+
+											<div class="men-cart-pro">
+												<div class="inner-men-cart-pro">
+													<a
+														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
+														class="link-product-add-cart">상품 보기</a>
+												</div>
+											</div>
+											<!-- <span class="product-new-top">New</span> -->
+										</div>
+										<div class="item-info-product ">
+
+											<h4>
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+											</h4>
+											<div class="info-product-price">
+												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<del>$1020.00</del>
+											</div>
+
+											<div
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" /> <input
+															type="hidden" name="add" value="1" /> <input
+															type="hidden" name="business" value=" " /> <input
+															type="hidden" name="item_name"
+															value="${FProductVO.PRODUCT_NAME}" /> <input
+															type="hidden" name="amount"
+															value="${FProductVO.ADULT_PRICE}" /> <input
+															type="hidden" name="discount_amount" value="1.00" /> <input
+															type="hidden" name="currency_code" value="USD" /> <input
+															type="hidden" name="return" value=" " /> <input
+															type="hidden" name="cancel_return" value=" " /> <input
+															type="submit" name="submit" value="Add to cart"
+															class="button" />
+													</fieldset>
+												</form>
+											</div>
+
 										</div>
 									</div>
-									<span class="product-new-top">New</span>
 								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">Almonds, 100g</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$149.00</span>
-										<del>$280.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Almonds, 100g" /> <input
-													type="hidden" name="amount" value="149.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-								</div>
-							</div>
+							</c:forEach>
+							<div class="clearfix"></div>
 						</div>
-						<div class="product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/m1.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">Almonds, 100g</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$149.00</span>
-										<del>$280.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Almonds, 100g" /> <input
-													type="hidden" name="amount" value="149.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
 					<div></div>
 					<!-- //first section (nuts) -->
 					<h6 style="visibility:hidden"> 짜잔~ </h6>

@@ -23,7 +23,10 @@ public interface FProductService {
 	
 	//국내 패키지
 	public List<FProductVO> listAll_domestic(String city_code)throws Exception;
-
+	
+	//빠른 출발 패키지
+	public List<FProductVO> listAll_imminent()throws Exception;
+		
 	//상품 상세 페이지
 	public FProductVO read(String product_code)throws Exception;
 }
