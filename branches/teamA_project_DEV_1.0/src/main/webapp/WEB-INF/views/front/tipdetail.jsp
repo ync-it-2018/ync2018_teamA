@@ -59,9 +59,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</h1>
 			</div>
 			<!-- header-bot -->
-			<div class="col-md-8 header">
+			<div class="collapse navbar-collapse menu--shylock"
+							id="bs-example-navbar-collapse-1">
 				<!-- header lists -->
-				<ul>
+				<ul class="nav navbar-nav menu__list">
 					<li class="dropdown"><a class="nav-stylehead dropdown-toggle"
 						href="#" data-toggle="dropdown">마이페이지 <b class="caret"></b>
 					</a>
@@ -78,11 +79,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="/faq">FAQ</a></li>
 							<li><a href="/notice">공지사항</a></li>
 							<li><a href="/qna">1대1 문의</a></li>
+							<li><a href="/tip">여행 TIP</a></li>
 						</ul></li>
 					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
 					</a></li>
-					<li><a href="/" data-toggle="modal" data-target="#myModal2">
+					<li><a href="/join" data-toggle="modal" data-target="#myModal2">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
@@ -121,6 +123,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"></div>
 		</div>
 	</div>
+	<!-- signin Model -->
+	<!-- Modal1 -->
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body modal-body-sub_agile">
+					<div class="main-mailposi">
+						<span class="fa fa-envelope-o" aria-hidden="true"></span>
+					</div>
+					<div class="modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign">로그인</h3>
+						<p style="text-align: center">
+							저희 여행사와 함께 즐겁고 행복한 여행 되세요.</br> 로그인을 하시면 더욱 다양한 서비스를 이용하실 수 있습니다.</br>
+						</p>
+						<form action="#" method="post">
+							<div class="contact-form wthree">
+								<div class="">
+									<input type="text" name="name" placeholder="아이디" required="">
+								</div>
+								<div class="">
+									<input class="text" type="password" name="비밀번호"
+										placeholder="비밀번호" required="">
+								</div>
+								<input type="submit" value="로그인" style="margin-left: 30%">
+							</div>
+						</form>
+						<br>
+						<div style="text-align: center">
+							<a href="/login/idFind"> 아이디 찾기</a>｜ <a href="/login/pwdFind">
+								비밀번호 찾기</a>｜ <a href="#" data-toggle="modal" data-target="#myModal2">
+								회원가입</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!-- //Modal content-->
+		</div>
+	</div>
+	<!-- //Modal1 -->
 	<!-- signin Model -->
 	<!-- Modal1 -->
 	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
