@@ -62,7 +62,7 @@
 
 							<tr>
 								<td>${TipNoticeBoardVO.BOARD_IDX}</td>
-								<td><a href=''>${TipNoticeBoardVO.TITLE}</a></td>
+								<td><a href='/admin/tipnoticeboarddetail?code=${TipNoticeBoardVO.BOARD_IDX}'>${TipNoticeBoardVO.TITLE}</a></td>
 								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${TipNoticeBoardVO.WRITEDATE}" /></td>
 							</tr>
 <!-- /sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${TipNoticeBoardVO.BOARD_IDX} -->

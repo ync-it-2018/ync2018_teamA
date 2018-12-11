@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
+<mapper namespace="kr.ync.project.mapper.PackListMapper">
+
+	
+	<insert id="create">
+		<![CDATA[
+		INSERT INTO TA_PRODUCT (PRODUCT_CODE, PRODUCT_NAME, NATION_CODE, CITY_CODE)
+		VALUES('JPOSA-12031200', #{PRODUCT_NAME}, 'JP', 'OSA')
+		]]>
+	</insert>
+	
+	<select id="listAll" resultType="ProductVO">
+		<![CDATA[
+		SELECT
+			ROWNUM, PRODUCT_CODE, PRODUCT_NAME, NATION_CODE, CITY_CODE, DEPARTURE_DATE, ARRIVAL_DATE, TRANSPORTATION, THEME, COSTPRICE
+		FROM
+			TA_PRODUCT
+		]]>
+	</select>
+	
+	<select id="read" resultType="ProductVO">
+		<![CDATA[
+		SELECT
+			 PRODUCT_CODE, PRODUCT_NAME, NATION_CODE, CITY_CODE, DEPARTURE_DATE, ARRIVAL_DATE, TRANSPORTATION, THEME, COSTPRICE, ADULT_PRICE, CHILD_PRICE, BABY_PRICE
+		FROM
+			TA_PRODUCT
+		WHERE 
+			PRODUCT_CODE = #{code}
+		]]>
+	</select>
+	
+	<update id="modify">
+		UPDATE TA_PRODUCT SET PRODUCT_NAME = #{PRODUCT_NAME}
+		WHERE PRODUCT_CODE = #{PRODUCT_CODE}
+	</update>
+	
+	<select id="listCriteria"  resultType="ProductVO">
+	<![CDATA[
+	SELECT	ROWNUM, 
+			PRODUCT_CODE, 
+			PRODUCT_NAME, 
+			NATION_CODE, 
+			CITY_CODE, 
+			DEPARTURE_DATE, 
+			ARRIVAL_DATE, 
+			TRANSPORTATION, 
+			THEME, 
+			COSTPRICE
+	FROM   	TA_PRODUCT
+	ORDER BY ROWNUM desc
+	LIMIT #{pageStart}, #{perPageNum}
+	]]>
+</select>
+
+</mapper>

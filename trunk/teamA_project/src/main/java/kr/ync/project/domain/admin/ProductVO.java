@@ -11,7 +11,7 @@ import lombok.ToString;
 public class ProductVO {
 	private String PRODUCT_NAME;
 	private Integer THENUMBER;
-	private Date DEPARTUE_DATE; //출국
+	private Date DEPARTURE_DATE; //출국
 	private Date ARRIVAL_DATE; //귀국
 	private Integer D_YEAR;
 	private Integer D_MONTH;
@@ -38,4 +38,6 @@ public class ProductVO {
 	private String CITY_CODE;
 	private String REGION_CODE;
 	private Integer MILEAGE_PERCENT;
+	private String PRODUCT_CODE;
+	private Integer ROWNUM;
 }

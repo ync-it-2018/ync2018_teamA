@@ -8,5 +8,11 @@ import kr.ync.project.domain.admin.NoticeBoardVO;
 
 @Service
 public interface NoticeBoardService {
-	public List<NoticeBoardVO> listAll() throws Exception;
+
+	public void regist(NoticeBoardVO product)throws Exception;
+	
+	public List<NoticeBoardVO> listAll()throws Exception;
+	
+	public NoticeBoardVO read(String code)throws Exception;
+	
 }

@@ -6,5 +6,24 @@ import kr.ync.project.domain.front.FProductVO;
 
 public interface FProductService {
 
-	public List<FProductVO> listAll()throws Exception;
+	//해외 패키지 
+	public List<FProductVO> listAll(String nation_code)throws Exception;
+	
+	//인기 패키지 
+	public List<FProductVO> listAll_best()throws Exception;
+	
+	//추천 패키지 
+	public List<FProductVO> listAll_special()throws Exception;
+	
+	//인기/추천/특가 패키지 
+	public List<FProductVO> listAll_categorization(String categorization)throws Exception;
+	
+	//테마 패키지 
+	public List<FProductVO> listAll_theme(String theme)throws Exception;
+	
+	//국내 패키지
+	public List<FProductVO> listAll_domestic(String city_code)throws Exception;
+
+	//상품 상세 페이지
+	public FProductVO read(String product_code)throws Exception;
 }

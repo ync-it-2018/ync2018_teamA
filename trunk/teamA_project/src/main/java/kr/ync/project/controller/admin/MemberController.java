@@ -14,7 +14,7 @@ import kr.ync.project.controller.HomeController;
 @Controller
 public class MemberController {
 
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
 	
 
 	@RequestMapping(value = "/member", method = RequestMethod.GET)

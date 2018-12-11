@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page session="false"%>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -10,7 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Single :: w3layouts</title>
+	<title>또봄 투어</title>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,6 +27,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
+		
 	</script>
 	
 	<!--//tags -->
@@ -42,9 +46,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <style>
 .tg {text-align:center;}
+
+	}
+	        .tabmenu {
+            min-width: 250px;
+            max-width: 500px;
+            padding: 50px;
+            margin-left: 100px auto;
+            background: #ffffff;}
+
+        #content1, #content2,#content3,#content4 {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #ddd;}
+	        /*라디오버튼 숨김*/
+          input {
+              display: none;}
+
+        label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #bbb;
+            border: 1px solid transparent;}
+
+        label:hover {
+            color: #2e9cdf;
+            cursor: pointer;}
+
+        /*input 클릭시, label 스타일*/
+        input:checked + label {
+              color: #555;
+              border: 1px solid #ddd;
+              border-top: 2px solid #2e9cdf;
+              border-bottom: 1px solid #ffffff;}
+
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2,
+        #tab3:checked ~ #content3,
+        #tab4:checked ~ #content4 {
+            display: block;}
 </style>
 
 <body>
+<section class="content">
 	<!-- top-header -->
 	<div class="header-most-top">
 		<p>또봄투어와 즐거운 여행 되세요 ♥</p>
@@ -61,9 +108,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</h1>
 			</div>
 			<!-- header-bot -->
-			<div class="col-md-8 header">
+			<div class="collapse navbar-collapse menu--shylock"
+							id="bs-example-navbar-collapse-1">
 				<!-- header lists -->
-				<ul>
+				<ul class="nav navbar-nav menu__list">
 					<li class="dropdown"><a class="nav-stylehead dropdown-toggle"
 						href="#" data-toggle="dropdown">마이페이지 <b class="caret"></b>
 					</a>
@@ -80,11 +128,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="/faq">FAQ</a></li>
 							<li><a href="/notice">공지사항</a></li>
 							<li><a href="/qna">1대1 문의</a></li>
+							<li><a href="/tip">여행 TIP</a></li>
 						</ul></li>
 					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
 					</a></li>
-					<li><a href="/" data-toggle="modal" data-target="#myModal2">
+					<li><a href="/join" data-toggle="modal" data-target="#myModal2">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
@@ -97,7 +146,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="agileits_search">
 					<form action="#" method="post">
 						<input name="Search" type="search"
-							placeholder="How can we help you today?" required="">
+							placeholder="오늘은 어디로 떠나실건가요?" required="" style="display:block;">
 						<button type="submit" class="btn btn-default"
 							aria-label="Left Align">
 							<span class="fa fa-search" aria-hidden="true"> </span>
@@ -288,35 +337,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									data-toggle="dropdown">해외여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="/overseas">동남아</a></li>
-										<li><a href="/overseas">중국/홍콩</a></li>
-										<li><a href="/overseas">일본</a></li>
-										<li><a href="/overseas">남태평양/괌</a></li>
-										<li><a href="/overseas">유럽</a></li>
-										<li><a href="/overseas">미주/하와이</a></li>
-										<li><a href="/overseas">아프리카</a></li>
+										<li><a href="/overseas?nation_code=ID">동남아</a></li>
+										<li><a href="/overseas?nation_code=HK">중국/홍콩</a></li>
+										<li><a href="/overseas?nation_code=JP">일본</a></li>
+										<li><a href="/overseas?nation_code=GU">남태평양/괌</a></li>
+										<li><a href="/overseas?nation_code=FR">유럽</a></li>
+										<li><a href="/overseas?nation_code=US">미주/하와이</a></li>
+										<li><a href="/overseas?nation_code=ZA">아프리카</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"
 									data-toggle="dropdown">테마여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="/honey">허니문</a></li>
-										<li><a href="/cruise">크루즈</a></li>
-										<li><a href="/culture">예술/문화/역사</a></li>
-										<li><a href="/leports">트래킹/스포츠</a></li>
-										<li><a href="/experience">체험</a></li>
-										<li><a href="/golf">골프</a></li>
-										<li><a href="/food">음식</a></li>
-										<li><a href="/event">이벤트</a></li>
+										<li><a href="/theme?theme=허니문">허니문</a></li>
+										<li><a href="/theme?theme=크루즈">크루즈</a></li>
+										<li><a href="/theme?theme=예술/문화/역사">예술/문화/역사</a></li>
+										<li><a href="/theme?theme=트래킹/스포츠">트래킹/스포츠</a></li>
+										<li><a href="/theme?theme=체험">체험</a></li>
+										<li><a href="/theme?theme=골프">골프</a></li>
+										<li><a href="/theme?theme=음식">음식</a></li>
+										<li><a href="/theme?theme=이벤트">이벤트</a></li>
 									</ul></li>
-								<li class=""><a class="nav-stylehead" href="/popular">인기상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=인기상품">인기상품</a>
 								</li>
-								<li class=""><a class="nav-stylehead" href="/recommand">추천상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=추천상품">추천상품</a>
 								</li>
-								<li class=""><a class="nav-stylehead" href="/special">특가상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=특가상품">특가상품</a>
 								</li>
-								<li class=""><a class="nav-stylehead" href="/contact">빠른출발상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=빠른출발상품">빠른출발상품</a>
 								</li>
 							</ul>
 						</div>
@@ -350,7 +399,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner-bootom-w3-agileits">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">상품 이름
+			<h3 class="tittle-w3l">${FProductVO.PRODUCT_NAME}
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -362,17 +411,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="grid images_3_of_2">
 					<div class="flexslider">
 						<ul class="slides">
-							<li data-thumb="/resources/front/images/osk.jpg">
+							<li data-thumb="/resources/front/images/${FProductVO.ROOT}">
 								<div class="thumb-image">
-									<img src="/resources/front/images/osk.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+									<img src="/resources/front/images/${FProductVO.ROOT}" data-imagezoom="true" class="img-responsive" alt=""> </div>
 							</li>
-							<li data-thumb="/resources/front/images/osk1.jpg">
+							<li data-thumb="/resources/front/images/${FProductVO.ROOT}">
 								<div class="thumb-image">
-									<img src="/resources/front/images/osk1.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+									<img src="/resources/front/images/${FProductVO.ROOT}" data-imagezoom="true" class="img-responsive" alt=""> </div>
 							</li>
-							<li data-thumb="/resources/front/images/osk2.jpg">
+							<li data-thumb="/resources/front/images/${FProductVO.ROOT}">
 								<div class="thumb-image">
-									<img src="/resources/front/images/osk2.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+									<img src="/resources/front/images/${FProductVO.ROOT}" data-imagezoom="true" class="img-responsive" alt=""> </div>
 							</li>
 						</ul>
 						<div class="clearfix"></div>
@@ -380,28 +429,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 			<div class="col-md-7 single-right-left simpleCart_shelfItem">
-				<h4>※ 출발일자를 선택하여 원하시는 여행상품을 확인하세요</h4>
+				<p>※ 일정 등을 꼼꼼히 정독하시고 예약해주세요.</p>
 				<p>
-					<span class="item_price">$950.00</span>
-					<del>$1300.00</del>
-					<label>Free delivery</label>
+					<span class="item_price">${FProductVO.ADULT_PRICE}원</span>(성인기준)
 				</p>
-				<div class="single-infoagile">
-					<div><input type="date" id="userdate" name="userdate" value="2018-12-03"></div>
-				</div>
 				<br>
 				<div class="product-single-w3l">
 					<p>
 					<br>
 						<i class="fa fa-hand-o-right" aria-hidden="true">
-						</i><label>여행 도시</label> 여행 기간
-						 (상품 코드)</p>
+						</i><label>${FProductVO.NATION_NAME} ${FProductVO.CITY_NAME} </label></p>
 					<ul>
 						<li>
-							교통수단
+							출발일자: <fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${FProductVO.DEPARTURE_DATE}"/>
 						</li>
 						<li>
-							상품 설명
+							도착일자: <fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${FProductVO.ARRIVAL_DATE}"/>
+						</li>
+						<li>
+							교통수단: ${FProductVO.TRANSPORTATION}
+						</li>
+						<li>
+							출발인원: ${FProductVO.THENUMBER}명
 						</li>
 					</ul>
 				</div>
@@ -411,39 +460,73 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //Single Page -->
-	<!-- 상품 표 -->
-	<div class="featured-section" id="projects">
-		<div class="container">
-		<table class="tg" border="1" width="100%" >
-				<tr height="50px" bgcolor="#F5DA81">
-					<th width="10%">출발/도착 정보</th>
-					<th width="10%">항공</th>
-					<th width="10%">여행기간</th>
-					<th width="50%">상품명</th>
-					<th width="10%">상품가격</th>
-					<th width="10%">예약상태</th>
-				</tr>
-				<tr height="50px">
-					<td>1234</td>
-					<td>1234</td>
-					<td>1234</td>
-					<td>1234</td>
-					<td>1234</td>
-					<td>1234</td>
-				</tr>
-				<tr height="50px">
-					<td>1234</td>
-					<td>1234</td>
-					<td>1234</td>
-					<td>1234</td>
-					<td>1234</td>
-					<td>1234</td>
-				</tr>
+	<!-- 상품 설명 -->
+				<div class="container">
+				<div class="col-md-8 about-agileits-w3layouts-left">				
+				<div class="tabmenu">
+				    <input id="tab1" type="radio" name="tabs" checked> <!--디폴트 메뉴-->
+				    <label for="tab1">여행일정</label>
 				
-			</table>
-		</div>
-	</div>
+				    <input id="tab2" type="radio" name="tabs">
+				    <label for="tab2">호텔&관광지정보</label>
+				
+				    <input id="tab3" type="radio" name="tabs">
+				    <label for="tab3">선택관광정보</label>
+				
+				    <input id="tab4" type="radio" name="tabs">
+				    <label for="tab4">상품후기</label>
+				
+				    <section id="content1">
+				        <p>${FProductVO.ITINERARY}</p>
+				    </section>
+				
+				    <section id="content2">
+				        <p>${FProductVO.HOTEL_TOUR}</p>
+				    </section>
+				
+				    <section id="content3">
+				        <p>${FProductVO.OPTIONAL_TOUR}</p>
+				    </section>
+				
+				    <section id="content4">
+				        <p>리뷰</p>
+				    </section>
+			    </div>				
+			</div>
+				<div class="col-md-4 about-agileits-w3layouts-right" >
+					<div class="img-video-about" style="width:300px; height:100%; border:1px solid; text-align:center">						<br>
+						성인(만12세 이상) : ${FProductVO.ADULT_PRICE}원<br>
+						------------------------------------------<br>
+						아동(만12세 미만) : ${FProductVO.CHILD_PRICE}원<br>
+						------------------------------------------<br>
+						유아(만2세 미만) : ${FProductVO.BABY_PRICE}원<br>
+						<br>
+					<div>
+						<div class="col-xs-4" >성인</div>
+						<div class="col-xs-4" >아동</div>
+						<div class="col-xs-4" >유아</div>
+						<div class="col-xs-4" >
+						<input id="adault_num" type="number" value="1" style="display:block; width:50px; margin-left:10px;"/></div>						
+						<div class="col-xs-4" >
+						<input id="child_num" type="number" value="0" style="display:block; width:50px; margin-left:10px;"/></div>						
+						<div class="col-xs-4" >
+						<input id="baby_num" type="number" value="0" style="display:block; width:50px; margin-left:10px;"/></div>
+						<div style="height:80px;"></div>
+						총 예정 금액<br>
+						<p style="color:red;">599,000원</p>
+						<div style="height:20px;"></div>
+					</div>
+					<button type="button" class="btn btn-warning btn-lg">장바구니</button>
+					<button type="button" class="btn btn-info btn-lg">예약하기</button>
+					<div style="height:30px;"></div>
+					</div>		
+											
+				</div>
+				<div class="clearfix"></div>
+			</div>
 	<!-- //special offers -->
+	
+	<div style="height:80px"></div>
 
 
 
@@ -620,6 +703,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
+	<script>
+
+	
+
+	</script>
+
+</section>
+
 
 </body>
 

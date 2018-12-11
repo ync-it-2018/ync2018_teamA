@@ -26,4 +26,15 @@ public class ProductServiceImpl implements ProductService{
 	public List<ProductVO> listAll()throws Exception {
 		return dao.listAll();
 	}
+	
+	@Override
+	public ProductVO read(String code)throws Exception {
+		return dao.read(code);
+	}
+	
+	@Override
+	public void modify(ProductVO product)throws Exception {
+		dao.modify(product);
+	}
+
 }

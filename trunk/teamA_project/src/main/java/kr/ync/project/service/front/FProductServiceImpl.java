@@ -16,7 +16,38 @@ public class FProductServiceImpl implements FProductService{
 	private FProductDAO dao;
 	
 	@Override
-	public List<FProductVO> listAll()throws Exception {
-		return dao.listAll();
+	public List<FProductVO> listAll(String nation_code)throws Exception {
+		return dao.listAll(nation_code);
+	}
+
+	@Override
+	public FProductVO read(String product_code) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.read(product_code);
+	}
+
+	@Override
+	public List<FProductVO> listAll_domestic(String city_code) throws Exception {
+		return dao.listAll_domestic(city_code);
+	}
+
+	@Override
+	public List<FProductVO> listAll_best() throws Exception {
+		return dao.listAll_best();
+	}
+
+	@Override
+	public List<FProductVO> listAll_special() throws Exception {
+		return dao.listAll_special();
+	}
+
+	@Override
+	public List<FProductVO> listAll_categorization(String categorization) throws Exception {
+		return dao.listAll_categorization(categorization);
+	}
+
+	@Override
+	public List<FProductVO> listAll_theme(String theme) throws Exception {
+		return dao.listAll_theme(theme);
 	}
 }

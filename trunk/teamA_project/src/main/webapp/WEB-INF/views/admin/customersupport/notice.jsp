@@ -40,7 +40,7 @@
 					</select> <input type="text" name='keyword' id="keywordInput"
 						value='${cri.keyword }'>
 					<button id='searchBtn'>Search</button>
-					<button id='newBtn'>New Board</button>
+					<input type="button" value="New Board" onclick="location.href='/admin/customersupport/register'">
 
 				</div>
 			</div>

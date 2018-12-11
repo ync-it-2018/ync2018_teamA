@@ -5,7 +5,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
 <mapper namespace="kr.ync.project.mapper.TipNoticeBoardMapper">
 
-<select id="listAll" resultType="TipNoticeBoardVO">
+	<insert id="create">
+		INSERT INTO TA_BOARD (BOARD_IDX, TITLE, ID, CONTENT,
+		BOARD_CODE)
+		VALUES(IDX_CRE.NEXTVAL, #{TITLE}, #{ID}, #{CONTENT}, '01')
+	</insert>
+
+	<select id="listAll" resultType="TipNoticeBoardVO">
 <![CDATA[
 SELECT
 BOARD_IDX, TITLE, WRITEDATE
@@ -13,5 +19,25 @@ FROM
 TA_BOARD
 WHERE BOARD_IDX > 0 AND BOARD_CODE = '01'
 ]]>
-</select>
+	</select>
+
+	<delete id="delete">
+		delete from TA_BOARD where BOARD_IDX = #{BOARD_IDX}
+	</delete>
+
+
+	<select id="read" resultType="TipNoticeBoardVO">
+<![CDATA[
+   SELECT 
+   BOARD_IDX,
+          TITLE,
+          WRITEDATE,
+          CONTENT
+   FROM    TA_BOARD 
+   WHERE   BOARD_IDX = #{code}
+   ]]>
+	</select>
+	<!-- <update id="update"> UPDATE tbl_board SET title =#{title}, content 
+		=#{content}, writer =#{writer} WHERE bno = #{bno} </update> -->
+
 </mapper>

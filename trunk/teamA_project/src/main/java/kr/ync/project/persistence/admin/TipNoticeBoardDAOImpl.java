@@ -2,8 +2,6 @@ package kr.ync.project.persistence.admin;
 
 import java.util.List;
 
-import javax.inject.Inject;
-
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -21,7 +19,7 @@ public class TipNoticeBoardDAOImpl implements TipNoticeBoardDAO{
 	
 	@Override
 	public void create(TipNoticeBoardVO vo) throws Exception {
-		
+		session.insert(namespace+".create", vo);
 	}
 
 	@Override
@@ -31,9 +29,9 @@ public class TipNoticeBoardDAOImpl implements TipNoticeBoardDAO{
 	}
 
 	@Override
-	public TipNoticeBoardVO read(Integer bno) throws Exception {
+	public TipNoticeBoardVO read(int code) throws Exception {
 		// TODO Auto-generated method stub
-		return null;
+		return session.selectOne(namespace+".read", code);
 	}
 
 	@Override
@@ -43,14 +41,14 @@ public class TipNoticeBoardDAOImpl implements TipNoticeBoardDAO{
 	}
 
 	@Override
-	public void update(TipNoticeBoardVO vod) throws Exception {
+	public void update(TipNoticeBoardVO vo) throws Exception {
 		// TODO Auto-generated method stub
-		
+		session.insert(namespace+".update", vo);
 	}
 
 	@Override
-	public void delete(Integer bno) throws Exception {
+	public void delete(Integer BOARD_IDX) throws Exception {
 		// TODO Auto-generated method stub
-		
+		session.delete(namespace + ".delete", BOARD_IDX);
 	}
 }

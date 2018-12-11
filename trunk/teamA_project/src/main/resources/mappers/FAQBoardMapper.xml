@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
+<mapper namespace="kr.ync.project.mapper.FAQBoardMapper">
+
+	<insert id="create">
+		INSERT INTO TA_BOARD (BOARD_IDX, TITLE, ID, CONTENT,
+		BOARD_CODE)
+		VALUES(IDX_CRE.NEXTVAL, #{TITLE}, #{ID}, #{CONTENT}, '01')
+	</insert>
+
+	<select id="listAll" resultType="FAQBoardVO">
+<![CDATA[
+SELECT
+FAQ_IDX, CATEGORIZATION, TITLE, WRITEDATE
+FROM
+TA_FAQ
+WHERE FAQ_IDX > 0
+]]>
+	</select>
+
+	<delete id="delete">
+		delete from TA_BOARD where BOARD_IDX = #{BOARD_IDX};
+	</delete>
+
+
+	<select id="read" resultType="FAQBoardVO">
+<![CDATA[
+   SELECT 
+          TITLE,
+          WRITEDATE,
+          CONTENT
+   FROM    TA_BOARD 
+   WHERE   BOARD_IDX = #{code}
+   ]]>
+	</select>
+	<!-- <update id="update"> UPDATE tbl_board SET title =#{title}, content 
+		=#{content}, writer =#{writer} WHERE bno = #{bno} </update> -->
+
+</mapper>

@@ -20,12 +20,39 @@ public class FProductDAOImpl implements FProductDAO{
 	
 
 	@Override
-	public FProductVO read(Integer bno) throws Exception {
-		return session.selectOne(namespace + ".read", bno);
+	public FProductVO read(String product_code) throws Exception {
+		return session.selectOne(namespace + ".read", product_code);
 	}
 
 	@Override
-	public List<FProductVO> listAll() throws Exception {
-		return session.selectList(namespace + ".listAll");
+	public List<FProductVO> listAll(String nation_code) throws Exception {
+		return session.selectList(namespace + ".listAll", nation_code);
+	}
+
+	@Override
+	public List<FProductVO> listAll_domestic(String city_code) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectList(namespace + ".listAll_domestic", city_code);
+	}
+
+	@Override
+	public List<FProductVO> listAll_best() throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectList(namespace + ".listAll_best");
+	}
+
+	@Override
+	public List<FProductVO> listAll_special() throws Exception {
+		return session.selectList(namespace + ".listAll_special");
+	}
+
+	@Override
+	public List<FProductVO> listAll_categorization(String categorization) throws Exception {
+		return session.selectList(namespace + ".listAll_categorization", categorization);
+	}
+
+	@Override
+	public List<FProductVO> listAll_theme(String theme) throws Exception {
+		return session.selectList(namespace + ".listAll_theme", theme);
 	}
 }

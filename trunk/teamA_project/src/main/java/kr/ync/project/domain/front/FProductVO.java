@@ -9,6 +9,7 @@ import lombok.ToString;
 @Setter
 @ToString
 public class FProductVO {
+	private String PRODUCT_CODE;
 	private String PRODUCT_NAME;
 	private Integer THENUMBER;
 	private Date DEPARTURE_DATE; //출국
@@ -38,4 +39,10 @@ public class FProductVO {
 	private String CITY_CODE;
 	private String REGION_CODE;
 	private Integer MILEAGE_PERCENT;
+	
+	private Integer PROIMG_IDX;
+	private String ROOT;
+	
+	private String CITY_NAME;
+	private String NATION_NAME;
 }
