@@ -27,6 +27,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
+		
 	</script>
 	
 	<!--//tags -->
@@ -46,43 +47,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <style>
 .tg {text-align:center;}
 
-	.navi {
-	 width:720px;
-	 margin:0 auto;
-	 border-top:1px solid #333;
-	 border-bottom:2px solid #f00; 
 	}
-	.navi-ul:after {
-	 clear:both;
-	 content:"";
-	 display:block;
-	 height:0;
-	 visibility:hidden; 
-	}
-	.navi-ul-li {
-	 list-style:none;
-	 width:180px;
-	 border-right:1px solid #ddd;
-	 text-align:center;
-	 float:left;
-	}
-	.navi-last {
-	 border:0; 
-	 width:180px;
-	}
-	.navi-a:link, .navi-a:visited {
-	 text-decoration:none;
-	 color:#000;
-	 font-weight:bold;
-	 font-size:14px;
-	 display:block;
-	 height:40px;
-	 line-height:38px;
-	}
-	.navi-a:hover, .navi-a:active, .navi-a:focus {
-	 background:#f00;
-	 color:#fff; 
-	}
+	        .tabmenu {
+            min-width: 250px;
+            max-width: 500px;
+            padding: 50px;
+            margin-left: 100px auto;
+            background: #ffffff;}
+
+        #content1, #content2,#content3,#content4 {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #ddd;}
+	        /*라디오버튼 숨김*/
+          input {
+              display: none;}
+
+        label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #bbb;
+            border: 1px solid transparent;}
+
+        label:hover {
+            color: #2e9cdf;
+            cursor: pointer;}
+
+        /*input 클릭시, label 스타일*/
+        input:checked + label {
+              color: #555;
+              border: 1px solid #ddd;
+              border-top: 2px solid #2e9cdf;
+              border-bottom: 1px solid #ffffff;}
+
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2,
+        #tab3:checked ~ #content3,
+        #tab4:checked ~ #content4 {
+            display: block;}
 </style>
 
 <body>
@@ -141,7 +146,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="agileits_search">
 					<form action="#" method="post">
 						<input name="Search" type="search"
-							placeholder="오늘은 어디로 떠나실건가요?" required="">
+							placeholder="오늘은 어디로 떠나실건가요?" required="" style="display:block;">
 						<button type="submit" class="btn btn-default"
 							aria-label="Left Align">
 							<span class="fa fa-search" aria-hidden="true"> </span>
@@ -345,22 +350,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									data-toggle="dropdown">테마여행 <b class="caret"></b>
 								</a>
 									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="/honey">허니문</a></li>
-										<li><a href="/cruise">크루즈</a></li>
-										<li><a href="/culture">예술/문화/역사</a></li>
-										<li><a href="/leports">트래킹/스포츠</a></li>
-										<li><a href="/experience">체험</a></li>
-										<li><a href="/golf">골프</a></li>
-										<li><a href="/food">음식</a></li>
-										<li><a href="/event">이벤트</a></li>
+										<li><a href="/theme?theme=허니문">허니문</a></li>
+										<li><a href="/theme?theme=크루즈">크루즈</a></li>
+										<li><a href="/theme?theme=예술/문화/역사">예술/문화/역사</a></li>
+										<li><a href="/theme?theme=트래킹/스포츠">트래킹/스포츠</a></li>
+										<li><a href="/theme?theme=체험">체험</a></li>
+										<li><a href="/theme?theme=골프">골프</a></li>
+										<li><a href="/theme?theme=음식">음식</a></li>
+										<li><a href="/theme?theme=이벤트">이벤트</a></li>
 									</ul></li>
-								<li class=""><a class="nav-stylehead" href="/popular">인기상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=인기상품">인기상품</a>
 								</li>
-								<li class=""><a class="nav-stylehead" href="/recommand">추천상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=추천상품">추천상품</a>
 								</li>
-								<li class=""><a class="nav-stylehead" href="/special">특가상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=특가상품">특가상품</a>
 								</li>
-								<li class=""><a class="nav-stylehead" href="/contact">빠른출발상품</a>
+								<li class=""><a class="nav-stylehead" href="/category?categorization=빠른출발상품">빠른출발상품</a>
 								</li>
 							</ul>
 						</div>
@@ -456,42 +461,66 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //Single Page -->
 	<!-- 상품 설명 -->
-				<div class="about-tp">
-				<div class="col-md-8 about-agileits-w3layouts-left">
-					<div class="navi">
-					 <ul class="navi-ul">
-					     <li class="navi-ul-li"><a class="navi-a" href="#">여행일정</a></li>
-					        <li class="navi-ul-li"><a class="navi-a" href="#">호텔&관광지정보</a></li>
-					        <li class="navi-ul-li"><a class="navi-a" href="#">선택관광정보</a></li>
-					        <li class="navi-ul-li"><a class="navi-a" href="#">상품후기</a></li>
-					    </ul>
-					</div>
-					<br>
-					<div style="border:1px solid; width:720px; height:332px; text-align:center; margin-left:40px;">
-					${FProductVO.ITINERARY}
-					</div>
-				</div>
+				<div class="container">
+				<div class="col-md-8 about-agileits-w3layouts-left">				
+				<div class="tabmenu">
+				    <input id="tab1" type="radio" name="tabs" checked> <!--디폴트 메뉴-->
+				    <label for="tab1">여행일정</label>
+				
+				    <input id="tab2" type="radio" name="tabs">
+				    <label for="tab2">호텔&관광지정보</label>
+				
+				    <input id="tab3" type="radio" name="tabs">
+				    <label for="tab3">선택관광정보</label>
+				
+				    <input id="tab4" type="radio" name="tabs">
+				    <label for="tab4">상품후기</label>
+				
+				    <section id="content1">
+				        <p>${FProductVO.ITINERARY}</p>
+				    </section>
+				
+				    <section id="content2">
+				        <p>${FProductVO.HOTEL_TOUR}</p>
+				    </section>
+				
+				    <section id="content3">
+				        <p>${FProductVO.OPTIONAL_TOUR}</p>
+				    </section>
+				
+				    <section id="content4">
+				        <p>리뷰</p>
+				    </section>
+			    </div>				
+			</div>
 				<div class="col-md-4 about-agileits-w3layouts-right" >
-					<div class="img-video-about" style="width:300px; height:400px; border:1px solid; text-align:center">
-						<br>
+					<div class="img-video-about" style="width:300px; height:100%; border:1px solid; text-align:center">						<br>
 						성인(만12세 이상) : ${FProductVO.ADULT_PRICE}원<br>
 						------------------------------------------<br>
 						아동(만12세 미만) : ${FProductVO.CHILD_PRICE}원<br>
 						------------------------------------------<br>
 						유아(만2세 미만) : ${FProductVO.BABY_PRICE}원<br>
 						<br>
-						성인
-						<input id="adault" type="number" value="1"/><br>
-						아동
-						<input id="adault" type="number" value="0"/><br>
-						유아
-						<input id="adault" type="number" value="0"/><br><br>
+					<div>
+						<div class="col-xs-4" >성인</div>
+						<div class="col-xs-4" >아동</div>
+						<div class="col-xs-4" >유아</div>
+						<div class="col-xs-4" >
+						<input id="adault_num" type="number" value="1" style="display:block; width:50px; margin-left:10px;"/></div>						
+						<div class="col-xs-4" >
+						<input id="child_num" type="number" value="0" style="display:block; width:50px; margin-left:10px;"/></div>						
+						<div class="col-xs-4" >
+						<input id="baby_num" type="number" value="0" style="display:block; width:50px; margin-left:10px;"/></div>
+						<div style="height:80px;"></div>
 						총 예정 금액<br>
 						<p style="color:red;">599,000원</p>
-
+						<div style="height:20px;"></div>
+					</div>
 					<button type="button" class="btn btn-warning btn-lg">장바구니</button>
 					<button type="button" class="btn btn-info btn-lg">예약하기</button>
-					</div>								
+					<div style="height:30px;"></div>
+					</div>		
+											
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -674,7 +703,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
+	<script>
+
+	
+
+	</script>
+
 </section>
+
+
 </body>
 
 </html>

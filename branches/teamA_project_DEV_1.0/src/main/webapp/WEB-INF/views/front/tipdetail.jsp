@@ -345,34 +345,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //page -->
 	<!-- top Products -->
-	<h3 class="tittle-w3l">${FProductVO.TITLE}
-				<span class="heading-style">
-					<i></i>
-					<i></i>
-					<i></i>
+	<div class="ads-grid">
+		<div class="container">
+			<!-- tittle heading -->
+			<h3 class="tittle-w3l">${FTipBoardVO.TITLE}
+				<span class="heading-style">					
 				</span>
 			</h3>
+			<!-- //tittle heading -->
+			<!-- product left -->
+
+			<!-- //product left -->
+			<!-- product right -->
 			<div class="agileinfo-ads-display col-md-12 w3l-rightpro">
 				<div class="wrapper">
 					<!-- first section -->
 					<div class="product-sec1">
-									<h4>
-										${FTipBoardVO.CONTENT}
-									</h4>
-									<p></p>
-						
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/${FTipBoardVO.IMG}" alt="" width="50%">
+						<div class="col-md-6 product-men">						
+							<div class="men-pro-item simpleCart_shelfItem">									
+									<img src="/resources/front/images/${FTipBoardVO.IMG}" alt="" width="100%">
 
-									<!-- <span class="product-new-top">New</span> -->
-								</div>
-								<div class="item-info-product ">								
-								 
-
-								</div>
-								<p style="height:15px;"></p>
+								<div style="height:30px;"></div>
 							</div>
+						
+						</div>
+						<div class="col-md-6 product-men">	
+							<p>${FTipBoardVO.CONTENT}</p>
+						</div>
 
 
 						<div class="clearfix"></div>
@@ -381,13 +380,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				</div>
 			</div>
+			<!-- //product right -->
+		</div>
+	</div>
 	<!-- //top products -->
-
-	</section>
-	<!-- //special offers -->
-	<!-- newsletter -->
 	
-
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
