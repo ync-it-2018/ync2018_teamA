@@ -17,7 +17,7 @@ public class FidFindController {
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/login/FidFind", method = RequestMethod.GET)
+	@RequestMapping(value = "/Flogin/FidFind", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
