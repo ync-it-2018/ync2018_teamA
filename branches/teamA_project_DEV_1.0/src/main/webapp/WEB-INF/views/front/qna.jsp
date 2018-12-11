@@ -63,6 +63,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       text-align: center;
       color: #000;
     }
+    .table-hover > tbody > tr:hover {
+      background-color: #fff5d2;
+    }
     .table > tbody > tr > td {
       text-align: center;
       color: #000;
@@ -82,15 +85,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       animation-iteration-count: infinite;
       /* 위 속성들을 한 줄로 표기하기 */
       /* -webkit-animation: blink 1.5s ease infinite; */
-    }
-    #contents {
-    	color : #000;
-    	text-align: center;
-    }
-    
-    #contentsSize {
-    	color : #000;
-    	width : 800px;
     }
 	
 	</style>
@@ -114,9 +108,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</h1>
 			</div>
 			<!-- header-bot -->
-			<div class="col-md-8 header">
+			<div class="collapse navbar-collapse menu--shylock"
+							id="bs-example-navbar-collapse-1">
 				<!-- header lists -->
-				<ul>
+				<ul class="nav navbar-nav menu__list">
 					<li class="dropdown"><a class="nav-stylehead dropdown-toggle"
 						href="#" data-toggle="dropdown">마이페이지 <b class="caret"></b>
 					</a>
@@ -133,6 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="/faq">FAQ</a></li>
 							<li><a href="/notice">공지사항</a></li>
 							<li><a href="/qna">1대1 문의</a></li>
+							<li><a href="/tip">여행 TIP</a></li>
 						</ul></li>
 					<li><a href="/login" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그인
@@ -395,7 +391,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</li>
 					<li>고객센터</li>
 					<i>|</i>
-					<li>공지사항</li>
+					<li>1대1문의</li>
 				</ul>
 			</div>
 		</div>
@@ -414,7 +410,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </c:if>
     </div>
    
-    <h3 class="tittle-w3l">NOTICE
+    <h3 class="tittle-w3l">1대1문의
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -432,18 +428,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </tr>
         </thead>
         <tbody>
+          <c:forEach items="${list}" var="FqnaBoardVO" varStatus="status">
             <tr>
               <td>${status.count}</td>
               <td id="title">
-              ${FNoticeBoardVO.TITLE}
+                <c:if test="${FqnaBoardVO.BOARD_IDX > 0}">
+                  &nbsp;&nbsp;
+                </c:if>
+                <a href="/front/qnaDetail?BOARD_IDX=${FqnaBoardVO.BOARD_IDX}">${FqnaBoardVO.TITLE}</a>
               </td>
-              <td>${FNoticeBoardVO.WRITER}</td>
-              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FNoticeBoardVO.WRITEDATE}"/></td>
+              <td>${FqnaBoardVO.WRITER}</td>
+              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FqnaBoardVO.WRITEDATE}"/></td>
             <tr>
-            <tr>
-             <th id="contents">내용</th>
-             <td colspan="3" id="cotentsSize"> ${FNoticeBoardVO.CONTENT}</td>
-            </tr>
+          </c:forEach>
         </tbody>
       </table>
       

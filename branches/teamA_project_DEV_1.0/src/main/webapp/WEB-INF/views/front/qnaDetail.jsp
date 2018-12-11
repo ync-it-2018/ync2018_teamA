@@ -395,7 +395,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</li>
 					<li>고객센터</li>
 					<i>|</i>
-					<li>공지사항</li>
+					<li>1대1문의</li>
 				</ul>
 			</div>
 		</div>
@@ -414,7 +414,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </c:if>
     </div>
    
-    <h3 class="tittle-w3l">NOTICE
+    <h3 class="tittle-w3l">1대1문의
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -435,14 +435,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <tr>
               <td>${status.count}</td>
               <td id="title">
-              ${FNoticeBoardVO.TITLE}
+              ${FqnaBoardVO.TITLE}
               </td>
-              <td>${FNoticeBoardVO.WRITER}</td>
-              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FNoticeBoardVO.WRITEDATE}"/></td>
+              <td>${FqnaBoardVO.WRITER}</td>
+              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FqnaBoardVO.WRITEDATE}"/></td>
             <tr>
             <tr>
              <th id="contents">내용</th>
-             <td colspan="3" id="cotentsSize"> ${FNoticeBoardVO.CONTENT}</td>
+             <td colspan="3" id="cotentsSize"> ${FqnaBoardVO.CONTENT}</td>
             </tr>
         </tbody>
       </table>
