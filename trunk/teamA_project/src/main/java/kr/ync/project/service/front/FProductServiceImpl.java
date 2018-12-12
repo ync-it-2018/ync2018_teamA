@@ -50,4 +50,9 @@ public class FProductServiceImpl implements FProductService{
 	public List<FProductVO> listAll_theme(String theme) throws Exception {
 		return dao.listAll_theme(theme);
 	}
+	
+	@Override
+	public List<FProductVO> listAll_imminent() throws Exception {
+		return dao.listAll_imminent();
+	}
 }

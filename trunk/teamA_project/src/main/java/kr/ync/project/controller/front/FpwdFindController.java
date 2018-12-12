@@ -17,7 +17,7 @@ public class FpwdFindController {
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/login/FpwdFind", method = RequestMethod.GET)
+	@RequestMapping(value = "/Flogin/FpwdFind", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다

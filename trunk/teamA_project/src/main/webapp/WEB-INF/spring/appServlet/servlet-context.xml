@@ -24,7 +24,7 @@
 	<context:component-scan base-package="kr.ync.project.controller" />
 	<context:component-scan base-package="kr.ync.project.controller.front" />
 	<context:component-scan base-package="kr.ync.project.controller.admin" />
-	<context:component-scan base-package="kr.ync.project.service.admin" />
+
 	<context:component-scan base-package="kr.ync.project.persistence.admin" />
 	<!-- multipartResolver upload file size를 MAX 10M로 설정 -->
 	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
@@ -42,7 +42,24 @@
 		<beans:constructor-arg value="D:\\hyeyoung\\SPRING\\upload">
 		</beans:constructor-arg>
 	</beans:bean>
-	
+
+	 <beans:bean id="FauthInterceptor" class="kr.ync.project.interceptor.FauthInterceptor"></beans:bean>
+	<beans:bean id="FloginInterceptor" class="kr.ync.project.interceptor.FloginInterceptor"></beans:bean>
+
+	<interceptors>
+		<interceptor>
+			<mapping path="/front/FloginPost"/>
+			<beans:ref bean = "FloginInterceptor"/>
+		</interceptor>
+		
+		<interceptor>
+			<mapping path="/FbuyList"/>
+			<mapping path="/Fprofile"/>
+			<mapping path="/Fmileage"/>
+			<mapping path="/Fcoupon"/>
+			<beans:ref bean = "FauthInterceptor"/>
+		</interceptor>
+	</interceptors>
 	<!-- interceptor 관련 설정 필요할때 넣기. 로그인이나 인증관련 기존꺼 복사해서 수정해서 넣기-->
  		
 </beans:beans>

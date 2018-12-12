@@ -80,4 +80,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		]]>
 	</select>
 	
+	<!-- 빠른 출발 패키지 리스트 -->
+	<select id="listAll_imminent" resultType="FProductVO">
+		<![CDATA[
+		SELECT  p.PRODUCT_NAME, p.ADULT_PRICE, pi.ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	(SELECT  * FROM	TA_PRODUCT ORDER BY DEPARTURE_DATE) p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND 	rownum <= 2
+		]]>
+	</select>
+	
 </mapper>

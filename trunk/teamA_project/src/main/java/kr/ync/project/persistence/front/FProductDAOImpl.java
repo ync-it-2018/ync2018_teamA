@@ -55,4 +55,9 @@ public class FProductDAOImpl implements FProductDAO{
 	public List<FProductVO> listAll_theme(String theme) throws Exception {
 		return session.selectList(namespace + ".listAll_theme", theme);
 	}
+	
+	@Override
+	public List<FProductVO> listAll_imminent() throws Exception {
+		return session.selectList(namespace + ".listAll_imminent");
+	}
 }
