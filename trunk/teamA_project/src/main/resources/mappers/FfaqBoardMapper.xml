@@ -3,24 +3,14 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
-<mapper namespace="kr.ync.project.mapper.FmainProductMapper">
+<mapper namespace="kr.ync.project.mapper.FfaqBoardMapper">
 
-<insert id="create">
-	insert into TA_PRODUCT *
-	values(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
-	
-	</insert>
-	
-	<select id="listAll" resultType="FmainProductVO">
-	<![CDATA[
-		SELECT  PRODUCT_NAME, ADULT_PRICE
-		FROM 	TA_PRODUCT 
-		]]>
-	</select>
-	
-	<select id="read" resultType="FmainProductVO">
-		SELECT  *
-		FROM 	TA_PRODUCT 
-		WHERE	product_code = #{product_code}
-	</select>
+<select id="listAll" resultType="FfaqBoardVO">
+<![CDATA[
+SELECT
+TITLE, CONTENT
+FROM
+TA_FAQ
+]]>
+</select>
 </mapper>

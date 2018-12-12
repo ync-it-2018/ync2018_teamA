@@ -87,11 +87,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     	color : #000;
     	text-align: center;
     }
-    
-    #contentsSize {
-    	color : #000;
-    	width : 800px;
-    }
 	
 	</style>
 </head>
@@ -153,9 +148,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <thead>
           <tr>
             <th width="10%">번호</th>
-            <th width="55%">제목</th>
+            <th width="45%">제목</th>
             <th width="15%">작성자</th>
             <th width="20%">작성일</th>
+            <th width="10%">답변유무</th>
           </tr>
         </thead>
         <tbody>
@@ -169,7 +165,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <tr>
             <tr>
              <th id="contents">내용</th>
-             <td colspan="3" id="cotentsSize"> ${FqnaBoardVO.CONTENT}</td>
+             <td colspan="4"  height="450px" style="text-align: left"> ${FqnaBoardVO.CONTENT}</td>
             </tr>
         </tbody>
       </table>
