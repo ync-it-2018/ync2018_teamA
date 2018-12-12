@@ -42,7 +42,7 @@ public class NoticeBoardController {
 		return "admin/customersupport/notice";
 	}
 
-	@RequestMapping(value = "/remove", method = RequestMethod.POST)
+	@RequestMapping(value = "/noticeremove", method = RequestMethod.POST)
 	public String NoticeBoardDelete(SearchCriteria cri, @RequestParam("BOARD_IDX") Integer BOARD_IDX,
 			RedirectAttributes rttr) throws Exception {
 
@@ -80,7 +80,7 @@ public class NoticeBoardController {
 	}
 
 	@RequestMapping(value = "/admin/customersupport/noticedetail", method = RequestMethod.GET)
-	public void TipNoticeBoardread(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("code") Integer BOARD_IDX, Model model) throws Exception {
+	public void NoticeBoardread(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("code") Integer BOARD_IDX, Model model) throws Exception {
 
 		model.addAttribute(service.read(BOARD_IDX));
 	}
@@ -99,7 +99,7 @@ public class NoticeBoardController {
 	}
 	
 	@RequestMapping(value = "/noticemodify", method = RequestMethod.POST)
-	public String TipNoticeBoardModifyPOST(SearchCriteria cri, NoticeBoardVO board, RedirectAttributes rttr) throws Exception {
+	public String NoticeBoardModifyPOST(SearchCriteria cri, NoticeBoardVO board, RedirectAttributes rttr) throws Exception {
 
 		logger.info("글 수정중");
 		
