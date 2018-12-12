@@ -38,5 +38,11 @@ public class ProductDAOImpl implements ProductDAO{
 		// TODO Auto-generated method stub
 		return session.selectList(namespace + ".listAll");
 	}
+
+	@Override
+	public void addAttach(String root) throws Exception {
+		// TODO Auto-generated method stub
+		session.insert(namespace+".addAttach", root);
+	}
 	
 }

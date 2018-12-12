@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page session="false"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
@@ -9,31 +10,13 @@
 
 <script type="text/javascript">
 	
-	$(function() {
-		  $("select[name=NATION_CODE]").change(function() {
-		   var temp = $("select[name=CITY_CODE]");
-		   var a = $(this).val();
-
-		   temp.children().remove();
-		   temp.append('<option value="">지역</option>');
-		   
-		    
-		   if(a == '1'){
-		    temp.append('<option value="">후쿠오카</option>');
-		    temp.append('<option value="">도쿄</option>');
-		   }
-		   if(a == '2'){
-		    temp.append('<option value="">파리</option>');
-		    temp.append('<option value="">마르세유</option>');
-		   }
-		  });
-		 });
-	
 	$(document).ready(function(){
 		
 		var formObj = $("form[role='form']");
 		
 		console.log(formObj);
+		
+
 		
 		$(".btn-warning").on("click", function() {
 			formObj.attr("action", "/admin/PackageModify");
@@ -49,7 +32,6 @@
 		$(".btn-primary").on("click", function() {
 			self.location = "/PackageList";
 		});
-		
 	});
 	
 </script>
@@ -80,119 +62,85 @@ th{
 							<tr>
 								<th align="center" bgcolor="#f0ebeb" style="font-weight:bold; font-size:15px">국가</th>
 								<td>
-									<select name="NATION_CODE">
-										<option value="">국가</option>
-										<option value="1">일본</option>
-										<option value="2">프랑스</option>
-									</select>
+									${productview.NATION_NAME}
 								</td>
-								<th align="center">지역</th>
+								<th align="center">도시</th>
 								<td>
-									<select name="CITY_CODE">
-											<option>지역</option>
-									</select>
+									${productview.CITY_NAME}
 								</td>
 							</tr>
 							<tr>
 								<th  align="center">인원수</th>
-								<td colspan="3"><input type="text" name="THENUMBER"></td>
+								<td colspan="3">${productview.THENUMBER}</td>
 							</tr>
 							<tr>
-								<th rowspan="2" style="padding-top:28px;">출/귀국일</th>
+								<th>출/귀국일</th>
 								<td colspan="3">
-									<select name="D_YEAR">
-										<option value="연도">연도</option>
-									</select>&nbsp;&nbsp;&nbsp;
-									<select name="D_MONTH">
-										<option value="월">월</option>
-									</select>&nbsp;&nbsp;&nbsp;
-									<select name="D_DAY">
-										<option value="일">일</option>
-									</select>&nbsp;&nbsp;&nbsp;
-									<select name="D_HOUR">
-										<option value="시">시</option>
-									</select>&nbsp;&nbsp;&nbsp;
-									<select name="D_MINUTE">
-										<option value="분">분</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td colspan="3">
-									 ~ &nbsp;&nbsp;&nbsp;
-									<select name="A_YEAR">
-										<option value="연도">연도</option>
-									</select>&nbsp;&nbsp;&nbsp;
-									<select name="A_MONTH">
-										<option value="월">월</option>
-									</select>&nbsp;&nbsp;&nbsp;
-									<select name="A_DAY">
-										<option value="일">일</option>
-									</select>&nbsp;&nbsp;&nbsp;
-									<select name="A_HOUR">
-										<option value="시">시</option>
-									</select>&nbsp;&nbsp;&nbsp;
-									<select name="A_MINUTE">
-										<option value="분">분</option>
-									</select>
+									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value ="${productview.DEPARTURE_DATE}"/>
+									&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${productview.ARRIVAL_DATE}"/>	
 								</td>
 							</tr>
 							<tr>
 								<th>교통편</th>
-								<td colspan="3"><input type="text" name="TRANSPORTATION"></td>
+								<td colspan="3">${productview.TRANSPORTATION}</td>
 							</tr>
 							<tr>
 								<th>이미지</th>
-								<td colspan="3"><input type="file" name="packageImage"></td>
+								<td colspan="3">${productview.ROOT}</td>
 							</tr>
 							<tr>
 								<th>테마</th>
 								<td colspan="3">
-									<select name="thema">
-										<option value="x">없음</option>
-									</select>
+									${productview.THEME}
 								</td>
 							</tr>
 							<tr>
 								<th>분류</th>
 								<td colspan="3">
-									<input type="radio" name="CATEGORIZATION">추천상품&nbsp;&nbsp;&nbsp;
-									<input type="radio" name="CATEGORIZATION">특가상품&nbsp;&nbsp;&nbsp;
-									<input type="radio" name="CATEGORIZATION">인기상품&nbsp;&nbsp;&nbsp;
+									${productview.CATEGORIZATION}
 								</td>
 							</tr>
 							<tr>
 								<th rowspan="4" style="padding-top:76px;">가격</th>
-								<td colspan="3">원가: <input type="text" name="PRICE">원</td>
+								<td colspan="3">원가: ${productview.COSTPRICE}원</td>
 							</tr>
 							<tr>	
-								<td colspan="3">성인: <input type="text" name="ADULT_PRICE">원</td>
+								<td colspan="3">성인: ${productview.ADULT_PRICE}원</td>
 							</tr>
 							<tr>
-								<td colspan="3">아동: <input type="text" name="CHILD_PRICE">원</td>
+								<td colspan="3">아동: ${productview.CHILD_PRICE}원</td>
 							</tr>
 							<tr>
-								<td colspan="3">유아: <input type="text" name="BABY_PRICE">원</td>
+								<td colspan="3">유아: ${productview.BABY_PRICE}원</td>
 							</tr>
 							<tr>
 								<th>마일리지(%)</th>
-								<td colspan="3"><input type="text" name="">%</td>
+								<td colspan="3">%</td>
 							</tr>
 							<tr>
 								<th style="padding-top:32px;">여행일정</th>
-								<td colspan="3"><textarea name="travelSchedule" cols="70" rows="3"></textarea></td>
+								<td colspan="3">
+									<textarea cols="70" rows="3" readonly="readonly">${productview.ITINERARY}</textarea>
+								</td>
 							</tr>
 							<tr>
 								<th style="padding-top:24px;">호텔<br>&관광지정보</th>
-								<td colspan="3"><textarea name="HOTEL_TOUR" cols="70" rows="3"></textarea></td>
+								<td colspan="3">
+									<textarea cols="70" rows="3" readonly="readonly">${productview.HOTEL_TOUR}</textarea>
+								</td>
 							</tr>
 							<tr>
 								<th style="padding-top:32px;">선택관광정보</th>
-								<td colspan="3"><textarea name="OPTIONAL_TOUR" cols="70" rows="3"></textarea></td>
+								<td colspan="3">
+									<textarea cols="70" rows="3" readonly="readonly">${productview.OPTIONAL_TOUR}</textarea>
+								</td>
 							</tr>
 							<tr>
-								<th>분류</th>
-								<td colspan="3"><input type="checkbox" name="">판매여부</td>
+								<th>판매여부</th>
+								<td colspan="3">
+									${productview.SALES}
+								</td>
 							</tr>
 							<tr>
 								<td align="center" colspan="4">

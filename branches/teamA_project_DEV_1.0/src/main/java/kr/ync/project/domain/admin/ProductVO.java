@@ -40,4 +40,10 @@ public class ProductVO {
 	private Integer MILEAGE_PERCENT;
 	private String PRODUCT_CODE;
 	private Integer ROWNUM;
+	
+	private Integer PROIMG_IDX;
+	private String[] ROOT;
+	
+	private String CITY_NAME;
+	private String NATION_NAME;
 }
