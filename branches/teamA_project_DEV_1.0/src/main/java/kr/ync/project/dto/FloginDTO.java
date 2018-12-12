@@ -11,6 +11,8 @@ public class FloginDTO {
 	
 	private String ID;
 	private String PASSWD;
+	private String SESSIONKEY;
 	private boolean useCookie;
+	
 	
 }

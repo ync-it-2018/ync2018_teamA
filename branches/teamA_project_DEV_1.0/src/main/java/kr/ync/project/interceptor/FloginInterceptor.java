@@ -27,7 +27,6 @@ public class FloginInterceptor extends HandlerInterceptorAdapter {
 		Object floginVO = modelMap.get("floginVO");
 		
 		if (floginVO != null) {
-			
 			log.info("new login success");
 			session.setAttribute(LOGIN, floginVO);
 			//response.sendRedirect("/");
