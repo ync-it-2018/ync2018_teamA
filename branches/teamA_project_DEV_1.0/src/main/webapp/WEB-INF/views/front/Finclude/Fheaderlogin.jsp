@@ -86,26 +86,36 @@
 	<div class="ban-top">
 		<div class="container">
 			<div class="agileits-navi_search">
-				<form action="#" method="post">
-					<select id="agileinfo-nav_search" name="agileinfo_search"
-						required="">
-						<option value="">전체메뉴</option>
-						<option value="Kitchen">Kitchen</option>
-						<option value="Household">Household</option>
-						<option value="Snacks &amp; Beverages">Snacks & Beverages</option>
-						<option value="Personal Care">Personal Care</option>
-						<option value="Gift Hampers">Gift Hampers</option>
-						<option value="Fruits &amp; Vegetables">Fruits &
-							Vegetables</option>
-						<option value="Baby Care">Baby Care</option>
-						<option value="Soft Drinks &amp; Juices">Soft Drinks &
-							Juices</option>
-						<option value="Frozen Food">Frozen Food</option>
-						<option value="Bread &amp; Bakery">Bread & Bakery</option>
-						<option value="Sweets">Sweets</option>
-					</select>
-				</form>
-			</div>
+					<div class="collapse navbar-collapse menu--shylock"
+						id="bs-example-navbar-collapse-2">
+						<ul class="nav navbar-nav menu__list">
+							<li class="dropdown"><a
+								class="nav-stylehead dropdown-toggle" href="#"
+								data-toggle="dropdown">전체 메뉴 <b class="caret"></b>
+							</a>
+
+								<ul class="dropdown-menu2 agile_short_dropdown"
+									style="width: 50%">
+									<li><a href="/domestic?city_code=ICN">서울/인천/경기</a></li>
+									<li><a href="/domestic?city_code=KAE">강원권</a></li>
+									<li><a href="/domestic?city_code=KR">충청권</a></li>
+									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
+									<li><a href="/domestic?city_code=KPO">경상권</a></li>
+									<li><a href="/domestic?city_code=">제주권</a></li>
+								</ul>
+								<ul class="dropdown-menu2 agile_short_dropdown"
+									style="width: 50%">
+									<li><a href="/domestic?city_code=ICN">서울/인천1/경기</a></li>
+									<li><a href="/domestic?city_code=KAE">강원권</a></li>
+									<li><a href="/domestic?city_code=KR">충청권</a></li>
+									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
+									<li><a href="/domestic?city_code=KPO">경상권</a></li>
+									<li><a href="/domestic?city_code=">제주권</a></li>
+								</ul>
+								</li>
+						</ul>
+					</div>
+				</div>
 			<div class="top_nav_left">
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
