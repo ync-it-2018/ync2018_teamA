@@ -43,7 +43,7 @@
 							<li><a href="/qna">1대1 문의</a></li>
 							<li><a href="/tip">여행 TIP</a></li>
 						</ul></li>
-					<li><a href="/Flogout">
+					<li><a href="/front/Flogout">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그아웃
 					</a></li>
 					<li><a href="/front/Fjoin">

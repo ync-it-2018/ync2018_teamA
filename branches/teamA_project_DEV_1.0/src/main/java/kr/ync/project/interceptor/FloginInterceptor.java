@@ -42,7 +42,7 @@ public class FloginInterceptor extends HandlerInterceptorAdapter {
 			
 			Object dest = session.getAttribute("dest");
 			
-			response.sendRedirect(dest != null ? (String)dest : "/FloginIndex");
+			response.sendRedirect(dest != null ? (String)dest : "/");
 //			response.sendRedirect("/");
 		}
 	}

@@ -56,12 +56,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 				<!-- header lists -->
 				<% Cookie[] useCookie = request.getCookies();
-				if(useCookie == null) { %>
-				<%@include file="Finclude/Fheaderlogin.jsp" %>
-				<% } else { %>
-				<%@include file="Finclude/Fheaderlogout.jsp" %>
+				int resultPage = 0;
+				if(useCookie != null) {
+					for(int i = 0; i < useCookie.length; i++) {
+						if(useCookie[i].getName().equals("loginCookie")) { 
+							resultPage = 1;%>
+						<% }%>
+					<% }%>
+					<%if(resultPage == 1) { %>
+						<%@include file="Finclude/Fheaderlogout.jsp" %>
+					<% } else {%>
+						<%@include file="Finclude/Fheaderlogin.jsp" %>
+					<% }%>
 				<% }%>
-				
 	<!-- //navigation -->
 	<!-- banner -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -1430,10 +1437,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					</li>
 				</ul>
+				
 			</div>
 		</div>
 	</div>
 	</section>
+	
 	<!-- //special offers -->
 	<!-- copyright -->
 	<div class="copy-right">
@@ -1444,6 +1453,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</p>
 		</div>
 	</div>
+	
 	<!-- //copyright -->
 
 	<!-- js-files -->

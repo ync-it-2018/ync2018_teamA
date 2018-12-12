@@ -54,7 +54,7 @@ private static final Logger logger = LoggerFactory.getLogger(FfaqController.clas
 		}
 	}
 	
-	@RequestMapping(value = "/Flogout", method = RequestMethod.GET)
+	@RequestMapping(value = "/front/Flogout", method = RequestMethod.GET)
 	public String logout(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws Exception {
 		Object obj = session.getAttribute("login");
 		
