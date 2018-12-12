@@ -18,9 +18,7 @@
 				<div class="box-header with-border">
 					<h3 class="box-title">Board List</h3>
 				</div>
-
 				<div class='box-body'>
-
 					<select name="searchType">
 						<option value="t"
 							<c:out value="${cri.searchType eq 't'?'selected':''}"/>>
@@ -28,8 +26,6 @@
 					</select> <input type="text" name='keyword' id="keywordInput"
 						value='${cri.keyword }'>
 					<button id='searchBtn'>Search</button>
-					<button id='newBtn'>New Board</button>
-
 				</div>
 			</div>
 
@@ -44,10 +40,9 @@
 							<th>TITLE</th>
 							<th>REGDATE</th>
 						</tr>
-
-						<c:forEach items="${list}" var="TipNoticeBoardVO">
+						<c:forEach items="${list}" var="TipNoticeBoardVO" varStatus="status">
 							<tr>
-								<td>${TipNoticeBoardVO.BOARD_IDX}</td>
+								<td>${status.count}</td>
 								<td><a href='/admin/tipnoticeboarddetail?code=${TipNoticeBoardVO.BOARD_IDX}'>${TipNoticeBoardVO.TITLE}</a></td>
 								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${TipNoticeBoardVO.WRITEDATE}" /></td>
 							</tr>
@@ -57,13 +52,9 @@
 					</table>
 				</div>
 				<!-- /.box-body -->
-
-
 				<div class="box-footer">
-
 					<div class="text-center">
 						<ul class="pagination">
-
 							<c:if test="${pageMaker.prev}">
 								<li><a href="tipnoticeboard${pageMaker.makeSearch(pageMaker.startPage - 1) }">&laquo;</a></li>
 							</c:if>
@@ -129,5 +120,4 @@
 		});
 	});
 </script>
-
 <%@include file="include/footer.jsp"%>

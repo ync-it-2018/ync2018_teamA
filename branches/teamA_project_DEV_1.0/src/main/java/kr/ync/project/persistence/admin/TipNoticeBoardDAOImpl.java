@@ -89,6 +89,4 @@ public class TipNoticeBoardDAOImpl implements TipNoticeBoardDAO{
 		// TODO Auto-generated method stub
 		session.update(namespace + ".updateViewCnt", bno);
 	}
-
-	
 }
