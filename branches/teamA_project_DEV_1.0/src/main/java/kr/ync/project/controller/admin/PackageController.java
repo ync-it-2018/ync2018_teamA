@@ -22,10 +22,7 @@ import kr.ync.project.service.admin.ProductService;
 
 @RequestMapping("/admin")
 public class PackageController {
-	
-//	@Resource(name = "uploadPath")
-//	private String uploadPath;
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(PackageController.class);
 	
 	@Inject
@@ -48,12 +45,7 @@ public class PackageController {
 		logger.info("size: " + ROOT.getSize());
 		logger.info("contentType: " + ROOT.getContentType());
 		
-//		// uploadPath에 바로 저장시키기
-//		String savedName = uploadFile(ROOT.getOriginalFilename(), ROOT.getBytes());
-//		// String savedName = UploadFileUtils.uploadFile(uploadPath, file.getOriginalFilename(), file.getBytes());
-//		
-//		// 실제 저장된 file명을 view에 전달한다.
-//		model.addAttribute("savedName", savedName);
+
 //		logger.info("패키지등록");
 //		logger.info(data.toString());
 //		

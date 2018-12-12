@@ -22,9 +22,6 @@
 				<div class='box-body'>
 
 					<select name="searchType">
-						<option value="n"
-							<c:out value="${cri.searchType == null?'selected':''}"/>>
-							---</option>
 						<option value="t"
 							<c:out value="${cri.searchType eq 't'?'selected':''}"/>>
 							Title</option>
@@ -35,7 +32,6 @@
 
 				</div>
 			</div>
-
 
 			<div class="box">
 				<div class="box-header with-border">
@@ -50,7 +46,6 @@
 						</tr>
 
 						<c:forEach items="${list}" var="TipNoticeBoardVO">
-
 							<tr>
 								<td>${TipNoticeBoardVO.BOARD_IDX}</td>
 								<td><a href='/admin/tipnoticeboarddetail?code=${TipNoticeBoardVO.BOARD_IDX}'>${TipNoticeBoardVO.TITLE}</a></td>

@@ -31,7 +31,7 @@ public class TipNoticeBoardController {
 		// 가나다
 		logger.info("여행 팁 게시판으로 이동");
 
-		model.addAttribute("list", service.listCriteria(cri));
+		model.addAttribute("list", service.listSearchCriteria(cri));
 		PageMaker pageMaker = new PageMaker();
 		pageMaker.setCri(cri);
 
