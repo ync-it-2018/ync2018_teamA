@@ -154,13 +154,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="agileinfo-ads-display col-md-9 w3l-rightpro">
 				<div class="wrapper">
 					<!-- first section -->
-					<div class="product-sec1">
+					<div class="product-sec1">					
 					<c:forEach items="${list_overseas}" var="FProductVO">
-						<div class="col-xs-4 product-men">
-						
+						<div class="col-xs-4 product-men">						
 							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/${FProductVO.ROOT}" alt="" width="100%">
+								<div class="men-thumb-item" style="width:230px; height:180px;">
+									<img src="/resources/front/images/${FProductVO.ROOT}" alt="" width="230px;" height=180px;">
 									
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
@@ -169,11 +168,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<!-- <span class="product-new-top">New</span> -->
 								</div>
-								<div class="item-info-product ">
-								
-									<h4>
-										<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
-									</h4>
+								<div class="item-info-product" >
+									<div style="height:30px;">
+										<h4>
+											<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+										</h4>
+									</div>
 									<div class="info-product-price">
 										<span class="item_price">${FProductVO.ADULT_PRICE}원</span>
 									</div>

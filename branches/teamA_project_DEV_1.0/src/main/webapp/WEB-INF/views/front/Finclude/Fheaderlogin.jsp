@@ -57,7 +57,7 @@
 				<div class="agileits_search">
 					<form action="#" method="post">
 						<input name="Search" type="search"
-							placeholder="오늘은 어디로 떠나실건가요?" required="">
+							placeholder="오늘은 어디로 떠나실건가요?" required="" style="display:block;">
 						<button type="submit" class="btn btn-default"
 							aria-label="Left Align">
 							<span class="fa fa-search" aria-hidden="true"> </span>
