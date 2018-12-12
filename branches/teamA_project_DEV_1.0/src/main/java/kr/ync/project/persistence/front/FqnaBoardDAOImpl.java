@@ -26,6 +26,7 @@ public class FqnaBoardDAOImpl implements FqnaBoardDAO{
 	@Override
 	public FqnaBoardVO read_qna(int BOARD_IDX) throws Exception {
 		// TODO Auto-generated method stub
+		System.out.println("--------------------idx = " + BOARD_IDX);
 		return session.selectOne(namespace + ".read_qna", BOARD_IDX);
 	}
 

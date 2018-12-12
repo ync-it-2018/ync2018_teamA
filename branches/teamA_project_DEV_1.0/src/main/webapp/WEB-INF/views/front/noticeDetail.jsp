@@ -86,12 +86,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     #contents {
     	color : #000;
     	text-align: center;
+    	padding-top: 100px;
     }
     
-    #contentsSize {
-    	color : #000;
-    	width : 800px;
-    }
 	
 	</style>
 </head>
@@ -169,7 +166,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <tr>
             <tr>
              <th id="contents">내용</th>
-             <td colspan="3" id="cotentsSize"> ${FNoticeBoardVO.CONTENT}</td>
+             <td colspan="3" height="450px" style="text-align: left"> ${FNoticeBoardVO.CONTENT}</td>
             </tr>
         </tbody>
       </table>
