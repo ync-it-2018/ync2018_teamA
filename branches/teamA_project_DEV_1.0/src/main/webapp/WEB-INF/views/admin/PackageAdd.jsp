@@ -234,7 +234,7 @@ th{
 									</tr>
 									<tr>
 										<th>이미지</th>
-										<td colspan="3"><input type="file" name="file"></td>
+										<td colspan="3"><input type="file" name="ROOT"></td>
 									</tr>
 									<tr>
 										<th>테마</th>
