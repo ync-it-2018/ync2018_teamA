@@ -117,7 +117,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <select id="listSearchCount"  resultType="int">
    <![CDATA[
-      SELECT   count(BOARD_IDX)
+      SELECT  count(BOARD_IDX)
       FROM   TA_BOARD
    ]]>
    
