@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page session="false"%>
 
@@ -43,8 +43,24 @@
 					<div class="form-group">
 						<label for="exampleInputPassword1">내용</label>
 						<textarea class="form-control" name="CONTENT" rows="3"
-							readonly="readonly">${tipNoticeBoardVO.CONTENT}</textarea>
+							readonly="readonly">${tipNoticeBoardVO.CONTENT}
+							</textarea>
 					</div>
+					<div class="form-group">
+						<label for="tipnoticeImportant">IMPORTMANT</label>
+						<c:choose>
+							<c:when test="${tipNoticeBoardVO.IMPORTMANT eq 'Y'}"> 
+							<input type="radio" name="IMPORTMANT" value="Y" required checked>Y&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="IMPORTMANT" value="N" required disabled>N
+							</c:when>
+							<c:otherwise> 
+							<input type="radio" name="IMPORTMANT" value="Y" required disabled>Y&nbsp;&nbsp;&nbsp; 
+							<input type="radio" name="IMPORTMANT" value="N" required checked>N
+							</c:otherwise>
+						</c:choose>
+						
+					</div>
+					
 				</div>
 				<!-- /.box-body -->
 
@@ -62,7 +78,7 @@
 						console.log(formObj);
 
 						$(".btn-warning").on("click", function() {
-							formObj.attr("action", "/board/modify");
+							formObj.attr("action", "/tipnoticeboardmodify");
 							formObj.attr("method", "get");
 							formObj.submit();
 						});
@@ -73,7 +89,7 @@
 						});
 
 						$(".btn-primary").on("click", function() {
-							self.location = "/board/listAll";
+							self.location = "/tipnoticeboard";
 						});
 
 					});

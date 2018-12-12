@@ -43,14 +43,14 @@ public class FAQBoardController {
 //		return "admin/tipnoticeboard";
 //	}
 
-	@RequestMapping(value = "/tipnoticeboardupdate", method = RequestMethod.GET)
+	@RequestMapping(value = "/faqboardupdate", method = RequestMethod.GET)
 	public String FAQBoardRegisterGET(FAQBoardVO board, Model model) throws Exception {
 
 		logger.info("register get........");
 		return "admin/tipnoticeboardupdate";
 	}
 
-	@RequestMapping(value = "/tipnoticeboardupdate", method = RequestMethod.POST)
+	@RequestMapping(value = "/faqboardupdate", method = RequestMethod.POST)
 	public String FAQBoardRegisterPOST(FAQBoardVO board, Model model) throws Exception {
 
 		logger.info("글 등록중");
@@ -61,8 +61,8 @@ public class FAQBoardController {
 		return "redirect:/tipnoticeboard";
 	}
 
-	@RequestMapping(value = "/admin/tipnoticeboarddetail", method = RequestMethod.GET)
-	public void TipNoticeBoardread(@RequestParam("code") int code, Model model) throws Exception {
+	@RequestMapping(value = "/admin/faqboarddetail", method = RequestMethod.GET)
+	public void FAQBoardread(@RequestParam("code") int code, Model model) throws Exception {
 
 		model.addAttribute(service.read(code));
 //		return "redirect:/tipnoticeboard";

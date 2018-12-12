@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import kr.ync.project.domain.admin.Criteria;
+import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.domain.admin.TipNoticeBoardVO;
 import kr.ync.project.persistence.admin.TipNoticeBoardDAO;
 
@@ -39,8 +41,32 @@ public class TipNoticeBoardServiceImpl implements TipNoticeBoardService {
 	}
 
 	@Override
-	public TipNoticeBoardVO read(int code) throws Exception {
+	public TipNoticeBoardVO read(Integer BOARD_IDX) throws Exception {
 		// TODO Auto-generated method stub
-		return dao.read(code);
+		return dao.read(BOARD_IDX);
+	}
+
+	@Override
+	public List<TipNoticeBoardVO> listCriteria(Criteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.listCriteria(cri);
+	}
+
+	@Override
+	public int listCountCriteria(Criteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.countPaging(cri);
+	}
+
+	@Override
+	public List<TipNoticeBoardVO> listSearchCriteria(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.listSearch(cri);
+	}
+
+	@Override
+	public int listSearchCount(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.listSearchCount(cri);
 	}
 }

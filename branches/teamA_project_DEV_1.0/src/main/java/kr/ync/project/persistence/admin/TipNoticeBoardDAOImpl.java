@@ -6,6 +6,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import kr.ync.project.domain.admin.Criteria;
+import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.domain.admin.TipNoticeBoardVO;
 
 @Repository
@@ -23,15 +25,9 @@ public class TipNoticeBoardDAOImpl implements TipNoticeBoardDAO{
 	}
 
 	@Override
-	public void modify(TipNoticeBoardVO vo) throws Exception {
+	public TipNoticeBoardVO read(Integer BOARD_IDX) throws Exception {
 		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public TipNoticeBoardVO read(int code) throws Exception {
-		// TODO Auto-generated method stub
-		return session.selectOne(namespace+".read", code);
+		return session.selectOne(namespace+".read", BOARD_IDX);
 	}
 
 	@Override
@@ -51,4 +47,48 @@ public class TipNoticeBoardDAOImpl implements TipNoticeBoardDAO{
 		// TODO Auto-generated method stub
 		session.delete(namespace + ".delete", BOARD_IDX);
 	}
+
+	@Override
+	public List<TipNoticeBoardVO> listCriteria(Criteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectList(namespace+".listCriteria", cri);
+	}
+
+	@Override
+	public List<TipNoticeBoardVO> listSearch(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectList(namespace+".listSearch", cri);
+	}
+
+	@Override
+	public int listSearchCount(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectOne(namespace+".listSearchCount", cri);
+	}
+
+	@Override
+	public int countPaging(Criteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectOne(namespace + ".countPaging", cri);
+	}
+
+	@Override
+	public List<TipNoticeBoardVO> listPage(int page) throws Exception {
+		// TODO Auto-generated method stub
+		if (page <= 0) {
+			page = 1;
+		}
+
+		page = (page - 1) * 10;
+
+		return session.selectList(namespace + ".listPage", page);
+	}
+
+	@Override
+	public void updateViewCnt(Integer bno) throws Exception {
+		// TODO Auto-generated method stub
+		session.update(namespace + ".updateViewCnt", bno);
+	}
+
+	
 }

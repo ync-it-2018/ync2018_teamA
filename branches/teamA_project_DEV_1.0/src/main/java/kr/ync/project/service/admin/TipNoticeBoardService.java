@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import kr.ync.project.domain.admin.Criteria;
+import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.domain.admin.TipNoticeBoardVO;
 
 @Service
@@ -16,5 +18,14 @@ public interface TipNoticeBoardService {
 	
 	public void regist(TipNoticeBoardVO board) throws Exception;
 	
-	public TipNoticeBoardVO read(int code) throws Exception;
+	public TipNoticeBoardVO read(Integer BOARD_IDX) throws Exception;
+	
+	public List<TipNoticeBoardVO> listCriteria(Criteria cri) throws Exception;
+
+	public int listCountCriteria(Criteria cri) throws Exception;
+
+	public List<TipNoticeBoardVO> listSearchCriteria(SearchCriteria cri) throws Exception;
+
+	public int listSearchCount(SearchCriteria cri) throws Exception;
+
 }
