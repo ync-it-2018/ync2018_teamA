@@ -110,7 +110,7 @@
 									<li><a href="/domestic?city_code=KR">충청권</a></li>
 									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 									<li><a href="/domestic?city_code=KPO">경상권</a></li>
-									<li><a href="/domestic?city_code=">제주권</a></li>
+									<li><a href="/domestic?city_code=CJU">제주권</a></li>
 								</ul>
 								</li>
 						</ul>
