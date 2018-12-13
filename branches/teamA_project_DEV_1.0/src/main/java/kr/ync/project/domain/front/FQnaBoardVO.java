@@ -8,8 +8,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class FQnaBoardVO {
-	
+public class FQnaBoardVO {	
 	private Integer BOARD_IDX;
 	private String TITLE;
 	private String WRITER;

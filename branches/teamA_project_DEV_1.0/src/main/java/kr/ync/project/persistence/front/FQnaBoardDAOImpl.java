@@ -17,12 +17,14 @@ public class FQnaBoardDAOImpl implements FQnaBoardDAO{
 	private static String namespace = 
 			"kr.ync.project.mapper.FQnaBoardMapper";
 
+	//리스트
 	@Override
 	public List<FQnaBoardVO> listAll() throws Exception {
 
 		return session.selectList(namespace + ".listAll");
 	}
 
+	//상세보기
 	@Override
 	public FQnaBoardVO read_Qna(int BOARD_IDX) throws Exception {
 
