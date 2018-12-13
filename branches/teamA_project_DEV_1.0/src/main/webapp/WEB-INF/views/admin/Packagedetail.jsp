@@ -52,7 +52,7 @@ th{
 					</div>
 					<div class="box-body">
 						<form role="form" method="post">
-							<input type='hidden' name='code' value="${productview.PRODUCT_CODE}">
+						<input type='text' name='code' value="${productview.PRODUCT_CODE}">
 						</form>
 						<table class="table table-bordered">
 							<tr>
@@ -87,7 +87,7 @@ th{
 							</tr>
 							<tr>
 								<th>이미지</th>
-								<td colspan="3">${productview.ROOT}</td>
+								<td colspan="3"></td>
 							</tr>
 							<tr>
 								<th>테마</th>
@@ -131,7 +131,7 @@ th{
 								</td>
 							</tr>
 							<tr>
-								<th style="padding-top:32px;">선택관광정보</th>
+								<th style="padding-top:32px;">선택<br>관광정보</th>
 								<td colspan="3">
 									<textarea cols="70" rows="3" readonly="readonly">${productview.OPTIONAL_TOUR}</textarea>
 								</td>

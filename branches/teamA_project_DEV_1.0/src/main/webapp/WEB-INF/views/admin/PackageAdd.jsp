@@ -49,7 +49,7 @@
 			}
 		}
 		
-		for(var i = 1; i <= 60; i++) {
+		for(var i = 0; i < 60; i++) {
 			if(i/10 >= 1) {
 				dminute.append('<option value=' + i + '>' + i + '</option>');
 				aminute.append('<option value=' + i + '>' + i + '</option>');
@@ -84,14 +84,21 @@
 			
 		});
 		   
-		 
+		
+		  
 	 	$('input[name="SALES"]').change(function(){
 			if($(this).prop('checked')){
-				$(this).val('y');
+				$(this).val('Y');
 			} else {
-				$(this).val('n');
+				$(this).val('N');
 			}
 		});
+	 	
+	 	$('input[name="CAT"]').change(function() {
+	 		var name = $(':input[name="CAT"]:radio:checked').val();
+	 		
+	 		$('input[name="CATEGORIZATION"]').val(name);
+	 	})
 	 	
 	 	$('select[name="D_YEAR"], select[name="D_MONTH"], select[name="D_DAY"], select[name="D_HOUR"], select[name="D_MINUTE"]').change(function() {
 			var dyear = $('select[name="D_YEAR"]').val();
@@ -110,7 +117,7 @@
 			var ahour = $('select[name="A_HOUR"]').val();
 			var aminute = $('select[name="A_MINUTE"]').val();
 			
-			$('input[name="DEPARTURE_DATE"]').val(ayear+"/"+amonth+"/"+aday+" "+ahour+":"+aminute);
+			$('input[name="ARRIVAL_DATE"]').val(ayear+"/"+amonth+"/"+aday+" "+ahour+":"+aminute);
 	 	});
 	 	
 	 	$('input[name="NATION_CODE"], input[name="CITY_CODE"], select[name="D_MONTH"], select[name="D_DAY"], select[name="D_HOUR"], select[name="D_MINUTE"]').change(function(){
@@ -159,7 +166,7 @@ th{
 										</td>
 									</tr>
 									<tr>
-										<th align="center" bgcolor="#f0ebeb" style="font-weight:bold; font-size:15px">국가</th>
+										<th align="center" style="font-weight:bold; font-size:15px">국가</th>
 										<td>
 											<input type="text" name="NATION_CODE">
 											<!-- <select name="NATION_CODE">
@@ -189,18 +196,17 @@ th{
 										</td> -->
 										 
 										<td colspan="3">
-											<!-- <input type="hidden" name="DEPARTURE_DATE" value=""> -->
+											<input type="datetime" name="DEPARTURE_DATE" value="">
 											<select name="D_YEAR">
 												<option value="0">연도</option>
+												<option value="2018">2018</option>
 												<option value="2019">2019</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="D_MONTH">
-												<option value="00">월</option>
-																
+												<option value="00">월</option>				
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="D_DAY">
 												<option value="00">일</option>
-												<option value="01">01</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="D_HOUR">
 												<option value="00">시</option>
@@ -209,22 +215,23 @@ th{
 												<option value="00">분</option>
 											</select>
 											&nbsp;&nbsp;&nbsp; ~ &nbsp;&nbsp;&nbsp;
-											<!-- <input type="hidden" name="DEPARTURE_DATE" value=""> -->
+											<input type="datetime" name="ARRIVAL_DATE" value=""> 
 											<select name="A_YEAR">
 												<option value="0">연도</option>
+												<option value="2018">2018</option>
 												<option value="2019">2019</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="A_MONTH">
-												<option value="">월</option>
+												<option value="00">월</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="A_DAY">
-												<option value="">일</option>
+												<option value="00">일</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="A_HOUR">
-												<option value="">시</option>
+												<option value="00">시</option>
 											</select>&nbsp;&nbsp;&nbsp;
 											<select name="A_MINUTE">
-												<option value="">분</option>
+												<option value="00">분</option>
 											</select>
 										</td>
 									</tr>
@@ -234,27 +241,36 @@ th{
 									</tr>
 									<tr>
 										<th>이미지</th>
-										<td colspan="3"><input type="file" name="ROOT"></td>
+										<td colspan="3"><input type="file" name=""></td>
 									</tr>
 									<tr>
 										<th>테마</th>
 										<td colspan="3">
-											<select name="thema">
+											<select name="THEME">
 												<option value="x">없음</option>
+												<option value="허니문">허니문</option>
+												<option value="골프">골프</option>
+												<option value="크루즈">크루즈</option>
+												<option value="음식">음식</option>
+												<option value="예술/문화/역사">예술/문화/역사</option>
+												<option value="이벤트">이벤트</option>
+												<option value="트래킹/스포츠">트래킹/스포츠</option>
+												<option value="체험">체험</option>
 											</select>
 										</td>
 									</tr>
 									<tr>
 										<th>분류</th>
 										<td colspan="3">
-											<input type="radio" name="CATEGORIZATION">추천상품&nbsp;&nbsp;&nbsp;
-											<input type="radio" name="CATEGORIZATION">특가상품&nbsp;&nbsp;&nbsp;
-											<input type="radio" name="CATEGORIZATION">인기상품&nbsp;&nbsp;&nbsp;
+											<input type="hidden" name="CATEGORIZATION" value="">
+											<input type="radio" name= "CAT" value="추천상품">추천상품&nbsp;&nbsp;&nbsp;
+											<input type="radio" name= "CAT" value="특가상품">특가상품&nbsp;&nbsp;&nbsp;
+											<input type="radio" name= "CAT" value="인기상품">인기상품&nbsp;&nbsp;&nbsp;
 										</td>
 									</tr>
 									<tr>
 										<th rowspan="4">가격</th>
-										<td colspan="3">원가: <input type="text" name="PRICE">원</td>
+										<td colspan="3">원가: <input type="text" name="COSTPRICE">원</td>
 									</tr>
 									<tr>	
 										<td colspan="3">성인: <input type="text" name="ADULT_PRICE">원</td>
@@ -271,7 +287,7 @@ th{
 									</tr>
 									<tr>
 										<th>여행일정</th>
-										<td colspan="3"><textarea name="travelSchedule" cols="70" rows="3"></textarea></td>
+										<td colspan="3"><textarea name="ITINERARY" cols="70" rows="3"></textarea></td>
 									</tr>
 									<tr>
 										<th>호텔<br>관광지정보</th>
@@ -283,7 +299,7 @@ th{
 									</tr>
 									<tr>
 										<th>판매여부</th>
-										<td colspan="3"><input type="checkbox" name="SALES" value="n">판매여부</td>
+										<td colspan="3"><input type="checkbox" name="SALES" value="Y">판매여부</td>
 									</tr>
 									<tr>
 										<td colspan="6"><button type="submit" class="btn btn-primary">등록</button></td>

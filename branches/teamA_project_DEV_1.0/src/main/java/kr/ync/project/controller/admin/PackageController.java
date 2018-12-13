@@ -1,16 +1,11 @@
 package kr.ync.project.controller.admin;
 
-import java.io.File;
-import java.util.UUID;
-
-import javax.annotation.Resource;
 import javax.inject.Inject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
@@ -41,18 +36,19 @@ public class PackageController {
 
 		// 가나다
 		
-		logger.info("originalName: " + ROOT.getOriginalFilename());
-		logger.info("size: " + ROOT.getSize());
-		logger.info("contentType: " + ROOT.getContentType());
-		
+//		logger.info("originalName: " + ROOT.getOriginalFilename());
+//		logger.info("size: " + ROOT.getSize());
+//		logger.info("contentType: " + ROOT.getContentType());
+//		
 
-//		logger.info("패키지등록");
-//		logger.info(data.toString());
-//		
-//		service.regist(data);
-//		
-//		model.addAttribute("result", "success");
-//
+
+		logger.info("패키지등록");
+		logger.info(data.toString());
+		
+		service.regist(data);
+		
+		model.addAttribute("result", "success");
+
 		return "admin/success";
 	}
 	

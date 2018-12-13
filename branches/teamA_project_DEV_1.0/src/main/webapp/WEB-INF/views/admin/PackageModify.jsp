@@ -186,7 +186,7 @@ th{
 									</tr>
 									<tr>
 										<th style="padding-top:32px;">여행일정</th>
-										<td colspan="3"><textarea name="travelSchedule" cols="70" rows="3"></textarea></td>
+										<td colspan="3"><textarea name="ITINERARY" cols="70" rows="3"></textarea></td>
 									</tr>
 									<tr>
 										<th style="padding-top:24px;">호텔<br>관광지정보</th>
