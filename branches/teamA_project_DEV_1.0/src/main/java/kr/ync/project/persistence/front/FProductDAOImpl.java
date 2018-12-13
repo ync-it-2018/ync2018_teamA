@@ -60,4 +60,54 @@ public class FProductDAOImpl implements FProductDAO{
 	public List<FProductVO> listAll_imminent() throws Exception {
 		return session.selectList(namespace + ".listAll_imminent");
 	}
+	
+	@Override
+	public List<FProductVO> listAll_main_special() throws Exception {
+		return session.selectList(namespace + ".listAll_main_special");
+	}
+	
+	@Override
+	public List<FProductVO> listAll_osusume() throws Exception {
+		return session.selectList(namespace + ".listAll_osusume");
+	}
+	
+	@Override
+	public List<FProductVO> listAll_honey() throws Exception {
+		return session.selectList(namespace + ".listAll_honey");
+	}
+	
+	@Override
+	public List<FProductVO> listAll_golf() throws Exception {
+		return session.selectList(namespace + ".listAll_golf");
+	}
+	
+	@Override
+	public List<FProductVO> listAll_cruise() throws Exception {
+		return session.selectList(namespace + ".listAll_cruise");
+	}
+	
+	@Override
+	public List<FProductVO> listAll_food() throws Exception {
+		return session.selectList(namespace + ".listAll_food");
+	}
+	
+	@Override
+	public List<FProductVO> listAll_culture() throws Exception {
+		return session.selectList(namespace + ".listAll_culture");
+	}
+	
+	@Override
+	public List<FProductVO> listAll_event() throws Exception {
+		return session.selectList(namespace + ".listAll_event");
+	}
+	
+	@Override
+	public List<FProductVO> listAll_leports() throws Exception {
+		return session.selectList(namespace + ".listAll_leports");
+	}
+	
+	@Override
+	public List<FProductVO> listAll_experience() throws Exception {
+		return session.selectList(namespace + ".listAll_experience");
+	}
 }

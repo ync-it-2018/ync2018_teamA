@@ -227,6 +227,550 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<c:forEach items="${list}" var="FProductVO">
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item" style="width:230px; height:170px;">
+									<img src="/resources/front/images/${FProductVO.ROOT}" alt="" width="230px" height="170px">
+									
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}' class="link-product-add-cart">상품 보기</a>
+										</div>
+									</div>
+									<!-- <span class="product-new-top">New</span> -->
+								</div>
+								<div class="item-info-product ">
+									<p style="overflow:hidden; width:230px; height:50px;">
+										<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+									</p>
+									<div class="info-product-price">
+										<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+									</div>
+								 
+									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+										<form action="#" method="post">
+											<fieldset>
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="business" value=" " />
+												<input type="hidden" name="item_name" value="${FProductVO.PRODUCT_NAME}" />
+												<input type="hidden" name="amount" value="${FProductVO.ADULT_PRICE}" />
+												<input type="hidden" name="discount_amount" value="1.00" />
+												<input type="hidden" name="currency_code" value="USD" />
+												<input type="hidden" name="return" value=" " />
+												<input type="hidden" name="cancel_return" value=" " />
+												<input type="submit" name="submit" value="Add to cart" class="button" />
+											</fieldset>
+										</form> 
+									</div>
+
+								</div>
+							</div>
+						</div>
+							</c:forEach> 
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-3 product-sec1">
+						<h4 class="heading-tittle" style="text-align:left;">출발 임박 패키지</h4>
+						<c:forEach items="${listAll_imminent}" var="FProductVO">
+								<div class="col-md-12 product-men">
+									<div class="men-pro-item simpleCart_shelfItem">
+										<div class="men-thumb-item" style="width:230px; height:170px;">
+											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
+												 width="210px" height="170px">
+
+											<div class="men-cart-pro">
+												<div class="inner-men-cart-pro">
+													<a
+														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
+														class="link-product-add-cart">상품 보기</a>
+												</div>
+											</div>
+											<!-- <span class="product-new-top">New</span> -->
+										</div>
+										<div class="item-info-product ">
+											<p style="overflow:hidden; width:230px; height:50px;">
+												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+											</p>
+											<div class="info-product-price">
+												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+											</div>
+
+											<div
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" /> <input
+															type="hidden" name="add" value="1" /> <input
+															type="hidden" name="business" value=" " /> <input
+															type="hidden" name="item_name"
+															value="${FProductVO.PRODUCT_NAME}" /> <input
+															type="hidden" name="amount"
+															value="${FProductVO.ADULT_PRICE}" /> <input
+															type="hidden" name="discount_amount" value="1.00" /> <input
+															type="hidden" name="currency_code" value="USD" /> <input
+															type="hidden" name="return" value=" " /> <input
+															type="hidden" name="cancel_return" value=" " /> <input
+															type="submit" name="submit" value="Add to cart"
+															class="button" />
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</c:forEach>
+						<div class="clearfix"></div>
+					</div>
+					<!-- //first section (nuts) -->
+					<h6 style="visibility:hidden"> 짜잔~ </h6>
+					<!-- third section (oils) -->
+						<div class="col-md-6 product-sec1">
+							<h4 class="heading-tittle" style="text-align: left;">
+								<sapn style="color:red;">강력추천</sapn>
+								테마 여행
+							</h4>
+							<div class="col-md-4 product-sec4">
+								<div class="product-sec3 thema-select1">
+									<h5 class="text-align:center">허니문</h5>
+								</div>
+								<div class="product-sec3 thema-select2">
+									<h5 class="text-align:center">골프</h5>
+								</div>
+								<div class="product-sec3 thema-select3">
+									<h5 class="text-align:center">크루즈</h5>
+								</div>
+								<div class="product-sec3 thema-select4">
+									<h5 class="text-align:center">음식</h5>
+								</div>
+								<div class="product-sec3 thema-select5">
+									<h5 class="text-align:center">예술/문화/역사</h5>
+								</div>
+								<div class="product-sec3 thema-select6">
+									<h5 class="text-align:center">이벤트</h5>
+								</div>
+								<div class="product-sec3 thema-select7">
+									<h5 class="text-align:center">트래킹/스포츠</h5>
+								</div>
+								<div class="product-sec3 thema-select8">
+									<h5 class="text-align:center">체험</h5>
+								</div>
+							</div>
+							<!-- 허니문 패키지 -->
+							<c:forEach items="${listAll_honey}" var="FProductVO">
+								<div class="col-md-4 product-men thema-selected1">
+									<div class="men-pro-item simpleCart_shelfItem">
+										<div class="men-thumb-item">
+											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
+												width="100%">
+
+											<div class="men-cart-pro">
+												<div class="inner-men-cart-pro">
+													<a
+														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
+														class="link-product-add-cart">상품 보기</a>
+												</div>
+											</div>
+											<!-- <span class="product-new-top">New</span> -->
+										</div>
+										<div class="item-info-product ">
+											<h4>
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+											</h4>
+											<div class="info-product-price">
+												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+											</div>
+
+											<div
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out" style="margin:0px">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" /> <input
+															type="hidden" name="add" value="1" /> <input
+															type="hidden" name="business" value=" " /> <input
+															type="hidden" name="item_name"
+															value="${FProductVO.PRODUCT_NAME}" /> <input
+															type="hidden" name="amount"
+															value="${FProductVO.ADULT_PRICE}" /> <input
+															type="hidden" name="discount_amount" value="1.00" /> <input
+															type="hidden" name="currency_code" value="USD" /> <input
+															type="hidden" name="return" value=" " /> <input
+															type="hidden" name="cancel_return" value=" " /> <input
+															type="submit" name="submit" value="Add to cart"
+															class="button" />
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</c:forEach>
+							<!-- 골프 패키지 -->
+							<c:forEach items="${listAll_golf}" var="FProductVO">
+								<div class="col-md-4 product-men thema-selected2" style="display:none;">
+									<div class="men-pro-item simpleCart_shelfItem">
+										<div class="men-thumb-item">
+											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
+												width="100%">
+
+											<div class="men-cart-pro">
+												<div class="inner-men-cart-pro">
+													<a
+														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
+														class="link-product-add-cart">상품 보기</a>
+												</div>
+											</div>
+											<!-- <span class="product-new-top">New</span> -->
+										</div>
+										<div class="item-info-product ">
+											<h4>
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+											</h4>
+											<div class="info-product-price">
+												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<del>$1020.00</del>
+											</div>
+
+											<div
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" /> <input
+															type="hidden" name="add" value="1" /> <input
+															type="hidden" name="business" value=" " /> <input
+															type="hidden" name="item_name"
+															value="${FProductVO.PRODUCT_NAME}" /> <input
+															type="hidden" name="amount"
+															value="${FProductVO.ADULT_PRICE}" /> <input
+															type="hidden" name="discount_amount" value="1.00" /> <input
+															type="hidden" name="currency_code" value="USD" /> <input
+															type="hidden" name="return" value=" " /> <input
+															type="hidden" name="cancel_return" value=" " /> <input
+															type="submit" name="submit" value="Add to cart"
+															class="button" />
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</c:forEach>
+							<!-- 크루즈 패키지 -->
+							<c:forEach items="${listAll_cruise}" var="FProductVO">
+								<div class="col-md-4 product-men thema-selected3" style="display:none;">
+									<div class="men-pro-item simpleCart_shelfItem">
+										<div class="men-thumb-item">
+											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
+												width="100%">
+
+											<div class="men-cart-pro">
+												<div class="inner-men-cart-pro">
+													<a
+														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
+														class="link-product-add-cart">상품 보기</a>
+												</div>
+											</div>
+											<!-- <span class="product-new-top">New</span> -->
+										</div>
+										<div class="item-info-product ">
+											<h4>
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+											</h4>
+											<div class="info-product-price">
+												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<del>$1020.00</del>
+											</div>
+
+											<div
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" /> <input
+															type="hidden" name="add" value="1" /> <input
+															type="hidden" name="business" value=" " /> <input
+															type="hidden" name="item_name"
+															value="${FProductVO.PRODUCT_NAME}" /> <input
+															type="hidden" name="amount"
+															value="${FProductVO.ADULT_PRICE}" /> <input
+															type="hidden" name="discount_amount" value="1.00" /> <input
+															type="hidden" name="currency_code" value="USD" /> <input
+															type="hidden" name="return" value=" " /> <input
+															type="hidden" name="cancel_return" value=" " /> <input
+															type="submit" name="submit" value="Add to cart"
+															class="button" />
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</c:forEach>
+							<!-- 음식 패키지 -->
+							<c:forEach items="${listAll_food}" var="FProductVO">
+								<div class="col-md-4 product-men thema-selected4" style="display:none;">
+									<div class="men-pro-item simpleCart_shelfItem">
+										<div class="men-thumb-item">
+											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
+												width="100%">
+
+											<div class="men-cart-pro">
+												<div class="inner-men-cart-pro">
+													<a
+														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
+														class="link-product-add-cart">상품 보기</a>
+												</div>
+											</div>
+											<!-- <span class="product-new-top">New</span> -->
+										</div>
+										<div class="item-info-product ">
+											<h4>
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+											</h4>
+											<div class="info-product-price">
+												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<del>$1020.00</del>
+											</div>
+
+											<div
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" /> <input
+															type="hidden" name="add" value="1" /> <input
+															type="hidden" name="business" value=" " /> <input
+															type="hidden" name="item_name"
+															value="${FProductVO.PRODUCT_NAME}" /> <input
+															type="hidden" name="amount"
+															value="${FProductVO.ADULT_PRICE}" /> <input
+															type="hidden" name="discount_amount" value="1.00" /> <input
+															type="hidden" name="currency_code" value="USD" /> <input
+															type="hidden" name="return" value=" " /> <input
+															type="hidden" name="cancel_return" value=" " /> <input
+															type="submit" name="submit" value="Add to cart"
+															class="button" />
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</c:forEach>
+							<!-- 예술/문화/역사 패키지 -->
+							<c:forEach items="${listAll_culture}" var="FProductVO">
+								<div class="col-md-4 product-men thema-selected5" style="display:none;">
+									<div class="men-pro-item simpleCart_shelfItem">
+										<div class="men-thumb-item">
+											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
+												width="100%">
+
+											<div class="men-cart-pro">
+												<div class="inner-men-cart-pro">
+													<a
+														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
+														class="link-product-add-cart">상품 보기</a>
+												</div>
+											</div>
+											<!-- <span class="product-new-top">New</span> -->
+										</div>
+										<div class="item-info-product ">
+											<h4>
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+											</h4>
+											<div class="info-product-price">
+												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<del>$1020.00</del>
+											</div>
+
+											<div
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" /> <input
+															type="hidden" name="add" value="1" /> <input
+															type="hidden" name="business" value=" " /> <input
+															type="hidden" name="item_name"
+															value="${FProductVO.PRODUCT_NAME}" /> <input
+															type="hidden" name="amount"
+															value="${FProductVO.ADULT_PRICE}" /> <input
+															type="hidden" name="discount_amount" value="1.00" /> <input
+															type="hidden" name="currency_code" value="USD" /> <input
+															type="hidden" name="return" value=" " /> <input
+															type="hidden" name="cancel_return" value=" " /> <input
+															type="submit" name="submit" value="Add to cart"
+															class="button" />
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</c:forEach>
+							<!-- 이벤트 패키지 -->
+							<c:forEach items="${listAll_event}" var="FProductVO">
+								<div class="col-md-4 product-men thema-selected6" style="display:none;">
+									<div class="men-pro-item simpleCart_shelfItem">
+										<div class="men-thumb-item">
+											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
+												width="100%">
+
+											<div class="men-cart-pro">
+												<div class="inner-men-cart-pro">
+													<a
+														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
+														class="link-product-add-cart">상품 보기</a>
+												</div>
+											</div>
+											<!-- <span class="product-new-top">New</span> -->
+										</div>
+										<div class="item-info-product ">
+											<h4>
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+											</h4>
+											<div class="info-product-price">
+												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<del>$1020.00</del>
+											</div>
+
+											<div
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" /> <input
+															type="hidden" name="add" value="1" /> <input
+															type="hidden" name="business" value=" " /> <input
+															type="hidden" name="item_name"
+															value="${FProductVO.PRODUCT_NAME}" /> <input
+															type="hidden" name="amount"
+															value="${FProductVO.ADULT_PRICE}" /> <input
+															type="hidden" name="discount_amount" value="1.00" /> <input
+															type="hidden" name="currency_code" value="USD" /> <input
+															type="hidden" name="return" value=" " /> <input
+															type="hidden" name="cancel_return" value=" " /> <input
+															type="submit" name="submit" value="Add to cart"
+															class="button" />
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</c:forEach>
+							<!-- 트래킹/스포츠 패키지 -->
+							<c:forEach items="${listAll_leports}" var="FProductVO">
+								<div class="col-md-4 product-men thema-selected7" style="display:none;">
+									<div class="men-pro-item simpleCart_shelfItem">
+										<div class="men-thumb-item">
+											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
+												width="100%">
+
+											<div class="men-cart-pro">
+												<div class="inner-men-cart-pro">
+													<a
+														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
+														class="link-product-add-cart">상품 보기</a>
+												</div>
+											</div>
+											<!-- <span class="product-new-top">New</span> -->
+										</div>
+										<div class="item-info-product ">
+											<h4>
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+											</h4>
+											<div class="info-product-price">
+												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<del>$1020.00</del>
+											</div>
+
+											<div
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" /> <input
+															type="hidden" name="add" value="1" /> <input
+															type="hidden" name="business" value=" " /> <input
+															type="hidden" name="item_name"
+															value="${FProductVO.PRODUCT_NAME}" /> <input
+															type="hidden" name="amount"
+															value="${FProductVO.ADULT_PRICE}" /> <input
+															type="hidden" name="discount_amount" value="1.00" /> <input
+															type="hidden" name="currency_code" value="USD" /> <input
+															type="hidden" name="return" value=" " /> <input
+															type="hidden" name="cancel_return" value=" " /> <input
+															type="submit" name="submit" value="Add to cart"
+															class="button" />
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</c:forEach>
+							<!-- 체험 패키지 -->
+							<c:forEach items="${listAll_experience}" var="FProductVO">
+								<div class="col-md-4 product-men thema-selected8" style="display:none;">
+									<div class="men-pro-item simpleCart_shelfItem">
+										<div class="men-thumb-item">
+											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
+												width="100%">
+
+											<div class="men-cart-pro">
+												<div class="inner-men-cart-pro">
+													<a
+														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
+														class="link-product-add-cart">상품 보기</a>
+												</div>
+											</div>
+											<!-- <span class="product-new-top">New</span> -->
+										</div>
+										<div class="item-info-product ">
+											<h4>
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+											</h4>
+											<div class="info-product-price">
+												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<del>$1020.00</del>
+											</div>
+
+											<div
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" /> <input
+															type="hidden" name="add" value="1" /> <input
+															type="hidden" name="business" value=" " /> <input
+															type="hidden" name="item_name"
+															value="${FProductVO.PRODUCT_NAME}" /> <input
+															type="hidden" name="amount"
+															value="${FProductVO.ADULT_PRICE}" /> <input
+															type="hidden" name="discount_amount" value="1.00" /> <input
+															type="hidden" name="currency_code" value="USD" /> <input
+															type="hidden" name="return" value=" " /> <input
+															type="hidden" name="cancel_return" value=" " /> <input
+															type="submit" name="submit" value="Add to cart"
+															class="button" />
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</c:forEach>
+							<div class="clearfix"></div>
+						</div>
+						<!-- //third section (oils) -->
+					<!-- fourth section (noodles) -->
+
+					<div class="col-md-6 product-sec1">
+						<h4 class="heading-tittle " style="text-align: left;"><span style="color:red">HOT </span>특가 패키지</h4>
+						<c:forEach items="${listAll_main_special}" var="FProductVO">
+						<div class="col-md-4 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="/resources/front/images/${FProductVO.ROOT}" alt="" width="100%">
 									
@@ -268,884 +812,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</div>
 							</c:forEach> 
-						
-						<div class="clearfix"></div>
-					</div>
-					<div class="col-md-3 product-sec1">
-						<h4 class="heading-tittle" style="text-align:left;">출발 임박 패키지</h4>
-						<c:forEach items="${listAll_imminent}" var="FProductVO">
-								<div class="col-md-6 product-men">
-									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item">
-											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
-												width="100%">
-
-											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro">
-													<a
-														href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}'
-														class="link-product-add-cart">상품 보기</a>
-												</div>
-											</div>
-											<!-- <span class="product-new-top">New</span> -->
-										</div>
-										<div class="item-info-product ">
-
-											<h4>
-												<a
-													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
-											</h4>
-											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
-												<del>$1020.00</del>
-											</div>
-
-											<div
-												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-												<form action="#" method="post">
-													<fieldset>
-														<input type="hidden" name="cmd" value="_cart" /> <input
-															type="hidden" name="add" value="1" /> <input
-															type="hidden" name="business" value=" " /> <input
-															type="hidden" name="item_name"
-															value="${FProductVO.PRODUCT_NAME}" /> <input
-															type="hidden" name="amount"
-															value="${FProductVO.ADULT_PRICE}" /> <input
-															type="hidden" name="discount_amount" value="1.00" /> <input
-															type="hidden" name="currency_code" value="USD" /> <input
-															type="hidden" name="return" value=" " /> <input
-															type="hidden" name="cancel_return" value=" " /> <input
-															type="submit" name="submit" value="Add to cart"
-															class="button" />
-													</fieldset>
-												</form>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</c:forEach>
-						<div class="clearfix"></div>
-					</div>
-					<div></div>
-					<!-- //first section (nuts) -->
-					<h6 style="visibility:hidden"> 짜잔~ </h6>
-					<!-- third section (oils) -->
-					<div class="col-md-6 product-sec1">
-						<h4 class="heading-tittle" style="text-align:left;"><sapn style="color:red;">강력추천</sapn>테마 여행</h4>
-						<div class="col-md-4 product-sec4">
-							<div class="product-sec3 thema-select1"><h5 class="text-align:center">허니문</h5></div>
-							<div class="product-sec3 thema-select2"><h5 class="text-align:center">골프</h5></div>
-							<div class="product-sec3 thema-select3"><h5 class="text-align:center">크루즈</h5></div>
-							<div class="product-sec3 thema-select4"><h5 class="text-align:center">음식</h5></div>
-							<div class="product-sec3 thema-select5"><h5 class="text-align:center">예술/문화/역사</h5></div>
-							<div class="product-sec3 thema-select6"><h5 class="text-align:center">이벤트</h5></div>
-							<div class="product-sec3 thema-select7"><h5 class="text-align:center">트래킹/스포츠</h5></div>
-							<div class="product-sec3 thema-select8"><h5 class="text-align:center">체험</h5></div>
-						</div>
-						<div class="col-md-4 product-men thema-selected1">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">허니문1</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected1">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk6.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">허니문2</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$399.99</span>
-										<del>$500.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Fortune Oil, 5L" /> <input
-													type="hidden" name="amount" value="399.99" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected2" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">골프1</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected2" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">골프2</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected3" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">크루즈1</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected3" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">크루즈2</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected4" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">음식1</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected4" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">음식2</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected5" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">예술/문화/역사1</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected5" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">예술/문화/역사2</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected6" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">이벤트1</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected6" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">이벤트2</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected7" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">트래킹/스포츠1</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected7" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">트래킹/스포츠2</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected8" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">체험1</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men thema-selected8" style="display:none;">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk5.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">체험2</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$130.00</span>
-										<del>$150.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Saffola Gold, 1L" /> <input
-													type="hidden" name="amount" value="130.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<!-- //third section (oils) -->
-					<!-- fourth section (noodles) -->
-
-					<div class="col-md-6 product-sec1">
-						<h3 class="heading-tittle">Pasta & Noodles</h3>
-						<div class="col-md-4 product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk7.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">Yippee Noodles, 65g</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$15.00</span>
-										<del>$25.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="YiPPee Noodles, 65g" /> <input
-													type="hidden" name="amount" value="15.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk8.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">Wheat Pasta, 500g</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$98.00</span>
-										<del>$120.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Wheat Pasta, 500g" /> <input
-													type="hidden" name="amount" value="98.00" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="/resources/front/images/mk9.jpg" alt="">
-									<div class="men-cart-pro">
-										<div class="inner-men-cart-pro">
-											<a href="/single" class="link-product-add-cart">상품보기</a>
-										</div>
-									</div>
-									<span class="product-new-top">New</span>
-
-								</div>
-								<div class="item-info-product ">
-									<h4>
-										<a href="/single">Chinese Noodles, 68g</a>
-									</h4>
-									<div class="info-product-price">
-										<span class="item_price">$11.99</span>
-										<del>$15.00</del>
-									</div>
-									<div
-										class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" /> <input
-													type="hidden" name="add" value="1" /> <input type="hidden"
-													name="business" value=" " /> <input type="hidden"
-													name="item_name" value="Chinese Noodles, 68g" /> <input
-													type="hidden" name="amount" value="11.99" /> <input
-													type="hidden" name="discount_amount" value="1.00" /> <input
-													type="hidden" name="currency_code" value="USD" /> <input
-													type="hidden" name="return" value=" " /> <input
-													type="hidden" name="cancel_return" value=" " /> <input
-													type="submit" name="submit" value="Add to cart"
-													class="button" />
-											</fieldset>
-										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
 						<div class="clearfix"></div>
 					</div>
 					<!-- //fourth section (noodles) -->
@@ -1160,304 +826,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<!-- tittle heading -->
 			<h3 class="tittle-w3l">
-				Special Offers <span class="heading-style"> <i></i> <i></i> <i></i>
+				또봄 추천 패키지 <span class="heading-style"> <i></i> <i></i> <i></i>
 				</span>
 			</h3>
 			<!-- //tittle heading -->
-			<div class="content-bottom-in">
-				<ul id="flexiselDemo1">
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="/single"> <img src="/resources/front/images/s1.jpg"
-									alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="/single">Aashirvaad, 5g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$220.00</h6>
-									<p>Save $40.00</p>
+				<div class="content-bottom-in">
+					<ul id="flexiselDemo1">
+						<c:forEach items="${listAll_osusume}" var="FProductVO">
+							<li>
+								<div class="w3l-specilamk">
+									<div class="speioffer-agile">
+										<a href="/single"> <img
+											src="/resources/front/images/${FProductVO.ROOT}" alt="">
+										</a>
+									</div>
+									<div class="product-name-w3l">
+										<h4>
+											<a
+												href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
+										</h4>
+										<div class="info-product-price">
+											<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+										</div>
+										<div
+											class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" /> <input
+														type="hidden" name="add" value="1" /> <input
+														type="hidden" name="business" value=" " /> <input
+														type="hidden" name="item_name"
+														value="${FProductVO.PRODUCT_NAME}" /> <input
+														type="hidden" name="amount"
+														value="${FProductVO.ADULT_PRICE}" /> <input type="hidden"
+														name="discount_amount" value="1.00" /> <input
+														type="hidden" name="currency_code" value="USD" /> <input
+														type="hidden" name="return" value=" " /> <input
+														type="hidden" name="cancel_return" value=" " /> <input
+														type="submit" name="submit" value="Add to cart"
+														class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
 								</div>
-								<div
-									class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" /> <input
-												type="hidden" name="add" value="1" /> <input type="hidden"
-												name="business" value=" " /> <input type="hidden"
-												name="item_name" value="Aashirvaad, 5g" /> <input
-												type="hidden" name="amount" value="220.00" /> <input
-												type="hidden" name="discount_amount" value="1.00" /> <input
-												type="hidden" name="currency_code" value="USD" /> <input
-												type="hidden" name="return" value=" " /> <input
-												type="hidden" name="cancel_return" value=" " /> <input
-												type="submit" name="submit" value="Add to cart"
-												class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="/single"> <img src="/resources/front/images/s4.jpg"
-									alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="/single">Kissan Tomato Ketchup, 950g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$99.00</h6>
-									<p>Save $20.00</p>
-								</div>
-								<div
-									class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" /> <input
-												type="hidden" name="add" value="1" /> <input type="hidden"
-												name="business" value=" " /> <input type="hidden"
-												name="item_name" value="Kissan Tomato Ketchup, 950g" /> <input
-												type="hidden" name="amount" value="99.00" /> <input
-												type="hidden" name="discount_amount" value="1.00" /> <input
-												type="hidden" name="currency_code" value="USD" /> <input
-												type="hidden" name="return" value=" " /> <input
-												type="hidden" name="cancel_return" value=" " /> <input
-												type="submit" name="submit" value="Add to cart"
-												class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="/single"> <img src="/resources/front/images/s2.jpg"
-									alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="/single">Madhur Pure Sugar, 1g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$69.00</h6>
-									<p>Save $20.00</p>
-								</div>
-								<div
-									class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" /> <input
-												type="hidden" name="add" value="1" /> <input type="hidden"
-												name="business" value=" " /> <input type="hidden"
-												name="item_name" value="Madhur Pure Sugar, 1g" /> <input
-												type="hidden" name="amount" value="69.00" /> <input
-												type="hidden" name="discount_amount" value="1.00" /> <input
-												type="hidden" name="currency_code" value="USD" /> <input
-												type="hidden" name="return" value=" " /> <input
-												type="hidden" name="cancel_return" value=" " /> <input
-												type="submit" name="submit" value="Add to cart"
-												class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="/single2"> <img
-									src="/resources/front/images/s3.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="/single2">Surf Excel Liquid, 1.02L</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$187.00</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div
-									class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" /> <input
-												type="hidden" name="add" value="1" /> <input type="hidden"
-												name="business" value=" " /> <input type="hidden"
-												name="item_name" value="Surf Excel Liquid, 1.02L" /> <input
-												type="hidden" name="amount" value="187.00" /> <input
-												type="hidden" name="discount_amount" value="1.00" /> <input
-												type="hidden" name="currency_code" value="USD" /> <input
-												type="hidden" name="return" value=" " /> <input
-												type="hidden" name="cancel_return" value=" " /> <input
-												type="submit" name="submit" value="Add to cart"
-												class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="/single"> <img src="/resources/front/images/s8.jpg"
-									alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="/single">Cadbury Choclairs, 655.5g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$160.00</h6>
-									<p>Save $60.00</p>
-								</div>
-								<div
-									class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" /> <input
-												type="hidden" name="add" value="1" /> <input type="hidden"
-												name="business" value=" " /> <input type="hidden"
-												name="item_name" value="Cadbury Choclairs, 655.5g" /> <input
-												type="hidden" name="amount" value="160.00" /> <input
-												type="hidden" name="discount_amount" value="1.00" /> <input
-												type="hidden" name="currency_code" value="USD" /> <input
-												type="hidden" name="return" value=" " /> <input
-												type="hidden" name="cancel_return" value=" " /> <input
-												type="submit" name="submit" value="Add to cart"
-												class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="/single2"> <img
-									src="/resources/front/images/s6.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="/single2">Fair & Lovely, 80 g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$121.60</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div
-									class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" /> <input
-												type="hidden" name="add" value="1" /> <input type="hidden"
-												name="business" value=" " /> <input type="hidden"
-												name="item_name" value="Fair & Lovely, 80 g" /> <input
-												type="hidden" name="amount" value="121.60" /> <input
-												type="hidden" name="discount_amount" value="1.00" /> <input
-												type="hidden" name="currency_code" value="USD" /> <input
-												type="hidden" name="return" value=" " /> <input
-												type="hidden" name="cancel_return" value=" " /> <input
-												type="submit" name="submit" value="Add to cart"
-												class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="/single"> <img src="/resources/front/images/s5.jpg"
-									alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="/single">Sprite, 2.25L (Pack of 2)</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$180.00</h6>
-									<p>Save $30.00</p>
-								</div>
-								<div
-									class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" /> <input
-												type="hidden" name="add" value="1" /> <input type="hidden"
-												name="business" value=" " /> <input type="hidden"
-												name="item_name" value="Sprite, 2.25L (Pack of 2)" /> <input
-												type="hidden" name="amount" value="180.00" /> <input
-												type="hidden" name="discount_amount" value="1.00" /> <input
-												type="hidden" name="currency_code" value="USD" /> <input
-												type="hidden" name="return" value=" " /> <input
-												type="hidden" name="cancel_return" value=" " /> <input
-												type="submit" name="submit" value="Add to cart"
-												class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3l-specilamk">
-							<div class="speioffer-agile">
-								<a href="/single2"> <img
-									src="/resources/front/images/s9.jpg" alt="">
-								</a>
-							</div>
-							<div class="product-name-w3l">
-								<h4>
-									<a href="/single2">Lakme Eyeconic Kajal, 0.35 g</a>
-								</h4>
-								<div class="w3l-pricehkj">
-									<h6>$153.00</h6>
-									<p>Save $40.00</p>
-								</div>
-								<div
-									class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-									<form action="#" method="post">
-										<fieldset>
-											<input type="hidden" name="cmd" value="_cart" /> <input
-												type="hidden" name="add" value="1" /> <input type="hidden"
-												name="business" value=" " /> <input type="hidden"
-												name="item_name" value="Lakme Eyeconic Kajal, 0.35 g" /> <input
-												type="hidden" name="amount" value="153.00" /> <input
-												type="hidden" name="discount_amount" value="1.00" /> <input
-												type="hidden" name="currency_code" value="USD" /> <input
-												type="hidden" name="return" value=" " /> <input
-												type="hidden" name="cancel_return" value=" " /> <input
-												type="submit" name="submit" value="Add to cart"
-												class="button" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
+							</li>
+						</c:forEach>
+					</ul>
+				</div>
 				
 			</div>
-		</div>
 	</div>
 	</section>
 	

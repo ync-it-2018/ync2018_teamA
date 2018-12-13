@@ -38,7 +38,27 @@ public class HomeController {
 
 		model.addAttribute("list", service.listAll_best());
 		
-		model.addAttribute("list", service.listAll_imminent());
+		model.addAttribute("listAll_imminent", service.listAll_imminent());
+		
+		model.addAttribute("listAll_honey", service.listAll_honey());
+		
+		model.addAttribute("listAll_golf", service.listAll_golf());
+		
+		model.addAttribute("listAll_cruise", service.listAll_cruise());
+		
+		model.addAttribute("listAll_food", service.listAll_food());
+		
+		model.addAttribute("listAll_culture", service.listAll_culture());
+		
+		model.addAttribute("listAll_event", service.listAll_event());
+		
+		model.addAttribute("listAll_leports", service.listAll_leports());
+		
+		model.addAttribute("listAll_experience", service.listAll_experience());
+		
+		model.addAttribute("listAll_main_special", service.listAll_main_special());
+		
+		model.addAttribute("listAll_osusume", service.listAll_osusume());
 		
 		return "front/index";
 
