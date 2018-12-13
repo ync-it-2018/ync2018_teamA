@@ -46,7 +46,6 @@ private static final Logger logger = LoggerFactory.getLogger(FfaqController.clas
 		}
 		logger.info("★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★여기까지 왔냐?? FloginController★★★★★★★★★");
 		model.addAttribute("floginVO", vo);
-		
 		if(dto.isUseCookie()) {
 			int amount = 60 * 60 * 24 * 7;
 			Date sessionLimit = new Date(System.currentTimeMillis()+(1000*amount));
@@ -54,7 +53,7 @@ private static final Logger logger = LoggerFactory.getLogger(FfaqController.clas
 		}
 	}
 	
-	@RequestMapping(value = "/Flogout", method = RequestMethod.GET)
+	@RequestMapping(value = "/front/Flogout", method = RequestMethod.GET)
 	public String logout(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws Exception {
 		Object obj = session.getAttribute("login");
 		

@@ -20,6 +20,14 @@ public class ProductServiceImpl implements ProductService{
 	public void regist(ProductVO product) throws Exception {
 		// TODO Auto-generated method stub
 		dao.create(product);
+
+		String[] files = product.getROOT();
+		
+		if(files == null) {return;}
+		
+		for(String ROOT : files) {
+			dao.addAttach(ROOT);
+		}
 	}
 	
 	@Override

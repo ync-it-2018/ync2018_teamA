@@ -9,7 +9,7 @@
 <body>
 	<script type="text/javascript">
 		alert("로그인 실패");
-		self.location = "/front/Floginfailed";
+		self.location = "/Floginfailed";
 	</script>
 </body>
 </html>

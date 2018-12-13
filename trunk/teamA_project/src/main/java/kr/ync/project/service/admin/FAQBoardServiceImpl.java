@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import kr.ync.project.domain.admin.Criteria;
 import kr.ync.project.domain.admin.FAQBoardVO;
-import kr.ync.project.domain.admin.TipNoticeBoardVO;
+import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.persistence.admin.FAQBoardDAO;
-import kr.ync.project.persistence.admin.TipNoticeBoardDAO;
 
 @Service
 public class FAQBoardServiceImpl implements FAQBoardService{
@@ -22,9 +22,9 @@ public class FAQBoardServiceImpl implements FAQBoardService{
 	}
 	
 	@Override
-	public void remove(Integer bno) throws Exception {
+	public void remove(Integer FAQ_IDX) throws Exception {
 		// TODO Auto-generated method stub
-		dao.delete(bno);
+		dao.delete(FAQ_IDX);
 	}
 
 	@Override
@@ -40,8 +40,32 @@ public class FAQBoardServiceImpl implements FAQBoardService{
 	}
 
 	@Override
-	public FAQBoardVO read(int code) throws Exception {
+	public FAQBoardVO read(Integer FAQ_IDX) throws Exception {
 		// TODO Auto-generated method stub
-		return dao.read(code);
+		return dao.read(FAQ_IDX);
+	}
+
+	@Override
+	public List<FAQBoardVO> listCriteria(Criteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.listCriteria(cri);
+	}
+
+	@Override
+	public int listCountCriteria(Criteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.countPaging(cri);
+	}
+
+	@Override
+	public List<FAQBoardVO> listSearchCriteria(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.listSearch(cri);
+	}
+
+	@Override
+	public int listSearchCount(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.listSearchCount(cri);
 	}
 }

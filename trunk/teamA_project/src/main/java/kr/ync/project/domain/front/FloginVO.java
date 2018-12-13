@@ -19,5 +19,7 @@ public class FloginVO {
 	private String GRADE;
 	private Integer GET_MILEAGE;
 	private String LEAVE;
+	private String SESSIONKEY;
+	private String SESSIONLIMIT;
 	
 }

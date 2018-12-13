@@ -43,15 +43,15 @@
 							<li><a href="/qna">1대1 문의</a></li>
 							<li><a href="/tip">여행 TIP</a></li>
 						</ul></li>
-					<li><a href="/Flogout">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그아웃
+					<li><a href="/front/Flogout">
+							<span class="fa fa-unlock" aria-hidden="true"></span> 로그아웃
 					</a></li>
 					<li><a href="/front/Fjoin">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
 					<li><a href="/basket" data-toggle="modal" data-target="#myModal1">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 장바구니
+							<span class="fa fa-shopping-basket" aria-hidden="true"></span> 장바구니
 					</a></li>
 				</ul>
 				<div class="agileits_search">
@@ -101,7 +101,7 @@
 									<li><a href="/domestic?city_code=KR">충청권</a></li>
 									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 									<li><a href="/domestic?city_code=KPO">경상권</a></li>
-									<li><a href="/domestic?city_code=">제주권</a></li>
+									<li><a href="/domestic?city_code=CJU">제주권</a></li>
 								</ul>
 								<ul class="dropdown-menu2 agile_short_dropdown"
 									style="width: 50%">
@@ -110,7 +110,7 @@
 									<li><a href="/domestic?city_code=KR">충청권</a></li>
 									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 									<li><a href="/domestic?city_code=KPO">경상권</a></li>
-									<li><a href="/domestic?city_code=">제주권</a></li>
+									<li><a href="/domestic?city_code=CJU">제주권</a></li>
 								</ul>
 								</li>
 						</ul>
@@ -144,7 +144,7 @@
 										<li><a href="/domestic?city_code=KR">충청권</a></li>
 										<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 										<li><a href="/domestic?city_code=KPO">경상권</a></li>
-										<li><a href="/domestic?city_code=">제주권</a></li>
+										<li><a href="/domestic?city_code=CJU">제주권</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"

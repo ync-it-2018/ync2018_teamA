@@ -44,11 +44,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <section class="content">
 	<!-- top-header -->
-					<% Cookie[] useCookie = request.getCookies();
-				if(useCookie == null) { %>
-				<%@include file="Finclude/Fheaderlogin.jsp" %>
-				<% } else { %>
-				<%@include file="Finclude/Fheaderlogout.jsp" %>
+								<% Cookie[] useCookie = request.getCookies();
+				int resultPage = 0;
+				if(useCookie != null) {
+					for(int i = 0; i < useCookie.length; i++) {
+						if(useCookie[i].getName().equals("loginCookie")) { 
+							resultPage = 1;%>
+						<% }%>
+					<% }%>
+					<%if(resultPage == 1) { %>
+						<%@include file="Finclude/Fheaderlogout.jsp" %>
+					<% } else {%>
+						<%@include file="Finclude/Fheaderlogin.jsp" %>
+					<% }%>
 				<% }%>
 	<!-- //navigation -->
 	<!-- banner-2 -->
@@ -87,17 +95,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="side-bar col-md-3">
 				<div class="search-hotel">
 					<h3 class="agileits-sear-head">검색하기</h3>
-					<form action="#" method="post">
-						<input type="search" placeholder="ex) 부산" name="search" required="">
-						<input type="submit" value=" ">
-					</form>
+
+						<input type="search" placeholder="ex) 부산" name='keyword' id="keyword">
+						<input type="submit" value=" " id="searchBtn" onclick="searchBtn()">
+		
 				</div>
 				<!-- price range -->
 				<div class="range">
 					<h3 class="agileits-sear-head">가격범위</h3>
 					<ul class="dropdown-menu6">
 						<li>
-
 							<div id="slider-range"></div>
 							<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
 						</li>
@@ -142,7 +149,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="/resources/front/images/${FProductVO.ROOT}" alt="" width="100%" ></a>
 							<div style="height:10px;"></div>
 							<h5>${FProductVO.PRODUCT_NAME}</h5>
-							<p>${FProductVO.ADULT_PRICE}원</p>					
+							<p><span class="number">${FProductVO.ADULT_PRICE}</span>원</p>					
 						</div>
 						<div style="height:30px;"></div>
 							</c:forEach>
@@ -169,14 +176,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<!-- <span class="product-new-top">New</span> -->
 								</div>
 								<div class="item-info-product" >
-									<div style="height:30px;">
+									<div style="height:40px; overflow:hidden;">
 										<h4>
 											<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
 										</h4>
 									</div>
+									<div style="height:5px;"></div>
 									<div class="info-product-price">
-										<span class="item_price">${FProductVO.ADULT_PRICE}원</span>
+										<span class="item_price"><span class="number">${FProductVO.ADULT_PRICE}</span>원</span>
 									</div>
+									<input type="hidden" id="nation_code" value="${FProductVO.NATION_CODE}">
 								 
 									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 										<form action="#" method="post">
@@ -221,8 +230,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
-			<p>© 2017 Grocery Shoppy. All rights reserved | Design by
-				<a href="http://w3layouts.com"> W3layouts.</a>
+			<p>또봄투어와 즐거운 여행 되세요 ♥
 			</p>
 		</div>
 	</div>
@@ -329,6 +337,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 
 		});
+		
+		});
 	</script>
 	<!-- //flexisel (for special offers) -->
 
@@ -388,13 +398,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		});
 	</script>
+	
+	<script>
+	//검색 버튼
+	function searchBtn() {
+		
+		var nation_code = $("#nation_code").val();
+		var keyword =  $("#keyword").val();
+
+		location.replace("/overseas?nation_code="+nation_code+"&keyword="+keyword);
+			
+	}
+	</script>
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
 	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
-
+	
+	<!-- 가격 콤마 -->
+	<script src="/resources/front/js/jquery.number.min.js"></script>
+	<script>
+		$('span.number').number(true);
+	</script>
 </body>
 
 </html>

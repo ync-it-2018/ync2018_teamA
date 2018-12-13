@@ -6,10 +6,14 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import kr.ync.project.domain.admin.Criteria;
 import kr.ync.project.domain.admin.FAQBoardVO;
+import kr.ync.project.domain.admin.NoticeBoardVO;
+import kr.ync.project.domain.admin.SearchCriteria;
 
 @Repository
 public class FAQBoardDAOImpl implements FAQBoardDAO{
+
 
 	@Autowired
 	private SqlSession session;
@@ -23,15 +27,9 @@ public class FAQBoardDAOImpl implements FAQBoardDAO{
 	}
 
 	@Override
-	public void modify(FAQBoardVO vo) throws Exception {
+	public FAQBoardVO read(Integer FAQ_IDX) throws Exception {
 		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public FAQBoardVO read(int code) throws Exception {
-		// TODO Auto-generated method stub
-		return session.selectOne(namespace+".read", code);
+		return session.selectOne(namespace+".read", FAQ_IDX);
 	}
 
 	@Override
@@ -47,8 +45,50 @@ public class FAQBoardDAOImpl implements FAQBoardDAO{
 	}
 
 	@Override
-	public void delete(Integer bno) throws Exception {
+	public void delete(Integer FAQ_IDX) throws Exception {
 		// TODO Auto-generated method stub
-		session.delete(namespace + ".delete", bno);
+		session.delete(namespace + ".delete", FAQ_IDX);
+	}
+
+	@Override
+	public List<FAQBoardVO> listCriteria(Criteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectList(namespace+".listCriteria", cri);
+	}
+
+	@Override
+	public List<FAQBoardVO> listSearch(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectList(namespace+".listSearch", cri);
+	}
+
+	@Override
+	public int listSearchCount(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectOne(namespace+".listSearchCount", cri);
+	}
+
+	@Override
+	public int countPaging(Criteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectOne(namespace + ".countPaging", cri);
+	}
+
+	@Override
+	public List<FAQBoardVO> listPage(int page) throws Exception {
+		// TODO Auto-generated method stub
+		if (page <= 0) {
+			page = 1;
+		}
+
+		page = (page - 1) * 10;
+
+		return session.selectList(namespace + ".listPage", page);
+	}
+
+	@Override
+	public void updateViewCnt(Integer bno) throws Exception {
+		// TODO Auto-generated method stub
+		session.update(namespace + ".updateViewCnt", bno);
 	}
 }

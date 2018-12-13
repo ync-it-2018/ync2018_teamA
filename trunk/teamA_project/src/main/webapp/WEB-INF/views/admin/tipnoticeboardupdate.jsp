@@ -27,10 +27,10 @@
 								placeholder="Enter ..."></textarea>
 						</div>
 						<div class="form-group">
-							<label for="tipnoticeImportant">Important</label>
-							&nbsp;&nbsp;&nbsp; <input type="radio" name="IMPORTANT" value="Y"
+							<label for="tipnoticeImportant">IMPORTMANT</label>
+							&nbsp;&nbsp;&nbsp; <input type="radio" name="IMPORTMANT" value="Y"
 								required>Y&nbsp;&nbsp;&nbsp; <input type="radio"
-								name="IMPORTANT" value="N" required>N
+								name="IMPORTMANT" value="N" required>N
 						</div>
 						<div class="form-group">
 							<label for="tipnoticeWriter">Writer</label>
@@ -48,8 +48,6 @@
 							class="btn btn-primary">Submit</button>
 					</div>
 				</form>
-
-
 			</div>
 			<!-- /.box -->
 		</div>

@@ -38,7 +38,7 @@ p{
 	letter-spacing:1px;
     font-size:16px;
     line-height: 1.9;
-    color:#999;
+    color:#000;
 }
 ul{
 	margin:0;
@@ -103,6 +103,7 @@ label{
 /*-- search --*/
 .agileits_search {
     margin-top: 16px;
+    margin-left: 10%;
     float: left;
     width: 80%;
 }
@@ -280,6 +281,7 @@ h3.agileinfo_sign span {
 }
 .navbar-nav > li > a {
     line-height: inherit;
+    color : black;
 }
 a.nav-stylehead {
     letter-spacing: 1px;
@@ -339,7 +341,7 @@ ul.multi-column-dropdown li a:hover{
 /*-- cart details--*/
 .top_nav_right {
     float: right;
-    width: 20%;
+    width: 10%;
 }
 .box_1 {
     text-align: center;
@@ -489,7 +491,7 @@ button.w3view-cart {
     float: right;
 }
 .snipcart-details {
-    width: 77%;
+    width: 100%;
     margin: 0 auto;
 }
 .btn-danger.my-cart-btn:focus {
@@ -699,7 +701,7 @@ button.w3view-cart {
     transition: all 0.5s ease-out 0s;
 }
 .men-thumb-item:hover .inner-men-cart-pro .link-product-add-cart {
-    top: 73%;
+    top: 50%;
 }
 .link-product-add-cart:hover {
     background: #000;

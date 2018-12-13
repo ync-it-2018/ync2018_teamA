@@ -93,11 +93,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <section class="content">
 	<!-- top-header -->
-					<% Cookie[] useCookie = request.getCookies();
-				if(useCookie == null) { %>
-				<%@include file="Finclude/Fheaderlogin.jsp" %>
-				<% } else { %>
-				<%@include file="Finclude/Fheaderlogout.jsp" %>
+								<% Cookie[] useCookie = request.getCookies();
+				int resultPage = 0;
+				if(useCookie != null) {
+					for(int i = 0; i < useCookie.length; i++) {
+						if(useCookie[i].getName().equals("loginCookie")) { 
+							resultPage = 1;%>
+						<% }%>
+					<% }%>
+					<%if(resultPage == 1) { %>
+						<%@include file="Finclude/Fheaderlogout.jsp" %>
+					<% } else {%>
+						<%@include file="Finclude/Fheaderlogin.jsp" %>
+					<% }%>
 				<% }%>
 	<!-- //navigation -->
 	<!-- banner-2 -->
@@ -143,27 +151,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</span>
 	</h3>
     <div>
-      <table class="table table-striped table-bordered table-hover">
+      <div class='box'>
+		<div class="box-header with-border">
+		</div>
+		<div class='box-body'>
+			<select name="searchType">
+				<option value="제목"
+					<c:out value="${FQnaBoardVO.TITLE eq 'TITLE'?'selected':''}"/>>
+					제목</option>
+			</select> <input type="text" name='keyword' id="keywordInput"
+				value='${cri.keyword }'>
+			<button id='searchBtn'>Search</button>
+		</div>
+	  </div>
+	  <p align="right" style="padding:10px">
+	  	<button type="button" class="btn btn-warning" style="color:black" id="writeBtn">글 쓰기</button>
+	  </p>
+	  
+      
+      <table class="table table-striped table-bordered table-hover" >
         <thead>
           <tr>
-            <th width="10%">번호</th>
-            <th width="55%">제목</th>
-            <th width="15%">작성자</th>
-            <th width="20%">작성일</th>
+            <th width="10%"><p>번호</p></th>
+            <th width="40%"><p>제목</p></th>
+            <th width="15%"><p>작성자</p></th>
+            <th width="20%"><p>작성일</p></th>
+            <th width="15%"><p>답변여부</p></th>
           </tr>
         </thead>
         <tbody>
-          <c:forEach items="${list}" var="FqnaBoardVO" varStatus="status">
+          <c:forEach items="${list}" var="FQnaBoardVO" varStatus="status">
             <tr>
-              <td>${status.count}</td>
+              <td><p>${status.count}</p></td>
               <td id="title">
-                <c:if test="${FqnaBoardVO.BOARD_IDX > 0}">
-                  &nbsp;&nbsp;
+                <c:if test="${FQnaBoardVO.BOARD_IDX > 0}">
                 </c:if>
-                <a href="/front/qnaDetail?BOARD_IDX=${FqnaBoardVO.BOARD_IDX}">${FqnaBoardVO.TITLE}</a>
+                <p><a href="/front/qnaDetail?BOARD_IDX=${FQnaBoardVO.BOARD_IDX}">${FQnaBoardVO.TITLE}</a></p>
               </td>
-              <td>${FqnaBoardVO.WRITER}</td>
-              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FqnaBoardVO.WRITEDATE}"/></td>
+              <td><p>${FQnaBoardVO.WRITER}</p></td>
+              <td><p><fmt:formatDate pattern="yyyy-MM-dd" value="${FQnaBoardVO.WRITEDATE}"/></p></td>
+              <td>
+              	<c:choose>
+	             	<c:when test="${null eq FQnaBoardVO.ANSWER}">
+	             		<p style="color:red">답변대기</p>
+	             	</c:when>
+	             	<c:otherwise>
+	             		<p style="color:blue">답변완료</p>
+					</c:otherwise>
+             	</c:choose>
+              </td>
             <tr>
           </c:forEach>
         </tbody>
@@ -319,6 +355,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			*/
 			$().UItoTop({
 				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	
+	<script>
+		$(document).ready(function () {
+			$('#writeBtn').on("click",function(event) {
+				self.location = "qnaWrite"
 			});
 
 		});

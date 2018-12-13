@@ -15,7 +15,7 @@ public class NoticeBoardVO {
 	private String WRITER;
 	private Date WRITEDATE;
 	private String CONTENT;
-	private String IMPORTANT;
+	private String IMPORTMANT;
 	private String ID;
 	private String BOARD_CODE;
 }

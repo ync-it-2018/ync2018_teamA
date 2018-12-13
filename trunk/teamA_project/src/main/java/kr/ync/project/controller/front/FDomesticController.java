@@ -25,22 +25,16 @@ public class FDomesticController {
 	private FProductService service;
 
 	@RequestMapping(value = "/domestic", method = RequestMethod.GET)
-	public String about(@RequestParam("city_code")String city_code,Locale locale, Model model) throws Exception {
+	public String about(@RequestParam("city_code")String city_code,
+				@RequestParam(value="keyword", required=false) String keyword,
+				Model model) throws Exception {
 
 		// 가나다
-		logger.info("국내여행상품으로 이동", locale);
-		model.addAttribute("list_domestic", service.listAll_domestic(city_code));
+		logger.info("국내여행상품으로 이동");
+		model.addAttribute("list_domestic", service.listAll_domestic(city_code, keyword));
 		model.addAttribute("list_special", service.listAll_special());
 		
 		return "front/domestic";
 	}
-	
-/*	//상품 상세 화면
-	@RequestMapping(value = "/front/detail", method = RequestMethod.GET)
-	   public void ProductDetail(@RequestParam("product_code")String product_code, Model model) throws Exception {
-		   
-		   model.addAttribute(service.read(product_code));
-		   
-	   }*/
 	
 }

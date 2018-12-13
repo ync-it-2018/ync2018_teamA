@@ -66,11 +66,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 	<!-- top-header -->
-					<% Cookie[] useCookie = request.getCookies();
-				if(useCookie == null) { %>
-				<%@include file="Finclude/Fheaderlogin.jsp" %>
-				<% } else { %>
-				<%@include file="Finclude/Fheaderlogout.jsp" %>
+								<% Cookie[] useCookie = request.getCookies();
+				int resultPage = 0;
+				if(useCookie != null) {
+					for(int i = 0; i < useCookie.length; i++) {
+						if(useCookie[i].getName().equals("loginCookie")) { 
+							resultPage = 1;%>
+						<% }%>
+					<% }%>
+					<%if(resultPage == 1) { %>
+						<%@include file="Finclude/Fheaderlogout.jsp" %>
+					<% } else {%>
+						<%@include file="Finclude/Fheaderlogin.jsp" %>
+					<% }%>
 				<% }%>
 	<!-- //navigation -->
 	<!-- banner-2 -->
@@ -142,6 +150,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										required="">
 								</div>
 								<input type="submit" value="회원가입" style="margin-left: 30%;">
+								</div>
 						</form>
 					</div>
 					
@@ -150,6 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- //contact -->
 		</div>
 	</div>
+	
 	<!-- map -->
 	
 	<!-- //footer -->

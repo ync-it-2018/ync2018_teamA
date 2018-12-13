@@ -94,11 +94,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <section class="content">
 	<!-- top-header -->
-					<% Cookie[] useCookie = request.getCookies();
-				if(useCookie == null) { %>
-				<%@include file="Finclude/Fheaderlogin.jsp" %>
-				<% } else { %>
-				<%@include file="Finclude/Fheaderlogout.jsp" %>
+								<% Cookie[] useCookie = request.getCookies();
+				int resultPage = 0;
+				if(useCookie != null) {
+					for(int i = 0; i < useCookie.length; i++) {
+						if(useCookie[i].getName().equals("loginCookie")) { 
+							resultPage = 1;%>
+						<% }%>
+					<% }%>
+					<%if(resultPage == 1) { %>
+						<%@include file="Finclude/Fheaderlogout.jsp" %>
+					<% } else {%>
+						<%@include file="Finclude/Fheaderlogin.jsp" %>
+					<% }%>
 				<% }%>
 	<!-- //navigation -->
 	<!-- banner-2 -->
@@ -147,28 +155,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <table class="table table-striped table-bordered table-hover">
         <thead>
           <tr>
-            <th width="10%">번호</th>
-            <th width="45%">제목</th>
+            <th width="10%"></th>
+            <th width="55%">제목</th>
             <th width="15%">작성자</th>
             <th width="20%">작성일</th>
-            <th width="10%">답변유무</th>
           </tr>
         </thead>
         <tbody>
             <tr>
               <td>${status.count}</td>
               <td id="title">
-              ${FqnaBoardVO.TITLE}
+              ${FQnaBoardVO.TITLE}
               </td>
-              <td>${FqnaBoardVO.WRITER}</td>
-              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FqnaBoardVO.WRITEDATE}"/></td>
+              <td>${FQnaBoardVO.WRITER}</td>
+              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FQnaBoardVO.WRITEDATE}"/></td>
             <tr>
             <tr>
              <th id="contents">내용</th>
-             <td colspan="4"  height="450px" style="text-align: left"> ${FqnaBoardVO.CONTENT}</td>
+             <td colspan="3"  height="450px" style="text-align: left"> ${FQnaBoardVO.CONTENT}</td>
+            </tr>
+            <tr>
+             <th id="contents">답변</th>
+             <td colspan="3" style="text-align: left"> ${FQnaBoardVO.ANSWER}</td>
             </tr>
         </tbody>
       </table>
+      
+      <p align="left" style="padding:10px">
+	  	<button type="button" class="btn btn-primary" onclick="javascript:history.back()">목록으로</button>
+	  </p>
       
        
       <!-- Paging 처리 -->
@@ -324,6 +339,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		});
 	</script>
+	
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->

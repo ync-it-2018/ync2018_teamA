@@ -14,9 +14,10 @@ import kr.ync.project.domain.admin.ProductVO;
 import kr.ync.project.service.admin.ProductService;
 
 @Controller
+
 @RequestMapping("/admin")
 public class PackageController {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(PackageController.class);
 	
 	@Inject
@@ -31,11 +32,17 @@ public class PackageController {
 	}
 	
 	@RequestMapping(value = "/PackageAdd", method = RequestMethod.POST)
-	public String PackageAddPOST(ProductVO data, MultipartFile file, Model model) throws Exception {
+	public String PackageAddPOST(ProductVO data, MultipartFile ROOT, Model model) throws Exception {
 
 		// 가나다
+		
+//		logger.info("originalName: " + ROOT.getOriginalFilename());
+//		logger.info("size: " + ROOT.getSize());
+//		logger.info("contentType: " + ROOT.getContentType());
+//		
+
+
 		logger.info("패키지등록");
-		logger.info("orignalName: " + file.getOriginalFilename());
 		logger.info(data.toString());
 		
 		service.regist(data);
@@ -44,5 +51,15 @@ public class PackageController {
 
 		return "admin/success";
 	}
+	
+//	private String uploadFile(String originalName, byte[] fileData) throws Exception {
+//
+//		UUID uid = UUID.randomUUID();
+//		String savedName = uid.toString() + "_" + originalName;
+//		File target = new File(uploadPath, savedName);
+//		FileCopyUtils.copy(fileData, target);
+//
+//		return savedName;
+//	}
 	
 }

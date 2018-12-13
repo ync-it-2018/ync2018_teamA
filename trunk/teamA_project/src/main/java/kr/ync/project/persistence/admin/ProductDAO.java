@@ -13,4 +13,6 @@ public interface ProductDAO {
 	public ProductVO read(String code)throws Exception;
 	
 	public List<ProductVO> listAll()throws Exception;
+	
+	public void addAttach(String root)throws Exception;
 }

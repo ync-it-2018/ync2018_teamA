@@ -8,9 +8,48 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<insert id="create">
 		<![CDATA[
-		INSERT INTO TA_PRODUCT (PRODUCT_CODE, PRODUCT_NAME, NATION_CODE, CITY_CODE)
-		VALUES('JPOSA-12031200', #{PRODUCT_NAME}, 'JP', 'OSA')
+		INSERT INTO TA_PRODUCT (PRODUCT_CODE, 
+								PRODUCT_NAME, 
+								NATION_CODE, 
+								CITY_CODE, 
+								THENUMBER, 
+								DEPARTURE_DATE, 
+								ARRIVAL_DATE, 
+								TRANSPORTATION, 
+								THEME,
+								CATEGORIZATION, 
+								COSTPRICE, 
+								ADULT_PRICE, 
+								CHILD_PRICE, 
+								BABY_PRICE,
+								ITINERARY,
+								HOTEL_TOUR,
+								OPTIONAL_TOUR,
+								SALES)
+		VALUES(#{PRODUCT_CODE}, 
+			   #{PRODUCT_NAME}, 
+			   #{NATION_CODE}, 
+			   #{CITY_CODE},
+			   #{THENUMBER},
+			   #{DEPARTURE_DATE}, 
+			   #{ARRIVAL_DATE}, 
+			   #{TRANSPORTATION}, 
+			   #{THEME},
+			   #{CATEGORIZATION}, 
+			   #{COSTPRICE}, 
+			   #{ADULT_PRICE}, 
+			   #{CHILD_PRICE}, 
+			   #{BABY_PRICE},
+			   #{ITINERARY},
+			   #{HOTEL_TOUR},
+			   #{OPTIONAL_TOUR},
+			   #{SALES})
 		]]>
+	</insert>
+	
+	<insert id="addAttach">
+		INSERT INTO TA_PROIMG(PROIMG_IDX, ROOT, PRODUCT_CODE)
+		VALUES(IDX_CRE.NEXTVAL, #{ROOT}, LAST_INSERT_ID())
 	</insert>
 	
 	<select id="listAll" resultType="ProductVO">
@@ -25,11 +64,32 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="read" resultType="ProductVO">
 		<![CDATA[
 		SELECT
-			 PRODUCT_CODE, PRODUCT_NAME, NATION_CODE, CITY_CODE, DEPARTURE_DATE, ARRIVAL_DATE, TRANSPORTATION, THEME, COSTPRICE, ADULT_PRICE, CHILD_PRICE, BABY_PRICE
-		FROM
-			TA_PRODUCT
+			p.PRODUCT_CODE, 
+			p.PRODUCT_NAME, 
+			n.NATION_NAME, 
+			c.CITY_NAME, 
+			p.THENUMBER,
+			p.DEPARTURE_DATE, 
+			p.ARRIVAL_DATE, 
+			p.TRANSPORTATION, 
+			p.THEME,
+			p.CATEGORIZATION, 
+			p.COSTPRICE, 
+			p.ADULT_PRICE, 
+			p.CHILD_PRICE, 
+			p.BABY_PRICE,
+			p.ITINERARY,
+			p.HOTEL_TOUR,
+			p.OPTIONAL_TOUR,
+			p.SALES
+		FROM 	
+			TA_PRODUCT p , TA_CITY c, TA_NATION n 
 		WHERE 
-			PRODUCT_CODE = #{code}
+			p.PRODUCT_CODE = #{code}
+		AND	
+			p.CITY_CODE = c.CITY_CODE
+		AND
+			c.NATION_CODE = n.NATION_CODE
 		]]>
 	</select>
 	

@@ -51,12 +51,12 @@
 							회원가입
 					</a></li>
 					<li><a href="/basket" data-toggle="modal" data-target="#myModal1">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 장바구니
+							<span class="fa fa-shopping-basket" aria-hidden="true"></span> 장바구니
 					</a></li>
 				</ul>
 				<div class="agileits_search">
-					<form action="#" method="post">
-						<input name="Search" type="search"
+					<form action="/SearchList" method="get">
+						<input name="keyword" type="search"
 							placeholder="오늘은 어디로 떠나실건가요?" required="" style="display:block;">
 						<button type="submit" class="btn btn-default"
 							aria-label="Left Align">
@@ -101,7 +101,7 @@
 									<li><a href="/domestic?city_code=KR">충청권</a></li>
 									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 									<li><a href="/domestic?city_code=KPO">경상권</a></li>
-									<li><a href="/domestic?city_code=">제주권</a></li>
+									<li><a href="/domestic?city_code=CJU">제주권</a></li>
 								</ul>
 								<ul class="dropdown-menu2 agile_short_dropdown"
 									style="width: 50%">
@@ -110,7 +110,7 @@
 									<li><a href="/domestic?city_code=KR">충청권</a></li>
 									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 									<li><a href="/domestic?city_code=KPO">경상권</a></li>
-									<li><a href="/domestic?city_code=">제주권</a></li>
+									<li><a href="/domestic?city_code=CJU">제주권</a></li>
 								</ul>
 								</li>
 						</ul>
@@ -144,7 +144,7 @@
 										<li><a href="/domestic?city_code=KR">충청권</a></li>
 										<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 										<li><a href="/domestic?city_code=KPO">경상권</a></li>
-										<li><a href="/domestic?city_code=">제주권</a></li>
+										<li><a href="/domestic?city_code=CJU">제주권</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"

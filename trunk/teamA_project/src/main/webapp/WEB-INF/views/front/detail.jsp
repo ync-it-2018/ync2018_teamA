@@ -93,11 +93,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <section class="content">
 	<!-- top-header -->
-				<% Cookie[] useCookie = request.getCookies();
-				if(useCookie == null) { %>
-				<%@include file="Finclude/Fheaderlogin.jsp" %>
-				<% } else { %>
-				<%@include file="Finclude/Fheaderlogout.jsp" %>
+								<% Cookie[] useCookie = request.getCookies();
+				int resultPage = 0;
+				if(useCookie != null) {
+					for(int i = 0; i < useCookie.length; i++) {
+						if(useCookie[i].getName().equals("loginCookie")) { 
+							resultPage = 1;%>
+						<% }%>
+					<% }%>
+					<%if(resultPage == 1) { %>
+						<%@include file="Finclude/Fheaderlogout.jsp" %>
+					<% } else {%>
+						<%@include file="Finclude/Fheaderlogin.jsp" %>
+					<% }%>
 				<% }%>
 	<!-- //navigation -->
 	<!-- banner-2 -->
@@ -156,7 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-7 single-right-left simpleCart_shelfItem">
 				<p>※ 일정 등을 꼼꼼히 정독하시고 예약해주세요.</p>
 				<p>
-					<span class="item_price">${FProductVO.ADULT_PRICE}원</span>(성인기준)
+					<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원(성인기준)
 				</p>
 				<br>
 				<div class="product-single-w3l">
@@ -220,25 +228,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 				<div class="col-md-4 about-agileits-w3layouts-right" >
 					<div class="img-video-about" style="width:300px; height:100%; border:1px solid; text-align:center">						<br>
-						성인(만12세 이상) : ${FProductVO.ADULT_PRICE}원<br>
+						성인(만12세 이상) : <span class="number">${FProductVO.ADULT_PRICE}</span>원<br>
 						------------------------------------------<br>
-						아동(만12세 미만) : ${FProductVO.CHILD_PRICE}원<br>
+						아동(만12세 미만) : <span class="number">${FProductVO.CHILD_PRICE}</span>원<br>
 						------------------------------------------<br>
-						유아(만2세 미만) : ${FProductVO.BABY_PRICE}원<br>
+						유아(만2세 미만) : <span class="number">${FProductVO.BABY_PRICE}</span>원<br>
 						<br>
 					<div>
 						<div class="col-xs-4" >성인</div>
 						<div class="col-xs-4" >아동</div>
 						<div class="col-xs-4" >유아</div>
 						<div class="col-xs-4" >
-						<input id="adault_num" type="number" value="1" style="display:block; width:50px; margin-left:10px;"/></div>						
+						<input id="adult_num" type="number" value="1" onclick='input_price()' style="display:block; width:50px; margin-left:10px;"/></div>						
 						<div class="col-xs-4" >
-						<input id="child_num" type="number" value="0" style="display:block; width:50px; margin-left:10px;"/></div>						
+						<input id="child_num" type="number" value="0" onclick='input_price()' style="display:block; width:50px; margin-left:10px;"/></div>						
 						<div class="col-xs-4" >
-						<input id="baby_num" type="number" value="0" style="display:block; width:50px; margin-left:10px;"/></div>
+						<input id="baby_num" type="number" value="0" onclick='input_price()' style="display:block; width:50px; margin-left:10px;"/></div>
 						<div style="height:80px;"></div>
-						총 예정 금액<br>
-						<p style="color:red;">599,000원</p>
+							총 예정 금액<br>						
+						<p style="color:red;" id="total_price">
+							<span class="number">${FProductVO.ADULT_PRICE}</span>원
+						</p>
 						<div style="height:20px;"></div>
 					</div>
 					<button type="button" class="btn btn-warning btn-lg">장바구니</button>
@@ -258,8 +268,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
-			<p>© 2017 Grocery Shoppy. All rights reserved | Design by
-				<a href="http://w3layouts.com"> W3layouts.</a>
+			<p>또봄투어와 즐거운 여행 되세요 ♥
 			</p>
 		</div>
 	</div>
@@ -287,7 +296,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 
 		});
-	</script>
+		
+		
+		/* function input_price() {
+		
+			var adult_num = $('#adult_num').val();			
+			document.getElementById('#total_price').val = ${FProductVO.ADULT_PRICE} * adult_num ;
+		} */
+		</script>
+		
+		
+		
+		
 	<!-- Large modal -->
 	<!-- <script>
 		$('#').modal('show');
@@ -435,7 +455,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 
 </section>
-
+<!-- 가격 콤마 -->
+	<script src="/resources/front/js/jquery.number.min.js"></script>
+	<script>
+		$('span.number').number(true);
+	</script>
 
 </body>
 

@@ -7,7 +7,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <select id="login" resultType="FloginVO">
 
-select ID, PASSWD from TA_MEMBER where ID=#{ID} AND PASSWD=#{PASSWD}
+select ID, PASSWD, SESSIONKEY from TA_MEMBER where ID=#{ID} AND PASSWD=#{PASSWD}
 
 </select>
 
