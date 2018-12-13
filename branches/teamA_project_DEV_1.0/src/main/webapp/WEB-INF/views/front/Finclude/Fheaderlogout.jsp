@@ -101,7 +101,7 @@
 									<li><a href="/domestic?city_code=KR">충청권</a></li>
 									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 									<li><a href="/domestic?city_code=KPO">경상권</a></li>
-									<li><a href="/domestic?city_code=">제주권</a></li>
+									<li><a href="/domestic?city_code=CJU">제주권</a></li>
 								</ul>
 								<ul class="dropdown-menu2 agile_short_dropdown"
 									style="width: 50%">
@@ -144,7 +144,7 @@
 										<li><a href="/domestic?city_code=KR">충청권</a></li>
 										<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 										<li><a href="/domestic?city_code=KPO">경상권</a></li>
-										<li><a href="/domestic?city_code=">제주권</a></li>
+										<li><a href="/domestic?city_code=CJU">제주권</a></li>
 									</ul></li>
 								<li class="dropdown"><a
 									class="nav-stylehead dropdown-toggle" href="#"

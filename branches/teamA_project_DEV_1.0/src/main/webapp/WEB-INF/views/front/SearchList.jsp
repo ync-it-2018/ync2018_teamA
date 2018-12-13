@@ -175,11 +175,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<!-- <span class="product-new-top">New</span> -->
 								</div>
 								<div class="item-info-product" >
-									<div style="height:30px;">
+									<div style="height:40px; overflow:hidden;">
 										<h4>
 											<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}">${FProductVO.PRODUCT_NAME}</a>
 										</h4>
 									</div>
+									<div style="height:5px;"></div>
 									<div class="info-product-price">
 										<span class="item_price">${FProductVO.ADULT_PRICE}원</span>
 									</div>
