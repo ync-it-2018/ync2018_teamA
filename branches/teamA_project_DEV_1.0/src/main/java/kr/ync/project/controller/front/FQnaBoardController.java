@@ -36,6 +36,7 @@ private static final Logger logger = LoggerFactory.getLogger(FQnaBoardController
 		   model.addAttribute(service.read_Qna(BOARD_IDX));
 		   
 	 }
+	//글쓰기 페이지로 이동
 	@RequestMapping(value = "/qnaWrite", 
 			method = RequestMethod.GET)
 	public String QnaBoardWrite(Model model) throws Exception {

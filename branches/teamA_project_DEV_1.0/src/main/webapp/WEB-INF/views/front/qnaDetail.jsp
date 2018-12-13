@@ -182,7 +182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </table>
       
       <p align="left" style="padding:10px">
-	  	<button type="button" class="btn btn-primary" id="ListBtn">목록으로</button>
+	  	<button type="button" class="btn btn-primary" onclick="javascript:history.back()">목록으로</button>
 	  </p>
       
        
@@ -340,15 +340,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	
-	
-	<script>
-	$(document).ready(function () {
-		$('#ListBtn').on("click",function(event) {
-			self.location = "qna"
-		});
-
-	});
-	</script>
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
