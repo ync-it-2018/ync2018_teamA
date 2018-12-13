@@ -235,7 +235,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 									</p>
 									<div class="info-product-price">
-										<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+										<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 									</div>
 								 
 									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
@@ -284,7 +284,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
@@ -369,7 +369,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
@@ -418,7 +418,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
@@ -467,7 +467,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
@@ -516,7 +516,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
@@ -565,7 +565,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
@@ -614,7 +614,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
@@ -663,7 +663,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
@@ -712,7 +712,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
@@ -767,7 +767,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
-												<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
@@ -827,7 +827,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
 										</p>
 										<div class="info-product-price" style="text-align:center; padding:15px;">
-											<span class="item_price">${FProductVO.ADULT_PRICE}</span>
+											<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 										</div>
 										<div
 											class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
@@ -1136,7 +1136,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     		});
     	});
     </script>
-
+	<!-- 가격 콤마 -->
+	<script src="/resources/front/js/jquery.number.min.js"></script>
+	<script>
+		$('span.number').number(true);
+	</script>
 </body>
 
 </html>
