@@ -98,7 +98,7 @@
 									style="width: 50%">
 									<li><a href="/domestic?city_code=ICN">서울/인천/경기</a></li>
 									<li><a href="/domestic?city_code=KAE">강원권</a></li>
-									<li><a href="/domestic?city_code=KR">충청권</a></li>
+									<li><a href="/domestic?city_code=GON">충청권</a></li>
 									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 									<li><a href="/domestic?city_code=KPO">경상권</a></li>
 									<li><a href="/domestic?city_code=CJU">제주권</a></li>
@@ -107,7 +107,7 @@
 									style="width: 50%">
 									<li><a href="/domestic?city_code=ICN">서울/인천1/경기</a></li>
 									<li><a href="/domestic?city_code=KAE">강원권</a></li>
-									<li><a href="/domestic?city_code=KR">충청권</a></li>
+									<li><a href="/domestic?city_code=GON">충청권</a></li>
 									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 									<li><a href="/domestic?city_code=KPO">경상권</a></li>
 									<li><a href="/domestic?city_code=CJU">제주권</a></li>
@@ -141,7 +141,7 @@
 									<ul class="dropdown-menu agile_short_dropdown">
 										<li><a href="/domestic?city_code=ICN">서울/인천/경기</a></li>
 										<li><a href="/domestic?city_code=KAE">강원권</a></li>
-										<li><a href="/domestic?city_code=KR">충청권</a></li>
+										<li><a href="/domestic?city_code=GON">충청권</a></li>
 										<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
 										<li><a href="/domestic?city_code=KPO">경상권</a></li>
 										<li><a href="/domestic?city_code=CJU">제주권</a></li>
@@ -154,7 +154,7 @@
 										<li><a href="/overseas?nation_code=ID">동남아</a></li>
 										<li><a href="/overseas?nation_code=HK">중국/홍콩</a></li>
 										<li><a href="/overseas?nation_code=JP">일본</a></li>
-										<li><a href="/overseas?nation_code=GU">남태평양/괌</a></li>
+										<li><a href="/overseas?nation_code=AU">남태평양/괌</a></li>
 										<li><a href="/overseas?nation_code=FR">유럽</a></li>
 										<li><a href="/overseas?nation_code=US">미주/하와이</a></li>
 										<li><a href="/overseas?nation_code=ZA">아프리카</a></li>
