@@ -150,46 +150,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<i></i>
 				</span>
 	</h3>
-    <div>
-      <div class='box'>
-		<div class="box-header with-border">
-		</div>
-		<div class='box-body'>
-			<select name="searchType">
-				<option value="제목"
-					<c:out value="${FQnaBoardVO.TITLE eq 'TITLE'?'selected':''}"/>>
-					제목</option>
-			</select> <input type="text" name='keyword' id="keywordInput"
-				value='${cri.keyword }'>
-			<button id='searchBtn'>Search</button>
-		</div>
-	  </div>
-	  <p align="right" style="padding:10px">
-	  	<button type="button" class="btn btn-warning" style="color:black" id="writeBtn">글 쓰기</button>
-	  </p>
-	  
-      
-      <table class="table table-striped table-bordered table-hover" >
-        <thead>
+    <div>      
+      <table class="table table-striped table-bordered table-hover">
+
           <tr>
-            <th width="10%"><p>번호</p></th>
-            <th width="40%"><p>제목</p></th>
-            <th width="15%"><p>작성자</p></th>
-            <th width="20%"><p>작성일</p></th>
-            <th width="15%"><p>답변여부</p></th>
+            <th width="15%" id="title">제목</th>
+            <td width="45%"><input type="text" placeholder="제목을 입력하세요." style="width:400px"></td>
+            <th width="10%">아이디</th>
+            <td width="20%"><input type="text" placeholder="id"></td>
           </tr>
-        </thead>
+          
+          <tr>
+          	<th id="title">내용</th>
+          	<td colspan="3"><textarea cols="80" rows="20" placeholder="내용을 입력하세요"> </textarea></td>
+          </tr>
+          <tr>
+          	<td colspan="4">
+         	 	<button type="button" class="btn btn-warning" style="color:black" id="successBtn">등록</button>
+         	 	<button type="button" class="btn btn-danger" style="color:black" id="cancelBtn">취소</button>
+          	</td>
+          </tr>
+          
+
         <tbody>
-          <c:forEach items="${list}" var="FQnaBoardVO" varStatus="status">
+          <%-- <c:forEach items="${list}" var="FQnaBoardVO" varStatus="status">
             <tr>
-              <td><p>${status.count}</p></td>
+              <td>${status.count}</td>
               <td id="title">
                 <c:if test="${FQnaBoardVO.BOARD_IDX > 0}">
+                  &nbsp;&nbsp;
                 </c:if>
-                <p><a href="/front/qnaDetail?BOARD_IDX=${FQnaBoardVO.BOARD_IDX}">${FQnaBoardVO.TITLE}</a></p>
+                <a href="/front/qnaDetail?BOARD_IDX=${FQnaBoardVO.BOARD_IDX}">${FQnaBoardVO.TITLE}</a>
               </td>
-              <td><p>${FQnaBoardVO.WRITER}</p></td>
-              <td><p><fmt:formatDate pattern="yyyy-MM-dd" value="${FQnaBoardVO.WRITEDATE}"/></p></td>
+              <td>${FQnaBoardVO.WRITER}</td>
+              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FQnaBoardVO.WRITEDATE}"/></td>
               <td>
               	<c:choose>
 	             	<c:when test="${null eq FQnaBoardVO.ANSWER}">
@@ -201,9 +195,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
              	</c:choose>
               </td>
             <tr>
-          </c:forEach>
+          </c:forEach> --%>
         </tbody>
       </table>
+      
+      
       
        
       <!-- Paging 처리 -->
@@ -359,16 +355,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		});
 	</script>
+	<!-- //smooth-scrolling-of-move-up -->
 	
 	<script>
 		$(document).ready(function () {
-			$('#writeBtn').on("click",function(event) {
-				self.location = "qnaWrite"
+			$('#successBtn').on("click",function(event) {
+				self.location = "qna"
 			});
 
 		});
+		
+		$(document).ready(function () {
+			$('#cancelBtn').on("click",function(event) {
+				self.location = "qna"
+			});
+
+		});
+		
 	</script>
-	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
 	<script src="/resources/front/js/bootstrap.js"></script>

@@ -155,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <table class="table table-striped table-bordered table-hover">
         <thead>
           <tr>
-            <th width="10%">번호</th>
+            <th width="10%"></th>
             <th width="55%">제목</th>
             <th width="15%">작성자</th>
             <th width="20%">작성일</th>
@@ -172,10 +172,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <tr>
             <tr>
              <th id="contents">내용</th>
-             <td colspan="4"  height="450px" style="text-align: left"> ${FQnaBoardVO.CONTENT}</td>
+             <td colspan="3"  height="450px" style="text-align: left"> ${FQnaBoardVO.CONTENT}</td>
+            </tr>
+            <tr>
+             <th id="contents">답변</th>
+             <td colspan="3" style="text-align: left"> ${FQnaBoardVO.ANSWER}</td>
             </tr>
         </tbody>
       </table>
+      
+      <p align="left" style="padding:10px">
+	  	<button type="button" class="btn btn-primary" id="ListBtn">목록으로</button>
+	  </p>
       
        
       <!-- Paging 처리 -->
@@ -330,6 +338,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 
 		});
+	</script>
+	
+	
+	<script>
+	$(document).ready(function () {
+		$('#ListBtn').on("click",function(event) {
+			self.location = "qna"
+		});
+
+	});
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->
 
