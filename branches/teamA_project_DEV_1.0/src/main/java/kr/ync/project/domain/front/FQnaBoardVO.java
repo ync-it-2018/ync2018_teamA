@@ -9,6 +9,7 @@ import lombok.ToString;
 @Setter
 @ToString
 public class FQnaBoardVO {
+	
 	private Integer BOARD_IDX;
 	private String TITLE;
 	private String WRITER;
@@ -19,4 +20,5 @@ public class FQnaBoardVO {
 	private String BOARD_CODE;
 	private String IMG;
 	private String ANSWER;
+	
 }

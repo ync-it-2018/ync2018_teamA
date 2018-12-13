@@ -19,13 +19,13 @@ public class FQnaBoardDAOImpl implements FQnaBoardDAO{
 
 	@Override
 	public List<FQnaBoardVO> listAll() throws Exception {
-		// TODO Auto-generated method stub
+
 		return session.selectList(namespace + ".listAll");
 	}
 
 	@Override
 	public FQnaBoardVO read_Qna(int BOARD_IDX) throws Exception {
-		// TODO Auto-generated method stub
+
 		return session.selectOne(namespace + ".read_Qna", BOARD_IDX);
 	}
 
