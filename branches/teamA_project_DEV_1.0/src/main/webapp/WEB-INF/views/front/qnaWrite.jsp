@@ -154,15 +154,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <table class="table table-striped table-bordered table-hover">
 
           <tr>
-            <th width="15%" id="title">제목</th>
-            <td width="45%"><input type="text" placeholder="제목을 입력하세요." style="width:400px"></td>
-            <th width="10%">아이디</th>
-            <td width="20%"><input type="text" placeholder="id"></td>
+            <th width="15%" id="title"><p>제목</p></th>
+            <td width="45%"><p><input type="text" placeholder="제목을 입력하세요." style="width:400px"></p></td>
+            <th width="10%"><p>아이디</p></th>
+            <td width="20%"><p><input type="text" placeholder="id"></p></td>
           </tr>
           
           <tr>
-          	<th id="title">내용</th>
-          	<td colspan="3"><textarea cols="80" rows="20" placeholder="내용을 입력하세요"> </textarea></td>
+          	<th id="title"><p>내용</p></th>
+          	<td colspan="3"><p><textarea cols="80%" rows="10" placeholder="내용을 입력하세요"> </textarea></p></td>
           </tr>
           <tr>
           	<td colspan="4">
