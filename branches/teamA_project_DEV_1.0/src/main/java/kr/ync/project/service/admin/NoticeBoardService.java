@@ -11,16 +11,16 @@ import kr.ync.project.domain.admin.TipNoticeBoardVO;
 
 @Service
 public interface NoticeBoardService {
-public List<NoticeBoardVO> listAll() throws Exception;
-	
+	public List<NoticeBoardVO> listAll() throws Exception;
+
 	public void remove(Integer BOARD_IDX) throws Exception;
-	
+
 	public void modify(NoticeBoardVO board) throws Exception;
-	
+
 	public void regist(NoticeBoardVO board) throws Exception;
-	
+
 	public NoticeBoardVO read(Integer BOARD_IDX) throws Exception;
-	
+
 	public List<NoticeBoardVO> listCriteria(Criteria cri) throws Exception;
 
 	public int listCountCriteria(Criteria cri) throws Exception;

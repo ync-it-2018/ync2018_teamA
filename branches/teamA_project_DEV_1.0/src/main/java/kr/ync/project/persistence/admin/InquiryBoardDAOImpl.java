@@ -8,14 +8,10 @@ import org.springframework.stereotype.Repository;
 
 import kr.ync.project.domain.admin.Criteria;
 import kr.ync.project.domain.admin.InquiryBoardVO;
-import kr.ync.project.domain.admin.NoticeBoardVO;
-import kr.ync.project.domain.admin.ProductVO;
 import kr.ync.project.domain.admin.SearchCriteria;
-import kr.ync.project.domain.admin.TipNoticeBoardVO;
 
 @Repository
-public class NoticeBoardDAOImpl implements NoticeBoardDAO{
-	
+public class InquiryBoardDAOImpl implements InquiryBoardDAO{
 	@Autowired
 	private SqlSession session;
 	
@@ -23,24 +19,24 @@ public class NoticeBoardDAOImpl implements NoticeBoardDAO{
 			"kr.ync.project.mapper.InquiryBoardMapper";
 	
 	@Override
-	public void create(NoticeBoardVO vo) throws Exception {
+	public void create(InquiryBoardVO vo) throws Exception {
 		session.insert(namespace+".create", vo);
 	}
 
 	@Override
-	public NoticeBoardVO read(Integer BOARD_IDX) throws Exception {
+	public InquiryBoardVO read(Integer BOARD_IDX) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectOne(namespace+".read", BOARD_IDX);
 	}
 
 	@Override
-	public List<NoticeBoardVO> listAll() throws Exception {
+	public List<InquiryBoardVO> listAll() throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectList(namespace + ".listAll");
 	}
 
 	@Override
-	public void update(NoticeBoardVO vo) throws Exception {
+	public void update(InquiryBoardVO vo) throws Exception {
 		// TODO Auto-generated method stub
 		session.insert(namespace+".update", vo);
 	}
@@ -52,13 +48,13 @@ public class NoticeBoardDAOImpl implements NoticeBoardDAO{
 	}
 
 	@Override
-	public List<NoticeBoardVO> listCriteria(Criteria cri) throws Exception {
+	public List<InquiryBoardVO> listCriteria(Criteria cri) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectList(namespace+".listCriteria", cri);
 	}
 
 	@Override
-	public List<NoticeBoardVO> listSearch(SearchCriteria cri) throws Exception {
+	public List<InquiryBoardVO> listSearch(SearchCriteria cri) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectList(namespace+".listSearch", cri);
 	}
@@ -76,7 +72,7 @@ public class NoticeBoardDAOImpl implements NoticeBoardDAO{
 	}
 
 	@Override
-	public List<NoticeBoardVO> listPage(int page) throws Exception {
+	public List<InquiryBoardVO> listPage(int page) throws Exception {
 		// TODO Auto-generated method stub
 		if (page <= 0) {
 			page = 1;

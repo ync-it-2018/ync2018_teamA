@@ -150,7 +150,7 @@
                    </a>
                 </li>
                 <li>
-                   <a href="#">
+                   <a href="/admin/customersupport/inquiry">
                       <i class="fa fa-circle-o"></i> 1대1 문의 
                    </a>
                 </li>

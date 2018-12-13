@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page session="false"%>
 
@@ -20,13 +20,21 @@
 				</div>
 				<div class='box-body'>
 					<select name="searchType">
+						<option value="n"
+							<c:out value="${cri.searchType == null?'selected':''}"/>>
+							---</option>
 						<option value="t"
 							<c:out value="${cri.searchType eq 't'?'selected':''}"/>>
 							Title</option>
+						<option value="i"
+							<c:out value="${cri.searchType eq 'i'?'selected':''}"/>>
+							ID</option>
+						<option value="w"
+							<c:out value="${cri.searchType eq 'w'?'selected':''}"/>>
+							Writer</option>
 					</select> <input type="text" name='keyword' id="keywordInput"
 						value='${cri.keyword }'>
 					<button id='searchBtn'>Search</button>
-					<button id='newBtn'>New Board</button>
 				</div>
 			</div>
 
@@ -41,13 +49,23 @@
 							<th>TITLE</th>
 							<th>REGDATE</th>
 						</tr>
-						<c:forEach items="${list}" var="FAQBoardVO" varStatus="status">
+						<c:forEach items="${list}" var="InquiryBoardVO" varStatus="status">
 							<tr>
-								<td>${FAQBoardVO.FAQ_IDX}</td>
-								<td><a href='/admin/customersupport/faqdetail?code=${FAQBoardVO.FAQ_IDX}'>${FAQBoardVO.TITLE}</a></td>
-								<td><fmt:formatDate pattern="yyyy-MM-dd" value="${FAQBoardVO.WRITEDATE}" /></td>
+								<td>${InquiryBoardVO.BOARD_IDX}</td>
+								<td><a
+									href='/admin/customersupport/inquirydetail?code=${InquiryBoardVO.BOARD_IDX}'>${InquiryBoardVO.TITLE}</a></td>
+								<td>${InquiryBoardVO.WRITER}</td>
+								<td>${InquiryBoardVO.ID}</td>
+								<c:choose>
+									<c:when test="${null eq InquiryBoardVO.ANSWER}">
+										<td style="color: red">답변대기</td>
+									</c:when>
+									<c:otherwise>
+										<td style="color: blue">답변완료</td>
+									</c:otherwise>
+								</c:choose>
 							</tr>
-<!-- /sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${TipNoticeBoardVO.BOARD_IDX} -->
+							<!-- /sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${TipNoticeBoardVO.BOARD_IDX} -->
 						</c:forEach>
 
 					</table>
@@ -57,19 +75,21 @@
 					<div class="text-center">
 						<ul class="pagination">
 							<c:if test="${pageMaker.prev}">
-								<li><a href="faq${pageMaker.makeSearch(pageMaker.startPage - 1) }">&laquo;</a></li>
+								<li><a
+									href="inquiry${pageMaker.makeSearch(pageMaker.startPage - 1) }">&laquo;</a></li>
 							</c:if>
 
 							<c:forEach begin="${pageMaker.startPage }"
 								end="${pageMaker.endPage }" var="idx">
 								<li
 									<c:out value="${pageMaker.cri.page == idx?'class =active':''}"/>>
-									<a href="faq${pageMaker.makeSearch(idx)}">${idx}</a>
+									<a href="inquiry${pageMaker.makeSearch(idx)}">${idx}</a>
 								</li>
 							</c:forEach>
 
 							<c:if test="${pageMaker.next && pageMaker.endPage > 0}">
-								<li><a href="faq${pageMaker.makeSearch(pageMaker.endPage +1) }">&raquo;</a></li>
+								<li><a
+									href="inquiry${pageMaker.makeSearch(pageMaker.endPage +1) }">&raquo;</a></li>
 							</c:if>
 
 						</ul>
@@ -86,8 +106,8 @@
 </section>
 <!-- /.content -->
 <form id="jobForm">
-  <input type='hidden' name="page" value=${pageMaker.cri.perPageNum}>
-  <input type='hidden' name="perPageNum" value=${pageMaker.cri.perPageNum}>
+	<input type='hidden' name="page" value=${pageMaker.cri.perPageNum}>
+	<input type='hidden' name="perPageNum" value=${pageMaker.cri.perPageNum}>
 </form>
 <script>
 	var result = '${msg}';
@@ -95,33 +115,19 @@
 	if (result == 'SUCCESS') {
 		alert("처리가 완료되었습니다.");
 	}
-	
-	/*
-	$(".pagination li a").on("click", function(event){
-		
-		event.preventDefault(); 
-		
-		var targetPage = $(this).attr("href");
-		
-		var jobForm = $("#jobForm");
-		jobForm.find("[name='page']").val(targetPage);
-		jobForm.attr("action","/board/listPage").attr("method", "get");
-		jobForm.submit();
-	});
-	*/
-	
-	$(document).ready(function() {
-		$('#searchBtn').on("click",function(event) {
-			self.location = "faq"
-							+ '${pageMaker.makeQuery(1)}'
-							+ "&searchType="
-							+ $("select option:selected").val()
-							+ "&keyword=" + $('#keywordInput').val();
 
-		});
-		$('#newBtn').on("click", function(evt) {
-			self.location = "faqupdate";
-		});
-	});
+	$(document).ready(
+			function() {
+				$('#searchBtn').on(
+						"click",
+						function(event) {
+							self.location = "inquiry"
+									+ '${pageMaker.makeQuery(1)}'
+									+ "&searchType="
+									+ $("select option:selected").val()
+									+ "&keyword=" + $('#keywordInput').val();
+
+						});
+			});
 </script>
 <%@include file="../include/footer.jsp"%>
