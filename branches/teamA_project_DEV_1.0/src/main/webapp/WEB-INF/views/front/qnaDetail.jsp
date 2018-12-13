@@ -165,14 +165,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <tr>
               <td>${status.count}</td>
               <td id="title">
-              ${FQNABoardVO.TITLE}
+              ${FQnaBoardVO.TITLE}
               </td>
-              <td>${FQNABoardVO.WRITER}</td>
-              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FQNABoardVO.WRITEDATE}"/></td>
+              <td>${FQnaBoardVO.WRITER}</td>
+              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FQnaBoardVO.WRITEDATE}"/></td>
             <tr>
             <tr>
              <th id="contents">내용</th>
-             <td colspan="4"  height="450px" style="text-align: left"> ${FQNABoardVO.CONTENT}</td>
+             <td colspan="4"  height="450px" style="text-align: left"> ${FQnaBoardVO.CONTENT}</td>
             </tr>
         </tbody>
       </table>

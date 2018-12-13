@@ -162,20 +162,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </tr>
         </thead>
         <tbody>
-          <c:forEach items="${list}" var="FQNABoardVO" varStatus="status">
+          <c:forEach items="${list}" var="FQnaBoardVO" varStatus="status">
             <tr>
               <td>${status.count}</td>
               <td id="title">
-                <c:if test="${FQNABoardVO.BOARD_IDX > 0}">
+                <c:if test="${FQnaBoardVO.BOARD_IDX > 0}">
                   &nbsp;&nbsp;
                 </c:if>
-                <a href="/front/qnaDetail?BOARD_IDX=${FQNABoardVO.BOARD_IDX}">${FQNABoardVO.TITLE}</a>
+                <a href="/front/qnaDetail?BOARD_IDX=${FQnaBoardVO.BOARD_IDX}">${FQnaBoardVO.TITLE}</a>
               </td>
-              <td>${FQNABoardVO.WRITER}</td>
-              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FQNABoardVO.WRITEDATE}"/></td>
+              <td>${FQnaBoardVO.WRITER}</td>
+              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FQnaBoardVO.WRITEDATE}"/></td>
               <td>
               	<c:choose>
-	             	<c:when test="${null eq FQNABoardVO.ANSWER}">
+	             	<c:when test="${null eq FQnaBoardVO.ANSWER}">
 	             		<p style="color:red">답변대기</p>
 	             	</c:when>
 	             	<c:otherwise>
