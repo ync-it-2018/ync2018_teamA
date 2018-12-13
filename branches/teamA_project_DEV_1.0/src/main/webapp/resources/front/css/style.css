@@ -103,6 +103,7 @@ label{
 /*-- search --*/
 .agileits_search {
     margin-top: 16px;
+    margin-left: 10%;
     float: left;
     width: 80%;
 }
@@ -340,7 +341,7 @@ ul.multi-column-dropdown li a:hover{
 /*-- cart details--*/
 .top_nav_right {
     float: right;
-    width: 20%;
+    width: 10%;
 }
 .box_1 {
     text-align: center;
