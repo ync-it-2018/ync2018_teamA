@@ -156,24 +156,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <thead>
           <tr>
             <th width="10%">번호</th>
-            <th width="45%">제목</th>
+            <th width="55%">제목</th>
             <th width="15%">작성자</th>
             <th width="20%">작성일</th>
-            <th width="10%">답변유무</th>
           </tr>
         </thead>
         <tbody>
             <tr>
               <td>${status.count}</td>
               <td id="title">
-              ${FqnaBoardVO.TITLE}
+              ${FQNABoardVO.TITLE}
               </td>
-              <td>${FqnaBoardVO.WRITER}</td>
-              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FqnaBoardVO.WRITEDATE}"/></td>
+              <td>${FQNABoardVO.WRITER}</td>
+              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FQNABoardVO.WRITEDATE}"/></td>
             <tr>
             <tr>
              <th id="contents">내용</th>
-             <td colspan="4"  height="450px" style="text-align: left"> ${FqnaBoardVO.CONTENT}</td>
+             <td colspan="4"  height="450px" style="text-align: left"> ${FQNABoardVO.CONTENT}</td>
             </tr>
         </tbody>
       </table>

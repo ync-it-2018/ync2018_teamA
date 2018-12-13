@@ -155,23 +155,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <thead>
           <tr>
             <th width="10%">번호</th>
-            <th width="55%">제목</th>
+            <th width="40%">제목</th>
             <th width="15%">작성자</th>
             <th width="20%">작성일</th>
+            <th width="15%">답변여부</th>
           </tr>
         </thead>
         <tbody>
-          <c:forEach items="${list}" var="FqnaBoardVO" varStatus="status">
+          <c:forEach items="${list}" var="FQNABoardVO" varStatus="status">
             <tr>
               <td>${status.count}</td>
               <td id="title">
-                <c:if test="${FqnaBoardVO.BOARD_IDX > 0}">
+                <c:if test="${FQNABoardVO.BOARD_IDX > 0}">
                   &nbsp;&nbsp;
                 </c:if>
-                <a href="/front/qnaDetail?BOARD_IDX=${FqnaBoardVO.BOARD_IDX}">${FqnaBoardVO.TITLE}</a>
+                <a href="/front/qnaDetail?BOARD_IDX=${FQNABoardVO.BOARD_IDX}">${FQNABoardVO.TITLE}</a>
               </td>
-              <td>${FqnaBoardVO.WRITER}</td>
-              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FqnaBoardVO.WRITEDATE}"/></td>
+              <td>${FQNABoardVO.WRITER}</td>
+              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FQNABoardVO.WRITEDATE}"/></td>
+              <td>
+              	<c:choose>
+	             	<c:when test="${null eq FQNABoardVO.ANSWER}">
+	             		<p style="color:red">답변대기</p>
+	             	</c:when>
+	             	<c:otherwise>
+	             		<p style="color:blue">답변완료</p>
+					</c:otherwise>
+             	</c:choose>
+              </td>
             <tr>
           </c:forEach>
         </tbody>
