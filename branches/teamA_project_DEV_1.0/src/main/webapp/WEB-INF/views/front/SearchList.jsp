@@ -73,7 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="/">Home</a>
 						<i>|</i>
 					</li>
-					<li>해외 여행</li>
+					<li>검색 결과 상품</li>
 				</ul>
 			</div>
 		</div>
@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="ads-grid">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">해외 여행
+			<h3 class="tittle-w3l">검색 결과 상품
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -94,17 +94,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- product left -->
 			<div class="side-bar col-md-3">
 				<div class="search-hotel">
-					<h3 class="agileits-sear-head">검색하기</h3>
-
+					<h3 class="agileits-sear-head">검색하기</h3>					
 						<input type="search" placeholder="ex) 부산" name='keyword' id="keyword">
 						<input type="submit" value=" " id="searchBtn" onclick="searchBtn()">
-		
 				</div>
 				<!-- price range -->
 				<div class="range">
 					<h3 class="agileits-sear-head">가격범위</h3>
 					<ul class="dropdown-menu6">
 						<li>
+
 							<div id="slider-range"></div>
 							<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
 						</li>
@@ -149,7 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="/resources/front/images/${FProductVO.ROOT}" alt="" width="100%" ></a>
 							<div style="height:10px;"></div>
 							<h5>${FProductVO.PRODUCT_NAME}</h5>
-							<p><span class="number">${FProductVO.ADULT_PRICE}</span>원</p>					
+							<p>${FProductVO.ADULT_PRICE}원</p>					
 						</div>
 						<div style="height:30px;"></div>
 							</c:forEach>
@@ -162,7 +161,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="wrapper">
 					<!-- first section -->
 					<div class="product-sec1">					
-					<c:forEach items="${list_overseas}" var="FProductVO">
+					<c:forEach items="${list_SearchList}" var="FProductVO">
 						<div class="col-xs-4 product-men">						
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item" style="width:230px; height:150px;">
@@ -182,9 +181,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</h4>
 									</div>
 									<div class="info-product-price">
-										<span class="item_price"><span class="number">${FProductVO.ADULT_PRICE}</span>원</span>
+										<span class="item_price">${FProductVO.ADULT_PRICE}원</span>
 									</div>
-									<input type="hidden" id="nation_code" value="${FProductVO.NATION_CODE}">
 								 
 									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 										<form action="#" method="post">
@@ -337,6 +335,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		});
 		
+		//검색
+		$(document).ready(function() {
+			/* $('#searchBtn').on("click",function(event) {
+				self.location = "overseas"
+								+ '${pageMaker.makeQuery(1)}'
+								+ "&searchType="
+								+ $("select option:selected").val()
+								+ "&keyword=" + $('#keywordInput').val();
+
+			}); */
 		});
 	</script>
 	<!-- //flexisel (for special offers) -->
@@ -397,30 +405,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		});
 	</script>
-	
-	<script>
-	//검색 버튼
-	function searchBtn() {
-		
-		var nation_code = $("#nation_code").val();
-		var keyword =  $("#keyword").val();
-
-		location.replace("/overseas?nation_code="+nation_code+"&keyword="+keyword);
-			
-	}
-	</script>
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
 	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
-	
-	<!-- 가격 콤마 -->
-	<script src="/resources/front/js/jquery.number.min.js"></script>
-	<script>
-		$('span.number').number(true);
-	</script>
+
 </body>
 
 </html>

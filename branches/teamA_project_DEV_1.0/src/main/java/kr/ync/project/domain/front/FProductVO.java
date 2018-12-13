@@ -45,4 +45,6 @@ public class FProductVO {
 	
 	private String CITY_NAME;
 	private String NATION_NAME;
+	
+	private String keyword;
 }

@@ -8,22 +8,26 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<!--  해외 상품 리스트 -->
 	<select id="listAll" resultType="FProductVO">
-	<![CDATA[
-		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
+
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE, NATION_CODE
 		FROM 	TA_PRODUCT p, TA_PROIMG pi 
 		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
 		AND     p.NATION_CODE =  #{nation_code}
-		]]>
+		<if test="keyword != null">
+           AND  PRODUCT_NAME LIKE '%'|| #{keyword}||'%' -->
+       </if>
 	</select>
 	
 	<!-- 국내 상품 리스트 -->
 	<select id="listAll_domestic" resultType="FProductVO">
-	<![CDATA[
-		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
+	
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE, CITY_CODE
 		FROM 	TA_PRODUCT p, TA_PROIMG pi 
 		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
 		AND     p.CITY_CODE =  #{city_code}
-		]]>
+		<if test="keyword != null">
+           AND  PRODUCT_NAME LIKE '%'|| #{keyword}||'%' -->
+       </if>
 	</select>
 	
 	<!-- 상품 상세 보기 화면 -->
@@ -56,7 +60,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		FROM 	TA_PRODUCT p, TA_PROIMG pi 
 		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
 		AND     p.CATEGORIZATION = '특가상품'
-		AND     ROWNUM <=5
+		AND     ROWNUM <=3
 		]]>
 	</select>
 	
@@ -198,6 +202,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
 		AND     p.THEME = '체험'
 		AND 	rownum <= 2
+		]]>
+	</select>
+
+<!--  전체 상품 검색 결과 리스트 -->
+	<select id="listAll_SearchList" resultType="FProductVO">
+	<![CDATA[
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     PRODUCT_NAME like '%'||#{keyword}||'%'
 		]]>
 	</select>
 	

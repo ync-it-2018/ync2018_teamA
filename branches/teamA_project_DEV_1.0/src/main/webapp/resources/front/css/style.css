@@ -280,6 +280,7 @@ h3.agileinfo_sign span {
 }
 .navbar-nav > li > a {
     line-height: inherit;
+    color : black;
 }
 a.nav-stylehead {
     letter-spacing: 1px;

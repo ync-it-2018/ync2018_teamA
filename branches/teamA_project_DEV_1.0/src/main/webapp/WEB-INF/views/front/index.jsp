@@ -68,6 +68,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<% } else {%>
 						<%@include file="Finclude/Fheaderlogin.jsp" %>
 					<% }%>
+				<% } else {%>
+					<%@include file="Finclude/Fheaderlogin.jsp" %>
 				<% }%>
 				
 				<%--  <% Cookie[] useCookie = request.getCookies();

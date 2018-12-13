@@ -44,14 +44,14 @@
 							<li><a href="/tip">여행 TIP</a></li>
 						</ul></li>
 					<li><a href="/front/Flogout">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 로그아웃
+							<span class="fa fa-unlock" aria-hidden="true"></span> 로그아웃
 					</a></li>
 					<li><a href="/front/Fjoin">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
 					<li><a href="/basket" data-toggle="modal" data-target="#myModal1">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> 장바구니
+							<span class="fa fa-shopping-basket" aria-hidden="true"></span> 장바구니
 					</a></li>
 				</ul>
 				<div class="agileits_search">

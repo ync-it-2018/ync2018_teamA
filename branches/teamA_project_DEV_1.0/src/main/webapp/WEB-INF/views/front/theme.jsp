@@ -154,7 +154,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="/resources/front/images/${FProductVO.ROOT}" alt="" width="100%" ></a>
 							<div style="height:10px;"></div>
 							<h5>${FProductVO.PRODUCT_NAME}</h5>
-							<p>${FProductVO.ADULT_PRICE}원</p>					
+							<p><span class="number">${FProductVO.ADULT_PRICE}</span>원</p>					
 						</div>
 						<div style="height:30px;"></div>
 							</c:forEach>
@@ -188,7 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</h4>
 									</div>
 									<div class="info-product-price">
-										<span class="item_price">${FProductVO.ADULT_PRICE}원</span>
+										<span class="item_price"><span class="number">${FProductVO.ADULT_PRICE}</span>원</span>
 									</div>
 								 
 									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
@@ -403,7 +403,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="/resources/front/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
-
+	
+	<!-- 가격 콤마 -->
+	<script src="/resources/front/js/jquery.number.min.js"></script>
+	<script>
+		$('span.number').number(true);
+	</script>
 </body>
 
 </html>

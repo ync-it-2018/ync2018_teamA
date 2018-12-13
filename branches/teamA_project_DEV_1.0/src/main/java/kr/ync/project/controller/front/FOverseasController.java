@@ -24,15 +24,30 @@ public class FOverseasController {
 	@Inject
 	private FProductService service;
 
+	//해외 패키지 리스트
 	@RequestMapping(value = "/overseas", method = RequestMethod.GET)
-	public String about(@RequestParam("nation_code")String nation_code,Locale locale, Model model) throws Exception {
+	public String about(@RequestParam("nation_code") String nation_code,
+						@RequestParam(value="keyword", required=false) String keyword,
+						Model model) throws Exception {
 
 		// 가나다
-		logger.info("해외여행상품으로 이동", locale);
-		model.addAttribute("list_overseas", service.listAll(nation_code));
+		logger.info("해외여행상품으로 이동");
+		model.addAttribute("list_overseas", service.listAll(nation_code, keyword));
 		model.addAttribute("list_special", service.listAll_special());
 		
 		return "front/overseas";
+	}
+	
+	//해외 패키지 검색
+	@RequestMapping(value = "/SearchList", method = RequestMethod.GET)
+	public String SearchList(@RequestParam("keyword")String keyword, Model model) throws Exception {
+
+		// 가나다
+		logger.info("해외여행상품 검색으로 이동");
+		model.addAttribute("list_SearchList", service.listAll_SearchList(keyword));
+		model.addAttribute("list_special", service.listAll_special());
+		
+		return "front/SearchList";
 	}
 	
 	//상품 상세 화면

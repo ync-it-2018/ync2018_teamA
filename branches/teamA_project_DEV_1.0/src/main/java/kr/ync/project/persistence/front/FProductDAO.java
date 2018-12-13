@@ -8,9 +8,12 @@ public interface FProductDAO {
 	
 	public FProductVO read(String product_code)throws Exception;
 	
-	public List<FProductVO> listAll_domestic(String nation_code)throws Exception;
+	public List<FProductVO> listAll_domestic(String city_code, String keyword)throws Exception;
 	
-	public List<FProductVO> listAll(String city_code)throws Exception;
+	public List<FProductVO> listAll(String nation_code, String keyword)throws Exception;
+	
+	//전체 검색 결과
+	public List<FProductVO> listAll_SearchList(String keyword)throws Exception;
 	
 	public List<FProductVO> listAll_best()throws Exception;
 	
