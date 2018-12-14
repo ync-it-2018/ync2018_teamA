@@ -144,7 +144,23 @@ label{
 }
 .agileits-navi_search {
 	float: left;
-	width: 18%;
+	width: 13%;
+}
+.all_wholemenu {
+	float: left;
+	display: block;
+	padding: 1px 0px 0 1px;
+	color: #4d4d4d;
+    text-align: center;
+    background: #FFF;
+    border-bottom: 1px solid #DEE0E1;
+    border-left: 1px solid #DEE0E1;
+    border-right: 1px solid #DEE0E1;
+    background-color: #FFF;
+    width:140px;
+    height:50px;
+    border:0;
+    outline:0;
 }
 #agileinfo-nav_search {
     outline: none;
@@ -261,6 +277,7 @@ h3.agileinfo_sign span {
     min-height: inherit;
     margin: 0;
     float: right;
+    width: 87%;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background: none;
@@ -358,7 +375,7 @@ button.w3view-cart {
     outline: none;
     border: none;
     background: #FF5722;
-    width: 48px;
+    width: 130px;
     height: 43px;
     font-size: 24px;
     color: #fff;
@@ -3410,7 +3427,7 @@ input[type="radio"], input[type="checkbox"] {
     }
     .top_nav_left {
         float: right;
-        width: 75%;
+        width: 50%;
     }
     .agile_short_dropdown li a {
         border-bottom: none;

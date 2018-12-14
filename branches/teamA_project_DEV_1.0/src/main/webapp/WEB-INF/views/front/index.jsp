@@ -77,7 +77,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 				
 	<!-- //navigation -->
-	<!-- banner -->
+	<!-- 메인화면 광고 -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators-->
 		<ol class="carousel-indicators">
@@ -96,7 +96,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>
 							KTX왕복 + 경주시티투어
 						</p>
-						<a class="button2" href="product">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -109,7 +108,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>
 							찬란한 잉카문명 유적지 마추피추와 그리고 하늘과 맞닿은 우유니 소금 사막까지 한번에 관광
 						</p>
-						<a class="button2" href="product">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -122,7 +120,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>
 							 모스크바와 예술의 도시 상트 페테르부르크를 관광하며 찬란했던 과거의 문명과 역동적인 오늘을 모습을 엿볼 수 있는 러시아일주
 						</p>
-						<a class="button2" href="product">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -135,7 +132,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>
 							동서문명의 교차로 이스탄불과 초기 그리스도교 유적을 만날 수 있는 카파도키아를 자유여행
 						</p>
-						<a class="button2" href="product">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -149,14 +145,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
-	<!-- //banner -->
+	<!-- //메인화면 광고 -->
+	<!-- 상세검색 -->
 	<div class="container">
 		<div class="book-form"> 
 			<form action="#" method="post">
 				<div class="col-md-3 form-time-w3layouts editContent">
 					<label class="editContent"><span class="fa fa-user"
 						aria-hidden="true"></span> Traveller Name</label> <input type="text"
-						placeholder="Name" required="">
+						required="">
 				</div>
 				<div class="col-md-3 form-date-w3-agileits editContent">
 					<label class="editContent"><span class="fa fa-map-marker"
@@ -195,15 +192,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"></div>
 			</form>
 		</div>
-
 	</div>
-	<!-- top Products -->
+	<!-- //상세검색 -->
 	<div class="ads-grid">
 		<div class="container">
 			<!-- product right -->
 			<div class="agileinfo-ads-display col-md-12">
 				<div class="wrapper">
-					<!-- first section (nuts) -->
+					<!-- 인기 패키지 -->
 					<div class="col-md-9 product-sec1">
 						<h4 class="heading-tittle" style="text-align:left">인기 패키지 <span style="color:red">best 6</span></h4>
 						<c:forEach items="${list}" var="FProductVO">
@@ -250,6 +246,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</c:forEach> 
 						<div class="clearfix"></div>
 					</div>
+					<!-- //인기 패키지 -->
+					<!-- 출발 임박 패키지 -->
 					<div class="col-md-3 product-sec1">
 						<h4 class="heading-tittle" style="text-align:left;">출발 임박 패키지</h4>
 						<c:forEach items="${listAll_imminent}" var="FProductVO">
@@ -302,15 +300,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</c:forEach>
 						<div class="clearfix"></div>
 					</div>
-					<!-- //first section (nuts) -->
+					<!-- //출발 임박 패키지 -->
 					<h6 style="visibility:hidden"> 짜잔~ </h6>
-					<!-- third section (oils) -->
-						<div class="col-md-6 product-sec1" style="padding:30px 20px 15px 20px">
+						<!-- 테마별 패키지 -->
+						<div class="col-md-6 product-sec1"
+							style="padding: 30px 20px 15px 20px">
 							<h4 class="heading-tittle" style="text-align: left;">
 								<sapn style="color:red;">강력추천</sapn>
 								테마 여행
 							</h4>
-							<div class="col-md-4 product-sec4" style="padding:10px 15px">
+							<div class="col-md-4 product-sec4" style="padding: 10px 15px">
 								<div class="product-sec3 thema-select1">
 									<h5 class="text-align:center">허니문</h5>
 								</div>
@@ -338,9 +337,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<!-- 허니문 패키지 -->
 							<c:forEach items="${listAll_honey}" var="FProductVO">
-								<div class="col-md-4 product-men thema-selected1" style="margin:2em 0em; padding:10px 15px;">
+								<div class="col-md-4 product-men thema-selected1"
+									style="margin: 2em 0em; padding: 10px 15px;">
 									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item" style="width:140px; height:100px;">
+										<div class="men-thumb-item"
+											style="width: 140px; height: 100px;">
 											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
 												width="140px" height="100px">
 
@@ -351,18 +352,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														class="link-product-add-cart">상품 보기</a>
 												</div>
 											</div>
-											<!-- <span class="product-new-top">New</span> -->
 										</div>
 										<div class="item-info-product" style="margin-top: 20px;">
-											<p style="overflow:hidden; width:140px; height:85px;">
-												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+											<p style="overflow: hidden; width: 140px; height: 85px;">
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}"
+													style="color: #000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
 												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
-												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out" style="margin:0px">
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out"
+												style="margin: 0px">
 												<form action="#" method="post">
 													<fieldset>
 														<input type="hidden" name="cmd" value="_cart" /> <input
@@ -387,9 +390,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</c:forEach>
 							<!-- 골프 패키지 -->
 							<c:forEach items="${listAll_golf}" var="FProductVO">
-								<div class="col-md-4 product-men thema-selected2" style="margin:2em 0em; padding:10px 15px; display:none;">
+								<div class="col-md-4 product-men thema-selected2"
+									style="margin: 2em 0em; padding: 10px 15px; display: none;">
 									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item" style="width:140px; height:100px;">
+										<div class="men-thumb-item"
+											style="width: 140px; height: 100px;">
 											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
 												width="140px" height="100px">
 
@@ -400,18 +405,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														class="link-product-add-cart">상품 보기</a>
 												</div>
 											</div>
-											<!-- <span class="product-new-top">New</span> -->
 										</div>
 										<div class="item-info-product" style="margin-top: 20px;">
-											<p style="overflow:hidden; width:140px; height:85px;">
-												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+											<p style="overflow: hidden; width: 140px; height: 85px;">
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}"
+													style="color: #000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
 												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
-												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out" style="margin:0px">
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out"
+												style="margin: 0px">
 												<form action="#" method="post">
 													<fieldset>
 														<input type="hidden" name="cmd" value="_cart" /> <input
@@ -436,9 +443,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</c:forEach>
 							<!-- 크루즈 패키지 -->
 							<c:forEach items="${listAll_cruise}" var="FProductVO">
-								<div class="col-md-4 product-men thema-selected3" style="margin:2em 0em; padding:10px 15px; display:none;">
+								<div class="col-md-4 product-men thema-selected3"
+									style="margin: 2em 0em; padding: 10px 15px; display: none;">
 									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item" style="width:140px; height:100px;">
+										<div class="men-thumb-item"
+											style="width: 140px; height: 100px;">
 											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
 												width="140px" height="100px">
 
@@ -449,18 +458,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														class="link-product-add-cart">상품 보기</a>
 												</div>
 											</div>
-											<!-- <span class="product-new-top">New</span> -->
 										</div>
 										<div class="item-info-product" style="margin-top: 20px;">
-											<p style="overflow:hidden; width:140px; height:85px;">
-												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+											<p style="overflow: hidden; width: 140px; height: 85px;">
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}"
+													style="color: #000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
 												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
-												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out" style="margin:0px">
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out"
+												style="margin: 0px">
 												<form action="#" method="post">
 													<fieldset>
 														<input type="hidden" name="cmd" value="_cart" /> <input
@@ -485,9 +496,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</c:forEach>
 							<!-- 음식 패키지 -->
 							<c:forEach items="${listAll_food}" var="FProductVO">
-								<div class="col-md-4 product-men thema-selected4" style="margin:2em 0em; padding:10px 15px; display:none;">
+								<div class="col-md-4 product-men thema-selected4"
+									style="margin: 2em 0em; padding: 10px 15px; display: none;">
 									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item" style="width:140px; height:100px;">
+										<div class="men-thumb-item"
+											style="width: 140px; height: 100px;">
 											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
 												width="140px" height="100px">
 
@@ -498,18 +511,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														class="link-product-add-cart">상품 보기</a>
 												</div>
 											</div>
-											<!-- <span class="product-new-top">New</span> -->
 										</div>
 										<div class="item-info-product" style="margin-top: 20px;">
-											<p style="overflow:hidden; width:140px; height:85px;">
-												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+											<p style="overflow: hidden; width: 140px; height: 85px;">
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}"
+													style="color: #000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
 												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
-												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out" style="margin:0px">
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out"
+												style="margin: 0px">
 												<form action="#" method="post">
 													<fieldset>
 														<input type="hidden" name="cmd" value="_cart" /> <input
@@ -534,9 +549,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</c:forEach>
 							<!-- 예술/문화/역사 패키지 -->
 							<c:forEach items="${listAll_culture}" var="FProductVO">
-								<div class="col-md-4 product-men thema-selected5" style="margin:2em 0em; padding:10px 15px; display:none;">
+								<div class="col-md-4 product-men thema-selected5"
+									style="margin: 2em 0em; padding: 10px 15px; display: none;">
 									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item" style="width:140px; height:100px;">
+										<div class="men-thumb-item"
+											style="width: 140px; height: 100px;">
 											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
 												width="140px" height="100px">
 
@@ -547,18 +564,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														class="link-product-add-cart">상품 보기</a>
 												</div>
 											</div>
-											<!-- <span class="product-new-top">New</span> -->
 										</div>
 										<div class="item-info-product" style="margin-top: 20px;">
-											<p style="overflow:hidden; width:140px; height:85px;">
-												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+											<p style="overflow: hidden; width: 140px; height: 85px;">
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}"
+													style="color: #000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
 												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
-												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out" style="margin:0px">
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out"
+												style="margin: 0px">
 												<form action="#" method="post">
 													<fieldset>
 														<input type="hidden" name="cmd" value="_cart" /> <input
@@ -583,9 +602,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</c:forEach>
 							<!-- 이벤트 패키지 -->
 							<c:forEach items="${listAll_event}" var="FProductVO">
-								<div class="col-md-4 product-men thema-selected6" style="margin:2em 0em; padding:10px 15px; display:none;">
+								<div class="col-md-4 product-men thema-selected6"
+									style="margin: 2em 0em; padding: 10px 15px; display: none;">
 									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item" style="width:140px; height:100px;">
+										<div class="men-thumb-item"
+											style="width: 140px; height: 100px;">
 											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
 												width="140px" height="100px">
 
@@ -596,18 +617,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														class="link-product-add-cart">상품 보기</a>
 												</div>
 											</div>
-											<!-- <span class="product-new-top">New</span> -->
 										</div>
 										<div class="item-info-product" style="margin-top: 20px;">
-											<p style="overflow:hidden; width:140px; height:85px;">
-												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+											<p style="overflow: hidden; width: 140px; height: 85px;">
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}"
+													style="color: #000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
 												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
-												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out" style="margin:0px">
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out"
+												style="margin: 0px">
 												<form action="#" method="post">
 													<fieldset>
 														<input type="hidden" name="cmd" value="_cart" /> <input
@@ -632,9 +655,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</c:forEach>
 							<!-- 트래킹/스포츠 패키지 -->
 							<c:forEach items="${listAll_leports}" var="FProductVO">
-								<div class="col-md-4 product-men thema-selected7" style="margin:2em 0em; padding:10px 15px; display:none;">
+								<div class="col-md-4 product-men thema-selected7"
+									style="margin: 2em 0em; padding: 10px 15px; display: none;">
 									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item" style="width:140px; height:100px;">
+										<div class="men-thumb-item"
+											style="width: 140px; height: 100px;">
 											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
 												width="140px" height="100px">
 
@@ -645,18 +670,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														class="link-product-add-cart">상품 보기</a>
 												</div>
 											</div>
-											<!-- <span class="product-new-top">New</span> -->
 										</div>
 										<div class="item-info-product" style="margin-top: 20px;">
-											<p style="overflow:hidden; width:140px; height:85px;">
-												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+											<p style="overflow: hidden; width: 140px; height: 85px;">
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}"
+													style="color: #000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
 												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
-												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out" style="margin:0px">
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out"
+												style="margin: 0px">
 												<form action="#" method="post">
 													<fieldset>
 														<input type="hidden" name="cmd" value="_cart" /> <input
@@ -681,9 +708,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</c:forEach>
 							<!-- 체험 패키지 -->
 							<c:forEach items="${listAll_experience}" var="FProductVO">
-								<div class="col-md-4 product-men thema-selected8" style="margin:2em 0em; padding:10px 15px; display:none;">
+								<div class="col-md-4 product-men thema-selected8"
+									style="margin: 2em 0em; padding: 10px 15px; display: none;">
 									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item" style="width:140px; height:100px;">
+										<div class="men-thumb-item"
+											style="width: 140px; height: 100px;">
 											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
 												width="140px" height="100px">
 
@@ -694,18 +723,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														class="link-product-add-cart">상품 보기</a>
 												</div>
 											</div>
-											<!-- <span class="product-new-top">New</span> -->
 										</div>
 										<div class="item-info-product" style="margin-top: 20px;">
-											<p style="overflow:hidden; width:140px; height:85px;">
-												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+											<p style="overflow: hidden; width: 140px; height: 85px;">
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}"
+													style="color: #000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
 												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
-												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out" style="margin:0px">
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out"
+												style="margin: 0px">
 												<form action="#" method="post">
 													<fieldset>
 														<input type="hidden" name="cmd" value="_cart" /> <input
@@ -730,15 +761,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</c:forEach>
 							<div class="clearfix"></div>
 						</div>
-						<!-- //third section (oils) -->
-					<!-- fourth section (noodles) -->
-
-					<div class="col-md-6 product-sec1" style="padding:30px 20px 15px 20px">
-						<h4 class="heading-tittle " style="text-align: left;"><span style="color:red">HOT </span>특가 패키지</h4>
-						<c:forEach items="${listAll_main_special}" var="FProductVO">
-								<div class="col-md-4 product-men" style="margin:2em 0em; padding:10px 15px;">
+						<!-- //테마별 패키지 -->
+						<!-- 특가 패키지 -->
+						<div class="col-md-6 product-sec1"
+							style="padding: 30px 20px 15px 20px">
+							<h4 class="heading-tittle " style="text-align: left;">
+								<span style="color: red">HOT </span>특가 패키지
+							</h4>
+							<c:forEach items="${listAll_main_special}" var="FProductVO">
+								<div class="col-md-4 product-men"
+									style="margin: 2em 0em; padding: 10px 15px;">
 									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item" style="width:140px; height:100px;">
+										<div class="men-thumb-item"
+											style="width: 140px; height: 100px;">
 											<img src="/resources/front/images/${FProductVO.ROOT}" alt=""
 												width="140px" height="100px">
 
@@ -752,15 +787,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<!-- <span class="product-new-top">New</span> -->
 										</div>
 										<div class="item-info-product" style="margin-top: 20px;">
-											<p style="overflow:hidden; width:140px; height:85px;">
-												<a href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}" style="color:#000000">${FProductVO.PRODUCT_NAME}</a>
+											<p style="overflow: hidden; width: 140px; height: 85px;">
+												<a
+													href="/front/detail?product_code=${FProductVO.PRODUCT_CODE}"
+													style="color: #000000">${FProductVO.PRODUCT_NAME}</a>
 											</p>
 											<div class="info-product-price">
 												<span class="item_price number">${FProductVO.ADULT_PRICE}</span>원
 											</div>
 
 											<div
-												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out" style="margin:0px">
+												class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out"
+												style="margin: 0px">
 												<form action="#" method="post">
 													<fieldset>
 														<input type="hidden" name="cmd" value="_cart" /> <input
@@ -783,24 +821,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 							</c:forEach>
-						<div class="clearfix"></div>
-					</div>
-					<!-- //fourth section (noodles) -->
+							<div class="clearfix"></div>
+						</div>
+						<!-- //특가 패키지 -->
 				</div>
 			</div>
-			<!-- //product right -->
 		</div>
 	</div>
-	<!-- //top products -->
-	<!-- special offers -->
+	<!-- 추천 패키지 -->
 	<div class="featured-section" id="projects">
 		<div class="container">
-			<!-- tittle heading -->
 			<h3 class="tittle-w3l">
 				또봄 추천 패키지 <span class="heading-style"> <i></i> <i></i> <i></i>
 				</span>
 			</h3>
-			<!-- //tittle heading -->
 				<div class="content-bottom-in">
 					<ul id="flexiselDemo1">
 						<c:forEach items="${listAll_osusume}" var="FProductVO">
@@ -847,9 +881,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 			</div>
 	</div>
+	<!-- //추천 패키지 -->
 	</section>
-	
-	<!-- //special offers -->
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
@@ -858,7 +891,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</p>
 		</div>
 	</div>
-	
 	<!-- //copyright -->
 
 	<!-- js-files -->
@@ -1036,11 +1068,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 	<script src="/resources/front/css/jquery-ui1.css"></script>
+	<!-- 상세검색 기능 -->
 	<script>
        $(function() {
           $( "#datepicker,#datepicker1" ).datepicker();
        });
     </script>
+    <!-- //상세검색 기능 -->
+    <!-- 테마분류 기능 -->
     <script>
     	$(function() {
     		$('.thema-select1').click(function() {
@@ -1125,11 +1160,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     		});
     	});
     </script>
+    <!-- //테마분류 기능 -->
 	<!-- 가격 콤마 -->
 	<script src="/resources/front/js/jquery.number.min.js"></script>
 	<script>
 		$('span.number').number(true);
 	</script>
+	<!-- //가격 콤마 -->
 </body>
 
 </html>

@@ -52,8 +52,8 @@
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
-					<li><a href="/basket" data-toggle="modal" data-target="#myModal1">
-							<span class="fa fa-shopping-basket" aria-hidden="true"></span> 장바구니
+					<li><a href="/intro">
+							<span class="fa fa-users" aria-hidden="true"></span> 팀원소개
 					</a></li>
 				</ul>
 				<div class="agileits_search">
@@ -75,6 +75,7 @@
 								type="hidden" name="display" value="1">
 							<button class="w3view-cart" type="submit" name="submit" value="">
 								<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+								<span style="font-size:20px;">장바구니</span>
 							</button>
 						</form>
 					</div>
@@ -88,36 +89,11 @@
 	<div class="ban-top">
 		<div class="container">
 			<div class="agileits-navi_search">
-					<div class="collapse navbar-collapse menu--shylock"
-						id="bs-example-navbar-collapse-2">
-						<ul class="nav navbar-nav menu__list">
-							<li class="dropdown"><a
-								class="nav-stylehead dropdown-toggle" href="#"
-								data-toggle="dropdown">전체 메뉴 <b class="caret"></b>
-							</a>
-
-								<ul class="dropdown-menu2 agile_short_dropdown"
-									style="width: 50%">
-									<li><a href="/domestic?city_code=ICN">서울/인천/경기</a></li>
-									<li><a href="/domestic?city_code=KAE">강원권</a></li>
-									<li><a href="/domestic?city_code=GON">충청권</a></li>
-									<li><a href="/domestic?city_code=KWJ">전라권</a></li>
-									<li><a href="/domestic?city_code=KPO">경상권</a></li>
-									<li><a href="/domestic?city_code=CJU">제주권</a></li>
-								</ul>
-								<ul class="dropdown-menu2 agile_short_dropdown"
-									style="width: 50%">
-									<li><a href="/domestic?city_code=ICN">서울/인천1/경기</a></li>
-									<li><a href="/domestic?city_code=KAE">강원권</a></li>
-									<li><a href="/domestic?city_code=GON">충청권</a></li>
-									<li><a href="/domestic?city_code=KWJ">전라권</a></li>
-									<li><a href="/domestic?city_code=KPO">경상권</a></li>
-									<li><a href="/domestic?city_code=CJU">제주권</a></li>
-								</ul>
-								</li>
-						</ul>
-					</div>
+				<button type="button" class="all_wholemenu" id="main_menu_btn">전체 메뉴<b class="caret"></b></button>
+				<div class="" id="main_whole_menu_content">
 				</div>
+			</div>
+			<!-- 메뉴 우측부분 -->
 			<div class="top_nav_left">
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
@@ -188,7 +164,22 @@
 					</div>
 				</nav>
 			</div>
+			<!-- //메뉴 우측부분 -->
 		</div>
 	</div>
+	<script type="text/javascript">/*cpWholeScriptStart*/
+    //ready
+    $(function() {
+      //전체메뉴 열기
+      $("#main_menu_btn").click(function () {
+        //.slideToggle(400,fn_pkgInfoData($(this)));
+        $(this).next().slideToggle(400);
+      });
+      //전체메뉴 닫기
+      $("#main_whole_menu_content > #jq_main_btn_close").click(function () {
+        $(this).parent().slideToggle(400);
+      });
+    });
+    /*cpWholeScriptEnd*/</script>
 </body>
 </html>

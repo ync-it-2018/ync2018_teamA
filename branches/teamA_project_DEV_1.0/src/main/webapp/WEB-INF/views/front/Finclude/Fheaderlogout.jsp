@@ -52,8 +52,8 @@
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
 							회원가입
 					</a></li>
-					<li><a href="/basket" data-toggle="modal" data-target="#myModal1">
-							<span class="fa fa-shopping-basket" aria-hidden="true"></span> 장바구니
+					<li><a href="/intro">
+							<span class="fa fa-users" aria-hidden="true"></span> 팀원소개
 					</a></li>
 				</ul>
 				<div class="agileits_search">
@@ -75,6 +75,7 @@
 								type="hidden" name="display" value="1">
 							<button class="w3view-cart" type="submit" name="submit" value="">
 								<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+								<span style="font-size:20px;">장바구니</span>
 							</button>
 						</form>
 					</div>
