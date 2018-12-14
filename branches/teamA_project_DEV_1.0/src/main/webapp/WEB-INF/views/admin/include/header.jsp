@@ -193,7 +193,7 @@
                    </a>
                 </li>
                 <li>
-                   <a href="#">
+                   <a href="/admin/reservation/canclelist">
                       <i class="fa fa-circle-o"></i> 예약 취소 관리 
                    </a>
                 </li>

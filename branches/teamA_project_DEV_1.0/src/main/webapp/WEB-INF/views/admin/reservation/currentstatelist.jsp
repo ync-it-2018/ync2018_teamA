@@ -21,16 +21,18 @@
 						<option value="n"
 							<c:out value="${cri.searchType == null?'selected':''}"/>>
 							---</option>
-						<option value="t"
-							<c:out value="${cri.searchType eq 't'?'selected':''}"/>>
-							Title</option>
-						<option value="i"
+							<option value="i"
 							<c:out value="${cri.searchType eq 'i'?'selected':''}"/>>
 							ID</option>
-						<option value="w"
-							<c:out value="${cri.searchType eq 'w'?'selected':''}"/>>
-							Writer</option>
-					</select> <input type="text" name='keyword' id="keywordInput"
+						<option value="ok"
+							<c:out value="${cri.searchType eq 'ok'?'selected':''}"/>>
+							입금</option>
+						<option value="no"
+							<c:out value="${cri.searchType eq 'no'?'selected':''}"/>>
+							미입금</option>
+					</select> 
+					
+					<input type="text" name='keyword' id="keywordInput"
 						value='${cri.keyword }'>
 					<button id='searchBtn'>Search</button>
 				</div>
@@ -57,7 +59,7 @@
 								<td>${ReservationVO.ID}</td>
 								<td><fmt:formatDate pattern="yyyy-MM-dd" value="${ReservationVO.RE_DATE}" /></td>
 								<td><a
-									href='/admin/reservation/currentstatelist?code=${ReservationVO.RE_IDX}'>${ReservationVO.PRODUCT_NAME}</a></td>
+									href='/admin/reservation/currentstatedetail?code=${ReservationVO.RE_IDX}'>${ReservationVO.PRODUCT_NAME}</a></td>
 								<td>${ReservationVO.TOTALPRICE}</td>
 								<c:choose>
 									<c:when test="${02 eq ReservationVO.STATUS}">
