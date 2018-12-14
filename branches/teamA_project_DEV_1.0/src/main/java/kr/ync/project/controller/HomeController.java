@@ -24,6 +24,7 @@ public class HomeController {
 	@Inject
 	private FProductService service;
 	
+	//프론트
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) throws Exception {
 
@@ -64,6 +65,7 @@ public class HomeController {
 
 	}
 	
+	//어드민
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public String adminhome(Locale locale, Model model) {
 
