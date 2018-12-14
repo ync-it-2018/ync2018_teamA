@@ -18,60 +18,36 @@ public class ReservationCancleDAOImpl implements ReservationCancleDAO{
 	
 	private static String namespace = 
 			"kr.ync.project.mapper.ReservationCancleMapper";
-	
-	@Override
-	public void create(ReservationCancleVO vo) throws Exception {
-		session.insert(namespace+".create", vo);
-	}
 
+	//상세
 	@Override
 	public ReservationCancleVO read(Integer RE_IDX) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectOne(namespace+".read", RE_IDX);
 	}
-
-	@Override
-	public List<ReservationCancleVO> listAll() throws Exception {
-		// TODO Auto-generated method stub
-		return session.selectList(namespace + ".listAll");
-	}
-
-	@Override
-	public void update(ReservationCancleVO vo) throws Exception {
-		// TODO Auto-generated method stub
-		session.insert(namespace+".update", vo);
-	}
-
-	@Override
-	public void delete(Integer RE_IDX) throws Exception {
-		// TODO Auto-generated method stub
-		session.delete(namespace + ".delete", RE_IDX);
-	}
-
-	@Override
-	public List<ReservationCancleVO> listCriteria(Criteria cri) throws Exception {
-		// TODO Auto-generated method stub
-		return session.selectList(namespace+".listCriteria", cri);
-	}
-
+	
+	//리스트
 	@Override
 	public List<ReservationCancleVO> listSearch(SearchCriteria cri) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectList(namespace+".listSearch", cri);
 	}
 
+	//카운팅
 	@Override
 	public int listSearchCount(SearchCriteria cri) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectOne(namespace+".listSearchCount", cri);
 	}
 
+	//페이징
 	@Override
 	public int countPaging(Criteria cri) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectOne(namespace + ".countPaging", cri);
 	}
 
+	//페이징
 	@Override
 	public List<ReservationCancleVO> listPage(int page) throws Exception {
 		// TODO Auto-generated method stub

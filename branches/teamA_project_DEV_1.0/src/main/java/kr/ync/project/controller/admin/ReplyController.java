@@ -18,6 +18,7 @@ import kr.ync.project.domain.admin.PageMaker;
 import kr.ync.project.domain.admin.ReplyVO;
 import kr.ync.project.service.admin.ReplyService;
 
+//1:1 답변을 위한 댓글 컨트롤러
 @RestController
 @RequestMapping("/replies")
 public class ReplyController {
@@ -25,6 +26,7 @@ public class ReplyController {
 	@Autowired
 	private ReplyService service;
 
+	//댓글 등록
 	@RequestMapping(value = "", method = RequestMethod.POST)
 	public ResponseEntity<String> register(@RequestBody ReplyVO vo) {
 
@@ -39,13 +41,13 @@ public class ReplyController {
 		return entity;
 	}
 
+	//댓글 리스트
 	@RequestMapping(value = "/all/{bno}", method = RequestMethod.GET)
 	public ResponseEntity<List<ReplyVO>> list(@PathVariable("bno") Integer bno) {
 
 		ResponseEntity<List<ReplyVO>> entity = null;
 		try {
-			// Java 1.7부터 객체 초기화 되는쪽 타입(제네릭)은 생략가능
-			//entity = new ResponseEntity<List<ReplyVO>>(service.listReply(bno), HttpStatus.OK);
+			
 			entity = new ResponseEntity<>(service.listReply(bno), HttpStatus.OK);
 
 		} catch (Exception e) {
@@ -56,6 +58,7 @@ public class ReplyController {
 		return entity;
 	}
 
+	//댓글 수정
 	@RequestMapping(value = "/{rno}", method = { RequestMethod.PUT, RequestMethod.PATCH })
 	public ResponseEntity<String> update(@PathVariable("rno") Integer rno, @RequestBody ReplyVO vo) {
 
@@ -70,21 +73,8 @@ public class ReplyController {
 		}
 		return entity;
 	}
-	
-	@RequestMapping(value = "/{rno}", method = RequestMethod.POST)
-	public ResponseEntity<String> remove(@PathVariable("rno") Integer rno) {
 
-		ResponseEntity<String> entity = null;
-		try {
-			service.removeReply(rno);
-			entity = new ResponseEntity<>("SUCCESS", HttpStatus.OK);
-		} catch (Exception e) {
-			e.printStackTrace();
-			entity = new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
-		}
-		return entity;
-	}
-
+	//댓글 리스트 페이징
 	@RequestMapping(value = "/{bno}/{page}", method = RequestMethod.GET)
 	public ResponseEntity<Map<String, Object>> listPage(@PathVariable("bno") Integer bno,
 			@PathVariable("page") Integer page) {
@@ -101,12 +91,12 @@ public class ReplyController {
 			Map<String, Object> map = new HashMap<String, Object>();
 			List<ReplyVO> list = service.listReplyPage(bno, cri);
 
-			map.put("list", list); // 기존엔 model 객제에 넣어서 처리
+			map.put("list", list);
 
 			int replyCount = service.count(bno);
 			pageMaker.setTotalCount(replyCount);
 
-			map.put("pageMaker", pageMaker); // 기존엔 model 객제에 넣어서 처리
+			map.put("pageMaker", pageMaker);
 
 			entity = new ResponseEntity<>(map, HttpStatus.OK);
 

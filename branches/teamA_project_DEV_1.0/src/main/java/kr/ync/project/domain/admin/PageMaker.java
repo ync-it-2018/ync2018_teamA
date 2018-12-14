@@ -5,11 +5,11 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 public class PageMaker {
 
-	private int totalCount;
-	private int startPage;
-	private int endPage;
-	private boolean prev;
-	private boolean next;
+	private int totalCount; //총 페이지
+	private int startPage; //시작페이지
+	private int endPage; //끝페이지
+	private boolean prev; //현재페이지
+	private boolean next; //다음페이지
 
 	private int displayPageNum = 10;
 

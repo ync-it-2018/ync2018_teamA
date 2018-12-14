@@ -8,28 +8,27 @@ import kr.ync.project.domain.admin.SearchCriteria;
 
 public interface FAQBoardDAO {
 	
+	//등록
 	public void create(FAQBoardVO vo)throws Exception;
 	
+	//상세
 	public FAQBoardVO read(Integer FAQ_IDX) throws Exception;
 
+	//수정
 	public void update(FAQBoardVO vo) throws Exception;
 
+	//삭제
 	public void delete(Integer FAQ_IDX) throws Exception;
 
-	public List<FAQBoardVO> listAll() throws Exception;
-
-	public List<FAQBoardVO> listPage(int page) throws Exception;
-
-	public List<FAQBoardVO> listCriteria(Criteria cri) throws Exception;
-
+	//페이징
 	public int countPaging(Criteria cri) throws Exception;
 
-	// use for dynamic SQL
-	// 검색이 적용된 Query 결과 List
+	//리스트
 	public List<FAQBoardVO> listSearch(SearchCriteria cri) throws Exception;
 
-	// 검색이 적용된 Query 결과 Count
+	//카운트
 	public int listSearchCount(SearchCriteria cri) throws Exception;
 
-	public void updateViewCnt(Integer bno) throws Exception;
+	//페이징
+	public List<FAQBoardVO> listPage(int page) throws Exception;
 }

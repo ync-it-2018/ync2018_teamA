@@ -10,9 +10,9 @@ import lombok.ToString;
 @Setter
 @ToString
 public class FAQBoardVO {
-	Integer FAQ_IDX;
-	String CATEGORIZATION;
-	String TITLE;
-	Date WRITEDATE;
-	String CONTENT;
+	Integer FAQ_IDX; //FAQ인덱스
+	String CATEGORIZATION; //카테고리
+	String TITLE; //제목
+	Date WRITEDATE; //작성날짜
+	String CONTENT; //내용
 }

@@ -5,17 +5,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
 <mapper namespace="kr.ync.project.mapper.ReservationMapper">
 
-	<select id="listAll" resultType="ReservationVO">
-		<![CDATA[
-		SELECT
-		*
-		FROM
-		TA_RESERVATION
-		WHERE RE_IDX > 0
-		ORDER BY RE_IDX DESC
-		]]>
-	</select>
-
+	<!-- 상세보기 -->
 	<select id="read" resultType="ReservationVO">
 		<![CDATA[
 		   SELECT
@@ -32,22 +22,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		   ]]>
 	</select>
 
-	<select id="listCriteria" resultType="ReservationVO">
-	 <![CDATA[
-   SELECT
-		*
-   FROM   (SELECT    /*+INDEX_DESC(tbl_board pk_board)*/
-               rownum rn,
-              RE_IDX, TOTALPRICE, DEPOSIT, ADAULT_NUMBER, CHILD_NUMBER, BABY_NUMBER, RE_DATE, KOREAN_NAME, ENGLISH_NAME,
-				BIRTH, PHONE, EMAIL, REQUESTED, STATUS, ID, SEX, PRODUCT_CODE, PRODUCT_NAME
-           FROM   TA_RESERVATION RE, TA_PRODUCT PR
-         WHERE   rownum <= #{page} * #{perPageNum}
-         AND      RE_IDX > 0  AND RE.PRODUCT_CODE = PR.PRODUCT_CODE
-         )
-   WHERE    rn > (#{page} -1) * #{perPageNum}
-   ]]>
-	</select>	
-	<select id="listPage"  resultType="ReservationVO">
+	<!-- 페이징 리스트 -->
+	<select id="listPage" resultType="ReservationVO">
    <![CDATA[
    SELECT   *
     FROM   (SELECT    /*+INDEX_DESC(tbl_board pk_board)*/
@@ -60,31 +36,34 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
          )
    WHERE    rn > (#{page} -1) * #{perPageNum}
    ]]>
-</select>
+	</select>
 
-<select id="countPaging" resultType="int">
+	<!-- 페이징 카운팅 -->
+	<select id="countPaging" resultType="int">
    <![CDATA[
    SELECT   count(RE_IDX) 
    FROM   TA_RESERVATION 
    WHERE   RE_IDX > 0 AND BOARD_CODE = '03'
    ]]>
-</select>
+	</select>
 
-<sql id="search">
-   <if test="searchType != null" >
-      <if test="searchType == 'i'.toString()">
-         AND ID LIKE '%'|| #{keyword}||'%'
-      </if>
-      <if test="searchType == 'ok'.toString()">
-         AND STATUS = '01'
-      </if>
-      <if test="searchType == 'no'.toString()">
-         AND STATUS = '02'
-      </if>
-   </if>
-</sql>
+	<!-- 검색조건 -->
+	<sql id="search">
+		<if test="searchType != null">
+			<if test="searchType == 'i'.toString()">
+				AND ID LIKE '%'|| #{keyword}||'%'
+			</if>
+			<if test="searchType == 'ok'.toString()">
+				AND STATUS = '01'
+			</if>
+			<if test="searchType == 'no'.toString()">
+				AND STATUS = '02'
+			</if>
+		</if>
+	</sql>
 
-<select id="listSearch"  resultType="ReservationVO">
+	<!-- 리스트 -->
+	<select id="listSearch" resultType="ReservationVO">
    <![CDATA[
       SELECT   *
       FROM  (SELECT    /*+INDEX_DESC(tbl_board pk_board)*/
@@ -93,40 +72,32 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 				BIRTH, PHONE, EMAIL, REQUESTED, STATUS, ID, SEX, RE.PRODUCT_CODE, PR.PRODUCT_NAME
            FROM   TA_RESERVATION RE, TA_PRODUCT PR
    ]]>
-      <!--
-      <where> 엘리먼트로 검색을 하지 않았을 경우 AND rownum <= 과 같이 WHERE 구문이 빠져버린다.
-      따라서 <where> 를 사용하면 AND나 OR로 구문이 시작되면 AND나 OR를 지워버린다.
-      아래 구문과 동일한 기능. 
-      <trim prefix="WHERE" prefixOverrides="AND|OR ">
-        ... 
-      </trim>
-      http://www.mybatis.org/mybatis-3/ko/dynamic-sql.html 참고
-      -->
-      <where>
-            <include refid="search"></include>
+		<where>
+			<include refid="search"></include>
             <![CDATA[
             AND rownum <= #{page} * #{perPageNum}
              AND STATUS IN('01', '02')
             AND RE_IDX > 0 AND RE.PRODUCT_CODE = PR.PRODUCT_CODE
               )
             ]]>
-      </where>
+		</where>
    <![CDATA[
       WHERE rn > (#{page} -1) * #{perPageNum}
    ]]>
-</select>
+	</select>
 
-<select id="listSearchCount"  resultType="int">
+	<!-- 리스트 카운팅 -->
+	<select id="listSearchCount" resultType="int">
    <![CDATA[
       SELECT  count(RE_IDX)
       FROM   TA_RESERVATION
    ]]>
-   
-   <where>
-      <include refid="search"></include>
+
+		<where>
+			<include refid="search"></include>
       <![CDATA[
          AND RE_IDX > 0 AND STATUS IN('01', '02')
       ]]>
-   </where>
-</select>
+		</where>
+	</select>
 </mapper>

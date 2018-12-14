@@ -7,28 +7,19 @@ import kr.ync.project.domain.admin.InquiryBoardVO;
 import kr.ync.project.domain.admin.SearchCriteria;
 
 public interface InquiryBoardDAO {
-	public void create(InquiryBoardVO vo) throws Exception;
-
+	//상세
 	public InquiryBoardVO read(Integer BOARD_IDX) throws Exception;
 
-	public void update(InquiryBoardVO vo) throws Exception;
-
-	public void delete(Integer BOARD_IDX) throws Exception;
-
-	public List<InquiryBoardVO> listAll() throws Exception;
-
+	//페이징
 	public List<InquiryBoardVO> listPage(int page) throws Exception;
 
-	public List<InquiryBoardVO> listCriteria(Criteria cri) throws Exception;
-
+	//페이징
 	public int countPaging(Criteria cri) throws Exception;
 
-	// use for dynamic SQL
-	// 검색이 적용된 Query 결과 List
+	//리스트
 	public List<InquiryBoardVO> listSearch(SearchCriteria cri) throws Exception;
 
-	// 검색이 적용된 Query 결과 Count
+	//카운트
 	public int listSearchCount(SearchCriteria cri) throws Exception;
 
-	public void updateViewCnt(Integer bno) throws Exception;
 }

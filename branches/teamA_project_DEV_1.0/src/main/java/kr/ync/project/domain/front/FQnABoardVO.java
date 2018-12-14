@@ -18,5 +18,5 @@ public class FQnABoardVO {
 	private String ID;//아이디
 	private String BOARD_CODE;//계시판코드
 	private String IMG;//이미지
-	private String ANSWER;//답변
+	private String replytext;//답변
 }

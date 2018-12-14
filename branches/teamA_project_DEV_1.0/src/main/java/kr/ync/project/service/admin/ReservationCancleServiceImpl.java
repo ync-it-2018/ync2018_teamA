@@ -15,54 +15,21 @@ public class ReservationCancleServiceImpl implements ReservationCancleService{
 	@Autowired
 	private ReservationCancleDAO dao;
 
-	@Override
-	public List<ReservationCancleVO> listAll() throws Exception {
-		// TODO Auto-generated method stub
-		return dao.listAll();
-	}
-	
-	@Override
-	public void remove(Integer RE_IDX) throws Exception {
-		// TODO Auto-generated method stub
-		dao.delete(RE_IDX);
-	}
-
-	@Override
-	public void modify(ReservationCancleVO board) throws Exception {
-		// TODO Auto-generated method stub
-		dao.update(board);
-	}
-
-	@Override
-	public void regist(ReservationCancleVO board) throws Exception {
-		// TODO Auto-generated method stub
-		dao.create(board);
-	}
-
+	//상세
 	@Override
 	public ReservationCancleVO read(Integer RE_IDX) throws Exception {
 		// TODO Auto-generated method stub
 		return dao.read(RE_IDX);
 	}
 
-	@Override
-	public List<ReservationCancleVO> listCriteria(Criteria cri) throws Exception {
-		// TODO Auto-generated method stub
-		return dao.listCriteria(cri);
-	}
-
-	@Override
-	public int listCountCriteria(Criteria cri) throws Exception {
-		// TODO Auto-generated method stub
-		return dao.countPaging(cri);
-	}
-
+	//리스트
 	@Override
 	public List<ReservationCancleVO> listSearchCriteria(SearchCriteria cri) throws Exception {
 		// TODO Auto-generated method stub
 		return dao.listSearch(cri);
 	}
 
+	//카운트
 	@Override
 	public int listSearchCount(SearchCriteria cri) throws Exception {
 		// TODO Auto-generated method stub

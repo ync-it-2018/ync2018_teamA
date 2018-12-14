@@ -2,8 +2,8 @@ package kr.ync.project.domain.admin;
 
 public class Criteria {
 
-	private int page;
-	private int perPageNum;
+	private int page; //현재페이지
+	private int perPageNum; //한 페이지 안의 게시물 갯수
 
 	public Criteria() {
 		this.page = 1;

@@ -18,59 +18,35 @@ public class InquiryBoardDAOImpl implements InquiryBoardDAO{
 	private static String namespace = 
 			"kr.ync.project.mapper.InquiryBoardMapper";
 	
-	@Override
-	public void create(InquiryBoardVO vo) throws Exception {
-		session.insert(namespace+".create", vo);
-	}
-
+	//상세
 	@Override
 	public InquiryBoardVO read(Integer BOARD_IDX) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectOne(namespace+".read", BOARD_IDX);
 	}
 
-	@Override
-	public List<InquiryBoardVO> listAll() throws Exception {
-		// TODO Auto-generated method stub
-		return session.selectList(namespace + ".listAll");
-	}
-
-	@Override
-	public void update(InquiryBoardVO vo) throws Exception {
-		// TODO Auto-generated method stub
-		session.insert(namespace+".update", vo);
-	}
-
-	@Override
-	public void delete(Integer BOARD_IDX) throws Exception {
-		// TODO Auto-generated method stub
-		session.delete(namespace + ".delete", BOARD_IDX);
-	}
-
-	@Override
-	public List<InquiryBoardVO> listCriteria(Criteria cri) throws Exception {
-		// TODO Auto-generated method stub
-		return session.selectList(namespace+".listCriteria", cri);
-	}
-
+	//리스트
 	@Override
 	public List<InquiryBoardVO> listSearch(SearchCriteria cri) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectList(namespace+".listSearch", cri);
 	}
 
+	//카운트
 	@Override
 	public int listSearchCount(SearchCriteria cri) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectOne(namespace+".listSearchCount", cri);
 	}
 
+	//페이징
 	@Override
 	public int countPaging(Criteria cri) throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectOne(namespace + ".countPaging", cri);
 	}
 
+	//페이징
 	@Override
 	public List<InquiryBoardVO> listPage(int page) throws Exception {
 		// TODO Auto-generated method stub
@@ -83,9 +59,4 @@ public class InquiryBoardDAOImpl implements InquiryBoardDAO{
 		return session.selectList(namespace + ".listPage", page);
 	}
 
-	@Override
-	public void updateViewCnt(Integer bno) throws Exception {
-		// TODO Auto-generated method stub
-		session.update(namespace + ".updateViewCnt", bno);
-	}
 }

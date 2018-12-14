@@ -8,13 +8,13 @@ import lombok.ToString;
 
 @ToString
 public class ReplyVO {
-	private Integer rno;
+	private Integer rno; //답변인덱스
 
-	private Integer bno;
+	private Integer bno; //게시판인덱스
 
-	private String replytext;
+	private String replytext; //답변내용
 
-	private Date regdate;
+	private Date regdate; //작성날짜
 
 	public Integer getRno() {
 		return rno;

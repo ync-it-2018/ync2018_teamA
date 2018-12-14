@@ -19,6 +19,7 @@ import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.service.admin.NoticeBoardService;
 import kr.ync.project.service.admin.ReservationService;
 
+//예약 관리를 위한 컨트롤러
 @Controller
 @RequestMapping("/admin/reservation/*")
 public class ReservationController {
@@ -27,10 +28,10 @@ public class ReservationController {
 	@Inject
 	private ReservationService service;
 
+	//예약 목록
 	@RequestMapping(value = "/currentstatelist", method = RequestMethod.GET)
 	public String ReservationCurrentStatelist(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 
-		// 가나다
 		logger.info("예약현황 목록으로 이동");
 
 		model.addAttribute("list", service.listSearchCriteria(cri));
@@ -43,6 +44,7 @@ public class ReservationController {
 		return "admin/reservation/currentstatelist";
 	}
 	
+	//예약 상세정보
 	@RequestMapping(value = "admin/reservation/currentstatedetail", method = RequestMethod.GET)
 	public void NoticeBoardread(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("code") Integer RE_IDX, Model model) throws Exception {
 

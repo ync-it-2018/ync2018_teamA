@@ -7,28 +7,28 @@ import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.domain.admin.TipNoticeBoardVO;
 
 public interface TipNoticeBoardDAO {
+	
+	//등록
 	public void create(TipNoticeBoardVO vo)throws Exception;
 	
+	//상세
 	public TipNoticeBoardVO read(Integer BOARD_IDX)throws Exception;
 	
+	//수정
 	public void update (TipNoticeBoardVO vo)throws Exception;
 	
+	//삭제
 	public void delete(Integer BOARD_IDX)throws Exception;
 	
-	public List<TipNoticeBoardVO> listAll()throws Exception;
-	
+	//페이징
 	public List<TipNoticeBoardVO> listPage(int page) throws Exception;
 	  
-	public List<TipNoticeBoardVO> listCriteria(Criteria cri) throws Exception;
-
+	//페이징
 	public int countPaging(Criteria cri) throws Exception;
    
-	//use for dynamic SQL
-	// 검색이 적용된 Query 결과 List
+	//리스트
 	public List<TipNoticeBoardVO> listSearch(SearchCriteria cri)throws Exception;
 	
-	// 검색이 적용된 Query 결과 Count
+	//카운팅
 	public int listSearchCount(SearchCriteria cri)throws Exception;
-	
-	public void updateViewCnt(Integer bno)throws Exception;
 }

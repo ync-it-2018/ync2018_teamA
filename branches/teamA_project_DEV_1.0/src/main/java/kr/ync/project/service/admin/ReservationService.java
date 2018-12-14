@@ -7,21 +7,13 @@ import kr.ync.project.domain.admin.ReservationVO;
 import kr.ync.project.domain.admin.SearchCriteria;
 
 public interface ReservationService {
-	public List<ReservationVO> listAll() throws Exception;
 
-	public void remove(Integer RE_IDX) throws Exception;
-
-	public void modify(ReservationVO board) throws Exception;
-
-	public void regist(ReservationVO board) throws Exception;
-
+	//상세
 	public ReservationVO read(Integer RE_IDX) throws Exception;
 
-	public List<ReservationVO> listCriteria(Criteria cri) throws Exception;
-
-	public int listCountCriteria(Criteria cri) throws Exception;
-
+	//리스트
 	public List<ReservationVO> listSearchCriteria(SearchCriteria cri) throws Exception;
 
+	//카운트
 	public int listSearchCount(SearchCriteria cri) throws Exception;
 }

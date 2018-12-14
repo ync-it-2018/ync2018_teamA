@@ -7,28 +7,19 @@ import kr.ync.project.domain.admin.ReservationVO;
 import kr.ync.project.domain.admin.SearchCriteria;
 
 public interface ReservationDAO {
-	public void create(ReservationVO vo) throws Exception;
-
+	
+	//상세
 	public ReservationVO read(Integer RE_IDX) throws Exception;
 
-	public void update(ReservationVO vo) throws Exception;
-
-	public void delete(Integer RE_IDX) throws Exception;
-
-	public List<ReservationVO> listAll() throws Exception;
-
+	//페이징
 	public List<ReservationVO> listPage(int page) throws Exception;
 
-	public List<ReservationVO> listCriteria(Criteria cri) throws Exception;
-
+	//페이징
 	public int countPaging(Criteria cri) throws Exception;
 
-	// use for dynamic SQL
-	// 검색이 적용된 Query 결과 List
+	//리스트
 	public List<ReservationVO> listSearch(SearchCriteria cri) throws Exception;
 
-	// 검색이 적용된 Query 결과 Count
+	//카운팅
 	public int listSearchCount(SearchCriteria cri) throws Exception;
-
-	public void updateViewCnt(Integer bno) throws Exception;
 }

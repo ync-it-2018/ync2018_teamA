@@ -180,7 +180,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </tr>
             <tr>
              <th id="contents">답변</th>
-             <td colspan="3" style="text-align: left"> ${FQnABoardVO.ANSWER}</td>
+             <td colspan="3" style="text-align: left"> ${FQnABoardVO.replytext}</td>
             </tr>
         </tbody>
       </table>

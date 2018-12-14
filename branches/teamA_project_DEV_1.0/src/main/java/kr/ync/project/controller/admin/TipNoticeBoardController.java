@@ -18,6 +18,7 @@ import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.domain.admin.TipNoticeBoardVO;
 import kr.ync.project.service.admin.TipNoticeBoardService;
 
+//팁게시판 컨트롤러
 @Controller
 public class TipNoticeBoardController {
 	private static final Logger logger = LoggerFactory.getLogger(TipNoticeBoardController.class);
@@ -25,10 +26,10 @@ public class TipNoticeBoardController {
 	@Inject
 	private TipNoticeBoardService service;
 
+	//리스트
 	@RequestMapping(value = "/tipnoticeboard", method = RequestMethod.GET)
 	public String TipNoticeBoardList(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 
-		// 가나다
 		logger.info("여행 팁 게시판으로 이동");
 
 		model.addAttribute("list", service.listSearchCriteria(cri));
@@ -41,6 +42,7 @@ public class TipNoticeBoardController {
 		return "admin/tipnoticeboard";
 	}
 
+	//삭제
 	@RequestMapping(value = "/remove", method = RequestMethod.POST)
 	public String TipNoticeBoardDelete(SearchCriteria cri, @RequestParam("BOARD_IDX") Integer BOARD_IDX,
 			RedirectAttributes rttr) throws Exception {
@@ -52,13 +54,13 @@ public class TipNoticeBoardController {
 		rttr.addAttribute("searchType", cri.getSearchType());
 		rttr.addAttribute("keyword", cri.getKeyword());
 		
-		// 가나다
 		logger.info("게시글 삭제");
 		
 		rttr.addFlashAttribute("msg","SUCCESS");
 		return "redirect:/tipnoticeboard";
 	}
 
+	//등록
 	@RequestMapping(value = "/tipnoticeboardupdate", method = RequestMethod.GET)
 	public String TipNoticeBoardRegisterGET(TipNoticeBoardVO board, Model model) throws Exception {
 
@@ -66,6 +68,7 @@ public class TipNoticeBoardController {
 		return "admin/tipnoticeboardupdate";
 	}
 
+	//등록
 	@RequestMapping(value = "/tipnoticeboardupdate", method = RequestMethod.POST)
 	public String TipNoticeBoardRegisterPOST(RedirectAttributes rttr, SearchCriteria cri, TipNoticeBoardVO board, Model model) throws Exception {
 
@@ -78,12 +81,14 @@ public class TipNoticeBoardController {
 		return "redirect:/tipnoticeboard";
 	}
 
+	//상세
 	@RequestMapping(value = "/admin/tipnoticeboarddetail", method = RequestMethod.GET)
 	public void TipNoticeBoardread(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("code") Integer BOARD_IDX, Model model) throws Exception {
 
 		model.addAttribute(service.read(BOARD_IDX));
 	}
 	
+	//수정
 	@RequestMapping(value = "/tipnoticeboardmodify", method = RequestMethod.GET)
 	public String TipNoticeBoardModifyGET(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("BOARD_IDX") Integer BOARD_IDX, Model model) throws Exception {
 
@@ -97,6 +102,7 @@ public class TipNoticeBoardController {
 		return "admin/tipnoticeboardmodify";
 	}
 	
+	//수정
 	@RequestMapping(value = "/tipnoticeboardmodify", method = RequestMethod.POST)
 	public String TipNoticeBoardModifyPOST(SearchCriteria cri, TipNoticeBoardVO board, RedirectAttributes rttr) throws Exception {
 

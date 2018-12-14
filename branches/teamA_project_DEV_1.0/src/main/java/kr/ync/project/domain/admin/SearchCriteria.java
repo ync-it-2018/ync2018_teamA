@@ -2,8 +2,8 @@ package kr.ync.project.domain.admin;
 
 public class SearchCriteria extends Criteria {
 
-	private String searchType;
-	private String keyword;
+	private String searchType; //검색 타입
+	private String keyword; //검색할 키워드
 
 	public String getSearchType() {
 		return searchType;

@@ -5,26 +5,19 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
 <mapper namespace="kr.ync.project.mapper.FAQBoardMapper">
 
+	<!-- 등록 -->
 	<insert id="create">
 		INSERT INTO TA_FAQ (FAQ_IDX, TITLE, CONTENT)
-		VALUES (FAQ_IDX_CRE.NEXTVAL, #{TITLE}, #{CONTENT})
+		VALUES
+		(FAQ_IDX_CRE.NEXTVAL, #{TITLE}, #{CONTENT})
 	</insert>
-
-	<select id="listAll" resultType="FAQBoardVO">
-		<![CDATA[
-		SELECT
-		FAQ_IDX, TITLE, WRITEDATE
-		FROM
-		TA_FAQ
-		WHERE FAQ_IDX > 0 
-		ORDER BY FAQ_IDX DESC
-		]]>
-	</select>
-
+	
+	<!-- 삭제 -->
 	<delete id="delete">
 		delete from TA_FAQ where FAQ_IDX = #{FAQ_IDX}
 	</delete>
-
+	
+	<!-- 상세보기 -->
 	<select id="read" resultType="FAQBoardVO">
 		<![CDATA[
 		   SELECT 
@@ -33,26 +26,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		   WHERE   FAQ_IDX = #{FAQ_IDX}
 		   ]]>
 	</select>
-
+	
+	<!-- 수정 -->
 	<update id="update">
 		UPDATE TA_FAQ SET TITLE =#{TITLE},
-		CONTENT=#{CONTENT}, WRITEDATE=CURRENT_TIMESTAMP WHERE FAQ_IDX = #{FAQ_IDX}
+		CONTENT=#{CONTENT}, WRITEDATE=CURRENT_TIMESTAMP WHERE FAQ_IDX =
+		#{FAQ_IDX}
 	</update>
-
-	<select id="listCriteria" resultType="FAQBoardVO">
-	 <![CDATA[
-   SELECT  FAQ_IDX, TITLE, WRITEDATE
-   FROM   (SELECT    /*+INDEX_DESC(tbl_board pk_board)*/
-               rownum rn,
-              FAQ_IDX, TITLE, WRITEDATE
-           FROM   TA_FAQ
-         WHERE   rownum <= #{page} * #{perPageNum}
-         AND      FAQ_IDX > 0 
-         )
-   WHERE    rn > (#{page} -1) * #{perPageNum}
-   ]]>
-	</select>	
-	<select id="listPage"  resultType="FAQBoardVO">
+	
+	<!-- 페이징리스트 -->
+	<select id="listPage" resultType="FAQBoardVO">
    <![CDATA[
    SELECT    FAQ_IDX, TITLE, WRITEDATE
    FROM   (SELECT    /*+INDEX_DESC(tbl_board pk_board)*/
@@ -64,25 +47,28 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
          )
    WHERE    rn > (#{page} -1) * #{perPageNum}
    ]]>
-</select>
-
-<select id="countPaging" resultType="int">
+	</select>
+	
+	<!-- 페이징 카운팅 -->
+	<select id="countPaging" resultType="int">
    <![CDATA[
    SELECT   count(FAQ_IDX) 
    FROM   TA_FAQ 
    WHERE   FAQ_IDX > 0 
    ]]>
-</select>
+	</select>
+	
+	<!-- 검색조건 -->
+	<sql id="search">
+		<if test="searchType != null">
+			<if test="searchType == 't'.toString()">
+				AND TITLE LIKE '%'|| #{keyword}||'%'
+			</if>
+		</if>
+	</sql>
 
-<sql id="search">
-   <if test="searchType != null" >
-      <if test="searchType == 't'.toString()">
-         AND TITLE LIKE '%'|| #{keyword}||'%'
-      </if>
-   </if>
-</sql>
-
-<select id="listSearch"  resultType="FAQBoardVO">
+	<!-- 리스트 -->
+	<select id="listSearch" resultType="FAQBoardVO">
    <![CDATA[
       SELECT   FAQ_IDX, TITLE, WRITEDATE
       FROM   (SELECT    /*+INDEX_DESC(tbl_board pk_board)*/
@@ -90,39 +76,35 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                  FAQ_IDX, TITLE, WRITEDATE
               FROM   TA_FAQ
    ]]>
-      <!--
-      <where> 엘리먼트로 검색을 하지 않았을 경우 AND rownum <= 과 같이 WHERE 구문이 빠져버린다.
-      따라서 <where> 를 사용하면 AND나 OR로 구문이 시작되면 AND나 OR를 지워버린다.
-      아래 구문과 동일한 기능. 
-      <trim prefix="WHERE" prefixOverrides="AND|OR ">
-        ... 
-      </trim>
-      http://www.mybatis.org/mybatis-3/ko/dynamic-sql.html 참고
-      -->
-      <where>
-            <include refid="search"></include>
+		<!-- <where> 엘리먼트로 검색을 하지 않았을 경우 AND rownum <= 과 같이 WHERE 구문이 빠져버린다. 따라서 
+			<where> 를 사용하면 AND나 OR로 구문이 시작되면 AND나 OR를 지워버린다. 아래 구문과 동일한 기능. <trim prefix="WHERE" 
+			prefixOverrides="AND|OR "> ... </trim> http://www.mybatis.org/mybatis-3/ko/dynamic-sql.html 
+			참고 -->
+		<where>
+			<include refid="search"></include>
             <![CDATA[
             AND rownum <= #{page} * #{perPageNum}
             AND FAQ_IDX > 0
               )
             ]]>
-      </where>
+		</where>
    <![CDATA[
       WHERE rn > (#{page} -1) * #{perPageNum}
    ]]>
-</select>
+	</select>
 
-<select id="listSearchCount"  resultType="int">
+	<!-- 리스트 카운팅 -->
+	<select id="listSearchCount" resultType="int">
    <![CDATA[
       SELECT  count(FAQ_IDX)
       FROM   TA_FAQ
    ]]>
-   
-   <where>
-      <include refid="search"></include>
+
+		<where>
+			<include refid="search"></include>
       <![CDATA[
          AND FAQ_IDX > 0
       ]]>
-   </where>
-</select>
+		</where>
+	</select>
 </mapper>

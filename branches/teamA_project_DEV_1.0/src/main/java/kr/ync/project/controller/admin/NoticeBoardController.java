@@ -18,6 +18,7 @@ import kr.ync.project.domain.admin.PageMaker;
 import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.service.admin.NoticeBoardService;
 
+//공지사항으로 이동하는 컨트롤러
 @Controller
 @RequestMapping("/admin/customersupport/*")
 public class NoticeBoardController {
@@ -26,10 +27,10 @@ public class NoticeBoardController {
 	@Inject
 	private NoticeBoardService service;
 
+	//리스트
 	@RequestMapping(value = "/notice", method = RequestMethod.GET)
 	public String NoticeBoardList(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 
-		// 가나다
 		logger.info("공지사항 게시판으로 이동");
 
 		model.addAttribute("list", service.listSearchCriteria(cri));
@@ -42,6 +43,7 @@ public class NoticeBoardController {
 		return "admin/customersupport/notice";
 	}
 
+	//삭제
 	@RequestMapping(value = "/noticeremove", method = RequestMethod.POST)
 	public String NoticeBoardDelete(SearchCriteria cri, @RequestParam("BOARD_IDX") Integer BOARD_IDX,
 			RedirectAttributes rttr) throws Exception {
@@ -53,13 +55,13 @@ public class NoticeBoardController {
 		rttr.addAttribute("searchType", cri.getSearchType());
 		rttr.addAttribute("keyword", cri.getKeyword());
 		
-		// 가나다
 		logger.info("게시글 삭제");
 		
 		rttr.addFlashAttribute("msg","SUCCESS");
 		return "redirect:/customersupport/notice";
 	}
-
+	
+	//등록 폼 불러오기
 	@RequestMapping(value = "/noticeupdate", method = RequestMethod.GET)
 	public String NoticeBoardRegisterGET(NoticeBoardVO board, Model model) throws Exception {
 
@@ -67,6 +69,7 @@ public class NoticeBoardController {
 		return "admin/customersupport/noticeupdate";
 	}
 
+	//등록할 내용 서버에 전송
 	@RequestMapping(value = "/noticeupdate", method = RequestMethod.POST)
 	public String NoticeBoardRegisterPOST(RedirectAttributes rttr, SearchCriteria cri, NoticeBoardVO board, Model model) throws Exception {
 
@@ -79,15 +82,16 @@ public class NoticeBoardController {
 		return "redirect:/admin/customersupport/notice";
 	}
 
+	//상세내용
 	@RequestMapping(value = "/admin/customersupport/noticedetail", method = RequestMethod.GET)
 	public void NoticeBoardread(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("code") Integer BOARD_IDX, Model model) throws Exception {
 
 		model.addAttribute(service.read(BOARD_IDX));
 	}
 	
+	//수정할 내용 불러오기
 	@RequestMapping(value = "/noticemodify", method = RequestMethod.GET)
 	public String NoticeBoardModifyGET(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("BOARD_IDX") Integer BOARD_IDX, Model model) throws Exception {
-
 
 		PageMaker pageMaker = new PageMaker();
 		pageMaker.setCri(cri);
@@ -98,6 +102,7 @@ public class NoticeBoardController {
 		return "admin/customersupport/noticemodify";
 	}
 	
+	//수정할 내용 서버로 전송
 	@RequestMapping(value = "/noticemodify", method = RequestMethod.POST)
 	public String NoticeBoardModifyPOST(SearchCriteria cri, NoticeBoardVO board, RedirectAttributes rttr) throws Exception {
 

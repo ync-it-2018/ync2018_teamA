@@ -16,6 +16,7 @@ import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.service.admin.ReservationCancleService;
 import kr.ync.project.service.admin.ReservationService;
 
+//예약취소 관리를 위한 컨트롤러
 @Controller
 @RequestMapping("/admin/reservation/*")
 public class ReservationCancleController {
@@ -24,10 +25,10 @@ public class ReservationCancleController {
 	@Inject
 	private ReservationCancleService service;
 
+	//리스트
 	@RequestMapping(value = "/canclelist", method = RequestMethod.GET)
 	public String ReservationCanclelist(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 
-		// 가나다
 		logger.info("예약취소 목록으로 이동");
 
 		model.addAttribute("list", service.listSearchCriteria(cri));
@@ -40,6 +41,7 @@ public class ReservationCancleController {
 		return "admin/reservation/canclelist";
 	}
 	
+	//상세정보
 	@RequestMapping(value = "admin/reservation/cancledetail", method = RequestMethod.GET)
 	public void ReservationCancleread(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("code") Integer RE_IDX, Model model) throws Exception {
 
