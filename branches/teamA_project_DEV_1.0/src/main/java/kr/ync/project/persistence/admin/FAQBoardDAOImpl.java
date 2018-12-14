@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import kr.ync.project.domain.admin.Criteria;
 import kr.ync.project.domain.admin.FAQBoardVO;
-import kr.ync.project.domain.admin.NoticeBoardVO;
 import kr.ync.project.domain.admin.SearchCriteria;
 
 @Repository

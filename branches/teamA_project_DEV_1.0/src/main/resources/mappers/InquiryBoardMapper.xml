@@ -70,10 +70,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
          AND TITLE LIKE '%'|| #{keyword}||'%'
       </if>
       <if test="searchType == 'i'.toString()">
-         AND TITLE LIKE '%'|| #{keyword}||'%'
+         AND ID LIKE '%'|| #{keyword}||'%'
       </if>
       <if test="searchType == 'w'.toString()">
-         AND TITLE LIKE '%'|| #{keyword}||'%'
+         AND WRITER LIKE '%'|| #{keyword}||'%'
       </if>
    </if>
 </sql>
