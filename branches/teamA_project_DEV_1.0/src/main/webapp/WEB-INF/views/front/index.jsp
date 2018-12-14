@@ -55,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<section class="content">
 	
 				<!-- header lists -->
-				 <% Cookie[] useCookie = request.getCookies();
+				  <% Cookie[] useCookie = request.getCookies();
 				int resultPage = 0;
 				if(useCookie != null) {
 					for(int i = 0; i < useCookie.length; i++) {
@@ -72,22 +72,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<%@include file="Finclude/Fheaderlogin.jsp" %>
 				<% }%>
 				
-				<%--  <% Cookie[] useCookie = request.getCookies();
-				int resultPage = 0;
-				if(useCookie != null) {
-					for(int i = 0; i < useCookie.length; i++) {
-						if(useCookie[i].getName().equals("JSESSIONID")) { 
-							if(useCookie[i].getValue().equals(${floginVO.SESSIONKEY})) {
-								resultPage = 1;	%>
-							<% }%>
-						<% }%>
-					<% }%>
-					<%if(resultPage == 1) { %>
-						<%@include file="Finclude/Fheaderlogout.jsp" %>
-					<% } else {%>
-						<%@include file="Finclude/Fheaderlogin.jsp" %>
-					<% }%>
-				<% }%> --%>
+				
+				 
+				
 				
 	<!-- //navigation -->
 	<!-- banner -->

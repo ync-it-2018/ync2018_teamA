@@ -1,5 +1,10 @@
+<!-- Fprofile(회원 정보 확인) -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page session="false"%>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -64,7 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 	<!-- top-header -->
-								<% Cookie[] useCookie = request.getCookies();
+				<% Cookie[] useCookie = request.getCookies();
 				int resultPage = 0;
 				if(useCookie != null) {
 					for(int i = 0; i < useCookie.length; i++) {
@@ -77,6 +82,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<% } else {%>
 						<%@include file="Finclude/Fheaderlogin.jsp" %>
 					<% }%>
+				<% } else {%>
+					<%@include file="Finclude/Fheaderlogin.jsp" %>
 				<% }%>
 	<!-- //navigation -->
 	<!-- banner-2 -->
@@ -119,27 +126,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<table>
 								<tr>
 									<th class="profile_object">이름</th>
-									<td class="profile_content">홍길동</td>
+									<td class="profile_content"><p>${floginVO.NAME}</p></td>
 								<tr>
 								<tr>
 									<th class="profile_object">아이디</th>
-									<td class="profile_content">ync12345</td>
+									<td class="profile_content">${floginVO.ID}</td>
 								<tr>
 								<tr>
 									<th class="profile_object">비밀번호</th>
-									<td class="profile_content">ab****</td>
+									<td class="profile_content">${floginVO.PASSWD}</td>
 								<tr>
 								<tr>
 									<th class="profile_object">E-mail</th>
-									<td class="profile_content">ync12345@naver.com</td>
+									<td class="profile_content">${floginVO.EMAIL}</td>
 								<tr>
 								<tr>
 									<th class="profile_object">휴대폰번호</th>
-									<td class="profile_content">010-1234-5678</td>
+									<td class="profile_content">${floginVO.PHONE}</td>
 								<tr>
 								<tr>
 									<th class="profile_object">생년월일</th>
-									<td class="profile_content">19950101</td>
+									<td class="profile_content">${floginVO.BIRTH}</td>
 								<tr>
 							</table>
 							<input type="submit" value="정보수정하기" class="profile_button">

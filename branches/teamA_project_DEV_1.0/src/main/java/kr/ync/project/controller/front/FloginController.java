@@ -41,16 +41,24 @@ private static final Logger logger = LoggerFactory.getLogger(FfaqController.clas
 	public void loginPOST(FloginDTO dto, HttpSession session, Model model) throws Exception {
 		FloginVO vo = service.login(dto);
 		
+		Object sessionname = session.getAttribute("login");
+		
 		if(vo == null) {
 			return;
 		}
 		logger.info("★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★여기까지 왔냐?? FloginController★★★★★★★★★");
+		
 		model.addAttribute("floginVO", vo);
+		
+		String checking = (String)sessionname;
+		logger.info(checking);
+		
 		if(dto.isUseCookie()) {
 			int amount = 60 * 60 * 24 * 7;
 			Date sessionLimit = new Date(System.currentTimeMillis()+(1000*amount));
 			service.keepLogin(vo.getID(), session.getId(), sessionLimit);
 		}
+		
 	}
 	
 	@RequestMapping(value = "/front/Flogout", method = RequestMethod.GET)

@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 	<!-- top-header -->
-								<% Cookie[] useCookie = request.getCookies();
+				<% Cookie[] useCookie = request.getCookies();
 				int resultPage = 0;
 				if(useCookie != null) {
 					for(int i = 0; i < useCookie.length; i++) {
@@ -55,6 +55,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<% } else {%>
 						<%@include file="Finclude/Fheaderlogin.jsp" %>
 					<% }%>
+				<% } else {%>
+					<%@include file="Finclude/Fheaderlogin.jsp" %>
 				<% }%>
 	<!-- //navigation -->
 	<!-- banner-2 -->

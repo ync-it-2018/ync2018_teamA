@@ -1,3 +1,5 @@
+<!-- Fheaderlogout(로그아웃 헤더) -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -99,7 +101,7 @@
 									<li><a href="/domestic?city_code=ICN">서울/인천/경기</a></li>
 									<li><a href="/domestic?city_code=KAE">강원권</a></li>
 									<li><a href="/domestic?city_code=GON">충청권</a></li>
-									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
+									<li><a href="/domestic?city_code=KWJ">전라권</a></li>
 									<li><a href="/domestic?city_code=KPO">경상권</a></li>
 									<li><a href="/domestic?city_code=CJU">제주권</a></li>
 								</ul>
@@ -108,7 +110,7 @@
 									<li><a href="/domestic?city_code=ICN">서울/인천1/경기</a></li>
 									<li><a href="/domestic?city_code=KAE">강원권</a></li>
 									<li><a href="/domestic?city_code=GON">충청권</a></li>
-									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
+									<li><a href="/domestic?city_code=KWJ">전라권</a></li>
 									<li><a href="/domestic?city_code=KPO">경상권</a></li>
 									<li><a href="/domestic?city_code=CJU">제주권</a></li>
 								</ul>
