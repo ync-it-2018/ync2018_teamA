@@ -188,7 +188,7 @@
               </a>
               <ul class="treeview-menu">
                 <li>
-                   <a href="#">
+                   <a href="/admin/reservation/currentstatelist">
                       <i class="fa fa-circle-o"></i> 예약 현황 관리
                    </a>
                 </li>
