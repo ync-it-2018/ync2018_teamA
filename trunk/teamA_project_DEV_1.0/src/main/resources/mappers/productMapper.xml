@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
+<mapper namespace="kr.ync.project.mapper.productMapper">
+
+	
+	<!--  해외 상품 리스트 -->
+	<select id="listAll" resultType="FProductVO">
+
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE, NATION_CODE
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.NATION_CODE =  #{nation_code}
+		<if test="keyword != null">
+           AND  PRODUCT_NAME LIKE '%'|| #{keyword}||'%' -->
+       </if>
+	</select>
+	
+	<!-- 국내 상품 리스트 -->
+	<select id="listAll_domestic" resultType="FProductVO">
+	
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE, CITY_CODE
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.CITY_CODE =  #{city_code}
+		<if test="keyword != null">
+           AND  PRODUCT_NAME LIKE '%'|| #{keyword}||'%' -->
+       </if>
+	</select>
+	
+	<!-- 상품 상세 보기 화면 -->
+	<select id="read" resultType="FProductVO">
+		<![CDATA[
+		SELECT  *
+		FROM 	TA_PRODUCT p , TA_CITY c, TA_NATION n, TA_PROIMG pi
+		WHERE	p.PRODUCT_CODE = #{product_code}
+		AND     p.CITY_CODE = c.CITY_CODE
+		AND     c.NATION_CODE = n.NATION_CODE
+		AND     p.PRODUCT_CODE = pi.PRODUCT_CODE
+				]]>
+	</select>
+	
+	<!-- 인기 상품 리스트 -->
+	<select id="listAll_best" resultType="FProductVO">
+		<![CDATA[
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.CATEGORIZATION = '인기상품'
+		AND     ROWNUM <=6
+		]]>
+	</select>
+	
+	<!-- 특가 상품 리스트 -->
+	<select id="listAll_special" resultType="FProductVO">
+		<![CDATA[
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.CATEGORIZATION = '특가상품'
+		AND     ROWNUM <=3
+		]]>
+	</select>
+	
+	<!-- 인기/추천/특가 페이지 리스트 -->
+	<select id="listAll_categorization" resultType="FProductVO">
+		<![CDATA[
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.CATEGORIZATION = #{CATEGORIZATION}
+		]]>
+	</select>
+	
+	<!-- 테마 페이지 리스트 -->
+	<select id="listAll_theme" resultType="FProductVO">
+		<![CDATA[
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.THEME = #{theme}
+		AND     ROWNUM <= 2
+		]]>
+	</select>
+	
+	<!-- 빠른 출발 상품 리스트 -->
+	<select id="listAll_imminent" resultType="FProductVO">
+		<![CDATA[
+		SELECT  p.PRODUCT_NAME, p.ADULT_PRICE, pi.ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	(SELECT  * FROM	TA_PRODUCT ORDER BY DEPARTURE_DATE) p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND 	rownum <= 2
+		]]>
+	</select>
+	
+	<!-- 메인 화면 특가 상품 리스트 -->
+	<select id="listAll_main_special" resultType="FProductVO">
+		<![CDATA[
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.CATEGORIZATION = '특가상품'
+		AND     ROWNUM <= 3
+		]]>
+	</select>
+	
+	<!-- 추천 상품 리스트 -->
+	<select id="listAll_osusume" resultType="FProductVO">
+		<![CDATA[
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.CATEGORIZATION = '추천상품'
+		AND     ROWNUM <= 6
+		]]>
+	</select>
+	
+	<!-- 메인화면 허니문 상품 리스트 -->
+	<select id="listAll_honey" resultType="FProductVO">
+		<![CDATA[
+		SELECT  p.PRODUCT_NAME, p.ADULT_PRICE, pi.ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	(SELECT  * FROM	TA_PRODUCT ORDER BY DEPARTURE_DATE) p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.THEME = '허니문'
+		AND 	rownum <= 2
+		]]>
+	</select>
+	
+	<!-- 메인화면 골프 상품 리스트 -->
+	<select id="listAll_golf" resultType="FProductVO">
+		<![CDATA[
+		SELECT  p.PRODUCT_NAME, p.ADULT_PRICE, pi.ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	(SELECT  * FROM	TA_PRODUCT ORDER BY DEPARTURE_DATE) p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.THEME = '골프'
+		AND 	rownum <= 2
+		]]>
+	</select>
+	
+	<!-- 메인화면 크루즈 상품 리스트 -->
+	<select id="listAll_cruise" resultType="FProductVO">
+		<![CDATA[
+		SELECT  p.PRODUCT_NAME, p.ADULT_PRICE, pi.ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	(SELECT  * FROM	TA_PRODUCT ORDER BY DEPARTURE_DATE) p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.THEME = '크루즈'
+		AND 	rownum <= 2
+		]]>
+	</select>
+	
+	<!-- 메인화면 음식 상품 리스트 -->
+	<select id="listAll_food" resultType="FProductVO">
+		<![CDATA[
+		SELECT  p.PRODUCT_NAME, p.ADULT_PRICE, pi.ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	(SELECT  * FROM	TA_PRODUCT ORDER BY DEPARTURE_DATE) p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.THEME = '음식'
+		AND 	rownum <= 2
+		]]>
+	</select>
+	
+	<!-- 메인화면 예술/문화/역사 상품 리스트 -->
+	<select id="listAll_culture" resultType="FProductVO">
+		<![CDATA[
+		SELECT  p.PRODUCT_NAME, p.ADULT_PRICE, pi.ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	(SELECT  * FROM	TA_PRODUCT ORDER BY DEPARTURE_DATE) p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.THEME = '예술/문화/역사'
+		AND 	rownum <= 2
+		]]>
+	</select>
+	
+	<!-- 메인화면 이벤트 상품 리스트 -->
+	<select id="listAll_event" resultType="FProductVO">
+		<![CDATA[
+		SELECT  p.PRODUCT_NAME, p.ADULT_PRICE, pi.ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	(SELECT  * FROM	TA_PRODUCT ORDER BY DEPARTURE_DATE) p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.THEME = '이벤트'
+		AND 	rownum <= 2
+		]]>
+	</select>
+	
+	<!-- 메인화면 트래킹/스포츠 상품 리스트 -->
+	<select id="listAll_leports" resultType="FProductVO">
+		<![CDATA[
+		SELECT  p.PRODUCT_NAME, p.ADULT_PRICE, pi.ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	(SELECT  * FROM	TA_PRODUCT ORDER BY DEPARTURE_DATE) p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.THEME = '트래킹/스포츠'
+		AND 	rownum <= 2
+		]]>
+	</select>
+	
+	<!-- 메인화면 체험 상품 리스트 -->
+	<select id="listAll_experience" resultType="FProductVO">
+		<![CDATA[
+		SELECT  p.PRODUCT_NAME, p.ADULT_PRICE, pi.ROOT, p.PRODUCT_CODE, p.CATEGORIZATION
+		FROM 	(SELECT  * FROM	TA_PRODUCT ORDER BY DEPARTURE_DATE) p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     p.THEME = '체험'
+		AND 	rownum <= 2
+		]]>
+	</select>
+
+<!--  전체 상품 검색 결과 리스트 -->
+	<select id="listAll_SearchList" resultType="FProductVO">
+	<![CDATA[
+		SELECT  PRODUCT_NAME, ADULT_PRICE, ROOT, p.PRODUCT_CODE
+		FROM 	TA_PRODUCT p, TA_PROIMG pi 
+		WHERE   p.PRODUCT_CODE = pi.PRODUCT_CODE
+		AND     PRODUCT_NAME like '%'||#{keyword}||'%'
+		]]>
+	</select>
+	
+</mapper>
