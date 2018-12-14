@@ -12,13 +12,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.ync.project.service.front.FQnaBoardService;
 
+//qna(1대1 문의)로 이동
 @Controller
 public class FQnaBoardController {
 private static final Logger logger = LoggerFactory.getLogger(FQnaBoardController.class);
 	
 	@Inject
 	private FQnaBoardService service;
-	
+	//리스트
 	@RequestMapping(value = "/qna", 
 					method = RequestMethod.GET)
 	public String QnaBoardList(Model model) throws Exception {
@@ -37,6 +38,7 @@ private static final Logger logger = LoggerFactory.getLogger(FQnaBoardController
 		   model.addAttribute(service.read_Qna(BOARD_IDX));
 		   
 	   }
+	//1대1문의 글쓰기
 	@RequestMapping(value = "/qnaWrite", 
 			method = RequestMethod.GET)
 		public String QnaBoardWrite(Model model) throws Exception {

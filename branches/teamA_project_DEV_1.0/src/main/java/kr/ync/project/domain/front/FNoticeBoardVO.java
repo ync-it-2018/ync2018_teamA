@@ -9,13 +9,13 @@ import lombok.ToString;
 @Setter
 @ToString
 public class FNoticeBoardVO {
-	private Integer BOARD_IDX;
-	private String TITLE;
-	private String WRITER;
-	private Date WRITEDATE;
-	private String CONTENT;
-	private String IMPORTANT;
-	private String ID;
-	private String BOARD_CODE;
-	private String IMG;
+	private Integer BOARD_IDX;//인덱스
+	private String TITLE;//제목
+	private String WRITER;//작성자
+	private Date WRITEDATE;//작성날짜
+	private String CONTENT;//내용
+	private String IMPORTANT;//중요표시
+	private String ID;//아이디
+	private String BOARD_CODE;//계시판 코드
+	private String IMG;//이미지
 }

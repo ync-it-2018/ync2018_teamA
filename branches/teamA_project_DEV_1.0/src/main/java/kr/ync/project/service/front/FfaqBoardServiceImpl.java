@@ -12,7 +12,7 @@ import kr.ync.project.persistence.front.FfaqBoardDAO;
 public class FfaqBoardServiceImpl implements FfaqBoardService{
 	@Autowired
 	private FfaqBoardDAO dao;
-
+	//리스트
 	@Override
 	public List<FfaqBoardVO> listAll() throws Exception {
 		// TODO Auto-generated method stub

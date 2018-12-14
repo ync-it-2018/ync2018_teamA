@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ync.project.service.front.FfaqBoardService;
 
+//faq(자주 묻는 질문)로 이동
 @Controller
 public class FfaqController {
 
@@ -21,11 +22,10 @@ private static final Logger logger = LoggerFactory.getLogger(FfaqController.clas
 	
 	@Inject
 	private FfaqBoardService service;
-
+	
 	@RequestMapping(value = "/faq", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) throws Exception{
 
-		// 가나다
 		logger.info("faq로 이동");
 		model.addAttribute("list", service.listAll());
 

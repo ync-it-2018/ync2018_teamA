@@ -16,7 +16,7 @@ public class FfaqBoardDAOImpl implements FfaqBoardDAO{
 	
 	private static String namespace = 
 			"kr.ync.project.mapper.FfaqBoardMapper";
-
+	//리스트
 	@Override
 	public List<FfaqBoardVO> listAll() throws Exception {
 		// TODO Auto-generated method stub

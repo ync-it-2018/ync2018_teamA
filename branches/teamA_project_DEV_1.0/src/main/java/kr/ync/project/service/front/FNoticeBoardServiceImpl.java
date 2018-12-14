@@ -13,12 +13,13 @@ public class FNoticeBoardServiceImpl implements FNoticeBoardService{
 	@Autowired
 	private FNoticeBoardDAO dao;
 
+	//리스트
 	@Override
 	public List<FNoticeBoardVO> listAll() throws Exception {
 		// TODO Auto-generated method stub
 		return dao.listAll();
 	}
-
+	//상세보기
 	@Override
 	public FNoticeBoardVO read_notice(int BOARD_IDX) throws Exception {
 		// TODO Auto-generated method stub

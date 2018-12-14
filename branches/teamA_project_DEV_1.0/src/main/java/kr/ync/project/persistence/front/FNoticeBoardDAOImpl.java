@@ -17,12 +17,13 @@ public class FNoticeBoardDAOImpl implements FNoticeBoardDAO{
 	private static String namespace = 
 			"kr.ync.project.mapper.FNoticeBoardMapper";
 
+	//리스트
 	@Override
 	public List<FNoticeBoardVO> listAll() throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectList(namespace + ".listAll");
 	}
-
+	//상세보기
 	@Override
 	public FNoticeBoardVO read_notice(int BOARD_IDX) throws Exception {
 		// TODO Auto-generated method stub

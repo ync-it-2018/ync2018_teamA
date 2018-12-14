@@ -8,5 +8,6 @@ import kr.ync.project.domain.front.FfaqBoardVO;
 
 @Service
 public interface FfaqBoardService {
+	//리스트
 	public List<FfaqBoardVO> listAll() throws Exception;
 }

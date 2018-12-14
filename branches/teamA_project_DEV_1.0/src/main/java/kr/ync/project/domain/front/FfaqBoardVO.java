@@ -9,9 +9,9 @@ import lombok.ToString;
 @Setter
 @ToString
 public class FfaqBoardVO {
-	private Integer FAQ_IDX;
-	private String CATEGORIZATION;
-	private String TITLE;
-	private Date WRITEDATE; 
-	private String CONTENT;
+	private Integer FAQ_IDX;//인덱스
+	private String CATEGORIZATION;//카테고리
+	private String TITLE;//제목
+	private Date WRITEDATE; //날짜
+	private String CONTENT;//내용
 }
