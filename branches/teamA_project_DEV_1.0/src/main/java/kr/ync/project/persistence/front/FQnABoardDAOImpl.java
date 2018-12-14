@@ -15,7 +15,7 @@ public class FQnABoardDAOImpl implements FQnABoardDAO{
 	private SqlSession session;
 	
 	private static String namespace = 
-			"kr.ync.project.mapper.FQnaBoardMapper";
+			"kr.ync.project.mapper.FQnABoardMapper";
 
 	//리스트
 	@Override
