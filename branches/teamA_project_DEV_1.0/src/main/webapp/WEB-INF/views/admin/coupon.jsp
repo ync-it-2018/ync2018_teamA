@@ -3,8 +3,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
 
+<!--  등록된 관리자의 리스트 출력 -->
+<!--  송원준                      -->
+<!--  2018. 11. 21                -->
 <%@include file="include/header.jsp" %>
-<!-- 깨끗한 빈 페이지. 해당 파일을 복사하여 새로운 admin view page를 만들어가면 됨 -->
     <!-- Main content -->
 	<section class="content">
 		<div class="row">
@@ -14,7 +16,7 @@
 			
 				<div class="box">
 					<div class="box-header with-border">
-						<h3 class="box-title">HOME PAGE ${serverTime }</h3>
+						<h3 class="box-title">쿠폰조회</h3>
 					</div>
 				</div>
 			</div><!--/.col (left) -->

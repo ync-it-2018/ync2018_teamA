@@ -4,11 +4,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
 
-<!--  등록된 회원의 리스트 출력   -->
+<!--  등록된 관리자의 리스트 출력 -->
 <!--  송원준                      -->
-<!--  2018. 11. 21                -->
+<!--  2018. 12. 15                -->
 <%@include file="include/header.jsp" %>
-<!-- 깨끗한 빈 페이지. 해당 파일을 복사하여 새로운 admin view page를 만들어가면 됨 -->
     <!-- Main content -->
 	<section class="content">
 		<div class="row">
@@ -18,7 +17,7 @@
 			
 				<div class="box">
 					<div class="box-header with-border">
-						<h3 class="box-title">회원조회</h3>
+						<h3 class="box-title">관리자 조회</h3>
 					</div>
 					<div class="box-body">
 						<table class="table table-bordered">
@@ -28,17 +27,17 @@
 								<th>아이디</th>
 								<th>E-mail</th>
 								<th>전화번호</th>
-								<th>마일리지 액수</th>
+								<th>등급</th>
 							</tr>
 						
-							<c:forEach items="${list}" var="memberVO">
+							<c:forEach items="${list}" var="admin">
 								<tr>
-									<td>${memberVO.ROWNUM}</td>
-									<td>${memberVO.NAME}</td>
-									<td><a href='/admin/memberdetail?id=${memberVO.ID}'>${memberVO.ID}</a>
-									<td>${memberVO.EMAIL}</td>
-									<td>${memberVO.PHONE }</td>
-									<td>${memberVO.GET_MILEAGE}</td>
+									<td>${admin.ROWNUM}</td>
+									<td>${admin.NAME}</td>
+									<td><a href='/admin/adminMemberdetail?id=${admin.ID}'>${admin.ID}</a>
+									<td>${admin.EMAIL}</td>
+									<td>${admin.PHONE }</td>
+									<td>${admin.GRADE}</td>
 								</tr>
 							</c:forEach> 
 						</table>

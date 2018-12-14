@@ -3,9 +3,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page session="false"%>
+<!--  등록된 패키지의 리스트 출력 -->
+<!--  송원준                      -->
+<!--  2018. 11. 29                -->
 
 <%@include file="include/header.jsp" %>
-<!-- 깨끗한 빈 페이지. 해당 파일을 복사하여 새로운 admin view page를 만들어가면 됨 -->
     <!-- Main content -->
     <script type="text/javascript">
 	

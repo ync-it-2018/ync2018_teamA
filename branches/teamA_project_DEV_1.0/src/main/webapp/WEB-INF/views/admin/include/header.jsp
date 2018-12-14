@@ -255,12 +255,12 @@
               </a>
              <ul class="treeview-menu">
                 <li>
-                   <a href="#">
+                   <a href="/admin/adminMemberAdd">
                       <i class="fa fa-circle-o"></i> 관리자 등록
                    </a>
                 </li>
                 <li>
-                   <a href="#">
+                   <a href="/adminMember">
                       <i class="fa fa-circle-o"></i> 관리자 조회 
                    </a>
                 </li>

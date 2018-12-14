@@ -4,8 +4,10 @@
 	pageEncoding="UTF-8"%>
 
 <%@include file="include/header.jsp"%>
-<!-- 깨끗한 빈 페이지. 해당 파일을 복사하여 새로운 admin view page를 만들어가면 됨 -->
 <!-- Main content -->
+<!--  패키지 등록 페이지          -->
+<!--  송원준                      -->
+<!--  2018. 11. 29                -->
 
 <script type="text/javascript">
 	
@@ -158,7 +160,7 @@ th{
 						<div class="box-body">
 						
 						
-							<form method="post" enctype="multipart/form-data">
+							<form method="post">
 								<span style="display:none">
 									<input type="datetime" name="DEPARTURE_DATE" value="">
 								</span>
@@ -310,16 +312,12 @@ th{
 									</tr>
 									<tr>
 										<th>판매여부</th>
-										<td colspan="3"><input type="checkbox" name="SALES" value="Y">판매여부</td>
+										<td colspan="3"><input type="checkbox" checked="checked" name="SALES" value="Y">판매여부</td>
 									</tr>
 									<tr>
 										<td colspan="6"><button type="submit" class="btn btn-primary">등록</button></td>
 									</tr>
 							</table>
-							<div class="form-group">
-								<label for="exampleInputEmail1">File DROP Here</label>
-								<div class="fileDrop"></div>
-							</div>
 						</form>	
 					</div>
 					<div class="box-footer">

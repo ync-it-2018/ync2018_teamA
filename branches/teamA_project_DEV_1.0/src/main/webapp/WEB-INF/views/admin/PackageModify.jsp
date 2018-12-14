@@ -5,8 +5,10 @@
 	pageEncoding="UTF-8"%>
 
 <%@include file="include/header.jsp"%>
-<!-- 깨끗한 빈 페이지. 해당 파일을 복사하여 새로운 admin view page를 만들어가면 됨 -->
 <!-- Main content -->
+<!--  패키지 정보 수정 페이지     -->
+<!--  송원준                      -->
+<!--  2018. 12. 07                -->
 
 <script type="text/javascript">
 	
@@ -206,7 +208,7 @@ th{
 									</tr>
 									<tr>
 										<th>판매여부</th>
-										<td colspan="3"><input type="checkbox" name="SALES" value="${productVO.SALES}">판매여부</td>
+										<td colspan="3"><input type="checkbox"  checked="checked" name="SALES" value='${productVO.SALES}'>판매여부</td>
 									</tr>
 									<tr>
 										<td colspan="4">

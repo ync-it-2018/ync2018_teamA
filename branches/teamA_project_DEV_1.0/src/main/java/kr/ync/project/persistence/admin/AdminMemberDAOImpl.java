@@ -6,50 +6,52 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import kr.ync.project.domain.admin.ProductVO;
+import kr.ync.project.domain.admin.MemberVO;
 
 
 /**
- * ProductDAOImpl.java
+ * AdminMemberDAOImpl.java
  * 
  * @Author : 송원준
- * @Date	: 2018. 12. 07.
- * @Description 패키지 DAOImpl
+ * @Date	: 2018. 12. 15.
+ * @Description 관리자 DAOImpl
  *
  *
  */
 @Repository
-public class ProductDAOImpl implements ProductDAO{
+public class AdminMemberDAOImpl implements AdminMemberDAO{
 	@Autowired
 	private SqlSession session;
 	
 	private static String namespace = 
-			"kr.ync.project.mapper.PackListMapper";
+			"kr.ync.project.mapper.adminMemberMapper";
 	
 	//생성
 	@Override
-	public void create(ProductVO vo) throws Exception {
+	public void create(MemberVO vo) throws Exception {
 		session.insert(namespace + ".create", vo);
 	}
-	
+
 	//수정
 	@Override
-	public void modify(ProductVO vo) throws Exception {
+	public void modify(MemberVO vo) throws Exception {
 		// TODO Auto-generated method stub
 		session.update(namespace + ".modify", vo);
 	}
 	
 	//상세보기
 	@Override
-	public ProductVO read(String code) throws Exception {
+	public MemberVO read(String id) throws Exception {
 		// TODO Auto-generated method stub
-		return session.selectOne(namespace+".read", code);
+		return session.selectOne(namespace+".read", id);
 	}
 	
 	//리스트
 	@Override
-	public List<ProductVO> listAll() throws Exception {
+	public List<MemberVO> listAll() throws Exception {
 		// TODO Auto-generated method stub
 		return session.selectList(namespace + ".listAll");
-	}	
+	}
+
+	
 }

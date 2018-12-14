@@ -14,6 +14,15 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import kr.ync.project.domain.admin.ProductVO;
 import kr.ync.project.service.admin.ProductService;
 
+/**
+ * PackageListController.java
+ * 
+ * @Author : 송원준
+ * @Date	: 2018. 12. 7.
+ * @Description 패키지 조회, 상세정보, 수정
+ *
+ *
+ */
 @Controller
 public class PackageListController {
 
@@ -21,7 +30,8 @@ public class PackageListController {
 	
 	@Inject
 	private ProductService service;
-
+	
+	//패키지조회로 이동
 	@RequestMapping(value = "/PackageList", method = RequestMethod.GET)
 	public String packageList(Model model) throws Exception {
 
@@ -32,20 +42,22 @@ public class PackageListController {
 		return "admin/PackageList";
 	}
 	
+	//패키지 상세정보로 이동
 	@RequestMapping(value = "/admin/Packagedetail", method = RequestMethod.GET)
 	public void packageDetail(@RequestParam("code") String code, Model model) throws Exception {
 
-		// 가나다
 		model.addAttribute("productview", service.read(code));
 		
 	}
 	
+	//패키지 수정으로 이동
 	@RequestMapping(value = "/admin/PackageModify", method = RequestMethod.GET)
 	public void packageModifyGET(String code, Model model) throws Exception {
 		
 		model.addAttribute(service.read(code));
 	}
 	
+	//패키지 수정
 	@RequestMapping(value = "/admin/PackageModify", method = RequestMethod.POST)
 	public String packageModifyPOST(ProductVO data, RedirectAttributes rttr) throws Exception {
 		

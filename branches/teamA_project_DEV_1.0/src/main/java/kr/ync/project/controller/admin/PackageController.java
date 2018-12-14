@@ -13,8 +13,16 @@ import org.springframework.web.multipart.MultipartFile;
 import kr.ync.project.domain.admin.ProductVO;
 import kr.ync.project.service.admin.ProductService;
 
+/**
+ * PackageController.java
+ * 
+ * @Author : 송원준
+ * @Date	: 2018. 12. 10.
+ * @Description 패키지 등록 controller
+ *
+ *
+ */
 @Controller
-
 @RequestMapping("/admin")
 public class PackageController {
 
@@ -23,6 +31,7 @@ public class PackageController {
 	@Inject
 	private ProductService service;
 	
+	//패키지 등록으로 이동
 	@RequestMapping(value = "/PackageAdd", method = RequestMethod.GET)
 	public void PackageAddGET(ProductVO data, Model model) throws Exception{
 
@@ -31,17 +40,11 @@ public class PackageController {
 	
 	}
 	
+	//패키지 등록
 	@RequestMapping(value = "/PackageAdd", method = RequestMethod.POST)
-	public String PackageAddPOST(ProductVO data, MultipartFile ROOT, Model model) throws Exception {
+	public String PackageAddPOST(ProductVO data, Model model) throws Exception {
 
-		// 가나다
 		
-//		logger.info("originalName: " + ROOT.getOriginalFilename());
-//		logger.info("size: " + ROOT.getSize());
-//		logger.info("contentType: " + ROOT.getContentType());
-//		
-
-
 		logger.info("패키지등록");
 		logger.info(data.toString());
 		
@@ -51,15 +54,5 @@ public class PackageController {
 
 		return "admin/success";
 	}
-	
-//	private String uploadFile(String originalName, byte[] fileData) throws Exception {
-//
-//		UUID uid = UUID.randomUUID();
-//		String savedName = uid.toString() + "_" + originalName;
-//		File target = new File(uploadPath, savedName);
-//		FileCopyUtils.copy(fileData, target);
-//
-//		return savedName;
-//	}
 	
 }

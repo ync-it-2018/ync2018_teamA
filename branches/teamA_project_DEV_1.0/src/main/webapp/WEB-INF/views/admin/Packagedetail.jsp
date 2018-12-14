@@ -5,8 +5,10 @@
 	pageEncoding="UTF-8"%>
 
 <%@include file="include/header.jsp"%>
-<!-- 깨끗한 빈 페이지. 해당 파일을 복사하여 새로운 admin view page를 만들어가면 됨 -->
 <!-- Main content -->
+<!--  등록된 패키지 상세정보 출력 -->
+<!--  송원준                      -->
+<!--  2018. 11. 29                -->
 
 <script type="text/javascript">
 	
@@ -21,11 +23,6 @@
 		$(".btn-warning").on("click", function() {
 			formObj.attr("action", "/admin/PackageModify");
 			formObj.attr("method", "get");
-			formObj.submit();
-		});
-		
-		$(".btn-danger").on("click", function() {
-			formObj.attr("action", "/admin/PackageRemove");
 			formObj.submit();
 		});
 		
@@ -87,7 +84,9 @@ th{
 							</tr>
 							<tr>
 								<th>이미지</th>
-								<td colspan="3"></td>
+								<td colspan="3">
+									${productview.ROOT}
+								</td>
 							</tr>
 							<tr>
 								<th>테마</th>
@@ -145,7 +144,6 @@ th{
 							<tr>
 								<td align="center" colspan="4">
 									<button type="submit" class="btn btn-warning">수정</button>
-									<button type="submit" class="btn btn-danger">삭제</button>
 									<button type="submit" class="btn btn-primary">목록</button>
 								</td>
 							</tr>
