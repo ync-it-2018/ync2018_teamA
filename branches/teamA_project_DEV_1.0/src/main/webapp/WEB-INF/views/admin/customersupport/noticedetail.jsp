@@ -78,13 +78,13 @@
 						console.log(formObj);
 
 						$(".btn-warning").on("click", function() {
-							formObj.attr("action", "/noticemodify");
+							formObj.attr("action", "/admin/customersupport/noticemodify");
 							formObj.attr("method", "get");
 							formObj.submit();
 						});
 
 						$(".btn-danger").on("click", function() {
-							formObj.attr("action", "/noticeremove");
+							formObj.attr("action", "/admin/customersupport/noticeremove");
 							formObj.submit();
 						});
 
