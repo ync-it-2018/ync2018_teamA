@@ -152,12 +152,22 @@ th{
 				<div class="box">
 					<div class="box-header with-border">
 						<h3 class="box-title">상품등록</h3>
+						
 					</div>
 					
 						<div class="box-body">
 						
+						
 							<form method="post" enctype="multipart/form-data">
-							<input type="text" name="PRODUCT_CODE">
+								<span style="display:none">
+									<input type="datetime" name="DEPARTURE_DATE" value="">
+								</span>
+								<span style="display:none">
+									<input type="datetime" name="ARRIVAL_DATE" value="">
+								</span>
+								<span style="display:none">
+									<input type="text" name="PRODUCT_CODE">
+								</span>
 								<table class="table table-bordered">
 									<tr>
 										<th>상품명</th>
@@ -166,7 +176,7 @@ th{
 										</td>
 									</tr>
 									<tr>
-										<th align="center" style="font-weight:bold; font-size:15px">국가</th>
+										<th align="center">국가</th>
 										<td>
 											<input type="text" name="NATION_CODE">
 											<!-- <select name="NATION_CODE">
@@ -178,9 +188,10 @@ th{
 										<th align="center">도시</th>
 										<td>
 											<input type="text" name="CITY_CODE">
-											<!-- <select name="CITY_CODE">
+											<!--<select name="CITY_CODE">
 													<option>도시</option>
-											</select> -->
+													<option style="display:block">일본</option>
+											</select>-->
 										</td>
 									</tr>
 									<tr>
@@ -196,7 +207,7 @@ th{
 										</td> -->
 										 
 										<td colspan="3">
-											<input type="datetime" name="DEPARTURE_DATE" value="">
+										  
 											<select name="D_YEAR">
 												<option value="0">연도</option>
 												<option value="2018">2018</option>
@@ -215,7 +226,7 @@ th{
 												<option value="00">분</option>
 											</select>
 											&nbsp;&nbsp;&nbsp; ~ &nbsp;&nbsp;&nbsp;
-											<input type="datetime" name="ARRIVAL_DATE" value=""> 
+											
 											<select name="A_YEAR">
 												<option value="0">연도</option>
 												<option value="2018">2018</option>
