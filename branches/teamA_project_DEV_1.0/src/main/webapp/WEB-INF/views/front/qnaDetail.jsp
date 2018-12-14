@@ -1,4 +1,4 @@
-<!-- qnaDetail(1대1문의 상세보기) -->
+<!-- QnADetail(1대1문의 상세보기) -->
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -167,18 +167,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <tr>
               <td>${status.count}</td>
               <td id="title">
-              ${FQnaBoardVO.TITLE}
+              ${FQnABoardVO.TITLE}
               </td>
-              <td>${FQnaBoardVO.WRITER}</td>
-              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FQnaBoardVO.WRITEDATE}"/></td>
+              <td>${FQnABoardVO.WRITER}</td>
+              <td><fmt:formatDate pattern="yyyy-MM-dd" value="${FQnABoardVO.WRITEDATE}"/></td>
             <tr>
             <tr>
              <th id="contents">내용</th>
-             <td colspan="3"  height="450px" style="text-align: left"> ${FQnaBoardVO.CONTENT}</td>
+             <td colspan="3"  height="450px" style="text-align: left"> ${FQnABoardVO.CONTENT}</td>
             </tr>
             <tr>
              <th id="contents">답변</th>
-             <td colspan="3" style="text-align: left"> ${FQnaBoardVO.ANSWER}</td>
+             <td colspan="3" style="text-align: left"> ${FQnABoardVO.ANSWER}</td>
             </tr>
         </tbody>
       </table>
