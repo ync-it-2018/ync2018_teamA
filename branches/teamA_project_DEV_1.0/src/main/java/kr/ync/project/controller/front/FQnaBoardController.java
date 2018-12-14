@@ -37,11 +37,13 @@ private static final Logger logger = LoggerFactory.getLogger(FQnaBoardController
 		   model.addAttribute(service.read_Qna(BOARD_IDX));
 		   
 	   }
-	//1대1문의 글쓰기
-	@RequestMapping(value = "/front/qnaWrite", method = RequestMethod.GET)
-	   public void FQnaWrite(@RequestParam("BOARD_IDX") int BOARD_IDX, Model model) throws Exception {
-		   
-		   model.addAttribute(service.read_Qna(BOARD_IDX));
-		   
-	   }
+	@RequestMapping(value = "/qnaWrite", 
+			method = RequestMethod.GET)
+		public String QnaBoardWrite(Model model) throws Exception {
+
+			logger.info("1대1문의 글쓰기로 이동");
+
+			model.addAttribute("list", service.listAll());
+			return "front/qnaWrite";
+		}
 }
