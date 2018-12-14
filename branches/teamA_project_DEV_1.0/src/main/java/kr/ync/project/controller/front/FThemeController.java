@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import kr.ync.project.controller.HomeController;
 import kr.ync.project.service.front.FProductService;
 
-//추천.인기.특가 패키지 리스트
+//테마별 패키지 리스트
 @Controller
 public class FThemeController {
 	
@@ -27,9 +27,11 @@ public class FThemeController {
 
 	@RequestMapping(value = "/theme", method = RequestMethod.GET)
 	public String about(@RequestParam("theme")String theme,Locale locale, Model model) throws Exception {
-		// 가나다
+	
 		logger.info("테마상품으로 이동", locale);
+		//테마 상품 리스트
 		model.addAttribute("list_theme", service.listAll_theme(theme));
+		//좌측 특가 상품 리스트
 		model.addAttribute("list_special", service.listAll_special());
 		
 		return "front/theme";

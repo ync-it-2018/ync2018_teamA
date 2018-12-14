@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.ync.project.service.front.FProductService;
 
@@ -81,6 +82,20 @@ public class HomeController {
 		
 		return "admin/index";
 
+	}
+	
+	//전체 패키지 검색
+	@RequestMapping(value = "/SearchList", method = RequestMethod.GET)
+	public String SearchList(@RequestParam("keyword")String keyword, Model model) throws Exception {
+
+		// 가나다
+		logger.info("검색 결과 화면으로 이동");
+		//검색 결과 화면
+		model.addAttribute("list_SearchList", service.listAll_SearchList(keyword));
+		//좌측 특가 상품 리스트
+		model.addAttribute("list_special", service.listAll_special());
+		
+		return "front/SearchList";
 	}
 }
 

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import kr.ync.project.controller.HomeController;
 import kr.ync.project.service.front.FProductService;
 
-//추천.인기.특가 패키지 리스트
+//카테고리 : 추천.인기.특가 패키지 리스트
 @Controller
 public class FCategorizationController {
 	
@@ -27,9 +27,11 @@ public class FCategorizationController {
 
 	@RequestMapping(value = "/category", method = RequestMethod.GET)
 	public String about(@RequestParam("categorization")String categorization,Locale locale, Model model) throws Exception {
-		// 가나다
+
 		logger.info("인기/추천/특가상품으로 이동", locale);
+		//카테고리별
 		model.addAttribute("list_categorization", service.listAll_categorization(categorization));
+		//좌측메뉴 특가상품 리스트
 		model.addAttribute("list_special", service.listAll_special());
 		
 		return "front/category";
