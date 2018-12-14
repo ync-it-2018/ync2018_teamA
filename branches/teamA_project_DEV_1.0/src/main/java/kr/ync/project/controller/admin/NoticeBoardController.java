@@ -12,24 +12,25 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import kr.ync.project.domain.admin.InquiryBoardVO;
+import kr.ync.project.domain.admin.Criteria;
+import kr.ync.project.domain.admin.NoticeBoardVO;
 import kr.ync.project.domain.admin.PageMaker;
 import kr.ync.project.domain.admin.SearchCriteria;
-import kr.ync.project.service.admin.InquiryBoardService;
+import kr.ync.project.service.admin.NoticeBoardService;
 
 @Controller
 @RequestMapping("/admin/customersupport/*")
-public class InquiryBoardController {
-	private static final Logger logger = LoggerFactory.getLogger(InquiryBoardController.class);
+public class NoticeBoardController {
+	private static final Logger logger = LoggerFactory.getLogger(NoticeBoardController.class);
 
 	@Inject
-	private InquiryBoardService service;
+	private NoticeBoardService service;
 
-	@RequestMapping(value = "/inquiry", method = RequestMethod.GET)
-	public String InquiryBoardList(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+	@RequestMapping(value = "/notice", method = RequestMethod.GET)
+	public String NoticeBoardList(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 
 		// 가나다
-		logger.info("1:1문의 게시판으로 이동");
+		logger.info("공지사항 게시판으로 이동");
 
 		model.addAttribute("list", service.listSearchCriteria(cri));
 		PageMaker pageMaker = new PageMaker();
@@ -38,11 +39,11 @@ public class InquiryBoardController {
 		pageMaker.setTotalCount(service.listSearchCount(cri));
 
 		model.addAttribute("pageMaker", pageMaker);
-		return "admin/customersupport/inquiry";
+		return "admin/customersupport/notice";
 	}
 
-	@RequestMapping(value = "/inquiryremove", method = RequestMethod.POST)
-	public String InquiryBoardDelete(SearchCriteria cri, @RequestParam("BOARD_IDX") Integer BOARD_IDX,
+	@RequestMapping(value = "/noticeremove", method = RequestMethod.POST)
+	public String NoticeBoardDelete(SearchCriteria cri, @RequestParam("BOARD_IDX") Integer BOARD_IDX,
 			RedirectAttributes rttr) throws Exception {
 
 		service.remove(BOARD_IDX);
@@ -56,18 +57,18 @@ public class InquiryBoardController {
 		logger.info("게시글 삭제");
 		
 		rttr.addFlashAttribute("msg","SUCCESS");
-		return "redirect:/customersupport/inquiry";
+		return "redirect:/customersupport/notice";
 	}
 
-	@RequestMapping(value = "/inquiryupdate", method = RequestMethod.GET)
-	public String InquiryBoardRegisterGET(InquiryBoardVO board, Model model) throws Exception {
+	@RequestMapping(value = "/noticeupdate", method = RequestMethod.GET)
+	public String NoticeBoardRegisterGET(NoticeBoardVO board, Model model) throws Exception {
 
 		logger.info("register get........");
-		return "admin/customersupport/inquiryupdate";
+		return "admin/customersupport/noticeupdate";
 	}
 
-	@RequestMapping(value = "/inquiryupdate", method = RequestMethod.POST)
-	public String InquiryBoardRegisterPOST(RedirectAttributes rttr, SearchCriteria cri, InquiryBoardVO board, Model model) throws Exception {
+	@RequestMapping(value = "/noticeupdate", method = RequestMethod.POST)
+	public String NoticeBoardRegisterPOST(RedirectAttributes rttr, SearchCriteria cri, NoticeBoardVO board, Model model) throws Exception {
 
 		logger.info("글 등록중");
 		logger.info(board.toString());
@@ -75,17 +76,17 @@ public class InquiryBoardController {
 		
 		rttr.addFlashAttribute("msg", "SUCCESS");
 
-		return "redirect:/admin/customersupport/inquiry";
+		return "redirect:/admin/customersupport/notice";
 	}
 
-	@RequestMapping(value = "/admin/customersupport/inquirydetail", method = RequestMethod.GET)
-	public void InquiryBoardread(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("code") Integer BOARD_IDX, Model model) throws Exception {
+	@RequestMapping(value = "/admin/customersupport/noticedetail", method = RequestMethod.GET)
+	public void NoticeBoardread(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("code") Integer BOARD_IDX, Model model) throws Exception {
 
 		model.addAttribute(service.read(BOARD_IDX));
 	}
 	
-	@RequestMapping(value = "/inquirymodify", method = RequestMethod.GET)
-	public String InquiryBoardModifyGET(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("BOARD_IDX") Integer BOARD_IDX, Model model) throws Exception {
+	@RequestMapping(value = "/noticemodify", method = RequestMethod.GET)
+	public String NoticeBoardModifyGET(@ModelAttribute("cri") SearchCriteria cri, @RequestParam("BOARD_IDX") Integer BOARD_IDX, Model model) throws Exception {
 
 
 		PageMaker pageMaker = new PageMaker();
@@ -94,11 +95,11 @@ public class InquiryBoardController {
 		
 		model.addAttribute(service.read(BOARD_IDX));
 		
-		return "admin/customersupport/inquirymodify";
+		return "admin/customersupport/noticemodify";
 	}
 	
-	@RequestMapping(value = "/inquirymodify", method = RequestMethod.POST)
-	public String InquiryBoardModifyPOST(SearchCriteria cri, InquiryBoardVO board, RedirectAttributes rttr) throws Exception {
+	@RequestMapping(value = "/noticemodify", method = RequestMethod.POST)
+	public String NoticeBoardModifyPOST(SearchCriteria cri, NoticeBoardVO board, RedirectAttributes rttr) throws Exception {
 
 		logger.info("글 수정중");
 		
@@ -111,6 +112,6 @@ public class InquiryBoardController {
 		rttr.addFlashAttribute("msg", "SUCCESS");
 		rttr.addFlashAttribute("msg", "SUCCESS");
 
-		return "redirect:/admin/customersupport/inquiry";
+		return "redirect:/admin/customersupport/notice";
 	}
 }
