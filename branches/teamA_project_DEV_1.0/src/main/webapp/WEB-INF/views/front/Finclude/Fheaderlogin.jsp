@@ -86,18 +86,78 @@
 			<div class="clearfix"></div>
 		</div>
 	</div>
+	
 	<div class="ban-top">
 		<div class="container">
-			<div class="agileits-navi_search">
-				<button type="button" class="all_wholemenu" id="main_menu_btn">전체 메뉴<b class="caret"></b></button>
-				<div class="" id="main_whole_menu_content">
-				</div>
+			<!-- 메뉴 좌측부분 -->
+			<div class="agileits-navi_search"  id="main_menu_btn">
+				<button type="button" class="all_wholemenu">전체 메뉴<b class="caret"></b></button>
 			</div>
+			<!-- //메뉴 좌측부분 -->
+			<!-- 전체메뉴 -->
+			<div class="main_wholemenu_content" id="whole_menu_content" style="display:none;">
+				<table cellpadding="0" cellspacing="0" width="100%" border="0">
+					<colgroup>
+						<col width="25%">
+						<col width="25%">
+						<col width="25%">
+						<col width="25%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th class="tour">국내여행</th>
+							<th class="tour_info_tit">해외여행</th>
+							<th class="tour">테마여행</th>
+							<th class="tour_info_tit">기타 게시판</th>
+						</tr>
+						<tr>
+							<td>
+								<ul class="tour_menu">
+									<li><a href="/domestic?city_code=ICN">서울/인천/경기</a></li>
+									<li><a href="/domestic?city_code=KAE">강원권</a></li>
+									<li><a href="/domestic?city_code=GON">충청권</a></li>
+									<li><a href="/domestic?city_code=KWJ">젼라권</a></li>
+									<li><a href="/domestic?city_code=KPO">경상권</a></li>
+									<li><a href="/domestic?city_code=CJU">제주권</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="tour_menu">
+									<li><a href="/overseas?nation_code=ID">동남아</a></li>
+									<li><a href="/overseas?nation_code=HK">중국/홍콩</a></li>
+									<li><a href="/overseas?nation_code=JP">일본</a></li>
+									<li><a href="/overseas?nation_code=AU">남태평양/괌</a></li>
+									<li><a href="/overseas?nation_code=FR">유럽</a></li>
+									<li><a href="/overseas?nation_code=US">미주/하와이</a></li>
+									<li><a href="/overseas?nation_code=ZA">아프리카</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="tour_menu">
+									<li><a href="/theme?theme=허니문">허니문</a></li>
+									<li><a href="/theme?theme=크루즈">크루즈</a></li>
+									<li><a href="/theme?theme=예술/문화/역사">예술/문화/역사</a></li>
+									<li><a href="/theme?theme=트래킹/스포츠">트래킹/스포츠</a></li>
+									<li><a href="/theme?theme=체험">체험</a></li>
+									<li><a href="/theme?theme=골프">골프</a></li>
+									<li><a href="/theme?theme=음식">음식</a></li>
+									<li><a href="/theme?theme=이벤트">이벤트</a></li>
+								</ul>
+							</td>
+							<td class="menu_background">
+								<ul class="tour_menu">
+									<li><a href="/tip">여행 TIP</a></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //전체메뉴 -->
 			<!-- 메뉴 우측부분 -->
 			<div class="top_nav_left">
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed"
 								data-toggle="collapse"
@@ -108,7 +168,6 @@
 									class="icon-bar"></span>
 							</button>
 						</div>
-						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse menu--shylock"
 							id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav menu__list">
@@ -167,19 +226,6 @@
 			<!-- //메뉴 우측부분 -->
 		</div>
 	</div>
-	<script type="text/javascript">/*cpWholeScriptStart*/
-    //ready
-    $(function() {
-      //전체메뉴 열기
-      $("#main_menu_btn").click(function () {
-        //.slideToggle(400,fn_pkgInfoData($(this)));
-        $(this).next().slideToggle(400);
-      });
-      //전체메뉴 닫기
-      $("#main_whole_menu_content > #jq_main_btn_close").click(function () {
-        $(this).parent().slideToggle(400);
-      });
-    });
-    /*cpWholeScriptEnd*/</script>
+	
 </body>
 </html>

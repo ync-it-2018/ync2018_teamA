@@ -72,14 +72,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<%@include file="Finclude/Fheaderlogin.jsp" %>
 				<% }%>
 				
-				
-				 
-				
-				
-	<!-- //navigation -->
+
 	<!-- 메인화면 광고 -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators-->
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1" class=""></li>
@@ -196,7 +191,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //상세검색 -->
 	<div class="ads-grid">
 		<div class="container">
-			<!-- product right -->
 			<div class="agileinfo-ads-display col-md-12">
 				<div class="wrapper">
 					<!-- 인기 패키지 -->
@@ -213,7 +207,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<a href='/front/detail?product_code=${FProductVO.PRODUCT_CODE}' class="link-product-add-cart">상품 보기</a>
 										</div>
 									</div>
-									<!-- <span class="product-new-top">New</span> -->
 								</div>
 								<div class="item-info-product ">
 									<p style="overflow:hidden; width:230px; height:60px;">
@@ -264,7 +257,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														class="link-product-add-cart">상품 보기</a>
 												</div>
 											</div>
-											<!-- <span class="product-new-top">New</span> -->
 										</div>
 										<div class="item-info-product ">
 											<p style="overflow:hidden; width:230px; height:60px;">
@@ -1161,6 +1153,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     	});
     </script>
     <!-- //테마분류 기능 -->
+    <!-- 전체 메뉴 펼치는 접는 기능 -->
+    <script>
+	    // html dom 이 다 로딩된 후 실행된다.
+	    $(document).ready(function(){
+	        // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+	        $("#main_menu_btn").click(function(){
+	            var submenu = $("#whole_menu_content");
+	            // submenu 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
+	            if( submenu.is(":visible") ){
+	                submenu.slideUp();
+	            }else{
+	                submenu.slideDown();
+	            }
+	        });
+	    });
+	</script>
+    <!-- //전체 메뉴 펼치는 접는 기능 -->
+    
 	<!-- 가격 콤마 -->
 	<script src="/resources/front/js/jquery.number.min.js"></script>
 	<script>
