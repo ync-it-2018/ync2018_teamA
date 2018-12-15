@@ -11,21 +11,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ync.project.controller.HomeController;
 
-//패키지 구매,예약 취소 완료 페이지로 이동
+//팀 프로젝트의 구성 및 팀원 소개 페이지로 이동 
 @Controller
-public class FcancelsuccessController {
+public class FteammemberController {
 
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 
-	@RequestMapping(value = "/FbuyList/FbuyListdetail/Fcancel/Fcancelsuccess", method = RequestMethod.GET)
+	@RequestMapping(value = "/intro", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
 
 		// 가나다
-		logger.info("Fcancelsuccess로 이동", locale);
+		logger.info("intro로 이동", locale);
 
-		return "front/Fcancelsuccess";
+		return "front/Fteammember";
 	}
-	
 	
 }

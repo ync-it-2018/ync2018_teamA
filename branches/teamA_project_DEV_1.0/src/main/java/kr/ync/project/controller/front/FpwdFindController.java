@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ync.project.controller.HomeController;
 
+//회원 비밀번호 확인 페이지로 이동
 @Controller
 public class FpwdFindController {
 	

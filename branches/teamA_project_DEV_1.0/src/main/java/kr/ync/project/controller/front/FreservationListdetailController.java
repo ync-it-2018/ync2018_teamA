@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ync.project.controller.HomeController;
 
+//패키지 예약 내역 상세보기
 @Controller
 public class FreservationListdetailController {
 	

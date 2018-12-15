@@ -21,6 +21,8 @@ public class FauthInterceptor extends HandlerInterceptorAdapter {
 	@Inject
 	private FloginService service;
 	
+	//현재 사용자가 session에 적당한 값이 없는 경우 loginCookie를 가지고 있는지 체크
+	//과거에 보관한 쿠키가 있다면 service를 이용해서 사용자의 정보 존재 여부 확인
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		HttpSession session = request.getSession();
@@ -50,6 +52,7 @@ public class FauthInterceptor extends HandlerInterceptorAdapter {
 		return true;
 	}
 	
+	//원래 사용자가 원하는 페이지의 정보를 dest라는 이름으로 저장
 	private void saveDest(HttpServletRequest req) {
 
 		String uri = req.getRequestURI();

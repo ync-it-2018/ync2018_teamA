@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ync.project.controller.HomeController;
 
+//장바구니로 이동
 @Controller
 public class FbasketController {
 

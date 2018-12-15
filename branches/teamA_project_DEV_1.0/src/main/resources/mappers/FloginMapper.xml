@@ -5,18 +5,21 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
 <mapper namespace="kr.ync.project.mapper.FloginMapper">
 
+<!-- 입력받은 아이디와 비밀번호가 등록된 것인지 확인 후 로그인  -->
 <select id="login" resultType="FloginVO">
 
 select ID, PASSWD, SESSIONKEY from TA_MEMBER where ID=#{ID} AND PASSWD=#{PASSWD}
 
 </select>
 
+<!-- 현재 로그인한 아이디의 세션키값과 세션 접속한 시간 수정  -->
 <update id="keepLogin">
 
 update TA_MEMBER set SESSIONKEY = #{sessionId}, SESSIONLIMIT = #{next} where ID=#{ID}
 
 </update>
 
+<!-- 현재 세션에 접속중이며 현재 세션 값과 같은 값을 가진 사용자 정보 가져오기  -->
 <select id="checkUserWithSessionKey" resultType="FloginVO">
 
 select * from TA_MEMBER where SESSIONKEY=#{value} and SESSIONLIMIT > now()

@@ -15,6 +15,7 @@ public class FjoinDAOImpl implements FjoinDAO {
 	private static String namespace = 
 			"kr.ync.project.mapper.FjoinMapper";
 	
+	//입력받은 값으로 회원 정보 저장
 	@Override
 	public void create(FjoinVO vo) throws Exception {
 		session.insert(namespace + ".create", vo);

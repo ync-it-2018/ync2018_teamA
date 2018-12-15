@@ -12,6 +12,7 @@ public class FjoinServiceImpl implements FjoinService {
 	@Autowired
 	private FjoinDAO dao;
 	
+	//회원 정보 만들기(저장)
 	@Override
 	public void regist(FjoinVO product) throws Exception {
 		// TODO Auto-generated method stub

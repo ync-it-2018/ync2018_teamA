@@ -17,6 +17,10 @@ public class FloginInterceptor extends HandlerInterceptorAdapter {
 	private static final String LOGIN = "login";
 	private static final Logger log = LoggerFactory.getLogger(FloginInterceptor.class);
 	
+	//자동 로그인(Remember login)을 선택한 경우 쿠키를 생성하고 loginCookie로 지정
+	//loginCookie에는 값으로 현재 세션 아이디 값을 보관
+	//쿠키는 브라우저를 종료하면 사라지지만, loginCookie는 일주일간 브라우저에서 보관
+	//만들어진 쿠키는 HttpServletResponse에 담겨서 전송
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
@@ -46,6 +50,7 @@ public class FloginInterceptor extends HandlerInterceptorAdapter {
 		}
 	}
 
+	//기존에 남아있는 정보가 있는 경우 해당 정보 삭제
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {

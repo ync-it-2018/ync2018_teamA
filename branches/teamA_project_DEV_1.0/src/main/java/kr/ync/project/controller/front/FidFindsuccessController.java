@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ync.project.controller.HomeController;
 
+//회원 아이디 찾기 성공 페이지로 이동
 @Controller
 public class FidFindsuccessController {
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ync.project.controller.HomeController;
 
+//회원 정보 수정하기 페이지로 이동
 @Controller
 public class FmodifyController {
 

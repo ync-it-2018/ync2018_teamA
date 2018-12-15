@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.ync.project.domain.front.FjoinVO;
 import kr.ync.project.service.front.FjoinService;
 
+//회원 가입 페이지로 이동
 @Controller
 public class FjoinController {
 
@@ -29,6 +30,7 @@ public class FjoinController {
 		
 	}
 	
+	//DB에 회원 정보 저장 후 메인 페이지로 이동
 	@RequestMapping(value = "/front/Fjoin", method = RequestMethod.POST)
 	public String registerPOST(FjoinVO join, Model model) throws Exception {
 

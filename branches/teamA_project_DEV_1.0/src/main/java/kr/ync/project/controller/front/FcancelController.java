@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ync.project.controller.HomeController;
 
+//패키지 구매 취소 페이지로 이동
 @Controller
 public class FcancelController {
 

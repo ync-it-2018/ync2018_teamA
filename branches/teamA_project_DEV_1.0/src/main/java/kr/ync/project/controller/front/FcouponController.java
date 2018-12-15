@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ync.project.controller.HomeController;
 
+//쿠폰 내역 페이지로 이동
 @Controller
 public class FcouponController {
 
