@@ -107,11 +107,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<a href="/front/tipdetail?board_idx=${FTipBoardVO.BOARD_IDX}">
-									<img src="/resources/front/images/${FTipBoardVO.IMG}" alt="" width="100%"></a>
+									<img src="/resources/front/images/${FTipBoardVO.IMG}" alt="" width="100%" height="185"></a>
 
 									<!-- <span class="product-new-top">New</span> -->
 								</div>
-								<div class="item-info-product ">
+								<div class="item-info-product " style="height:30px">
 								
 									<h4>
 										<a href="/front/tipdetail?board_idx=${FTipBoardVO.BOARD_IDX}">${FTipBoardVO.TITLE}</a>
