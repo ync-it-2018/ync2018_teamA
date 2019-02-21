@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import kr.ync.project.domain.admin.FAQBoardVO;
 import kr.ync.project.domain.admin.ProductVO;
+import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.persistence.admin.ProductDAO;
 
 
@@ -34,12 +36,6 @@ public class ProductServiceImpl implements ProductService{
 		dao.create(product);
 	}
 	
-	//리스트
-	@Override
-	public List<ProductVO> listAll()throws Exception {
-		return dao.listAll();
-	}
-	
 	//상세보기
 	@Override
 	public ProductVO read(String code)throws Exception {
@@ -50,6 +46,20 @@ public class ProductServiceImpl implements ProductService{
 	@Override
 	public void modify(ProductVO product)throws Exception {
 		dao.modify(product);
+	}
+	
+	//리스트
+	@Override
+	public List<ProductVO> listSearchCriteria(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.listAll(cri);
+	}
+
+	//리스트 개수
+	@Override
+	public int listSearchCount(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.listSearchCount(cri);
 	}
 
 }

@@ -9,53 +9,34 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.ync.project.domain.admin.PageMaker;
 import kr.ync.project.domain.admin.SearchCriteria;
-import kr.ync.project.service.admin.MemberService;
+import kr.ync.project.service.admin.SaleService;
 
-
-/**
- * MemberController.java
- * 
- * @Author : 송원준
- * @Date	: 2018. 12. 15.
- * @Description 회원 조회, 상세정보 controller
- *
- *
- */
 @Controller
-public class MemberController {
-	
+public class SaleListController {
+
+	private static final Logger logger = LoggerFactory.getLogger(SaleListController.class);
 	
 	@Inject
-	private MemberService service;
-
-	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
+	private SaleService service;
 	
-	//회원조회로 이동
-	@RequestMapping(value = "/member", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/salelist", method = RequestMethod.GET)
 	public String memberList(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 
 		// 가나다
-		logger.info("show all list..........");
+		logger.info("매출관리로 이동");
+		
 		model.addAttribute("list", service.listSearchCriteria(cri));
+		model.addAttribute("add", service.add());
 		PageMaker pageMaker = new PageMaker();
 		pageMaker.setCri(cri);
 
 		pageMaker.setTotalCount(service.listSearchCount(cri));
 
 		model.addAttribute("pageMaker", pageMaker);
-		return "admin/member";
-	}
-	
-	//회원 상세정보로 이동
-	@RequestMapping(value = "/admin/memberdetail", method = RequestMethod.GET)
-	public void memberDetail(@RequestParam("id") String id, Model model) throws Exception {
-
-		model.addAttribute("memberview", service.read(id));
 		
+		return "admin/salelist";
 	}
-
 }

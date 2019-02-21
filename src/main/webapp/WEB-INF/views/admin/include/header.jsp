@@ -36,7 +36,7 @@
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="/resources/index2.html" class="logo">
+        <a href="/admin" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
@@ -97,24 +97,11 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="treeview">
-              <a href="#">
+            <li>
+              <a href="/member">
                 <i class="fa fa-dashboard"></i> 
                 <span>회원 관리</span>
-                <i class="fa fa-angle-left pull-right"></i>
               </a>
-               <ul class="treeview-menu">
-                <li>
-                   <a href="/member">
-                      <i class="fa fa-circle-o"></i> 회원 정보
-                   </a>
-                </li>
-                <li>
-                   <a href="/admin/coupon">
-                      <i class="fa fa-circle-o"></i> 쿠폰 정보
-                   </a>
-                </li>
-              </ul>
             </li>
             <li class="treeview">
               <a href="#">
@@ -212,44 +199,26 @@
                    </a>
                 </li> -->
                 <li>
-                   <a href="#">
+                   <a href="/admin/purchase/purchaselist">
                       <i class="fa fa-circle-o"></i> 구매 현황 관리
                    </a>
                 </li>
                 <li>
-                   <a href="#">
+                   <a href="/admin/purchase/refundlist">
                       <i class="fa fa-circle-o"></i> 환불 관리 
                    </a>
                 </li>
               </ul>
             </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-table"></i> 
-                <span>팝업창 관리</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-             <ul class="treeview-menu">
-                <li>
-                   <a href="#">
-                      <i class="fa fa-circle-o"></i> 팝업창 조회
-                   </a>
-                </li>
-                <li>
-                   <a href="#">
-                      <i class="fa fa-circle-o"></i> 팝업창 등록 
-                   </a>
-                </li>
-              </ul>
-            </li>
             <li>
-              <a href="#">
+              <a href="/admin/salelist">
                 <i class="fa fa-calendar"></i> 
                 <span>매출 관리</span>
               </a>
             </li>
-            <li>
+            <li class="treeview">
               <a href="#">
+              	<i class="fa fa-table"></i>
                 <span>관리자 관리</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>

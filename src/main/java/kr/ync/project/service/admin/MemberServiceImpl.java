@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import kr.ync.project.domain.admin.MemberVO;
+import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.persistence.admin.MemberDAO;
 
 /**
@@ -28,8 +29,16 @@ public class MemberServiceImpl implements MemberService{
 	
 	//리스트
 	@Override
-	public List<MemberVO> listAll()throws Exception {
-		return dao.listAll();
+	public List<MemberVO> listSearchCriteria(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.listAll(cri);
+	}
+
+	//리스트 개수
+	@Override
+	public int listSearchCount(SearchCriteria cri) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.listSearchCount(cri);
 	}
 	
 	//상세보기
@@ -38,5 +47,5 @@ public class MemberServiceImpl implements MemberService{
 		return dao.read(id);
 	}
 	
-
+	
 }

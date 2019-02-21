@@ -9,31 +9,6 @@
 
 <%@include file="include/header.jsp" %>
     <!-- Main content -->
-    <script type="text/javascript">
-	
-		$(function() {
-			$("select[name=NATION_CODE]").change(function() {
-				var temp = $("select[name=CITY_CODE]");
-				var a = $(this).val();
-				
-				temp.children().remove();
-				temp.append('<option value="">지역</option>');
-				
-				if(a == 'JS'){
-					temp.append('<option value="">후쿠오카</option>');
-					temp.append('<option value="">도쿄</option>');
-					temp.append('<option value="OSA">오사카</option>')
-				}
-				if(a == '2'){
-					temp.append('<option value="">파리</option>');
-					temp.append('<option value="">마르세유</option>');
-				}
-			});
-		});
-	
-	</script>
-
-
 
   <section class="content">
 		
@@ -42,62 +17,112 @@
 		<!-- left column -->
 			<div class="col-md-12">
 			  <!-- general form elements -->
+			  	<div class='box'>
+					<div class="box-header with-border">
+						<h3 class="box-title">Package Search</h3>
+					</div>
+					<div class='box-body'>
+						<select name="searchType">
+							<option value="n"
+								<c:out value="${cri.searchType == null?'selected':''}"/>>
+								---</option>
+								<option value="t"
+								<c:out value="${cri.searchType eq 'i'?'selected':''}"/>>
+								NAME</option>
+								<option value="c"
+								<c:out value="${cri.searchType eq 'c'?'selected':''}"/>>
+								CODE</option>
+						</select> 
+						
+						<input type="text" name='keyword' id="keywordInput"
+							value='${cri.keyword }'>
+						<button id='searchBtn'>Search</button>
+					</div>
+				</div>
+			  
 				<div class="box">
 					<div class="box-header with-border">
-						<h3 class="box-title">LIST ALL PAGE</h3>
+						<h3 class="box-title">Package List</h3>
 					</div>
 					<div class="box-body">
-					<table>
-						<tr>
-							<td width=75>
-								<select name="NATION_CODE">
-									<option value="">국가</option>
-									<option value="JS">일본</option>
-									<option value="2">프랑스</option>
-								</select>
-							</td>
-							<td width=75>
-								<select name="CITY_CODE">
-									<option value="">지역</option>
-								</select>
-							</td>
-						</tr>
-					</table>
-					<br>
-					<table class="table table-bordered">
-						<tr>
-							<th style="width: 10px">NO</th>
-							<th>상품명</th>
-							<th>지역/도시</th>
-							<th>출/귀국일</th>
-							<th>교통편</th>
-							<th>테마</th>
-							<th>가격(원)</th>
-						</tr>
-					
-						<c:forEach items="${list}" var="productVO">
+						<table class="table table-bordered">
 							<tr>
-								<td>${productVO.ROWNUM}</td>
-								<td><a href='/admin/Packagedetail?code=${productVO.PRODUCT_CODE}'>${productVO.PRODUCT_NAME}</a>
-								<td>${productVO.NATION_CODE}/${productVO.CITY_CODE}</td>
-								<td>
-									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${productVO.DEPARTURE_DATE}"/>
-									&nbsp;~&nbsp;
-									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${productVO.ARRIVAL_DATE}"/>
-								</td>
-								<td>${productVO.TRANSPORTATION}</td>
-								<td>${productVO.THEME}</td>
-								<td>${productVO.COSTPRICE}</td>
+								<th style="width: 10px">NO</th>
+								<th>NAME</th>
+								<th>NATION/CITY</th>
+								<th>DEPARTURE/ARRIVAL</th>
+								<th>TRANSPORTATION</th>
+								<th>THEME</th>
+								<th>PRICE</th>
 							</tr>
-						</c:forEach> 
-					</table>
+							<c:forEach items="${list}" var="productVO">
+								<tr>
+									<td>${productVO.ROWNUM}</td>
+									<td><a href='/admin/Packagedetail?code=${productVO.PRODUCT_CODE}'>${productVO.PRODUCT_NAME}</a>
+									<td>${productVO.NATION_CODE}/${productVO.CITY_CODE}</td>
+									<td>
+										<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${productVO.DEPARTURE_DATE}"/>
+										&nbsp;~&nbsp;
+										<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${productVO.ARRIVAL_DATE}"/>
+									</td>
+									<td>${productVO.TRANSPORTATION}</td>
+									<td>${productVO.THEME}</td>
+									<td>${productVO.COSTPRICE}</td>
+								</tr>
+							</c:forEach> 
+						</table>
 					</div>
-					
+					<div class="box-footer">
+						<div class="text-center">
+							<ul class="pagination">
+								<c:if test="${pageMaker.prev}">
+									<li><a href="PackageList${pageMaker.makeSearch(pageMaker.startPage - 1) }">&laquo;</a></li>
+								</c:if>
+	
+								<c:forEach begin="${pageMaker.startPage }"
+									end="${pageMaker.endPage }" var="idx">
+									<li
+										<c:out value="${pageMaker.cri.page == idx?'class =active':''}"/>>
+										<a href="PackageList${pageMaker.makeSearch(idx)}">${idx}</a>
+									</li>
+								</c:forEach>
+	
+								<c:if test="${pageMaker.next && pageMaker.endPage > 0}">
+									<li><a href="PackageList${pageMaker.makeSearch(pageMaker.endPage +1) }">&raquo;</a></li>
+								</c:if>
+	
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div><!--/.col (left) -->
 		</div>   <!-- /.row -->
     </section><!-- /.content -->
-    
+    <form id="jobForm">
+		<input type='hidden' name="page" value=${pageMaker.cri.perPageNum}>
+		<input type='hidden' name="perPageNum" value=${pageMaker.cri.perPageNum}>
+	</form>
+	<script>
+		var result = '${msg}';
+	
+		if (result == 'SUCCESS') {
+			alert("처리가 완료되었습니다.");
+		}
+	
+		$(document).ready(
+				function() {
+					$('#searchBtn').on(
+							"click",
+							function(event) {
+								self.location = "PackageList"
+										+ '${pageMaker.makeQuery(1)}'
+										+ "&searchType="
+										+ $("select option:selected").val()
+										+ "&keyword=" + $('#keywordInput').val();
+	
+							});
+				});
+	</script>
     
 <%@include file="include/footer.jsp" %>
     

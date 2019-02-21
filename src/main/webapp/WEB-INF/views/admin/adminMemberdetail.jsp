@@ -46,7 +46,7 @@ th{
 					</div>
 					<div class="box-body">
 						<form role="form" method="post">
-						<input type='text' name='id' value="${adminview.ID}">
+						<input type='hidden' name='id' value="${adminview.ID}">
 						</form>
 						<table class="table table-bordered">
 							<tr>
