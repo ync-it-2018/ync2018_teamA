@@ -1,21 +1,20 @@
 package kr.ync.project.controller.admin;
 
-import java.util.Locale;
-
 import javax.inject.Inject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.ync.project.domain.admin.MemberVO;
-import kr.ync.project.domain.admin.ProductVO;
+import kr.ync.project.domain.admin.PageMaker;
+import kr.ync.project.domain.admin.SearchCriteria;
 import kr.ync.project.service.admin.AdminMemberService;
 
 
@@ -39,11 +38,17 @@ public class AdminMemberController {
 	
 	//관리자 조회로 이동
 	@RequestMapping(value = "/adminMember", method = RequestMethod.GET)
-	public String adminMemberList(Locale locale, Model model) throws Exception {
+	public String adminMemberList(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 
 		// 가나다
-		logger.info("관리자 조회로 이동", locale);
-		model.addAttribute("list", service.listAll());
+		logger.info("show all list..........");
+		model.addAttribute("list", service.listSearchCriteria(cri));
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+
+		pageMaker.setTotalCount(service.listSearchCount(cri));
+
+		model.addAttribute("pageMaker", pageMaker);
 
 		return "admin/adminMember";
 	}

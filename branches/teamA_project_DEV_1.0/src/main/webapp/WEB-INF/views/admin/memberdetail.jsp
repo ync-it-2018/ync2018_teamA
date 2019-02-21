@@ -10,6 +10,20 @@
 <!--  송원준                      -->
 <!--  2018. 12. 15                -->
 
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		
+		var formObj = $("form[role='form']");
+		
+		console.log(formObj);
+		$(".btn-primary").on("click", function() {
+			self.location = "/member";
+		});
+	});
+	
+</script>
+
 <style>
 <!--
 th{
@@ -59,6 +73,11 @@ th{
 							<tr>
 								<th>E-mail</th>
 								<td>${memberview.EMAIL}</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2">
+									<button type="submit" class="btn btn-primary">목록</button>
+								</td>
 							</tr>
 					</table>
 				</div>	

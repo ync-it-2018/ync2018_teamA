@@ -49,7 +49,7 @@ th{
 					</div>
 					<div class="box-body">
 						<form role="form" method="post">
-						<input type='text' name='code' value="${productview.PRODUCT_CODE}">
+						<input type='hidden' name='code' value="${productview.PRODUCT_CODE}">
 						</form>
 						<table class="table table-bordered">
 							<tr>

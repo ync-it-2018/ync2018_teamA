@@ -2,7 +2,9 @@ package kr.ync.project.persistence.admin;
 
 import java.util.List;
 
+import kr.ync.project.domain.admin.Criteria;
 import kr.ync.project.domain.admin.ProductVO;
+import kr.ync.project.domain.admin.SearchCriteria;
 
 
 /**
@@ -25,6 +27,15 @@ public interface ProductDAO {
 	//상세보기
 	public ProductVO read(String code)throws Exception;
 	
+	//페이징
+	public int countPaging(Criteria cri) throws Exception;
+
 	//리스트
-	public List<ProductVO> listAll()throws Exception;
+	public List<ProductVO> listAll(SearchCriteria cri) throws Exception;
+
+	//카운트
+	public int listSearchCount(SearchCriteria cri) throws Exception;
+
+	//페이징
+	public List<ProductVO> listPage(int page) throws Exception;
 }
