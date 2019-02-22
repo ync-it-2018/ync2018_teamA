@@ -51,7 +51,7 @@
 						</tr>
 						<c:forEach items="${list}" var="InquiryBoardVO" varStatus="status">
 							<tr>
-								<td>${InquiryBoardVO.BOARD_IDX}</td>
+								<td>${(pageMaker.totalCount - status.index) - ( (pageMaker.cri.page - 1)  *  pageMaker.cri.perPageNum ) } </td>
 								<td><a
 									href='/admin/customersupport/inquirydetail?code=${InquiryBoardVO.BOARD_IDX}'>${InquiryBoardVO.TITLE}</a></td>
 								<td>${InquiryBoardVO.WRITER}</td>

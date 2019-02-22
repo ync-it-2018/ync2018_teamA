@@ -55,7 +55,7 @@
 						</tr>
 						<c:forEach items="${list}" var="ReservationCancleVO" varStatus="status">
 							<tr>
-								<td>${ReservationCancleVO.RE_IDX}</td>
+								<td>${(pageMaker.totalCount - status.index) - ( (pageMaker.cri.page - 1)  *  pageMaker.cri.perPageNum ) } </td>
 								<td>${ReservationCancleVO.ID}</td>
 								<td><fmt:formatDate pattern="yyyy-MM-dd" value="${ReservationCancleVO.RE_DATE}" /></td>
 								<td><a
