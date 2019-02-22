@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
+<mapper namespace="kr.ync.project.mapper.memberMapper">
+	
+	<!--  회원 리스트 -->
+	<select id="listAll" resultType="MemberVO">
+		<![CDATA[
+		SELECT
+			ROWNUM, 
+			NAME, 
+			ID, 
+			EMAIL, 
+			PHONE
+		FROM
+			TA_MEMBER
+		WHERE
+			GRADE IS NULL
+		]]>
+	</select>
+		
+	<!-- 페이징리스트 -->
+	<select id="listPage" resultType="MemberVO">
+   <![CDATA[
+   SELECT    
+		ROWNUM, 
+		NAME, 
+		ID, 
+		EMAIL, 
+		PHONE
+   FROM   
+   		(SELECT    
+   			/*+INDEX_DESC(tbl_board pk_board)*/
+            rownum rn, 
+			NAME, 
+			ID, 
+			EMAIL, 
+			PHONE
+         FROM   
+         	TA_MEMBER
+         WHERE   
+         	rownum <= #{page} * #{perPageNum}
+         AND      
+         	ID IS NOT NULL
+         AND
+         	GRADE IS NULL
+         )
+   WHERE    
+   		rn > (#{page} -1) * #{perPageNum}
+   ]]>
+	</select>
+	
+	<!-- 페이징 카운팅 -->
+	<select id="countPaging" resultType="int">
+   <![CDATA[
+   SELECT   count(ID) 
+   FROM   TA_MEMBER 
+   WHERE   
+   		ID IS NOT NULL
+   AND
+        GRADE IS NULL
+   ]]>
+	</select>
+	
+	<!-- 검색조건 -->
+	<sql id="search">
+		<if test="searchType != null">
+			<if test="searchType == 'i'.toString()">
+				AND ID LIKE '%'|| #{keyword}||'%'
+			</if>
+		</if>
+	</sql>
+
+	<!-- 리스트 -->
+	<select id="listSearch" resultType="MemberVO">
+		<![CDATA[
+			SELECT   
+				ROWNUM,  
+				NAME, 
+				ID, 
+				EMAIL, 
+				PHONE, 
+				GET_MILEAGE
+			FROM   
+				(SELECT    
+					/*+INDEX_DESC(tbl_board pk_board)*/
+			        rownum rn,
+					NAME, 
+					ID, 
+					EMAIL, 
+					PHONE, 
+					GET_MILEAGE
+				FROM   
+					TA_MEMBER
+		]]>
+		<where>
+			<include refid="search"></include>
+			<![CDATA[
+				AND 
+					rownum <= #{page} * #{perPageNum}
+				AND 
+					ID IS NOT NULL
+				AND
+					GRADE IS NULL
+				)
+		    ]]>
+		</where>
+		<![CDATA[
+			WHERE 
+				rn > (#{page} -1) * #{perPageNum}
+		]]>
+	</select>
+
+	<!-- 리스트 카운팅 -->
+	<select id="listSearchCount" resultType="int">
+		<![CDATA[
+			SELECT  
+				count(ID)
+			FROM   
+				TA_MEMBER
+		]]>
+	
+		<where>
+			<include refid="search"></include>
+			<![CDATA[
+				AND 
+					ID IS NOT NULL
+				AND
+        			GRADE IS NULL
+			]]>
+		</where>
+	</select>
+	
+	<!--  회원 정보 상세보기 -->
+	<select id="read" resultType="MemberVO">
+		<![CDATA[
+		SELECT
+			ROWNUM, 
+			NAME, 
+			ID, 
+			PASSWD,
+			EMAIL, 
+			BIRTH,
+			PHONE, 
+			GRADE
+		FROM 	
+			TA_MEMBER
+		WHERE 
+			ID = #{id}
+		]]>
+	</select>
+	
+</mapper>

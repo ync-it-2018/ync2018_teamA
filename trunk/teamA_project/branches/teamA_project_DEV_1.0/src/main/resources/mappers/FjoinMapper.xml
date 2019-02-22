@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
+<mapper namespace="kr.ync.project.mapper.FjoinMapper">
+
+<!-- 아이디, 이름, 비밀번호, 생년월일, 전화번호, 이메일 정보를 받아서 새로운 회원 등록  -->
+<insert id="create">
+<![CDATA[
+INSERT INTO TA_MEMBER ( ID, NAME, PASSWD, BIRTH, PHONE, EMAIL ) 
+VALUES ( #{ID}, #{NAME}, #{PASSWD}, #{BIRTH}, #{PHONE}, #{EMAIL} )
+]]>
+</insert>
+
+</mapper>

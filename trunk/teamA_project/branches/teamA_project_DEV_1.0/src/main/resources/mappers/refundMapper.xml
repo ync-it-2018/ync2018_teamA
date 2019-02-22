@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
+<mapper namespace="kr.ync.project.mapper.refundMapper">
+
+	<!-- 상세보기 -->
+	<select id="read" resultType="purchaseVO">
+		<![CDATA[
+		    SELECT
+			    OD.ORDER_CODE,
+			    OD.ORDER_MEANS,
+			    OD.ORDER_DATE,
+			    OD.STATUS,
+			    RV.RE_IDX, 
+			    OD.ORDER_PRICE,  
+			    RV.ADAULT_NUMBER, 
+			    RV.CHILD_NUMBER, 
+			    RV.BABY_NUMBER, 
+			    RV.ID, 
+			    RV.PRODUCT_CODE,
+			    RV.PRODUCT_NAME, 
+			    RV.NATION_NAME, 
+			    RV.CITY_NAME, 
+			    RV.DEPARTURE_DATE, 
+			    RV.ARRIVAL_DATE, 
+			    RV.TRANSPORTATION
+			 FROM
+			    (SELECT
+			        RE.RE_IDX,  
+			        RE.ADAULT_NUMBER, 
+			        RE.CHILD_NUMBER, 
+			        RE.BABY_NUMBER, 
+			        RE.ID, 
+			        RE.PRODUCT_CODE,
+			        PR.PRODUCT_NAME, 
+			        NA.NATION_NAME, 
+			        CI.CITY_NAME, 
+			        PR.DEPARTURE_DATE, 
+			        PR.ARRIVAL_DATE, 
+			        PR.TRANSPORTATION
+			    FROM   
+			        TA_RESERVATION RE, TA_PRODUCT PR, TA_CITY CI, TA_NATION NA
+			    WHERE   
+			        RE.PRODUCT_CODE = PR.PRODUCT_CODE
+			    AND 
+			        CI.CITY_CODE = PR.CITY_CODE
+			    AND 
+			        NA.NATION_CODE = PR.NATION_CODE) RV, TA_ORDER OD
+			WHERE
+			    OD.ORDER_CODE = #{ORDER_CODE}
+			AND
+			    RV.RE_IDX = OD.RE_IDX
+		   ]]>
+	</select>
+
+	<!-- 페이징 리스트 -->
+	<select id="listPage" resultType="purchaseVO">
+   <![CDATA[
+		SELECT
+			*
+		FROM
+		    (SELECT    
+		        /*+INDEX_DESC(tbl_board pk_board)*/
+		        rownum rn,
+		        OD.ORDER_CODE,
+		        OD.ORDER_MEANS,
+		        OD.ORDER_PRICE,
+		        OD.ORDER_DATE,
+		        OD.STATUS,
+		        RE.ID, 
+		        PR.PRODUCT_CODE, 
+		        PR.PRODUCT_NAME
+		     FROM   
+		        TA_RESERVATION RE, TA_PRODUCT PR, TA_ORDER OD
+		     WHERE
+	         	rownum <= #{page} * #{perPageNum}
+	         AND
+	         	OD.ORDER_CODE > 0  
+	         AND 
+	         	RE.PRODUCT_CODE = PR.PRODUCT_CODE
+	         AND
+	         	RE.RE_IDX = OD.RE_IDX
+	         AND
+	         	OD.STATUS IN('02', '03')
+	         )
+	   WHERE    
+   			rn > (#{page} -1) * #{perPageNum}
+   ]]>
+	</select>
+
+	<!-- 페이징 카운팅 -->
+	<select id="countPaging" resultType="int">
+   <![CDATA[
+	SELECT
+		count(ORDER_CODE) 
+	FROM   
+		TA_ORDER 
+	WHERE
+		ORDER_CODE > 0 
+	AND 
+		STATUS IN('02', '03')
+   ]]>
+	</select>
+
+	<!-- 검색조건 -->
+	<sql id="search">
+		<if test="searchType != null">
+			<if test="searchType == 'i'.toString()">
+				AND ID LIKE '%'|| #{keyword}||'%'
+			</if>
+			<if test="searchType == 'ok'.toString()">
+				AND OD.STATUS = '03'
+			</if>
+			<if test="searchType == 'no'.toString()">
+				AND OD.STATUS = '02'
+			</if>
+		</if>
+	</sql>
+
+	<!-- 리스트 -->
+	<select id="listSearch" resultType="purchaseVO">
+   <![CDATA[
+		SELECT
+		    	*
+		FROM
+		    (SELECT    
+		        /*+INDEX_DESC(tbl_board pk_board)*/
+		        rownum rn,
+		        OD.ORDER_CODE,
+		        OD.ORDER_MEANS,
+		        OD.ORDER_PRICE,
+		        OD.ORDER_DATE,
+		        OD.STATUS,
+		        RE.ID, 
+		        PR.PRODUCT_CODE, 
+		        PR.PRODUCT_NAME
+		     FROM   
+		        TA_RESERVATION RE, TA_PRODUCT PR, TA_ORDER OD
+   ]]>
+		<where>
+			<include refid="search"></include>
+            <![CDATA[
+				AND 	
+				  	rownum <= #{page} * #{perPageNum}
+				AND
+					OD.ORDER_CODE > 0  
+				AND 
+					RE.PRODUCT_CODE = PR.PRODUCT_CODE
+				AND
+					RE.RE_IDX = OD.RE_IDX
+				AND
+					OD.STATUS IN('02', '03')
+				)
+            ]]>
+		</where>
+   <![CDATA[
+      WHERE 
+      		rn > (#{page} -1) * #{perPageNum}
+   ]]>
+	</select>
+
+	<!-- 리스트 카운팅 -->
+	<select id="listSearchCount" resultType="int">
+   <![CDATA[
+	SELECT
+		count(OD.ORDER_CODE) 
+	FROM   
+		TA_ORDER OD, TA_RESERVATION RE 
+   ]]>
+
+		<where>
+			<include refid="search"></include>
+      <![CDATA[
+		AND
+			RE.RE_IDX = OD.RE_IDX
+		AND 
+		   	OD.ORDER_CODE > 0 
+		AND 
+			OD.STATUS IN('02', '03')
+      ]]>
+		</where>
+	</select>
+</mapper>
