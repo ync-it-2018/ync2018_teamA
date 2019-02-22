@@ -43,7 +43,7 @@
 						</tr>
 						<c:forEach items="${list}" var="NoticeBoardVO" varStatus="status">
 							<tr>
-								<td>${status.count}</td>
+								<td>${(pageMaker.totalCount - status.index) - ( (pageMaker.cri.page - 1)  *  pageMaker.cri.perPageNum ) } </td>
 								<td><a href='/admin/customersupport/noticedetail?code=${NoticeBoardVO.BOARD_IDX}'>${NoticeBoardVO.TITLE}</a></td>
 								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${NoticeBoardVO.WRITEDATE}" /></td>
 							</tr>

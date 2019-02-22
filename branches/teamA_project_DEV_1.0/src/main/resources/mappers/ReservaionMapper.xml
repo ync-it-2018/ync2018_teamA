@@ -35,6 +35,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
          AND      RE_IDX > 0  AND RE.PRODUCT_CODE = PR.PRODUCT_CODE
          )
    WHERE    rn > (#{page} -1) * #{perPageNum}
+   ORDER BY RE_IDX DESC
    ]]>
 	</select>
 
@@ -78,11 +79,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             AND rownum <= #{page} * #{perPageNum}
              AND STATUS IN('01', '02')
             AND RE_IDX > 0 AND RE.PRODUCT_CODE = PR.PRODUCT_CODE
-              )
+              
             ]]>
 		</where>
+		<![CDATA[
+		ORDER BY RE.RE_IDX )
+		]]>
+		
    <![CDATA[
       WHERE rn > (#{page} -1) * #{perPageNum}
+      
    ]]>
 	</select>
 
@@ -99,5 +105,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
          AND RE_IDX > 0 AND STATUS IN('01', '02')
       ]]>
 		</where>
+		
 	</select>
 </mapper>
