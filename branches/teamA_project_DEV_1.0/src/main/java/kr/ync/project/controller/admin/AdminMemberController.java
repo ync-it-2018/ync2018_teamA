@@ -40,7 +40,6 @@ public class AdminMemberController {
 	@RequestMapping(value = "/adminMember", method = RequestMethod.GET)
 	public String adminMemberList(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 
-		// 가나다
 		logger.info("show all list..........");
 		model.addAttribute("list", service.listSearchCriteria(cri));
 		PageMaker pageMaker = new PageMaker();
