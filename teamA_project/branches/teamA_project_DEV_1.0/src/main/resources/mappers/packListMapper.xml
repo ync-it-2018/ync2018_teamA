@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
+<mapper namespace="kr.ync.project.mapper.PackListMapper">
+
+	<!--  패키지 등록 -->
+	<insert id="create">
+		<![CDATA[
+		INSERT INTO TA_PRODUCT (PRODUCT_CODE, 
+								PRODUCT_NAME, 
+								NATION_CODE, 
+								CITY_CODE, 
+								THENUMBER, 
+								DEPARTURE_DATE, 
+								ARRIVAL_DATE, 
+								TRANSPORTATION, 
+								THEME,
+								CATEGORIZATION, 
+								COSTPRICE, 
+								ADULT_PRICE, 
+								CHILD_PRICE, 
+								BABY_PRICE,
+								ITINERARY,
+								HOTEL_TOUR,
+								OPTIONAL_TOUR,
+								SALES)
+		VALUES(#{PRODUCT_CODE}, 
+			   #{PRODUCT_NAME}, 
+			   #{NATION_CODE}, 
+			   #{CITY_CODE},
+			   #{THENUMBER},
+			   #{DEPARTURE_DATE}, 
+			   #{ARRIVAL_DATE}, 
+			   #{TRANSPORTATION}, 
+			   #{THEME},
+			   #{CATEGORIZATION}, 
+			   #{COSTPRICE}, 
+			   #{ADULT_PRICE}, 
+			   #{CHILD_PRICE}, 
+			   #{BABY_PRICE},
+			   #{ITINERARY},
+			   #{HOTEL_TOUR},
+			   #{OPTIONAL_TOUR},
+			   #{SALES})
+		]]>
+	</insert>
+	
+	<!--  패키지 리스트 -->
+	<select id="listAll" resultType="ProductVO">
+		<![CDATA[
+		SELECT
+			ROWNUM, 
+			PRODUCT_CODE, 
+			PRODUCT_NAME, 
+			NATION_CODE, 
+			CITY_CODE, 
+			DEPARTURE_DATE, 
+			ARRIVAL_DATE, 
+			TRANSPORTATION, 
+			THEME, 
+			COSTPRICE
+		FROM
+			TA_PRODUCT
+		]]>
+	</select>
+	
+	<!-- 페이징리스트 -->
+	<select id="listPage" resultType="ProductVO">
+   <![CDATA[
+   SELECT    
+		ROWNUM, 
+		PRODUCT_CODE, 
+		PRODUCT_NAME, 
+		NATION_CODE, 
+		CITY_CODE, 
+		DEPARTURE_DATE, 
+		ARRIVAL_DATE, 
+		TRANSPORTATION, 
+		THEME, 
+		COSTPRICE
+   FROM   
+   		(SELECT    
+   			/*+INDEX_DESC(tbl_board pk_board)*/
+            rownum rn,
+			PRODUCT_CODE, 
+			PRODUCT_NAME, 
+			NATION_CODE, 
+			CITY_CODE, 
+			DEPARTURE_DATE, 
+			ARRIVAL_DATE, 
+			TRANSPORTATION, 
+			THEME, 
+			COSTPRICE
+         FROM   
+         	TA_PRODUCT
+         WHERE   
+         	rownum <= #{page} * #{perPageNum}
+         AND      
+         	PRODUCT_CODE IS NOT NULL
+         )
+   WHERE    
+   		rn > (#{page} -1) * #{perPageNum}
+   ]]>
+	</select>
+	
+	<!-- 페이징 카운팅 -->
+	<select id="countPaging" resultType="int">
+   <![CDATA[
+   SELECT   count(PRODUCT_CODE) 
+   FROM   TA_PRODUCT 
+   WHERE   PRODUCT_CODE IS NOT NULL 
+   ]]>
+	</select>
+	
+	<!-- 검색조건 -->
+	<sql id="search">
+		<if test="searchType != null">
+			<if test="searchType == 't'.toString()">
+				AND PRODUCT_NAME LIKE '%'|| #{keyword}||'%'
+			</if>
+			<if test="searchType == 'c'.toString()">
+				AND PRODUCT_CODE LIKE '%'|| #{keyword}||'%'
+			</if>
+		</if>
+	</sql>
+
+	<!-- 리스트 -->
+	<select id="listSearch" resultType="ProductVO">
+		<![CDATA[
+			SELECT   
+				ROWNUM, 
+				PRODUCT_CODE, 
+				PRODUCT_NAME, 
+				NATION_CODE, 
+				CITY_CODE, 
+				DEPARTURE_DATE, 
+				ARRIVAL_DATE, 
+				TRANSPORTATION, 
+				THEME, 
+				COSTPRICE
+			FROM   
+				(SELECT    
+					/*+INDEX_DESC(tbl_board pk_board)*/
+			        rownum rn,
+					PRODUCT_CODE, 
+					PRODUCT_NAME, 
+					NATION_CODE, 
+					CITY_CODE, 
+					DEPARTURE_DATE, 
+					ARRIVAL_DATE, 
+					TRANSPORTATION, 
+					THEME, 
+					COSTPRICE
+				FROM   
+					TA_PRODUCT
+		]]>
+		<!-- 
+			<where> 엘리먼트로 검색을 하지 않았을 경우 AND rownum <= 과 같이 WHERE 구문이 빠져버린다. 따라서 
+			<where> 를 사용하면 AND나 OR로 구문이 시작되면 AND나 OR를 지워버린다. 아래 구문과 동일한 기능. <trim prefix="WHERE" 
+			prefixOverrides="AND|OR "> ... </trim> http://www.mybatis.org/mybatis-3/ko/dynamic-sql.html 
+			참고 
+		-->
+		<where>
+			<include refid="search"></include>
+			<![CDATA[
+				AND 
+					rownum <= #{page} * #{perPageNum}
+				AND 
+					PRODUCT_CODE IS NOT NULL
+				)
+		    ]]>
+		</where>
+		<![CDATA[
+			WHERE 
+				rn > (#{page} -1) * #{perPageNum}
+		]]>
+	</select>
+
+	<!-- 리스트 카운팅 -->
+	<select id="listSearchCount" resultType="int">
+		<![CDATA[
+			SELECT  
+				count(PRODUCT_CODE)
+			FROM   
+				TA_PRODUCT
+		]]>
+	
+		<where>
+			<include refid="search"></include>
+			<![CDATA[
+				AND 
+					PRODUCT_CODE IS NOT NULL
+			]]>
+		</where>
+	</select>	
+	
+	<!--  패키지 정보 상세조회 -->
+	<select id="read" resultType="ProductVO">
+		<![CDATA[
+		SELECT
+			p.PRODUCT_CODE, 
+			p.PRODUCT_NAME, 
+			n.NATION_NAME,
+			p.NATION_CODE, 
+			c.CITY_NAME,
+			p.CITY_CODE, 
+			p.THENUMBER,
+			p.DEPARTURE_DATE, 
+			p.ARRIVAL_DATE, 
+			p.TRANSPORTATION, 
+			p.THEME,
+			pi.ROOT,
+			p.CATEGORIZATION, 
+			p.COSTPRICE, 
+			p.ADULT_PRICE, 
+			p.CHILD_PRICE, 
+			p.BABY_PRICE,
+			p.ITINERARY,
+			p.HOTEL_TOUR,
+			p.OPTIONAL_TOUR,
+			p.SALES
+		FROM 	
+			TA_PRODUCT p , TA_CITY c, TA_NATION n, TA_PROIMG pi 
+		WHERE 
+			p.PRODUCT_CODE = #{code}
+		AND	
+			p.CITY_CODE = c.CITY_CODE
+		AND
+			c.NATION_CODE = n.NATION_CODE
+		AND
+			p.PRODUCT_CODE = pi.PRODUCT_CODE
+		]]>
+	</select>
+	
+	<!--  패키지 정보 수정 -->
+	<update id="modify">
+		UPDATE TA_PRODUCT 
+		SET PRODUCT_NAME = #{PRODUCT_NAME},
+			NATION_CODE = #{NATION_CODE},
+			CITY_CODE = #{CITY_CODE},
+			THENUMBER = #{THENUMBER},
+			TRANSPORTATION = #{TRANSPORTATION}, 
+			THEME = #{THEME},
+			CATEGORIZATION = #{CATEGORIZATION}, 
+			COSTPRICE = #{COSTPRICE},
+			ADULT_PRICE = #{ADULT_PRICE},
+			CHILD_PRICE = #{CHILD_PRICE},
+			BABY_PRICE = #{BABY_PRICE},
+			ITINERARY = #{ITINERARY},
+			HOTEL_TOUR = #{HOTEL_TOUR},
+			OPTIONAL_TOUR = #{OPTIONAL_TOUR},
+			SALES = #{SALES}
+		WHERE PRODUCT_CODE = #{PRODUCT_CODE}
+	</update>
+
+</mapper>

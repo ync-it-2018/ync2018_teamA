@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- maven build 시 mapper xml찾지못하는 오류 방지하기위해 임시로 작성한 mapper xml -->
+<mapper namespace="kr.ync.project.mapper.PackListMapper">
+
+	<!--  패키지 등록 -->
+	<insert id="create">
+		<![CDATA[
+		INSERT INTO TA_PRODUCT (PRODUCT_CODE, 
+								PRODUCT_NAME, 
+								NATION_CODE, 
+								CITY_CODE, 
+								THENUMBER, 
+								DEPARTURE_DATE, 
+								ARRIVAL_DATE, 
+								TRANSPORTATION, 
+								THEME,
+								CATEGORIZATION, 
+								COSTPRICE, 
+								ADULT_PRICE, 
+								CHILD_PRICE, 
+								BABY_PRICE,
+								ITINERARY,
+								HOTEL_TOUR,
+								OPTIONAL_TOUR,
+								SALES)
+		VALUES(#{PRODUCT_CODE}, 
+			   #{PRODUCT_NAME}, 
+			   #{NATION_CODE}, 
+			   #{CITY_CODE},
+			   #{THENUMBER},
+			   #{DEPARTURE_DATE}, 
+			   #{ARRIVAL_DATE}, 
+			   #{TRANSPORTATION}, 
+			   #{THEME},
+			   #{CATEGORIZATION}, 
+			   #{COSTPRICE}, 
+			   #{ADULT_PRICE}, 
+			   #{CHILD_PRICE}, 
+			   #{BABY_PRICE},
+			   #{ITINERARY},
+			   #{HOTEL_TOUR},
+			   #{OPTIONAL_TOUR},
+			   #{SALES})
+		]]>
+	</insert>
+	
+	<!--  패키지 리스트 -->
+	<select id="listAll" resultType="ProductVO">
+		<![CDATA[
+		SELECT
+			ROWNUM, PRODUCT_CODE, PRODUCT_NAME, NATION_CODE, CITY_CODE, DEPARTURE_DATE, ARRIVAL_DATE, TRANSPORTATION, THEME, COSTPRICE
+		FROM
+			TA_PRODUCT
+		]]>
+	</select>
+	
+	<!--  패키지 정보 상세조회 -->
+	<select id="read" resultType="ProductVO">
+		<![CDATA[
+		SELECT
+			p.PRODUCT_CODE, 
+			p.PRODUCT_NAME, 
+			n.NATION_NAME,
+			p.NATION_CODE, 
+			c.CITY_NAME,
+			p.CITY_CODE, 
+			p.THENUMBER,
+			p.DEPARTURE_DATE, 
+			p.ARRIVAL_DATE, 
+			p.TRANSPORTATION, 
+			p.THEME,
+			pi.ROOT,
+			p.CATEGORIZATION, 
+			p.COSTPRICE, 
+			p.ADULT_PRICE, 
+			p.CHILD_PRICE, 
+			p.BABY_PRICE,
+			p.ITINERARY,
+			p.HOTEL_TOUR,
+			p.OPTIONAL_TOUR,
+			p.SALES
+		FROM 	
+			TA_PRODUCT p , TA_CITY c, TA_NATION n, TA_PROIMG pi 
+		WHERE 
+			p.PRODUCT_CODE = #{code}
+		AND	
+			p.CITY_CODE = c.CITY_CODE
+		AND
+			c.NATION_CODE = n.NATION_CODE
+		AND
+			p.PRODUCT_CODE = pi.PRODUCT_CODE
+		]]>
+	</select>
+	
+	<!--  패키지 정보 수정 -->
+	<update id="modify">
+		UPDATE TA_PRODUCT 
+		SET PRODUCT_NAME = #{PRODUCT_NAME},
+			NATION_CODE = #{NATION_CODE},
+			CITY_CODE = #{CITY_CODE},
+			THENUMBER = #{THENUMBER},
+			TRANSPORTATION = #{TRANSPORTATION}, 
+			THEME = #{THEME},
+			CATEGORIZATION = #{CATEGORIZATION}, 
+			COSTPRICE = #{COSTPRICE},
+			ADULT_PRICE = #{ADULT_PRICE},
+			CHILD_PRICE = #{CHILD_PRICE},
+			BABY_PRICE = #{BABY_PRICE},
+			ITINERARY = #{ITINERARY},
+			HOTEL_TOUR = #{HOTEL_TOUR},
+			OPTIONAL_TOUR = #{OPTIONAL_TOUR},
+			SALES = #{SALES}
+		WHERE PRODUCT_CODE = #{PRODUCT_CODE}
+	</update>
+
+</mapper>
