@@ -8,10 +8,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <select id="listAll" resultType="FQnABoardVO">
 <![CDATA[
 SELECT
-BOARD_IDX, TITLE, WRITEDATE, WRITER, ANSWER
+BO.BOARD_IDX, TITLE, WRITEDATE, WRITER, "replytext"
 FROM
-TA_BOARD
-WHERE BOARD_CODE = '03'
+TA_BOARD BO, TA_ANSWER AN
+WHERE BO.BOARD_CODE = '03'
 ]]>
 </select>
 <!-- 상세보기 -->

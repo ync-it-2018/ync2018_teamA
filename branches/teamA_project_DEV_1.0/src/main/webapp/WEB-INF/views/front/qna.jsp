@@ -196,7 +196,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <td><p><fmt:formatDate pattern="yyyy-MM-dd" value="${FQnABoardVO.WRITEDATE}"/></p></td>
               <td>
               	<c:choose>
-	             	<c:when test="${null eq FQnABoardVO.ANSWER}">
+	             	<c:when test="${null eq FQnABoardVO.replytext}">
 	             		<p style="color:red">답변대기</p>
 	             	</c:when>
 	             	<c:otherwise>
